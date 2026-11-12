@@ -1,0 +1,89 @@
+{
+  "as_of": "2027-07-26T10:02:00Z",
+  "checked_source_ids": [
+    "discovery",
+    "review",
+    "qa"
+  ],
+  "note": "Fresh host review is recorded separately so unchanged approved normalized memory is not rewritten merely to describe this task. Source and dependency fingerprint checks are performed by handoff resume.",
+  "reviews": [
+    {
+      "record_id": "CE-001",
+      "normalized_record_preserved": true,
+      "current_review": "Compared the exact source passage with all three supplied documents as of 2027-07-26T10:02:00Z. No newly accepted successor or changed factual state is supplied for this record.",
+      "qualifications": "Current documents do not contradict or resolve this evidence state."
+    },
+    {
+      "record_id": "CE-002",
+      "normalized_record_preserved": true,
+      "current_review": "Compared the exact source passage with all three supplied documents as of 2027-07-26T10:02:00Z. No newly accepted successor or changed factual state is supplied for this record.",
+      "qualifications": "Current documents do not contradict or resolve this evidence state."
+    },
+    {
+      "record_id": "D-041",
+      "normalized_record_preserved": true,
+      "current_review": "Compared the exact source passage with all three supplied documents as of 2027-07-26T10:02:00Z. No newly accepted successor or changed factual state is supplied for this record.",
+      "qualifications": "D-052 still explicitly replaces D-041; QA describes the legacy analytics as a failure, not permission to revive D-041."
+    },
+    {
+      "record_id": "D-052",
+      "normalized_record_preserved": true,
+      "current_review": "Compared the exact source passage with all three supplied documents as of 2027-07-26T10:02:00Z. No newly accepted successor or changed factual state is supplied for this record.",
+      "qualifications": "Q-11 confirms observed band behavior; Q-13 is a failure to comply, not a change to the accepted decision."
+    },
+    {
+      "record_id": "DESIGN-NESSA-01",
+      "normalized_record_preserved": true,
+      "current_review": "Compared the exact source passage with all three supplied documents as of 2027-07-26T10:02:00Z. No newly accepted successor or changed factual state is supplied for this record.",
+      "qualifications": "No source says Sela approved this circulated concept. Generic prototype-design/QA-plan approval in the QA note does not specifically adopt its prohibited features."
+    },
+    {
+      "record_id": "G-001",
+      "normalized_record_preserved": true,
+      "current_review": "Compared the exact source passage with all three supplied documents as of 2027-07-26T10:02:00Z. No newly accepted successor or changed factual state is supplied for this record.",
+      "qualifications": "The stated purpose is unchanged; no formal goal approval is newly evidenced. The inherited follow-up rationale referring to D-041 is historical. Current prototype authority is D-052."
+    },
+    {
+      "record_id": "H-001",
+      "normalized_record_preserved": true,
+      "current_review": "Compared the exact source passage with all three supplied documents as of 2027-07-26T10:02:00Z. No newly accepted successor or changed factual state is supplied for this record.",
+      "qualifications": "Current documents do not contradict or resolve this evidence state."
+    },
+    {
+      "record_id": "Q-001",
+      "normalized_record_preserved": true,
+      "current_review": "Compared the exact source passage with all three supplied documents as of 2027-07-26T10:02:00Z. No newly accepted successor or changed factual state is supplied for this record.",
+      "qualifications": "The review says the research gap remains open. Q-14 is a test-execution gap, not new interview evidence or resolution of this question."
+    },
+    {
+      "record_id": "R-001",
+      "normalized_record_preserved": true,
+      "current_review": "Compared the exact source passage with all three supplied documents as of 2027-07-26T10:02:00Z. No newly accepted successor or changed factual state is supplied for this record.",
+      "qualifications": "Current documents do not contradict or resolve this evidence state."
+    },
+    {
+      "record_id": "R-PRIVACY-052",
+      "normalized_record_preserved": true,
+      "current_review": "Compared the exact source passage with all three supplied documents as of 2027-07-26T10:02:00Z. No newly accepted successor or changed factual state is supplied for this record.",
+      "qualifications": "Current documents do not contradict or resolve this evidence state."
+    },
+    {
+      "record_id": "REQ-DATA-052",
+      "normalized_record_preserved": true,
+      "current_review": "Compared the exact source passage with all three supplied documents as of 2027-07-26T10:02:00Z. No newly accepted successor or changed factual state is supplied for this record.",
+      "qualifications": "Q-13 exposes noncompliance with this unchanged rule."
+    },
+    {
+      "record_id": "REQ-FRESH-052",
+      "normalized_record_preserved": true,
+      "current_review": "Compared the exact source passage with all three supplied documents as of 2027-07-26T10:02:00Z. No newly accepted successor or changed factual state is supplied for this record.",
+      "qualifications": "Q-12 supplies passing execution evidence without changing the criterion."
+    },
+    {
+      "record_id": "REQ-RELEASE",
+      "normalized_record_preserved": true,
+      "current_review": "Compared the exact source passage with all three supplied documents as of 2027-07-26T10:02:00Z. No newly accepted successor or changed factual state is supplied for this record.",
+      "qualifications": "The QA report reconfirms Ivo as sole release authority and says no written decision has been issued."
+    }
+  ]
+}

@@ -1,0 +1,757 @@
+{
+  "version": "0.2.0",
+  "evaluation_revision": "eval-r1",
+  "warnings": [],
+  "semantic_leakage_guarantee": false,
+  "scope": "Local static structure, reference, YAML and evaluation-input checks only",
+  "passed": true,
+  "checks_count": 148,
+  "checks": [
+    {
+      "check": "file:README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file:CHANGELOG.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file:cognitive-partner/SKILL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file:cognitive-partner/agents/openai.yaml",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file:cognitive-partner/references/intervention-guide.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file:cognitive-partner/references/examples.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file:cognitive-partner/references/contribution-record.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file:integration/AGENTS.snippet.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file:evals/PROTOCOL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file:evals/inputs.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "file:evals/evaluator-only.jsonl",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "frontmatter_delimiters",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "frontmatter_mapping",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "skill_name",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "description",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "deep_default",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "core_under_500_lines",
+      "passed": true,
+      "detail": "155"
+    },
+    {
+      "check": "reference_files",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "reference_paths_stay_inside_skill",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "balanced_code_fences:README.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "balanced_code_fences:CHANGELOG.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "balanced_code_fences:cognitive-partner/SKILL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "balanced_code_fences:integration/AGENTS.snippet.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "balanced_code_fences:evals/PROTOCOL.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "balanced_code_fences:cognitive-partner/references/examples.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "balanced_code_fences:cognitive-partner/references/intervention-guide.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "balanced_code_fences:cognitive-partner/references/contribution-record.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "host_metadata_yaml_mapping",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "host_interface",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "host_implicit_flag_boolean",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "nested_evaluation_schema",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "28_unique_input_cases",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "28_matching_evaluator_cases",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-11",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-11",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-13",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-13",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-14",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-14",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-15",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-15",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-16",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-16",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-17",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-17",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-18",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-18",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-19",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-19",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-20",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-20",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-21",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-21",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-22",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-22",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-23",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-23",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-24",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-24",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-25",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-25",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-26",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-26",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-27",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-27",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "input_schema:CP-28",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_rubric_or_future_user_leak:CP-28",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-01",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-02",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-03",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-04",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-05",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-06",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-07",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-08",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-09",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-10",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-11",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-11",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-12",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-13",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-13",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-14",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-14",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-15",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-15",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-16",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-16",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-17",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-17",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-18",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-18",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-19",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-19",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-20",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-20",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-21",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-21",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-22",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-22",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-23",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-23",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-24",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-24",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-25",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-25",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-26",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-26",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-27",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-27",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluator_schema:CP-28",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "followup_schema:CP-28",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "all_route_types_present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "multi_turn_cases_present",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "official_full_spec_validation": "not_run",
+  "runtime_loading": "not_run",
+  "behavioral_evaluation": "not_run",
+  "outcome_comparison": "not_run",
+  "human_learning_evaluation": "not_run",
+  "installation_performed": false
+}

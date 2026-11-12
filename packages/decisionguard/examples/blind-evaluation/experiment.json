@@ -1,0 +1,26 @@
+{
+  "version": "0.4.1",
+  "date": "2026-11-08",
+  "author_separate_from_extractors": true,
+  "fresh_extractor_contexts": 4,
+  "unique_corpora": 2,
+  "unique_requests": 6,
+  "heldout_suite": "suite-b",
+  "frozen_before_results": true,
+  "original_author_manifest_sha256": "d202d65ab26181aef283ce135be8d38296bd56ba9256a0dd91f6e99b5dd1a1ad",
+  "baseline_skill_version": "0.3.0",
+  "improved_skill_version": "0.4.0",
+  "blinding": "Fresh no-history agents, isolated input+skill copies, read-scope instructions, first outputs and hashes preserved. Shared filesystem; no OS-enforced secrecy claim.",
+  "scope": "Fictional local data only. No Notion retrieval or writes. No GitHub publishing.",
+  "limitations": [
+    "One author agent created both corpora independently of implementation but used the same agent service/family as extractors.",
+    "One extraction per version per corpus. These are small behavioral trials, not population accuracy estimates.",
+    "Frozen answers remain unchanged; exact-anchor/status scorer findings are adjudicated separately.",
+    "Suite A is the development corpus; only suite B stayed unopened by the implementer until improvement code was frozen."
+  ],
+  "improved_trial_skill_version": "0.4.0",
+  "final_skill_version": "0.4.1",
+  "post_trial_patch": "After both blind extractions sealed, missing design-kind was converted to a classification caution when accepted decisions/requirements exist. Same frozen responses replayed; all selected records unchanged. No additional blind model trial for this patch.",
+  "completed_task_packets": 12,
+  "independent_semantic_reviewer_contexts": 2
+}

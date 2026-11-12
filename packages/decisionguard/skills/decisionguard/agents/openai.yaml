@@ -1,0 +1,4 @@
+interface:
+  display_name: "DecisionGuard"
+  short_description: "Carry current decisions into the next project task"
+  default_prompt: "Use $decisionguard to complete this task with current project decisions, rechecking any confirmed handoff and applying relevant changes."

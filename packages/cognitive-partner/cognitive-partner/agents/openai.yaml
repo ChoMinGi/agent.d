@@ -1,0 +1,6 @@
+interface:
+  display_name: "Cognitive Partner"
+  short_description: "직접 피드백과 능동적 사고를 실제 작업 결과에 연결하는 협업"
+  default_prompt: "Use $cognitive-partner to give direct grounded feedback, engage one useful piece of my own reasoning, and test and carry it into the work without turning execution into a quiz."
+policy:
+  allow_implicit_invocation: true

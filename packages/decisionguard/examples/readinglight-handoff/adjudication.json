@@ -1,0 +1,636 @@
+{
+  "fixture_id": "readinglight-fictional-lifecycle-01",
+  "review_status": "complete",
+  "method": "Independent semantic reading of author/raw, requests.json, author-expectations.json, final result.md outputs, and relevant stage artifacts. This adjudication does not use Python replay success as evidence of semantic correctness. Evidence locations are relative to work/lifecycle-study; JSON locations identify records or keys.",
+  "substantive_failures": [],
+  "stages": {
+    "research": {
+      "status": "pass_with_nonblocking_caveats",
+      "task_basis": "research/task.research.json (market_research); research/task.json is the supplemental prototype task",
+      "checks": [
+        {
+          "id": "R01_local_counts",
+          "expected": "Preserve six local interviews, two afternoon observations, four abandonment reports, and nine unnecessary room entries without generalizing.",
+          "outcome": "pass",
+          "finding": "All counts and local scope are explicit; counts are not presented as a population rate or measured product benefit.",
+          "evidence": [
+            "raw/stage-1.md:5",
+            "research/result.md:7",
+            "research/snapshot.json:context_records[CE-001,CE-002,R-001]"
+          ]
+        },
+        {
+          "id": "R02_hypothesis_not_fact",
+          "expected": "Oren's cross-branch interruption-reduction hypothesis remains unverified.",
+          "outcome": "pass",
+          "finding": "The answer attributes the hypothesis to Oren, says it is unverified, and proposes future testing rather than claiming demand or effectiveness.",
+          "evidence": [
+            "research/result.md:9",
+            "research/result.md:24",
+            "research/snapshot.json:context_records[H-001]"
+          ]
+        },
+        {
+          "id": "R03_nonblocking_research_gap",
+          "expected": "Missing weekend and screen-reader interviews limit demand claims but do not block staff-only prototype design.",
+          "outcome": "pass",
+          "finding": "Both missing populations are named; the answer explicitly permits staff-only design and separates future interviews from completed research.",
+          "evidence": [
+            "research/result.md:3",
+            "research/result.md:9",
+            "research/result.md:17",
+            "research/result.md:23",
+            "research/snapshot.json:context_records[Q-001]"
+          ]
+        },
+        {
+          "id": "R04_initial_decision_authority_scope",
+          "expected": "D-041 is initially accepted by Sela on July 14 for individual free/occupied seat dots without names, limited to the two-room staff prototype.",
+          "outcome": "pass",
+          "finding": "Authority, date, behavior, scope and accepted status are preserved. No future D-052 knowledge is improperly introduced at this stage.",
+          "evidence": [
+            "research/result.md:8",
+            "research/result.md:13",
+            "research/result.md:43",
+            "research/snapshot.json:decisions[D-041]"
+          ]
+        },
+        {
+          "id": "R05_release_boundary",
+          "expected": "Prototype design approval does not authorize visitors; Ivo's separate written release approval is required.",
+          "outcome": "pass",
+          "finding": "The requirement is explicit and is not mistaken for evidence that release approval exists.",
+          "evidence": [
+            "research/result.md:27",
+            "research/result.md:29",
+            "research/result.md:44",
+            "research/snapshot.json:context_records[REQ-RELEASE]"
+          ]
+        },
+        {
+          "id": "R06_suggestions_not_accepted_facts",
+          "expected": "Unspecified implementation and evaluation details must not become source-approved requirements or completed work.",
+          "outcome": "pass",
+          "finding": "Sample-data walkthrough, labels, future interviews, and live-data questions are explicitly suggestions or questions. No actual implementation or test execution is claimed.",
+          "evidence": [
+            "research/result.md:15",
+            "research/result.md:17",
+            "research/result.md:26",
+            "research/result.md:46"
+          ]
+        },
+        {
+          "id": "R07_memory_and_freshness",
+          "expected": "Memory consent preserves states and cannot validate a hypothesis, authorize release, or guarantee future currency.",
+          "outcome": "pass",
+          "finding": "Eight evidence-bound records are proposed with their original states. Fresh authoritative reads are required before reuse. The stage's result reports proposal-time state; coordinator-created confirmation artifacts are separate simulation steps.",
+          "evidence": [
+            "research/result.md:33",
+            "research/result.md:37",
+            "research/result.md:46",
+            "research/result.md:48",
+            "research/confirmation.json",
+            "research/ledger.approved.json:receipts"
+          ]
+        },
+        {
+          "id": "R08_research_selection",
+          "expected": "Research selection includes observed facts, unverified hypothesis, open limits, initial decision and release boundary.",
+          "outcome": "pass",
+          "finding": "The research context, evaluated separately from the prototype context, selects all eight records with CE-001/CE-002 observed, H-001 unverified, Q-001/R-001 open, D-041/REQ-RELEASE accepted and G-001 unknown.",
+          "evidence": [
+            "research/task.research.json",
+            "research/raw-prepare.first.stdout.json:research.selected",
+            "research/snapshot.json"
+          ]
+        },
+        {
+          "id": "R09_source_integrity",
+          "expected": "The source underlying the answer remains the supplied discovery note.",
+          "outcome": "pass",
+          "finding": "Independent byte comparison found snapshot discovery content identical to raw/stage-1.md.",
+          "evidence": [
+            "raw/stage-1.md",
+            "research/snapshot.json:sources[discovery].content"
+          ]
+        }
+      ],
+      "failures": [],
+      "caveats": [
+        {
+          "id": "RC01_formal_goal_warning",
+          "classification": "conservative_warning_not_substantive_defect",
+          "finding": "G-001 unknown and helper needs_context add a formal-goal-approval concern that the fixture does not require resolving. The answer explicitly says D-041 independently authorizes scoped design, so this does not block authorized work or corrupt the decision.",
+          "evidence": [
+            "research/result.md:37",
+            "research/result.md:56",
+            "research/validation.json:context_status"
+          ]
+        },
+        {
+          "id": "RC02_concision",
+          "classification": "presentation_caveat",
+          "finding": "The requested concise synthesis is expanded with substantial memory/tool audit material. The core synthesis and brief remain easy to identify; this is a usability cost rather than a lifecycle reasoning failure.",
+          "evidence": [
+            "requests.json:stage-1",
+            "research/result.md:31",
+            "research/result.md:50"
+          ]
+        }
+      ]
+    },
+    "design": {
+      "status": "pass_with_nonblocking_caveats",
+      "task_basis": "design/task.json at corrected fictional as_of 2027-07-22T10:02:00Z",
+      "checks": [
+        {
+          "id": "D01_explicit_supersession",
+          "expected": "Sela's D-052 replaces D-041 for both rooms; the old approval is not reusable as current policy.",
+          "outcome": "pass",
+          "finding": "D-052 is the current accepted decision; D-041 is explicitly superseded in prose and state, omitted from current selection, and retired in memory_trace with successor D-052.",
+          "evidence": [
+            "raw/stage-2.md:3",
+            "raw/stage-2.md:5",
+            "design/result.md:3",
+            "design/result.md:12",
+            "design/result.md:44",
+            "design/snapshot.json:decisions[D-041,D-052]",
+            "design/context.json:omitted[D-041]",
+            "design/resume.json:memory_trace[D-041]"
+          ]
+        },
+        {
+          "id": "D02_band_choice",
+          "expected": "Staff choose exactly one of none, a few, or several for each pilot room.",
+          "outcome": "pass",
+          "finding": "The builder contract specifies all three labels, one band per room, staff selection and both-room scope. No numeric thresholds are invented as accepted policy.",
+          "evidence": [
+            "design/result.md:20",
+            "design/result.md:36",
+            "design/snapshot.json:decisions[D-052]"
+          ]
+        },
+        {
+          "id": "D03_non_ui_data_restrictions",
+          "expected": "D-052 restricts every display, stored record and analytics event to room-level availability; seat IDs and exact counts are prohibited.",
+          "outcome": "pass",
+          "finding": "The restriction explicitly covers UI, storage and analytics; derived hidden payload/cache/log checks are identified as enforcement points rather than separate source decisions.",
+          "evidence": [
+            "design/result.md:3",
+            "design/result.md:21",
+            "design/result.md:32",
+            "design/result.md:33",
+            "design/result.md:59",
+            "design/snapshot.json:context_records[REQ-DATA-052]"
+          ]
+        },
+        {
+          "id": "D04_privacy_rationale",
+          "expected": "Preserve the reason: fine seat detail can reveal where someone sits in small rooms.",
+          "outcome": "pass",
+          "finding": "The answer explains the positional privacy concern and does not claim merely omitting visitor names solves it. The rationale is linked to D-052 and REQ-DATA-052.",
+          "evidence": [
+            "design/result.md:25",
+            "design/snapshot.json:context_records[R-PRIVACY-052]",
+            "design/snapshot.json:context_links"
+          ]
+        },
+        {
+          "id": "D05_timestamp_not_prohibited",
+          "expected": "Show update time and mark stale after ten minutes; the availability granularity rule must not exclude this required metadata.",
+          "outcome": "pass",
+          "finding": "Required update time and staleness are explicit. The proposed record includes updated_at, and timestamps are correctly distinguished from availability granularity.",
+          "evidence": [
+            "design/result.md:22",
+            "design/result.md:32",
+            "design/result.md:33",
+            "design/result.md:34",
+            "design/snapshot.json:context_records[REQ-FRESH-052]"
+          ]
+        },
+        {
+          "id": "D06_later_draft_not_policy",
+          "expected": "Nessa's July 21 per-seat map, exact count and history proposal remains unreviewed/unapproved despite being newer.",
+          "outcome": "pass",
+          "finding": "All conflicting features are named and excluded from build requirements. DESIGN-NESSA-01 is draft, not accepted or falsely rejected.",
+          "evidence": [
+            "design/result.md:13",
+            "design/result.md:47",
+            "design/result.md:80",
+            "design/snapshot.json:context_records[DESIGN-NESSA-01]"
+          ]
+        },
+        {
+          "id": "D07_release_authority_preserved",
+          "expected": "Accepted product design and approved memory do not constitute visitor-release authorization.",
+          "outcome": "pass",
+          "finding": "The answer preserves Ivo's separate scoped written approval requirement and explicitly separates it from source approval, memory consent and helper success.",
+          "evidence": [
+            "design/result.md:7",
+            "design/result.md:14",
+            "design/result.md:23",
+            "design/result.md:63",
+            "design/result.md:89",
+            "design/snapshot.json:context_records[REQ-RELEASE]"
+          ]
+        },
+        {
+          "id": "D08_proposal_execution_approval_distinct",
+          "expected": "Builder recommendations and QA plans must not be represented as agreed requirements, completed implementation or passing tests.",
+          "outcome": "pass",
+          "finding": "Implementation defaults are explicitly proposed; source-authorized requirements are separately identified. QA rows are proposed checks and the absence of execution evidence blocks a compliance/pass claim.",
+          "evidence": [
+            "design/result.md:29",
+            "design/result.md:38",
+            "design/result.md:54",
+            "design/result.md:60",
+            "design/result.md:88"
+          ]
+        },
+        {
+          "id": "D09_uncertainty_by_action",
+          "expected": "Research coverage remains open but nonblocking for design; unresolved implementation details should be identified without reopening settled D-052 policy.",
+          "outcome": "pass",
+          "finding": "Weekend/screen-reader interview gaps are deferred for design, while equality/clock/concurrency/error details are proposed defaults for later acceptance. The accepted band and data rules remain usable now.",
+          "evidence": [
+            "design/result.md:34",
+            "design/result.md:38",
+            "design/result.md:86",
+            "design/result.md:87",
+            "design/snapshot.json:context_records[Q-001]"
+          ]
+        },
+        {
+          "id": "D10_unchanged_memory_not_status_upgraded",
+          "expected": "Unchanged evidence and release requirements may be reused only with preserved states after current-source review; stale D-041 may not.",
+          "outcome": "pass",
+          "finding": "Six inherited selected records are reusable with original states; D-041 is retired. The unverified hypothesis is retained but intentionally excluded for this task. New D-052-related records are source context awaiting separate memory consent at result creation time.",
+          "evidence": [
+            "design/result.md:67",
+            "design/result.md:75",
+            "design/result.md:82",
+            "design/reuse-audit.json",
+            "design/resume.json:reused_ids,memory_trace,unconfirmed_current_ids"
+          ]
+        },
+        {
+          "id": "D11_timing_correction",
+          "expected": "Do not treat July 19/21 correspondence as current evidence for a July 18 review; fairly attribute the corrected fixture clock.",
+          "outcome": "pass_after_coordinator_fixture_correction",
+          "finding": "The design agent reported the date inconsistency. The coordinator corrected the fictional review clock to July 22 before final outputs; originals are retained and no July 18 authority is claimed. This is a repaired coordinator-input defect, not an agent semantic failure.",
+          "evidence": [
+            "design/initial-timing/requests.json:requests[0].as_of",
+            "design/requests.json:requests[0].as_of",
+            "design/timing-correction.md:1",
+            "design/result.md:16",
+            "design/validation.json:fixture_timing_corrected_by_coordinator"
+          ]
+        },
+        {
+          "id": "D12_current_selection_and_retirement",
+          "expected": "Current selected states preserve D-052, granularity/freshness requirements, draft contradiction, privacy rationale, open research gap and release boundary; D-041 is not current selected context.",
+          "outcome": "pass",
+          "finding": "Selected records use accepted/draft/open/unknown states appropriately. D-041 and task-irrelevant H-001 are omitted with explicit reasons; D-041 remains available as reconciled history.",
+          "evidence": [
+            "design/task.json:relevance",
+            "design/context.json:selected,omitted,reconciled_history",
+            "design/resume.json:memory_trace[D-041]"
+          ]
+        },
+        {
+          "id": "D13_source_integrity",
+          "expected": "Timing correction must not modify the content of either supplied source.",
+          "outcome": "pass",
+          "finding": "Independent byte comparisons found both snapshot source contents identical to raw/stage-1.md and stage-2.md.",
+          "evidence": [
+            "raw/stage-1.md",
+            "raw/stage-2.md",
+            "design/snapshot.json:sources[discovery,review].content"
+          ]
+        }
+      ],
+      "failures": [],
+      "caveats": [
+        {
+          "id": "DC01_historical_rationale",
+          "classification": "historical_wording_caveat_not_current_policy_failure",
+          "finding": "Unchanged G-001 follow-up prose still says D-041 independently authorizes the prototype, and its source-bound release status quote contains the historical D-041 paragraph. These could mislead if detached from current context. The final answer expressly identifies the inherited wording as historical, and current decision/retirement records unambiguously name D-052.",
+          "evidence": [
+            "design/snapshot.json:context_records[G-001].followup.rationale",
+            "design/snapshot.json:context_records[REQ-RELEASE].status_quote",
+            "design/result.md:69",
+            "design/reuse-audit.json:current_recheck"
+          ]
+        },
+        {
+          "id": "DC02_generic_helper_warnings",
+          "classification": "conservative_warning_not_substantive_defect",
+          "finding": "needs_context includes missing formal goal approval, a generic later-authority warning and a design-kind coverage caution. None proves D-052 is unresolved or a later approved successor exists; the prose explains that limitation and proceeds with concrete design.",
+          "evidence": [
+            "design/validation.json:context_gaps,context_cautions",
+            "design/result.md:87",
+            "design/result.md:91"
+          ]
+        },
+        {
+          "id": "DC03_edge_behavior_agreement",
+          "classification": "conservative_design_detail_not_substantive_defect",
+          "finding": "Treating exact ten-minute equality and routine error/empty behaviors as proposed defaults creates a minor extra agreement step, but the source does not define these edge cases and the answer supplies a workable recommendation. It does not defer the central accepted requirements.",
+          "evidence": [
+            "design/result.md:34",
+            "design/result.md:38",
+            "design/result.md:60"
+          ]
+        },
+        {
+          "id": "DC04_concision",
+          "classification": "presentation_caveat",
+          "finding": "The QA table is concise, but the full response contains substantial audit detail beyond the requested feature design and handoff. The added material does not change the design or approval boundaries.",
+          "evidence": [
+            "requests.json:stage-2",
+            "design/result.md:52",
+            "design/result.md:65"
+          ]
+        }
+      ]
+    },
+    "qa": {
+      "status": "pass_with_nonblocking_caveats",
+      "task_basis": "qa/task.json (qa_review), fictional as_of 2027-07-26T10:02:00Z; final independent QA answer qa/result.md",
+      "checks": [
+        {
+          "id": "Q01_current_design_baseline",
+          "expected": "Assess build 0.8 against D-052, including room bands, all data surfaces, update time, ten-minute staleness and privacy rationale.",
+          "outcome": "pass",
+          "finding": "The final answer identifies Sela’s D-052 as current and preserves the exact three labels, both-room scope, display/storage/analytics restriction, required timestamp/staleness and positional privacy rationale.",
+          "evidence": [
+            "raw/stage-2.md:5",
+            "qa/result.md:1",
+            "qa/result.md:3",
+            "qa/snapshot.json:decisions[D-052]",
+            "qa/resume.json:context.selected[D-052,REQ-DATA-052,REQ-FRESH-052,R-PRIVACY-052]"
+          ]
+        },
+        {
+          "id": "Q02_executed_passes",
+          "expected": "Q-11 and Q-12 are executed passes, not plans or blanket proof of conformance.",
+          "outcome": "pass",
+          "finding": "Both passes are named with their tested behavior. The answer limits their conclusions to band display and freshness, preserving analytics and accessibility concerns.",
+          "evidence": [
+            "raw/stage-3.md:5",
+            "qa/result.md:7",
+            "qa/result.md:8",
+            "qa/snapshot.json:context_records[Q-11,Q-12]"
+          ]
+        },
+        {
+          "id": "Q03_executed_privacy_failure",
+          "expected": "Q-13 failed because analytics sends seat_id and exact_free_count contrary to D-052; a correct screen does not settle other data paths.",
+          "outcome": "pass",
+          "finding": "The answer identifies both prohibited fields, directly compares them with D-052, and keeps the failure release-blocking. It explicitly avoids claiming stored-record conformance from the available screen and analytics summary.",
+          "evidence": [
+            "qa/result.md:1",
+            "qa/result.md:9",
+            "qa/result.md:13",
+            "qa/snapshot.json:context_records[Q-13].attention",
+            "qa/snapshot.json:context_records[REQ-DATA-052]"
+          ]
+        },
+        {
+          "id": "Q04_patch_not_implemented",
+          "expected": "Pell’s patch is only proposed and neither merged nor retested; it cannot close Q-13.",
+          "outcome": "pass",
+          "finding": "The result states the patch remains unmerged and unretested, calls for implementation/merge and a passing privacy retest, and explicitly says not to call the defect fixed.",
+          "evidence": [
+            "qa/result.md:10",
+            "qa/snapshot.json:context_records[PATCH-Q13-08]",
+            "qa/snapshot.json:context_links[PATCH-Q13-08->Q-13]"
+          ]
+        },
+        {
+          "id": "Q05_unexecuted_accessibility",
+          "expected": "Q-14 is unknown because it was not run, with test-device unavailability preserved; it is neither passed nor an observed functional failure.",
+          "outcome": "pass",
+          "finding": "The result calls Q-14 unexecuted and explicitly rejects both pass and failed-run interpretations. It directs obtaining a device and executing the test. The snapshot preserves the exact device-unavailability explanation and missing-execution attention.",
+          "evidence": [
+            "qa/result.md:11",
+            "qa/snapshot.json:context_records[Q-14].quote",
+            "qa/snapshot.json:context_records[Q-14].attention",
+            "qa/snapshot.json:context_records[Q-14].followup"
+          ]
+        },
+        {
+          "id": "Q06_required_test_gates",
+          "expected": "Visitor release requires a passing privacy retest and an executed, passing screen-reader check.",
+          "outcome": "pass",
+          "finding": "Both required checks are treated as release prerequisites that cannot be deferred to after opening. Their completion is not mistaken for automatic release authority.",
+          "evidence": [
+            "qa/result.md:15",
+            "qa/result.md:27",
+            "qa/snapshot.json:context_records[REQ-RELEASE-TESTS-08]"
+          ]
+        },
+        {
+          "id": "Q07_separate_written_release",
+          "expected": "Ivo Reed alone can authorize visitor opening through a separate written decision; Sela’s design and QA-plan approval is insufficient.",
+          "outcome": "pass",
+          "finding": "The answer states no Ivo decision exists, names Ivo as sole authority and limits Sela’s reported approval to design and the QA plan. It does not issue or infer deployment permission.",
+          "evidence": [
+            "qa/result.md:1",
+            "qa/result.md:15",
+            "qa/snapshot.json:context_records[Q-RELEASE-08,REQ-APPROVAL-BOUNDARY-08,REQ-RELEASE]"
+          ]
+        },
+        {
+          "id": "Q08_calendar_and_allowed_activity",
+          "expected": "The Monday opening is provisional scheduling intent; staff may continue supervised prototype trials but public opening is unauthorized.",
+          "outcome": "pass",
+          "finding": "The answer keeps the calendar provisional, rejects calendar authorization, permits only the source-reported supervised staff trials and repeatedly states visitors cannot open now.",
+          "evidence": [
+            "qa/result.md:1",
+            "qa/result.md:15",
+            "qa/result.md:27",
+            "qa/snapshot.json:context_records[OPENING-MONDAY,REQ-STAFF-TRIAL-08]"
+          ]
+        },
+        {
+          "id": "Q09_action_specific_uncertainty",
+          "expected": "Distinguish nonblocking missing weekend/screen-reader interviews from release-blocking unexecuted Q-14; do not validate broader market claims.",
+          "outcome": "pass",
+          "finding": "The answer expressly contrasts the interview coverage question with the screen-reader execution gap. It preserves local evidence and the untested cross-branch hypothesis, while allowing review and supervised prototype trials to continue.",
+          "evidence": [
+            "qa/result.md:19",
+            "qa/result.md:27",
+            "qa/snapshot.json:context_records[Q-001,H-001,R-001]"
+          ]
+        },
+        {
+          "id": "Q10_newer_draft_not_adopted",
+          "expected": "Nessa’s unapproved map/count/history concept does not override D-052 or gain approval from generic design/QA-plan approval.",
+          "outcome": "pass",
+          "finding": "The result names the draft features and lack of approval, rejects generic approval as adoption, and says a scoped authoritative design change would be needed. Resolving the alternative is correctly deferable for this QA review.",
+          "evidence": [
+            "qa/result.md:17",
+            "qa/snapshot.json:context_records[DESIGN-NESSA-01]",
+            "qa/reuse-review.json:reviews[DESIGN-NESSA-01]"
+          ]
+        },
+        {
+          "id": "Q11_concrete_actions_and_roles",
+          "expected": "Give the next actions and correct authorities without inventing completed work, assignments or merge approval.",
+          "outcome": "pass",
+          "finding": "The handoff requires implementing and verifying the privacy fix, executing and passing Q-14, then seeking Ivo’s scoped written decision. Pell/Tamsin routing is labeled a recommendation; merge authority is explicitly unspecified.",
+          "evidence": [
+            "qa/result.md:10",
+            "qa/result.md:11",
+            "qa/result.md:15",
+            "qa/result.md:27"
+          ]
+        },
+        {
+          "id": "Q12_nine_unchanged_reused_records",
+          "expected": "Reuse only applicable unchanged approved records with their evidence states intact; consent must not upgrade draft/open/unknown states.",
+          "outcome": "pass",
+          "finding": "Exactly nine selected IDs are reusable: D-052, DESIGN-NESSA-01, G-001, Q-001, R-001, R-PRIVACY-052, REQ-DATA-052, REQ-FRESH-052 and REQ-RELEASE. Independent comparison confirms all 13 inherited normalized records equal the approved design ledger records after normalizing decision kind/title. Reused draft, open and unknown states are preserved.",
+          "evidence": [
+            "qa/result.md:21",
+            "qa/resume.json:reused_ids,memory_trace",
+            "qa/snapshot.json",
+            "design/ledger.approved.json:entries",
+            "qa/reuse-review.json"
+          ]
+        },
+        {
+          "id": "Q13_retirement_and_relevant_selection",
+          "expected": "D-041 must remain retired with successor D-052; omitted discovery detail must not disappear or become evidence of conformance.",
+          "outcome": "pass",
+          "finding": "D-041 is superseded and retired in memory_trace, omitted from current selection and retained as reconciled history. CE-001, CE-002 and H-001 are intentionally omitted from the 19 selected records but preserved in the snapshot; the result explains that research counts do not establish build conformance.",
+          "evidence": [
+            "qa/result.md:17",
+            "qa/result.md:21",
+            "qa/task.json:relevance",
+            "qa/resume.json:memory_trace[D-041]",
+            "qa/resume.json:context.omitted,context.reconciled_history,context.selection"
+          ]
+        },
+        {
+          "id": "Q14_ten_proposed_additions_only",
+          "expected": "New QA evidence must be proposed with correct states, without silently replacing inherited policy or inventing memory consent.",
+          "outcome": "pass",
+          "finding": "proposal.json and plan.json contain the same ten new IDs, all before:null. Q-11/Q-12/Q-13 are observed results; Q-14, patch and calendar remain planned; missing release decision is open; the three source-reported prerequisites/boundaries are accepted requirements. No inherited record is replaced, and all ten are unconfirmed current IDs in resume.json.",
+          "evidence": [
+            "qa/result.md:23",
+            "qa/proposal.json:record_ids",
+            "qa/plan.json:changes",
+            "qa/resume.json:unconfirmed_current_ids",
+            "qa/snapshot.json:context_records"
+          ]
+        },
+        {
+          "id": "Q15_raw_content_and_time_integrity",
+          "expected": "Source content must remain unchanged, and the fictional review must follow the dated source evidence.",
+          "outcome": "pass",
+          "finding": "Independent byte comparisons confirm all three snapshot source bodies exactly match raw/stage-1.md, stage-2.md and stage-3.md. The July 26 review/fetch is after the July 25 QA source. Fetch times are described as fixture attestations, not real network retrieval.",
+          "evidence": [
+            "raw/stage-1.md",
+            "raw/stage-2.md",
+            "raw/stage-3.md",
+            "qa/snapshot.json:sources",
+            "qa/task.json:as_of",
+            "qa/validation.md:6"
+          ]
+        },
+        {
+          "id": "Q16_first_attempt_preservation",
+          "expected": "Retain original helper outputs and distinguish an operational interruption from validation repair.",
+          "outcome": "pass",
+          "finding": "resume.first.json is byte-identical to resume.json; plan.first.json is byte-identical to plan.json. validation.md reports both commands exited 0 on their first attempts with no revisions. The one nonexistent helper-file search is disclosed and did not alter the result. This verifies preserved artifacts and reports, not an independently recorded process-exit log.",
+          "evidence": [
+            "qa/resume.first.json",
+            "qa/resume.json",
+            "qa/plan.first.json",
+            "qa/plan.json",
+            "qa/validation.md:3",
+            "qa/validation.md:10"
+          ]
+        },
+        {
+          "id": "Q17_evidence_scope_and_helper_limits",
+          "expected": "Do not equate helper success or an empty policy-conflict list with actual build compliance or direct verification of underlying logs/code/email/calendar.",
+          "outcome": "pass",
+          "finding": "The final answer expressly says Q-13 requires semantic comparison despite an empty accepted-decision-conflict list. It limits coverage to the supplied reports and ledger, with no claim to have separately inspected execution logs, patch code, email or calendar. The ten proposed records are not claimed as completed implementation or release action.",
+          "evidence": [
+            "qa/result.md:23",
+            "qa/result.md:25",
+            "qa/validation.md:8"
+          ]
+        }
+      ],
+      "failures": [],
+      "caveats": [
+        {
+          "id": "QC01_replay_state_granularity",
+          "classification": "representation_limit_not_substantive_defect",
+          "finding": "The schema labels Q-11, Q-12 and Q-13 all observed, so the state label alone cannot distinguish pass from failure. Likewise planned alone cannot establish Q-14 outcome, patch implementation or opening authorization. Titles, exact quotes, attention categories and prose preserve those distinctions. Replay expectations intentionally test state invariants, not complete semantic truth.",
+          "evidence": [
+            "qa/snapshot.json:context_records[Q-11,Q-12,Q-13,Q-14,PATCH-Q13-08,OPENING-MONDAY]",
+            "qa/result.md:7",
+            "qa/result.md:9",
+            "qa/result.md:11"
+          ]
+        },
+        {
+          "id": "QC02_reported_evidence",
+          "classification": "declared_evidence_limit_not_substantive_defect",
+          "finding": "The QA answer relies on Tamsin’s report for executed outcomes and reported approvals. It does not independently inspect underlying logs, code, email or calendar, and states this clearly. Accepted new boundary/requirement records refer to the source report rather than authority newly issued by the QA agent.",
+          "evidence": [
+            "qa/result.md:23",
+            "qa/result.md:25",
+            "qa/validation.md:8"
+          ]
+        },
+        {
+          "id": "QC03_historical_followups_and_generic_warnings",
+          "classification": "conservative_warning_and_historical_wording_not_current_policy_failure",
+          "finding": "Inherited G-001 and source-bound follow-up prose retain old review wording, while helper needs_context includes generic authority warnings. The answer and reuse review explicitly identify those rationales as historical, keep D-052 current, and say goal/draft uncertainty does not prevent current review or staff trials. No stale approval is reused as current policy.",
+          "evidence": [
+            "qa/result.md:19",
+            "qa/result.md:21",
+            "qa/result.md:25",
+            "qa/reuse-review.json:reviews[G-001,D-041,DESIGN-NESSA-01]"
+          ]
+        },
+        {
+          "id": "QC04_interruption_provenance",
+          "classification": "operational_caveat_not_substantive_defect",
+          "finding": "The temporary usage interruption occurred before final QA prose existed. The coordinator reports successful same-agent resumption under unchanged read restrictions, with no parent-authored QA content or coaching. This provenance is recorded explicitly; the normalized artifacts alone cannot certify agent isolation.",
+          "evidence": [
+            "Coordinator follow-up task message requesting final QA review",
+            "qa/result.md",
+            "qa/resume.first.json",
+            "qa/plan.first.json"
+          ]
+        }
+      ]
+    }
+  },
+  "study_provenance": {
+    "temporary_usage_interruption": "The reviewer and QA runs were temporarily interrupted by a usage limit. Review resumed from saved research/design reports. QA resumed in the same agent and produced its final result before this QA adjudication.",
+    "qa_completion_origin": "Independent same-agent QA resumption, as reported in the coordinator follow-up. The coordinator reports reading the evaluator key after interruption but neither coaching QA on answers nor authoring/editing its output. QA retained its original read restrictions. Therefore this review does not reclassify the QA answer as parent-authored development replay.",
+    "provenance_limit": "Resumption and no-coaching provenance are coordinator-reported process evidence, not facts independently recoverable from normalized JSON. Artifact content, equality, selection and proposed changes were independently inspected. A temporary usage interruption is not a semantic or helper-validation failure.",
+    "evidence": [
+      "Coordinator follow-up task message requesting final QA review",
+      "qa/result.md:25",
+      "qa/resume.first.json",
+      "qa/plan.first.json",
+      "qa/validation.md"
+    ]
+  },
+  "check_counts": {
+    "research": 9,
+    "design": 13,
+    "qa": 17,
+    "total": 39
+  },
+  "substantive_failure_count": 0
+}

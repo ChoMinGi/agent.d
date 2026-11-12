@@ -1,0 +1,11 @@
+{
+  "summary": "문서 내보내기·게스트 공유의 시장조사를 준비해줘. 고객 문제와 경쟁 대안, 현재 정책, 검증할 가정을 찾아줘.",
+  "type": "market_research",
+  "project_id": "lantern-docs",
+  "scope": "standard",
+  "topics": [
+    "exports"
+  ],
+  "as_of": "2026-11-07T00:00:00Z",
+  "max_items": 16
+}

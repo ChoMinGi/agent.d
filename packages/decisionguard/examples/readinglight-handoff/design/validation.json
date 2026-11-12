@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "command": "raw_context.py prepare",
+      "exit_code": 0,
+      "first_attempt_retained": true
+    },
+    {
+      "command": "decisionguard.py context",
+      "exit_code": 0,
+      "first_attempt_retained": true
+    },
+    {
+      "command": "handoff.py resume",
+      "exit_code": 0,
+      "first_attempt_retained": true
+    },
+    {
+      "command": "handoff.py plan",
+      "exit_code": 0,
+      "first_attempt_retained": true
+    }
+  ],
+  "context_status": "needs_context",
+  "context_gaps": [
+    "The purpose is stated, but separate formal approval of goal G-001 is not evidenced. D-052 independently supplies scoped prototype design authority.",
+    "No implementation, execution record or test result is supplied. The QA handoff is a proposed test plan, not evidence of passing behavior or release readiness.",
+    "The sources do not specify band thresholds, exact ten-minute equality behavior, timestamp origin, concurrent updates, failure handling or historical-data disposition. Proposed defaults in result.md remain implementation recommendations, not accepted source decisions.",
+    "Missing supported goal context for feature_design.",
+    "DESIGN-NESSA-01: later decision or authority requires follow-up; do not treat the old state as current.",
+    "G-001: authority or state is unknown.",
+    "G-001: later decision or authority requires follow-up; do not treat the old state as current."
+  ],
+  "context_cautions": [
+    "No separate design-kind record; review implementation coverage in the accepted decisions/requirements. Classification alone does not establish semantic completeness.",
+    "DESIGN-NESSA-01 is draft; do not treat it as an accepted decision or verified fact.",
+    "R-PRIVACY-052 is open; do not treat it as an accepted decision or verified fact.",
+    "R-001 is open; do not treat it as an accepted decision or verified fact.",
+    "Q-001 is open; do not treat it as an accepted decision or verified fact."
+  ],
+  "raw_content_preserved_exactly": true,
+  "inherited_ledger_matches_plan_binding": true,
+  "consent_created": false,
+  "ledger_mutated": false,
+  "fixture_timing_corrected_by_coordinator": true,
+  "validation_revisions_required": false
+}

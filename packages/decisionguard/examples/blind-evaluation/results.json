@@ -1,0 +1,89 @@
+{
+  "method": "separate-author, answer-blind extraction; independent semantic adjudication; one run per version/corpus",
+  "cases": [
+    {
+      "suite": "suite-a",
+      "request_id": "research",
+      "required_facts": 12,
+      "baseline_missing": 2,
+      "baseline_wrong": 2,
+      "improved_missing": 0,
+      "improved_wrong": 0,
+      "improved_semantic_errors": 0,
+      "improved_trial_diagnostic_errors": 0,
+      "final_diagnostic_regression_check": "design-label warning corrected by deterministic replay; no new model trial"
+    },
+    {
+      "suite": "suite-a",
+      "request_id": "design",
+      "required_facts": 15,
+      "baseline_missing": 0,
+      "baseline_wrong": 2,
+      "improved_missing": 0,
+      "improved_wrong": 0,
+      "improved_semantic_errors": 0,
+      "improved_trial_diagnostic_errors": 1,
+      "final_diagnostic_regression_check": "design-label warning corrected by deterministic replay; no new model trial"
+    },
+    {
+      "suite": "suite-a",
+      "request_id": "qa",
+      "required_facts": 15,
+      "baseline_missing": 0,
+      "baseline_wrong": 4,
+      "improved_missing": 0,
+      "improved_wrong": 0,
+      "improved_semantic_errors": 0,
+      "improved_trial_diagnostic_errors": 0,
+      "final_diagnostic_regression_check": "design-label warning corrected by deterministic replay; no new model trial"
+    },
+    {
+      "suite": "suite-b",
+      "request_id": "research",
+      "required_facts": 9,
+      "baseline_missing": 0,
+      "baseline_wrong": 0,
+      "improved_missing": 0,
+      "improved_wrong": 0,
+      "improved_semantic_errors": 0,
+      "improved_trial_diagnostic_errors": 0,
+      "final_diagnostic_regression_check": "design-label warning corrected by deterministic replay; no new model trial"
+    },
+    {
+      "suite": "suite-b",
+      "request_id": "design",
+      "required_facts": 16,
+      "baseline_missing": 0,
+      "baseline_wrong": 0,
+      "improved_missing": 0,
+      "improved_wrong": 0,
+      "improved_semantic_errors": 0,
+      "improved_trial_diagnostic_errors": 1,
+      "final_diagnostic_regression_check": "design-label warning corrected by deterministic replay; no new model trial"
+    },
+    {
+      "suite": "suite-b",
+      "request_id": "qa",
+      "required_facts": 17,
+      "baseline_missing": 0,
+      "baseline_wrong": 2,
+      "improved_missing": 0,
+      "improved_wrong": 0,
+      "improved_semantic_errors": 0,
+      "improved_trial_diagnostic_errors": 0,
+      "final_diagnostic_regression_check": "design-label warning corrected by deterministic replay; no new model trial"
+    }
+  ],
+  "totals": {
+    "required_fact_task_pairs": 84,
+    "baseline_missing": 2,
+    "baseline_wrong": 10,
+    "improved_missing": 0,
+    "improved_wrong": 0,
+    "improved_semantic_errors": 0,
+    "baseline_false_absence_warnings": 2,
+    "improved_trial_false_absence_warnings": 2,
+    "final_false_absence_regressions": 0
+  },
+  "note": "Fact-task pairs and wrong record selections are counted separately per request. Relevance judgments include reviewer discretion. This is not a general accuracy percentage."
+}

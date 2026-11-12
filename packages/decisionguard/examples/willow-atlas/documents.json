@@ -1,0 +1,55 @@
+{
+  "raw_version": 1,
+  "sources": [
+    {
+      "id": "notebook",
+      "title": "3월 수첩",
+      "url": "demo://willow-atlas/notebook",
+      "revision": "fictional-1",
+      "fetched_at": "2027-04-13T09:00:00Z",
+      "complete": true,
+      "project_id": "willow-atlas",
+      "file": "raw/notebook.md"
+    },
+    {
+      "id": "field-notes",
+      "title": "현장 메모 모음",
+      "url": "demo://willow-atlas/field-notes",
+      "revision": "fictional-1",
+      "fetched_at": "2027-04-13T09:00:00Z",
+      "complete": true,
+      "project_id": "willow-atlas",
+      "file": "raw/field-notes.md"
+    },
+    {
+      "id": "council",
+      "title": "4월 운영회의 W-03",
+      "url": "demo://willow-atlas/council",
+      "revision": "fictional-1",
+      "fetched_at": "2027-04-13T09:00:00Z",
+      "complete": true,
+      "project_id": "willow-atlas",
+      "file": "raw/council.md"
+    },
+    {
+      "id": "working-copy",
+      "title": "4월 작업 사본",
+      "url": "demo://willow-atlas/working-copy",
+      "revision": "fictional-1",
+      "fetched_at": "2027-04-13T09:00:00Z",
+      "complete": true,
+      "project_id": "willow-atlas",
+      "file": "raw/working-copy.md"
+    },
+    {
+      "id": "checks",
+      "title": "시험판 관찰판",
+      "url": "demo://willow-atlas/checks",
+      "revision": "fictional-1",
+      "fetched_at": "2027-04-13T09:00:00Z",
+      "complete": true,
+      "project_id": "willow-atlas",
+      "file": "raw/checks.md"
+    }
+  ]
+}

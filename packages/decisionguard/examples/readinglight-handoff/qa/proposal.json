@@ -1,0 +1,15 @@
+{
+  "summary": "Propose remembering only the new build 0.8 QA results, incomplete fix and accessibility execution, reported QA approval boundaries, release prerequisites, absent written release decision, and provisional opening. Preserve observed, planned, accepted, and open evidence states. Leave all inherited normalized records and the approved ledger unchanged. No consent, implementation, or release approval is supplied by this proposal.",
+  "record_ids": [
+    "Q-11",
+    "Q-12",
+    "Q-13",
+    "PATCH-Q13-08",
+    "Q-14",
+    "REQ-RELEASE-TESTS-08",
+    "REQ-APPROVAL-BOUNDARY-08",
+    "Q-RELEASE-08",
+    "OPENING-MONDAY",
+    "REQ-STAFF-TRIAL-08"
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "summary": "Review build 0.8 against the agreed ReadingLight design and assess readiness for the proposed visitor opening. Summarize the evidence, remaining actions, and who can authorize the next step. Leave a concise project status handoff.",
+  "type": "qa_review",
+  "project_id": "readinglight",
+  "scope": "two-room-pilot",
+  "topics": [
+    "seat-availability",
+    "prototype-scope",
+    "data-minimization",
+    "freshness",
+    "accessibility",
+    "release-approval",
+    "release-readiness",
+    "build-0.8",
+    "research-generalization"
+  ],
+  "as_of": "2027-07-26T10:02:00Z",
+  "max_items": 32,
+  "relevance": [
+    {
+      "record_id": "CE-001",
+      "action": "exclude",
+      "rationale": "Local interview counts do not establish build conformance; preserved in the snapshot as historical discovery evidence."
+    },
+    {
+      "record_id": "CE-002",
+      "action": "exclude",
+      "rationale": "Local room-entry counts do not determine build conformance or release authorization; retained as discovery context."
+    },
+    {
+      "record_id": "D-041",
+      "action": "include",
+      "rationale": "Retain explicit retirement to D-052 in the audit trail; never apply the old seat-dot behavior as the current QA baseline."
+    },
+    {
+      "record_id": "D-052",
+      "action": "include",
+      "rationale": "Accepted current band behavior is the baseline for build conformance."
+    },
+    {
+      "record_id": "DESIGN-NESSA-01",
+      "action": "include",
+      "rationale": "Shows why newer per-seat concepts do not change the current privacy baseline; the proposal still lacks approval."
+    },
+    {
+      "record_id": "G-001",
+      "action": "include",
+      "rationale": "Preserve the stated two-room purpose and its inherited authority uncertainty without inventing goal approval."
+    },
+    {
+      "record_id": "H-001",
+      "action": "exclude",
+      "rationale": "Untested cross-branch demand is not needed to assess this two-room build; it remains unverified and cannot support expansion claims."
+    },
+    {
+      "record_id": "Q-001",
+      "action": "include",
+      "rationale": "Distinguish the open research coverage gap from the unexecuted screen-reader release test; the former is explicitly deferable for prototypes."
+    },
+    {
+      "record_id": "R-001",
+      "action": "include",
+      "rationale": "Constrain any demand conclusion in the project handoff to the local discovery scope."
+    },
+    {
+      "record_id": "R-PRIVACY-052",
+      "action": "include",
+      "rationale": "Explains why analytics granularity matters even when the screen uses bands."
+    },
+    {
+      "record_id": "REQ-DATA-052",
+      "action": "include",
+      "rationale": "Current display, storage and analytics restriction is directly violated by Q-13."
+    },
+    {
+      "record_id": "REQ-FRESH-052",
+      "action": "include",
+      "rationale": "Current timestamp and stale-marker acceptance criterion is checked by Q-12."
+    },
+    {
+      "record_id": "REQ-RELEASE",
+      "action": "include",
+      "rationale": "Identifies the independent written release prerequisite and the only named release chair."
+    },
+    {
+      "record_id": "Q-11",
+      "action": "include",
+      "rationale": "Current build, remediation, test execution, or approval boundary directly informs the requested visitor-opening readiness and action handoff: Build 0.8: availability-band check passed in both rooms."
+    },
+    {
+      "record_id": "Q-12",
+      "action": "include",
+      "rationale": "Current build, remediation, test execution, or approval boundary directly informs the requested visitor-opening readiness and action handoff: Build 0.8: update-time and ten-minute stale-marker check passed."
+    },
+    {
+      "record_id": "Q-13",
+      "action": "include",
+      "rationale": "Current build, remediation, test execution, or approval boundary directly informs the requested visitor-opening readiness and action handoff: Build 0.8 privacy check failed: analytics emits seat identifiers and exact counts."
+    },
+    {
+      "record_id": "PATCH-Q13-08",
+      "action": "include",
+      "rationale": "Current build, remediation, test execution, or approval boundary directly informs the requested visitor-opening readiness and action handoff: Pell Moss proposed a privacy patch; merge and retest remain outstanding."
+    },
+    {
+      "record_id": "Q-14",
+      "action": "include",
+      "rationale": "Current build, remediation, test execution, or approval boundary directly informs the requested visitor-opening readiness and action handoff: Q-14 screen-reader check is planned and unexecuted."
+    },
+    {
+      "record_id": "REQ-RELEASE-TESTS-08",
+      "action": "include",
+      "rationale": "Current build, remediation, test execution, or approval boundary directly informs the requested visitor-opening readiness and action handoff: Visitor release requires passing privacy and screen-reader checks."
+    },
+    {
+      "record_id": "REQ-APPROVAL-BOUNDARY-08",
+      "action": "include",
+      "rationale": "Current build, remediation, test execution, or approval boundary directly informs the requested visitor-opening readiness and action handoff: Reported Sela approval covers prototype design and QA plan only."
+    },
+    {
+      "record_id": "Q-RELEASE-08",
+      "action": "include",
+      "rationale": "Current build, remediation, test execution, or approval boundary directly informs the requested visitor-opening readiness and action handoff: Written release decision from sole release authority Ivo Reed remains absent."
+    },
+    {
+      "record_id": "OPENING-MONDAY",
+      "action": "include",
+      "rationale": "Current build, remediation, test execution, or approval boundary directly informs the requested visitor-opening readiness and action handoff: Front-desk Monday visitor opening is provisional."
+    },
+    {
+      "record_id": "REQ-STAFF-TRIAL-08",
+      "action": "include",
+      "rationale": "Current build, remediation, test execution, or approval boundary directly informs the requested visitor-opening readiness and action handoff: Current reported operating boundary permits supervised staff trials and excludes public opening."
+    }
+  ]
+}

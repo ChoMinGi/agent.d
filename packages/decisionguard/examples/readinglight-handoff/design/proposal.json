@@ -1,0 +1,11 @@
+{
+  "summary": "Remember only the reviewed delta: retire D-041 in favor of accepted D-052; preserve D-052’s prototype-only authority, display/storage/analytics granularity and freshness requirements; retain the privacy rationale and unapproved concept as an open risk and draft. Unchanged inherited records remain intact. This proposal is not memory consent or deployment approval.",
+  "record_ids": [
+    "D-041",
+    "D-052",
+    "REQ-DATA-052",
+    "REQ-FRESH-052",
+    "R-PRIVACY-052",
+    "DESIGN-NESSA-01"
+  ]
+}

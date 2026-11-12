@@ -1,0 +1,3585 @@
+{
+  "handoff_version": 1,
+  "project_id": "readinglight",
+  "entries": [
+    {
+      "record": {
+        "id": "CE-001",
+        "scope": "two-room-pilot",
+        "topics": [
+          "seat-availability",
+          "local-discovery"
+        ],
+        "status": "observed",
+        "source_id": "discovery",
+        "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat;",
+        "status_quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch.",
+        "kind": "customer_evidence",
+        "title": "Four of six interviewees reported abandoning a room after finding no seat"
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "CE-001",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "local-discovery"
+          ],
+          "status": "observed",
+          "source_id": "discovery",
+          "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat;",
+          "status_quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch.",
+          "kind": "customer_evidence",
+          "title": "Four of six interviewees reported abandoning a room after finding no seat"
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          }
+        ]
+      },
+      "state_sha256": "da291feb5cc5a470d594b171fd8408addf394a2838e8b96966d47ddf45a6711a",
+      "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+    },
+    {
+      "record": {
+        "id": "CE-002",
+        "scope": "two-room-pilot",
+        "topics": [
+          "seat-availability",
+          "local-discovery"
+        ],
+        "status": "observed",
+        "source_id": "discovery",
+        "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat; observers counted nine unnecessary room entries.",
+        "status_quote": "observers counted nine unnecessary room entries.",
+        "kind": "customer_evidence",
+        "title": "Nine unnecessary room entries counted during two afternoon observations"
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "CE-002",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "local-discovery"
+          ],
+          "status": "observed",
+          "source_id": "discovery",
+          "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat; observers counted nine unnecessary room entries.",
+          "status_quote": "observers counted nine unnecessary room entries.",
+          "kind": "customer_evidence",
+          "title": "Nine unnecessary room entries counted during two afternoon observations"
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          }
+        ]
+      },
+      "state_sha256": "fc7ff3a998948631341a252672783e48de58221cba6fde75607fd75338a707a0",
+      "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+    },
+    {
+      "record": {
+        "id": "D-041",
+        "scope": "two-room-pilot",
+        "topics": [
+          "seat-availability",
+          "prototype-scope"
+        ],
+        "status": "superseded",
+        "source_id": "discovery",
+        "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+        "status_quote": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+        "status_source_id": "review",
+        "attention": {
+          "category": "approval_boundary",
+          "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+          "quote": "This authorizes prototype design only."
+        },
+        "key": "prototype-seat-representation",
+        "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+        "superseded_by": "D-052",
+        "followup": {
+          "outcome": "changed",
+          "evidence": [
+            {
+              "source_id": "review",
+              "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+            }
+          ],
+          "rationale": "Signed product-steward review explicitly replaces D-041 with D-052 for both rooms. Checked the later Nessa concept: it expressly lacks review and approval, so it does not change this successor. Visitor deployment remains unauthorized.",
+          "successor_id": "D-052"
+        },
+        "kind": "decision",
+        "title": "Reading room discovery notes"
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "D-041",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "prototype-scope"
+          ],
+          "status": "superseded",
+          "source_id": "discovery",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+          "status_quote": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+          "status_source_id": "review",
+          "attention": {
+            "category": "approval_boundary",
+            "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+            "quote": "This authorizes prototype design only."
+          },
+          "key": "prototype-seat-representation",
+          "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+          "superseded_by": "D-052",
+          "followup": {
+            "outcome": "changed",
+            "evidence": [
+              {
+                "source_id": "review",
+                "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+              }
+            ],
+            "rationale": "Signed product-steward review explicitly replaces D-041 with D-052 for both rooms. Checked the later Nessa concept: it expressly lacks review and approval, so it does not change this successor. Visitor deployment remains unauthorized.",
+            "successor_id": "D-052"
+          },
+          "kind": "decision",
+          "title": "Reading room discovery notes"
+        },
+        "dependencies": [
+          {
+            "id": "D-052",
+            "scope": "two-room-pilot",
+            "topics": [
+              "seat-availability",
+              "prototype-scope"
+            ],
+            "status": "accepted",
+            "source_id": "review",
+            "quote": "I approve decision D-052, replacing D-041 for both pilot rooms. Staff will choose one availability band: “none,” “a few,” or “several.”",
+            "status_quote": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+            "attention": {
+              "category": "approval_boundary",
+              "rationale": "The approved replacement governs prototype design; it explicitly does not authorize visitor deployment.",
+              "quote": "This is the accepted prototype design; it does not authorize visitor deployment."
+            },
+            "key": "prototype-seat-representation",
+            "value": "Staff choose one room-level availability band: none, a few, or several, for both pilot rooms; prototype design only.",
+            "followup": {
+              "outcome": "no_change_found",
+              "evidence": [
+                {
+                  "source_id": "review",
+                  "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+                },
+                {
+                  "source_id": "review",
+                  "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+                }
+              ],
+              "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+            },
+            "kind": "decision",
+            "title": "Prototype review and design correspondence"
+          },
+          {
+            "id": "R-PRIVACY-052",
+            "scope": "two-room-pilot",
+            "topics": [
+              "seat-availability",
+              "data-minimization"
+            ],
+            "status": "open",
+            "source_id": "review",
+            "quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+            "status_quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+            "kind": "risk",
+            "title": "Fine-grained availability can reveal where an individual is sitting"
+          }
+        ],
+        "links": [
+          {
+            "from_id": "D-052",
+            "to_id": "R-PRIVACY-052",
+            "source_id": "review",
+            "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited. Visitors could otherwise infer where a person is sitting in our small rooms."
+          }
+        ],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          },
+          {
+            "id": "review",
+            "url": "demo://readinglight/review",
+            "revision": "r1",
+            "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+          }
+        ]
+      },
+      "state_sha256": "abf76b2f4987ca744ff63066367d36edc2b77e3bcbd340ec026ccf6cf2dd5c73",
+      "approved_in": "88266370e7a07b411d4a44b86903cf491cf2f7e5c2f9799dd48883f0b7905030"
+    },
+    {
+      "record": {
+        "id": "D-052",
+        "scope": "two-room-pilot",
+        "topics": [
+          "seat-availability",
+          "prototype-scope"
+        ],
+        "status": "accepted",
+        "source_id": "review",
+        "quote": "I approve decision D-052, replacing D-041 for both pilot rooms. Staff will choose one availability band: “none,” “a few,” or “several.”",
+        "status_quote": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+        "attention": {
+          "category": "approval_boundary",
+          "rationale": "The approved replacement governs prototype design; it explicitly does not authorize visitor deployment.",
+          "quote": "This is the accepted prototype design; it does not authorize visitor deployment."
+        },
+        "key": "prototype-seat-representation",
+        "value": "Staff choose one room-level availability band: none, a few, or several, for both pilot rooms; prototype design only.",
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "source_id": "review",
+              "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+            },
+            {
+              "source_id": "review",
+              "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+            }
+          ],
+          "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+        },
+        "kind": "decision",
+        "title": "Prototype review and design correspondence"
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "D-052",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "prototype-scope"
+          ],
+          "status": "accepted",
+          "source_id": "review",
+          "quote": "I approve decision D-052, replacing D-041 for both pilot rooms. Staff will choose one availability band: “none,” “a few,” or “several.”",
+          "status_quote": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+          "attention": {
+            "category": "approval_boundary",
+            "rationale": "The approved replacement governs prototype design; it explicitly does not authorize visitor deployment.",
+            "quote": "This is the accepted prototype design; it does not authorize visitor deployment."
+          },
+          "key": "prototype-seat-representation",
+          "value": "Staff choose one room-level availability band: none, a few, or several, for both pilot rooms; prototype design only.",
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "review",
+                "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+              },
+              {
+                "source_id": "review",
+                "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+              }
+            ],
+            "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+          },
+          "kind": "decision",
+          "title": "Prototype review and design correspondence"
+        },
+        "dependencies": [
+          {
+            "id": "R-PRIVACY-052",
+            "scope": "two-room-pilot",
+            "topics": [
+              "seat-availability",
+              "data-minimization"
+            ],
+            "status": "open",
+            "source_id": "review",
+            "quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+            "status_quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+            "kind": "risk",
+            "title": "Fine-grained availability can reveal where an individual is sitting"
+          }
+        ],
+        "links": [
+          {
+            "from_id": "D-052",
+            "to_id": "R-PRIVACY-052",
+            "source_id": "review",
+            "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited. Visitors could otherwise infer where a person is sitting in our small rooms."
+          }
+        ],
+        "sources": [
+          {
+            "id": "review",
+            "url": "demo://readinglight/review",
+            "revision": "r1",
+            "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+          }
+        ]
+      },
+      "state_sha256": "7388e0ae34718c3eda2e0454fe92ac0bab0b6f6dce1d969c832e7cf10b25d1ca",
+      "approved_in": "88266370e7a07b411d4a44b86903cf491cf2f7e5c2f9799dd48883f0b7905030"
+    },
+    {
+      "record": {
+        "id": "DESIGN-NESSA-01",
+        "scope": "two-room-pilot",
+        "topics": [
+          "seat-availability",
+          "data-minimization"
+        ],
+        "status": "draft",
+        "source_id": "review",
+        "quote": "My revised concept offers a much clearer per-seat map, exact vacancy count, and automatic seat-level history.",
+        "status_quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop.",
+        "kind": "design",
+        "title": "Unapproved concept: per-seat map, exact count and seat-level history",
+        "followup": {
+          "outcome": "unresolved",
+          "evidence": [
+            {
+              "source_id": "review",
+              "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+            },
+            {
+              "source_id": "review",
+              "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited."
+            }
+          ],
+          "rationale": "The source explicitly withholds approval and proposes features incompatible with D-052. Do not implement it under D-052; a scoped authoritative replacement would be needed before these features could become requirements."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "DESIGN-NESSA-01",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "data-minimization"
+          ],
+          "status": "draft",
+          "source_id": "review",
+          "quote": "My revised concept offers a much clearer per-seat map, exact vacancy count, and automatic seat-level history.",
+          "status_quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop.",
+          "kind": "design",
+          "title": "Unapproved concept: per-seat map, exact count and seat-level history",
+          "followup": {
+            "outcome": "unresolved",
+            "evidence": [
+              {
+                "source_id": "review",
+                "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+              },
+              {
+                "source_id": "review",
+                "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited."
+              }
+            ],
+            "rationale": "The source explicitly withholds approval and proposes features incompatible with D-052. Do not implement it under D-052; a scoped authoritative replacement would be needed before these features could become requirements."
+          }
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "review",
+            "url": "demo://readinglight/review",
+            "revision": "r1",
+            "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+          }
+        ]
+      },
+      "state_sha256": "5edd8ec3d9f2e6002a01827d6897212b66a691c9b837cf9b147b059847fd0445",
+      "approved_in": "88266370e7a07b411d4a44b86903cf491cf2f7e5c2f9799dd48883f0b7905030"
+    },
+    {
+      "record": {
+        "id": "G-001",
+        "scope": "two-room-pilot",
+        "topics": [
+          "seat-availability"
+        ],
+        "status": "unknown",
+        "source_id": "discovery",
+        "quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+        "status_quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+        "kind": "goal",
+        "title": "Stated purpose: help visitors find space in two reading rooms",
+        "followup": {
+          "outcome": "unresolved",
+          "evidence": [
+            {
+              "source_id": "discovery",
+              "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+            }
+          ],
+          "rationale": "Checked all four passages of discovery r1. The purpose is stated but separate goal-approval authority is not identified. If formal goal approval matters, ask the product steward for the applicable decision; D-041 independently authorizes the scoped prototype design."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "G-001",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability"
+          ],
+          "status": "unknown",
+          "source_id": "discovery",
+          "quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+          "status_quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+          "kind": "goal",
+          "title": "Stated purpose: help visitors find space in two reading rooms",
+          "followup": {
+            "outcome": "unresolved",
+            "evidence": [
+              {
+                "source_id": "discovery",
+                "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+              }
+            ],
+            "rationale": "Checked all four passages of discovery r1. The purpose is stated but separate goal-approval authority is not identified. If formal goal approval matters, ask the product steward for the applicable decision; D-041 independently authorizes the scoped prototype design."
+          }
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          }
+        ]
+      },
+      "state_sha256": "226ec6a2c568aa2f31c25efae002f5cc6bdf2889d9cfe97ce5c22ce2ae7a63f5",
+      "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+    },
+    {
+      "record": {
+        "id": "H-001",
+        "scope": "two-room-pilot",
+        "topics": [
+          "cross-branch-demand",
+          "seat-availability"
+        ],
+        "status": "unverified",
+        "source_id": "discovery",
+        "quote": "Librarian Oren Vale suspects that a live seat map would reduce interruptions across other branches; nobody has tested that market hypothesis.",
+        "status_quote": "nobody has tested that market hypothesis.",
+        "kind": "assumption",
+        "title": "Oren Vale hypothesizes that a live seat map reduces interruptions across other branches"
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "H-001",
+          "scope": "two-room-pilot",
+          "topics": [
+            "cross-branch-demand",
+            "seat-availability"
+          ],
+          "status": "unverified",
+          "source_id": "discovery",
+          "quote": "Librarian Oren Vale suspects that a live seat map would reduce interruptions across other branches; nobody has tested that market hypothesis.",
+          "status_quote": "nobody has tested that market hypothesis.",
+          "kind": "assumption",
+          "title": "Oren Vale hypothesizes that a live seat map reduces interruptions across other branches"
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          }
+        ]
+      },
+      "state_sha256": "62531e807717f34918a3ae2fa55fff40c58a3e1cd077a58c6dec59e1db84b3ac",
+      "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+    },
+    {
+      "record": {
+        "id": "OPENING-MONDAY",
+        "kind": "task",
+        "title": "Front-desk Monday visitor opening is provisional",
+        "scope": "two-room-pilot",
+        "topics": [
+          "release-readiness",
+          "release-approval"
+        ],
+        "status": "planned",
+        "source_id": "qa",
+        "quote": "The front desk's calendar entry “Monday visitor opening” is provisional.",
+        "status_quote": "The front desk's calendar entry “Monday visitor opening” is provisional.",
+        "attention": {
+          "category": "approval_boundary",
+          "quote": "The front desk's calendar entry “Monday visitor opening” is provisional.",
+          "rationale": "Scheduling is provisional and is not evidence of release authorization."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "OPENING-MONDAY",
+          "kind": "task",
+          "title": "Front-desk Monday visitor opening is provisional",
+          "scope": "two-room-pilot",
+          "topics": [
+            "release-readiness",
+            "release-approval"
+          ],
+          "status": "planned",
+          "source_id": "qa",
+          "quote": "The front desk's calendar entry “Monday visitor opening” is provisional.",
+          "status_quote": "The front desk's calendar entry “Monday visitor opening” is provisional.",
+          "attention": {
+            "category": "approval_boundary",
+            "quote": "The front desk's calendar entry “Monday visitor opening” is provisional.",
+            "rationale": "Scheduling is provisional and is not evidence of release authorization."
+          }
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "qa",
+            "url": "demo://readinglight/qa",
+            "revision": "r1",
+            "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+          }
+        ]
+      },
+      "state_sha256": "bee9594e4a04a6e5d8100b32938a7b378011f4e63e92dbcd294e2a1902abf06c",
+      "approved_in": "d8c6c0af24bf08a732a9e451f177c4ab06615f0fcc8034aff9ca4f3fc7b1e1a0"
+    },
+    {
+      "record": {
+        "id": "PATCH-Q13-08",
+        "kind": "task",
+        "title": "Pell Moss proposed a privacy patch; merge and retest remain outstanding",
+        "scope": "two-room-pilot",
+        "topics": [
+          "data-minimization",
+          "build-0.8",
+          "release-readiness"
+        ],
+        "status": "planned",
+        "source_id": "qa",
+        "quote": "Engineer Pell Moss has proposed a patch; it has not been merged or retested.",
+        "status_quote": "Engineer Pell Moss has proposed a patch; it has not been merged or retested.",
+        "attention": {
+          "category": "missing_execution",
+          "quote": "Engineer Pell Moss has proposed a patch; it has not been merged or retested.",
+          "rationale": "A proposed fix is not an implemented fix or a passing privacy retest."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "PATCH-Q13-08",
+          "kind": "task",
+          "title": "Pell Moss proposed a privacy patch; merge and retest remain outstanding",
+          "scope": "two-room-pilot",
+          "topics": [
+            "data-minimization",
+            "build-0.8",
+            "release-readiness"
+          ],
+          "status": "planned",
+          "source_id": "qa",
+          "quote": "Engineer Pell Moss has proposed a patch; it has not been merged or retested.",
+          "status_quote": "Engineer Pell Moss has proposed a patch; it has not been merged or retested.",
+          "attention": {
+            "category": "missing_execution",
+            "quote": "Engineer Pell Moss has proposed a patch; it has not been merged or retested.",
+            "rationale": "A proposed fix is not an implemented fix or a passing privacy retest."
+          }
+        },
+        "dependencies": [
+          {
+            "id": "Q-13",
+            "kind": "test_result",
+            "title": "Build 0.8 privacy check failed: analytics emits seat identifiers and exact counts",
+            "scope": "two-room-pilot",
+            "topics": [
+              "data-minimization",
+              "build-0.8",
+              "release-readiness"
+            ],
+            "status": "observed",
+            "source_id": "qa",
+            "quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+            "status_quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+            "attention": {
+              "category": "known_failure",
+              "quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+              "rationale": "The current analytics payload contradicts the accepted display/storage/analytics granularity requirement; passing screen checks do not remedy this failure."
+            }
+          }
+        ],
+        "links": [
+          {
+            "from_id": "PATCH-Q13-08",
+            "to_id": "Q-13",
+            "source_id": "qa",
+            "quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation. Engineer Pell Moss has proposed a patch; it has not been merged or retested."
+          }
+        ],
+        "sources": [
+          {
+            "id": "qa",
+            "url": "demo://readinglight/qa",
+            "revision": "r1",
+            "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+          }
+        ]
+      },
+      "state_sha256": "1f492543ed4caa9e376aa9b2f84db4d101841b657a730588e20b6d7a7208a597",
+      "approved_in": "d8c6c0af24bf08a732a9e451f177c4ab06615f0fcc8034aff9ca4f3fc7b1e1a0"
+    },
+    {
+      "record": {
+        "id": "Q-001",
+        "scope": "two-room-pilot",
+        "topics": [
+          "research-generalization",
+          "accessibility"
+        ],
+        "status": "open",
+        "source_id": "discovery",
+        "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype.",
+        "status_quote": "Weekend and screen-reader users have not yet been interviewed.",
+        "kind": "question",
+        "title": "Weekend and screen-reader user needs remain unresearched",
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "source_id": "discovery",
+              "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+            }
+          ],
+          "rationale": "Checked the full supplied discovery note for later answers; none resolves these missing interviews. No follow-up document is linked. Preserve the open research need and check newer interviews before making demand or accessibility claims."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "Q-001",
+          "scope": "two-room-pilot",
+          "topics": [
+            "research-generalization",
+            "accessibility"
+          ],
+          "status": "open",
+          "source_id": "discovery",
+          "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype.",
+          "status_quote": "Weekend and screen-reader users have not yet been interviewed.",
+          "kind": "question",
+          "title": "Weekend and screen-reader user needs remain unresearched",
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "discovery",
+                "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+              }
+            ],
+            "rationale": "Checked the full supplied discovery note for later answers; none resolves these missing interviews. No follow-up document is linked. Preserve the open research need and check newer interviews before making demand or accessibility claims."
+          }
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          }
+        ]
+      },
+      "state_sha256": "83618cb7ed6248df1338ed1e07bc9d620b886a0c326a8add53c54d65e98493d8",
+      "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+    },
+    {
+      "record": {
+        "id": "Q-11",
+        "kind": "test_result",
+        "title": "Build 0.8: availability-band check passed in both rooms",
+        "scope": "two-room-pilot",
+        "topics": [
+          "seat-availability",
+          "build-0.8"
+        ],
+        "status": "observed",
+        "source_id": "qa",
+        "quote": "Executed checks passed: Q-11 verified availability bands in both rooms;",
+        "status_quote": "Executed checks passed: Q-11 verified availability bands in both rooms;"
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "Q-11",
+          "kind": "test_result",
+          "title": "Build 0.8: availability-band check passed in both rooms",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "build-0.8"
+          ],
+          "status": "observed",
+          "source_id": "qa",
+          "quote": "Executed checks passed: Q-11 verified availability bands in both rooms;",
+          "status_quote": "Executed checks passed: Q-11 verified availability bands in both rooms;"
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "qa",
+            "url": "demo://readinglight/qa",
+            "revision": "r1",
+            "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+          }
+        ]
+      },
+      "state_sha256": "0252c7b0361ceef01001f43bd1c6f2c8f4c73bfc2fa2b11aab3e5f65658f358e",
+      "approved_in": "d8c6c0af24bf08a732a9e451f177c4ab06615f0fcc8034aff9ca4f3fc7b1e1a0"
+    },
+    {
+      "record": {
+        "id": "Q-12",
+        "kind": "test_result",
+        "title": "Build 0.8: update-time and ten-minute stale-marker check passed",
+        "scope": "two-room-pilot",
+        "topics": [
+          "seat-availability",
+          "freshness",
+          "build-0.8"
+        ],
+        "status": "observed",
+        "source_id": "qa",
+        "quote": "Q-12 verified update times and the stale marker after ten minutes.",
+        "status_quote": "Executed checks passed: Q-11 verified availability bands in both rooms; Q-12 verified update times and the stale marker after ten minutes."
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "Q-12",
+          "kind": "test_result",
+          "title": "Build 0.8: update-time and ten-minute stale-marker check passed",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "freshness",
+            "build-0.8"
+          ],
+          "status": "observed",
+          "source_id": "qa",
+          "quote": "Q-12 verified update times and the stale marker after ten minutes.",
+          "status_quote": "Executed checks passed: Q-11 verified availability bands in both rooms; Q-12 verified update times and the stale marker after ten minutes."
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "qa",
+            "url": "demo://readinglight/qa",
+            "revision": "r1",
+            "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+          }
+        ]
+      },
+      "state_sha256": "c5bb4d9c14cd8db494a464377c7b10782699044ca8205231e8ee8a2c94d26d68",
+      "approved_in": "d8c6c0af24bf08a732a9e451f177c4ab06615f0fcc8034aff9ca4f3fc7b1e1a0"
+    },
+    {
+      "record": {
+        "id": "Q-13",
+        "kind": "test_result",
+        "title": "Build 0.8 privacy check failed: analytics emits seat identifiers and exact counts",
+        "scope": "two-room-pilot",
+        "topics": [
+          "data-minimization",
+          "build-0.8",
+          "release-readiness"
+        ],
+        "status": "observed",
+        "source_id": "qa",
+        "quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+        "status_quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+        "attention": {
+          "category": "known_failure",
+          "quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+          "rationale": "The current analytics payload contradicts the accepted display/storage/analytics granularity requirement; passing screen checks do not remedy this failure."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "Q-13",
+          "kind": "test_result",
+          "title": "Build 0.8 privacy check failed: analytics emits seat identifiers and exact counts",
+          "scope": "two-room-pilot",
+          "topics": [
+            "data-minimization",
+            "build-0.8",
+            "release-readiness"
+          ],
+          "status": "observed",
+          "source_id": "qa",
+          "quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+          "status_quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+          "attention": {
+            "category": "known_failure",
+            "quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+            "rationale": "The current analytics payload contradicts the accepted display/storage/analytics granularity requirement; passing screen checks do not remedy this failure."
+          }
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "qa",
+            "url": "demo://readinglight/qa",
+            "revision": "r1",
+            "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+          }
+        ]
+      },
+      "state_sha256": "377a8d2d403a36be8a577f8a5001a78cd4b18650da46d38135741a4182bb7f59",
+      "approved_in": "d8c6c0af24bf08a732a9e451f177c4ab06615f0fcc8034aff9ca4f3fc7b1e1a0"
+    },
+    {
+      "record": {
+        "id": "Q-14",
+        "kind": "test_case",
+        "title": "Q-14 screen-reader check is planned and unexecuted",
+        "scope": "two-room-pilot",
+        "topics": [
+          "accessibility",
+          "build-0.8",
+          "release-readiness"
+        ],
+        "status": "planned",
+        "source_id": "qa",
+        "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+        "status_quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+        "attention": {
+          "category": "missing_execution",
+          "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+          "rationale": "Visitor release needs an executed, passing screen-reader check; the device problem explains the missing run but does not waive it."
+        },
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "source_id": "qa",
+              "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable."
+            }
+          ],
+          "rationale": "Reviewed the full supplied QA report and its approval paragraph; no executed result or passing retest for Q-14 is supplied. QA-plan approval does not execute a test."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "Q-14",
+          "kind": "test_case",
+          "title": "Q-14 screen-reader check is planned and unexecuted",
+          "scope": "two-room-pilot",
+          "topics": [
+            "accessibility",
+            "build-0.8",
+            "release-readiness"
+          ],
+          "status": "planned",
+          "source_id": "qa",
+          "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+          "status_quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+          "attention": {
+            "category": "missing_execution",
+            "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+            "rationale": "Visitor release needs an executed, passing screen-reader check; the device problem explains the missing run but does not waive it."
+          },
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "qa",
+                "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable."
+              }
+            ],
+            "rationale": "Reviewed the full supplied QA report and its approval paragraph; no executed result or passing retest for Q-14 is supplied. QA-plan approval does not execute a test."
+          }
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "qa",
+            "url": "demo://readinglight/qa",
+            "revision": "r1",
+            "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+          }
+        ]
+      },
+      "state_sha256": "f0cc479f019fe0b0f2601adcef5eb1a92f0a315b883485ca4b8410240ed72331",
+      "approved_in": "d8c6c0af24bf08a732a9e451f177c4ab06615f0fcc8034aff9ca4f3fc7b1e1a0"
+    },
+    {
+      "record": {
+        "id": "Q-RELEASE-08",
+        "kind": "question",
+        "title": "Written release decision from sole release authority Ivo Reed remains absent",
+        "scope": "two-room-pilot",
+        "topics": [
+          "release-approval",
+          "release-readiness"
+        ],
+        "status": "open",
+        "source_id": "qa",
+        "quote": "Ivo Reed, the sole release authority, has issued no written release decision.",
+        "status_quote": "Ivo Reed, the sole release authority, has issued no written release decision.",
+        "attention": {
+          "category": "approval_boundary",
+          "quote": "Ivo Reed, the sole release authority, has issued no written release decision.",
+          "rationale": "Public opening remains unauthorized until the sole release authority issues a scoped written decision; a calendar entry cannot supply it."
+        },
+        "followup": {
+          "outcome": "unresolved",
+          "evidence": [
+            {
+              "source_id": "qa",
+              "quote": "Ivo Reed, the sole release authority, has issued no written release decision."
+            }
+          ],
+          "rationale": "The latest supplied report explicitly states that no written decision exists. Obtain Ivo’s scoped written release decision after passing required checks; no external search or release action was authorized for this review."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "Q-RELEASE-08",
+          "kind": "question",
+          "title": "Written release decision from sole release authority Ivo Reed remains absent",
+          "scope": "two-room-pilot",
+          "topics": [
+            "release-approval",
+            "release-readiness"
+          ],
+          "status": "open",
+          "source_id": "qa",
+          "quote": "Ivo Reed, the sole release authority, has issued no written release decision.",
+          "status_quote": "Ivo Reed, the sole release authority, has issued no written release decision.",
+          "attention": {
+            "category": "approval_boundary",
+            "quote": "Ivo Reed, the sole release authority, has issued no written release decision.",
+            "rationale": "Public opening remains unauthorized until the sole release authority issues a scoped written decision; a calendar entry cannot supply it."
+          },
+          "followup": {
+            "outcome": "unresolved",
+            "evidence": [
+              {
+                "source_id": "qa",
+                "quote": "Ivo Reed, the sole release authority, has issued no written release decision."
+              }
+            ],
+            "rationale": "The latest supplied report explicitly states that no written decision exists. Obtain Ivo’s scoped written release decision after passing required checks; no external search or release action was authorized for this review."
+          }
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "qa",
+            "url": "demo://readinglight/qa",
+            "revision": "r1",
+            "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+          }
+        ]
+      },
+      "state_sha256": "80b3da7368ecac48ba3a0aedfca50ea3534f001dbabe88be0ec3f1baf3feaa29",
+      "approved_in": "d8c6c0af24bf08a732a9e451f177c4ab06615f0fcc8034aff9ca4f3fc7b1e1a0"
+    },
+    {
+      "record": {
+        "id": "R-001",
+        "scope": "two-room-pilot",
+        "topics": [
+          "research-generalization"
+        ],
+        "status": "open",
+        "source_id": "discovery",
+        "quote": "These are local observations, not evidence about all library users.",
+        "status_quote": "These are local observations, not evidence about all library users.",
+        "kind": "risk",
+        "title": "Local discovery cannot establish demand for all library users"
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "R-001",
+          "scope": "two-room-pilot",
+          "topics": [
+            "research-generalization"
+          ],
+          "status": "open",
+          "source_id": "discovery",
+          "quote": "These are local observations, not evidence about all library users.",
+          "status_quote": "These are local observations, not evidence about all library users.",
+          "kind": "risk",
+          "title": "Local discovery cannot establish demand for all library users"
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          }
+        ]
+      },
+      "state_sha256": "56af9879b92df7b3a985bccbc194367995df7020194c6187ead740ad14c5110b",
+      "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+    },
+    {
+      "record": {
+        "id": "R-PRIVACY-052",
+        "scope": "two-room-pilot",
+        "topics": [
+          "seat-availability",
+          "data-minimization"
+        ],
+        "status": "open",
+        "source_id": "review",
+        "quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+        "status_quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+        "kind": "risk",
+        "title": "Fine-grained availability can reveal where an individual is sitting"
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "R-PRIVACY-052",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "data-minimization"
+          ],
+          "status": "open",
+          "source_id": "review",
+          "quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+          "status_quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+          "kind": "risk",
+          "title": "Fine-grained availability can reveal where an individual is sitting"
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "review",
+            "url": "demo://readinglight/review",
+            "revision": "r1",
+            "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+          }
+        ]
+      },
+      "state_sha256": "6a29e88c086e218b81c6d4c6e62dddb479376b0e4d71f5abed728c2f02997eae",
+      "approved_in": "88266370e7a07b411d4a44b86903cf491cf2f7e5c2f9799dd48883f0b7905030"
+    },
+    {
+      "record": {
+        "id": "REQ-APPROVAL-BOUNDARY-08",
+        "kind": "requirement",
+        "title": "Reported Sela approval covers prototype design and QA plan only",
+        "scope": "two-room-pilot",
+        "topics": [
+          "prototype-scope",
+          "release-approval"
+        ],
+        "status": "accepted",
+        "source_id": "qa",
+        "quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+        "status_quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+        "attention": {
+          "category": "approval_boundary",
+          "quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+          "rationale": "Do not interpret the product steward’s reported design/plan approval as visitor deployment approval."
+        },
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "source_id": "qa",
+              "quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment."
+            }
+          ],
+          "rationale": "Compared the reported email with the separate release requirement and explicit lack of Ivo’s decision. No deployment approval is established."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "REQ-APPROVAL-BOUNDARY-08",
+          "kind": "requirement",
+          "title": "Reported Sela approval covers prototype design and QA plan only",
+          "scope": "two-room-pilot",
+          "topics": [
+            "prototype-scope",
+            "release-approval"
+          ],
+          "status": "accepted",
+          "source_id": "qa",
+          "quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+          "status_quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+          "attention": {
+            "category": "approval_boundary",
+            "quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+            "rationale": "Do not interpret the product steward’s reported design/plan approval as visitor deployment approval."
+          },
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "qa",
+                "quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment."
+              }
+            ],
+            "rationale": "Compared the reported email with the separate release requirement and explicit lack of Ivo’s decision. No deployment approval is established."
+          }
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "qa",
+            "url": "demo://readinglight/qa",
+            "revision": "r1",
+            "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+          }
+        ]
+      },
+      "state_sha256": "a051a870abea111b9e460f270c765001b73d34d2b65c36bae61af80dd48a1ced",
+      "approved_in": "d8c6c0af24bf08a732a9e451f177c4ab06615f0fcc8034aff9ca4f3fc7b1e1a0"
+    },
+    {
+      "record": {
+        "id": "REQ-DATA-052",
+        "scope": "two-room-pilot",
+        "topics": [
+          "seat-availability",
+          "data-minimization"
+        ],
+        "status": "accepted",
+        "source_id": "review",
+        "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited.",
+        "status_quote": "This is the accepted prototype design; it does not authorize visitor deployment.",
+        "kind": "requirement",
+        "title": "Availability granularity is restricted in displays, records and analytics",
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "source_id": "review",
+              "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+            },
+            {
+              "source_id": "review",
+              "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+            }
+          ],
+          "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "REQ-DATA-052",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "data-minimization"
+          ],
+          "status": "accepted",
+          "source_id": "review",
+          "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited.",
+          "status_quote": "This is the accepted prototype design; it does not authorize visitor deployment.",
+          "kind": "requirement",
+          "title": "Availability granularity is restricted in displays, records and analytics",
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "review",
+                "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+              },
+              {
+                "source_id": "review",
+                "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+              }
+            ],
+            "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+          }
+        },
+        "dependencies": [
+          {
+            "id": "R-PRIVACY-052",
+            "scope": "two-room-pilot",
+            "topics": [
+              "seat-availability",
+              "data-minimization"
+            ],
+            "status": "open",
+            "source_id": "review",
+            "quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+            "status_quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+            "kind": "risk",
+            "title": "Fine-grained availability can reveal where an individual is sitting"
+          }
+        ],
+        "links": [
+          {
+            "from_id": "REQ-DATA-052",
+            "to_id": "R-PRIVACY-052",
+            "source_id": "review",
+            "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited. Visitors could otherwise infer where a person is sitting in our small rooms."
+          }
+        ],
+        "sources": [
+          {
+            "id": "review",
+            "url": "demo://readinglight/review",
+            "revision": "r1",
+            "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+          }
+        ]
+      },
+      "state_sha256": "d917a05cc1c6766a4d8d088667f55cb029716dcee3b9d6415de556f075b0af2d",
+      "approved_in": "88266370e7a07b411d4a44b86903cf491cf2f7e5c2f9799dd48883f0b7905030"
+    },
+    {
+      "record": {
+        "id": "REQ-FRESH-052",
+        "scope": "two-room-pilot",
+        "topics": [
+          "seat-availability",
+          "freshness"
+        ],
+        "status": "accepted",
+        "source_id": "review",
+        "quote": "Show an update time and mark information stale after ten minutes.",
+        "status_quote": "This is the accepted prototype design; it does not authorize visitor deployment.",
+        "kind": "requirement",
+        "title": "Display update time and stale status after ten minutes",
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "source_id": "review",
+              "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+            },
+            {
+              "source_id": "review",
+              "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+            }
+          ],
+          "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "REQ-FRESH-052",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "freshness"
+          ],
+          "status": "accepted",
+          "source_id": "review",
+          "quote": "Show an update time and mark information stale after ten minutes.",
+          "status_quote": "This is the accepted prototype design; it does not authorize visitor deployment.",
+          "kind": "requirement",
+          "title": "Display update time and stale status after ten minutes",
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "review",
+                "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+              },
+              {
+                "source_id": "review",
+                "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+              }
+            ],
+            "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+          }
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "review",
+            "url": "demo://readinglight/review",
+            "revision": "r1",
+            "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+          }
+        ]
+      },
+      "state_sha256": "dbee2403936341b02ce403b78c5d601c38ce3a085e9b386e73e2469db6662f50",
+      "approved_in": "88266370e7a07b411d4a44b86903cf491cf2f7e5c2f9799dd48883f0b7905030"
+    },
+    {
+      "record": {
+        "id": "REQ-RELEASE",
+        "scope": "two-room-pilot",
+        "topics": [
+          "release-approval",
+          "prototype-scope"
+        ],
+        "status": "accepted",
+        "source_id": "discovery",
+        "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+        "status_quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+        "attention": {
+          "category": "approval_boundary",
+          "rationale": "Before visitor-facing deployment, retrieve the specific written release approval and verify its scope; this source supplies the requirement, not the approval.",
+          "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+        },
+        "kind": "requirement",
+        "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "source_id": "discovery",
+              "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+            }
+          ],
+          "rationale": "The supplied note retains the separate written-release requirement and contains no written release approval. The requirement is current in this source; actual release approval and deployment are not established. Retrieve Ivo Reed’s scoped written approval before any visitor-facing deployment."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "REQ-RELEASE",
+          "scope": "two-room-pilot",
+          "topics": [
+            "release-approval",
+            "prototype-scope"
+          ],
+          "status": "accepted",
+          "source_id": "discovery",
+          "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+          "status_quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+          "attention": {
+            "category": "approval_boundary",
+            "rationale": "Before visitor-facing deployment, retrieve the specific written release approval and verify its scope; this source supplies the requirement, not the approval.",
+            "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+          },
+          "kind": "requirement",
+          "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "discovery",
+                "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+              }
+            ],
+            "rationale": "The supplied note retains the separate written-release requirement and contains no written release approval. The requirement is current in this source; actual release approval and deployment are not established. Retrieve Ivo Reed’s scoped written approval before any visitor-facing deployment."
+          }
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          }
+        ]
+      },
+      "state_sha256": "c941cfba3b0e201f3a07583bcf1cae369967d508ffbe48266dbc2a2cc0d9f9de",
+      "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+    },
+    {
+      "record": {
+        "id": "REQ-RELEASE-TESTS-08",
+        "kind": "requirement",
+        "title": "Visitor release requires passing privacy and screen-reader checks",
+        "scope": "two-room-pilot",
+        "topics": [
+          "release-readiness",
+          "data-minimization",
+          "accessibility"
+        ],
+        "status": "accepted",
+        "source_id": "qa",
+        "quote": "Visitor release requires a passing privacy retest and an executed, passing screen-reader check.",
+        "status_quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+        "attention": {
+          "category": "approval_boundary",
+          "quote": "Visitor release requires a passing privacy retest and an executed, passing screen-reader check.",
+          "rationale": "These QA prerequisites are necessary release evidence, not a substitute for Ivo Reed’s separate written release decision."
+        },
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "source_id": "qa",
+              "quote": "Visitor release requires a passing privacy retest and an executed, passing screen-reader check."
+            }
+          ],
+          "rationale": "The QA lead states the release test prerequisites and reports Sela’s approval of the QA plan in the same report. No later waiver or changed test gate appears in the supplied sources; the reported approval is limited to design and the QA plan."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "REQ-RELEASE-TESTS-08",
+          "kind": "requirement",
+          "title": "Visitor release requires passing privacy and screen-reader checks",
+          "scope": "two-room-pilot",
+          "topics": [
+            "release-readiness",
+            "data-minimization",
+            "accessibility"
+          ],
+          "status": "accepted",
+          "source_id": "qa",
+          "quote": "Visitor release requires a passing privacy retest and an executed, passing screen-reader check.",
+          "status_quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+          "attention": {
+            "category": "approval_boundary",
+            "quote": "Visitor release requires a passing privacy retest and an executed, passing screen-reader check.",
+            "rationale": "These QA prerequisites are necessary release evidence, not a substitute for Ivo Reed’s separate written release decision."
+          },
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "qa",
+                "quote": "Visitor release requires a passing privacy retest and an executed, passing screen-reader check."
+              }
+            ],
+            "rationale": "The QA lead states the release test prerequisites and reports Sela’s approval of the QA plan in the same report. No later waiver or changed test gate appears in the supplied sources; the reported approval is limited to design and the QA plan."
+          }
+        },
+        "dependencies": [
+          {
+            "id": "Q-14",
+            "kind": "test_case",
+            "title": "Q-14 screen-reader check is planned and unexecuted",
+            "scope": "two-room-pilot",
+            "topics": [
+              "accessibility",
+              "build-0.8",
+              "release-readiness"
+            ],
+            "status": "planned",
+            "source_id": "qa",
+            "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+            "status_quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+            "attention": {
+              "category": "missing_execution",
+              "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+              "rationale": "Visitor release needs an executed, passing screen-reader check; the device problem explains the missing run but does not waive it."
+            },
+            "followup": {
+              "outcome": "no_change_found",
+              "evidence": [
+                {
+                  "source_id": "qa",
+                  "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable."
+                }
+              ],
+              "rationale": "Reviewed the full supplied QA report and its approval paragraph; no executed result or passing retest for Q-14 is supplied. QA-plan approval does not execute a test."
+            }
+          }
+        ],
+        "links": [
+          {
+            "from_id": "REQ-RELEASE-TESTS-08",
+            "to_id": "Q-14",
+            "source_id": "qa",
+            "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable. Visitor release requires a passing privacy retest and an executed, passing screen-reader check."
+          }
+        ],
+        "sources": [
+          {
+            "id": "qa",
+            "url": "demo://readinglight/qa",
+            "revision": "r1",
+            "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+          }
+        ]
+      },
+      "state_sha256": "1845d7c43c713605ba36592566055adae99ef5ee14e4ac5465bd02aa3cda0272",
+      "approved_in": "d8c6c0af24bf08a732a9e451f177c4ab06615f0fcc8034aff9ca4f3fc7b1e1a0"
+    },
+    {
+      "record": {
+        "id": "REQ-STAFF-TRIAL-08",
+        "kind": "requirement",
+        "title": "Current reported operating boundary permits supervised staff trials and excludes public opening",
+        "scope": "two-room-pilot",
+        "topics": [
+          "prototype-scope",
+          "release-approval"
+        ],
+        "status": "accepted",
+        "source_id": "qa",
+        "quote": "Staff may continue supervised prototype trials; public opening is not authorized.",
+        "status_quote": "Staff may continue supervised prototype trials; public opening is not authorized.",
+        "attention": {
+          "category": "approval_boundary",
+          "quote": "Staff may continue supervised prototype trials; public opening is not authorized.",
+          "rationale": "This is the operating boundary reported by the QA lead, consistent with prototype-only design approval. It grants no wider release authority."
+        },
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "source_id": "qa",
+              "quote": "Staff may continue supervised prototype trials; public opening is not authorized."
+            }
+          ],
+          "rationale": "The final supplied QA paragraph expressly retains supervised staff prototype trials and withholds public opening. This review repeats that reported boundary; it does not issue new permission."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "REQ-STAFF-TRIAL-08",
+          "kind": "requirement",
+          "title": "Current reported operating boundary permits supervised staff trials and excludes public opening",
+          "scope": "two-room-pilot",
+          "topics": [
+            "prototype-scope",
+            "release-approval"
+          ],
+          "status": "accepted",
+          "source_id": "qa",
+          "quote": "Staff may continue supervised prototype trials; public opening is not authorized.",
+          "status_quote": "Staff may continue supervised prototype trials; public opening is not authorized.",
+          "attention": {
+            "category": "approval_boundary",
+            "quote": "Staff may continue supervised prototype trials; public opening is not authorized.",
+            "rationale": "This is the operating boundary reported by the QA lead, consistent with prototype-only design approval. It grants no wider release authority."
+          },
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "qa",
+                "quote": "Staff may continue supervised prototype trials; public opening is not authorized."
+              }
+            ],
+            "rationale": "The final supplied QA paragraph expressly retains supervised staff prototype trials and withholds public opening. This review repeats that reported boundary; it does not issue new permission."
+          }
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "qa",
+            "url": "demo://readinglight/qa",
+            "revision": "r1",
+            "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+          }
+        ]
+      },
+      "state_sha256": "f7c7dc3a134236195a41da89d585b54ed90ecc9908a6d78b184f44f71c4a30b5",
+      "approved_in": "d8c6c0af24bf08a732a9e451f177c4ab06615f0fcc8034aff9ca4f3fc7b1e1a0"
+    }
+  ],
+  "receipts": [
+    {
+      "mode": "simulation",
+      "confirmed_by": "Fictional study coordinator",
+      "confirmation_reference": "demo://readinglight/study/approval-1",
+      "confirmed_at": "2027-07-14T10:00:00Z",
+      "plan_id": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34",
+      "ledger_before_sha256": "0e6c6dc31f342e17cc383d00744c37288860a157fa2ae25b11bc767ab6671b00",
+      "snapshot_sha256": "b74ad8205fb9905133e7caee92f1de1258c7f29e9237c614f02a03486134efae",
+      "proposal": {
+        "summary": "Propose remembering the ReadingLight discovery evidence, limits, D-041 prototype choice and separate visitor-facing release prerequisite; preserve every evidence state. No memory approval or execution authority is implied.",
+        "record_ids": [
+          "G-001",
+          "CE-001",
+          "CE-002",
+          "R-001",
+          "H-001",
+          "Q-001",
+          "D-041",
+          "REQ-RELEASE"
+        ]
+      },
+      "changes": [
+        {
+          "record_id": "CE-001",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "CE-001",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "local-discovery"
+              ],
+              "status": "observed",
+              "source_id": "discovery",
+              "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat;",
+              "status_quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch.",
+              "kind": "customer_evidence",
+              "title": "Four of six interviewees reported abandoning a room after finding no seat"
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "CE-001",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability",
+                  "local-discovery"
+                ],
+                "status": "observed",
+                "source_id": "discovery",
+                "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat;",
+                "status_quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch.",
+                "kind": "customer_evidence",
+                "title": "Four of six interviewees reported abandoning a room after finding no seat"
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "da291feb5cc5a470d594b171fd8408addf394a2838e8b96966d47ddf45a6711a"
+          }
+        },
+        {
+          "record_id": "CE-002",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "CE-002",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "local-discovery"
+              ],
+              "status": "observed",
+              "source_id": "discovery",
+              "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat; observers counted nine unnecessary room entries.",
+              "status_quote": "observers counted nine unnecessary room entries.",
+              "kind": "customer_evidence",
+              "title": "Nine unnecessary room entries counted during two afternoon observations"
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "CE-002",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability",
+                  "local-discovery"
+                ],
+                "status": "observed",
+                "source_id": "discovery",
+                "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat; observers counted nine unnecessary room entries.",
+                "status_quote": "observers counted nine unnecessary room entries.",
+                "kind": "customer_evidence",
+                "title": "Nine unnecessary room entries counted during two afternoon observations"
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "fc7ff3a998948631341a252672783e48de58221cba6fde75607fd75338a707a0"
+          }
+        },
+        {
+          "record_id": "D-041",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "D-041",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "prototype-scope"
+              ],
+              "status": "accepted",
+              "source_id": "discovery",
+              "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+              "status_quote": "Product steward Sela Rowan accepted decision D-041 today:",
+              "attention": {
+                "category": "approval_boundary",
+                "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+                "quote": "This authorizes prototype design only."
+              },
+              "key": "prototype-seat-representation",
+              "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+              "followup": {
+                "outcome": "no_change_found",
+                "evidence": [
+                  {
+                    "source_id": "discovery",
+                    "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+                  },
+                  {
+                    "source_id": "discovery",
+                    "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+                  }
+                ],
+                "rationale": "Checked the complete supplied note for an amended or superseding prototype choice; none is present. Acceptance remains limited to design. Re-fetch D-041 and any later authoritative changes before reuse; this is not an exhaustive workspace check."
+              },
+              "kind": "decision",
+              "title": "Reading room discovery notes"
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "D-041",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability",
+                  "prototype-scope"
+                ],
+                "status": "accepted",
+                "source_id": "discovery",
+                "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+                "status_quote": "Product steward Sela Rowan accepted decision D-041 today:",
+                "attention": {
+                  "category": "approval_boundary",
+                  "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+                  "quote": "This authorizes prototype design only."
+                },
+                "key": "prototype-seat-representation",
+                "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+                "followup": {
+                  "outcome": "no_change_found",
+                  "evidence": [
+                    {
+                      "source_id": "discovery",
+                      "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+                    },
+                    {
+                      "source_id": "discovery",
+                      "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+                    }
+                  ],
+                  "rationale": "Checked the complete supplied note for an amended or superseding prototype choice; none is present. Acceptance remains limited to design. Re-fetch D-041 and any later authoritative changes before reuse; this is not an exhaustive workspace check."
+                },
+                "kind": "decision",
+                "title": "Reading room discovery notes"
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "a767aeec927883466cc78e10168eba08b2570181f2dd0bfdabb8f163db7c6ab6"
+          }
+        },
+        {
+          "record_id": "G-001",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "G-001",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability"
+              ],
+              "status": "unknown",
+              "source_id": "discovery",
+              "quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+              "status_quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+              "kind": "goal",
+              "title": "Stated purpose: help visitors find space in two reading rooms",
+              "followup": {
+                "outcome": "unresolved",
+                "evidence": [
+                  {
+                    "source_id": "discovery",
+                    "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+                  }
+                ],
+                "rationale": "Checked all four passages of discovery r1. The purpose is stated but separate goal-approval authority is not identified. If formal goal approval matters, ask the product steward for the applicable decision; D-041 independently authorizes the scoped prototype design."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "G-001",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability"
+                ],
+                "status": "unknown",
+                "source_id": "discovery",
+                "quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+                "status_quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+                "kind": "goal",
+                "title": "Stated purpose: help visitors find space in two reading rooms",
+                "followup": {
+                  "outcome": "unresolved",
+                  "evidence": [
+                    {
+                      "source_id": "discovery",
+                      "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+                    }
+                  ],
+                  "rationale": "Checked all four passages of discovery r1. The purpose is stated but separate goal-approval authority is not identified. If formal goal approval matters, ask the product steward for the applicable decision; D-041 independently authorizes the scoped prototype design."
+                }
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "226ec6a2c568aa2f31c25efae002f5cc6bdf2889d9cfe97ce5c22ce2ae7a63f5"
+          }
+        },
+        {
+          "record_id": "H-001",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "H-001",
+              "scope": "two-room-pilot",
+              "topics": [
+                "cross-branch-demand",
+                "seat-availability"
+              ],
+              "status": "unverified",
+              "source_id": "discovery",
+              "quote": "Librarian Oren Vale suspects that a live seat map would reduce interruptions across other branches; nobody has tested that market hypothesis.",
+              "status_quote": "nobody has tested that market hypothesis.",
+              "kind": "assumption",
+              "title": "Oren Vale hypothesizes that a live seat map reduces interruptions across other branches"
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "H-001",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "cross-branch-demand",
+                  "seat-availability"
+                ],
+                "status": "unverified",
+                "source_id": "discovery",
+                "quote": "Librarian Oren Vale suspects that a live seat map would reduce interruptions across other branches; nobody has tested that market hypothesis.",
+                "status_quote": "nobody has tested that market hypothesis.",
+                "kind": "assumption",
+                "title": "Oren Vale hypothesizes that a live seat map reduces interruptions across other branches"
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "62531e807717f34918a3ae2fa55fff40c58a3e1cd077a58c6dec59e1db84b3ac"
+          }
+        },
+        {
+          "record_id": "Q-001",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "Q-001",
+              "scope": "two-room-pilot",
+              "topics": [
+                "research-generalization",
+                "accessibility"
+              ],
+              "status": "open",
+              "source_id": "discovery",
+              "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype.",
+              "status_quote": "Weekend and screen-reader users have not yet been interviewed.",
+              "kind": "question",
+              "title": "Weekend and screen-reader user needs remain unresearched",
+              "followup": {
+                "outcome": "no_change_found",
+                "evidence": [
+                  {
+                    "source_id": "discovery",
+                    "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+                  }
+                ],
+                "rationale": "Checked the full supplied discovery note for later answers; none resolves these missing interviews. No follow-up document is linked. Preserve the open research need and check newer interviews before making demand or accessibility claims."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "Q-001",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "research-generalization",
+                  "accessibility"
+                ],
+                "status": "open",
+                "source_id": "discovery",
+                "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype.",
+                "status_quote": "Weekend and screen-reader users have not yet been interviewed.",
+                "kind": "question",
+                "title": "Weekend and screen-reader user needs remain unresearched",
+                "followup": {
+                  "outcome": "no_change_found",
+                  "evidence": [
+                    {
+                      "source_id": "discovery",
+                      "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+                    }
+                  ],
+                  "rationale": "Checked the full supplied discovery note for later answers; none resolves these missing interviews. No follow-up document is linked. Preserve the open research need and check newer interviews before making demand or accessibility claims."
+                }
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "83618cb7ed6248df1338ed1e07bc9d620b886a0c326a8add53c54d65e98493d8"
+          }
+        },
+        {
+          "record_id": "R-001",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "R-001",
+              "scope": "two-room-pilot",
+              "topics": [
+                "research-generalization"
+              ],
+              "status": "open",
+              "source_id": "discovery",
+              "quote": "These are local observations, not evidence about all library users.",
+              "status_quote": "These are local observations, not evidence about all library users.",
+              "kind": "risk",
+              "title": "Local discovery cannot establish demand for all library users"
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "R-001",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "research-generalization"
+                ],
+                "status": "open",
+                "source_id": "discovery",
+                "quote": "These are local observations, not evidence about all library users.",
+                "status_quote": "These are local observations, not evidence about all library users.",
+                "kind": "risk",
+                "title": "Local discovery cannot establish demand for all library users"
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "56af9879b92df7b3a985bccbc194367995df7020194c6187ead740ad14c5110b"
+          }
+        },
+        {
+          "record_id": "REQ-RELEASE",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "REQ-RELEASE",
+              "scope": "two-room-pilot",
+              "topics": [
+                "release-approval",
+                "prototype-scope"
+              ],
+              "status": "accepted",
+              "source_id": "discovery",
+              "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+              "status_quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+              "attention": {
+                "category": "approval_boundary",
+                "rationale": "Before visitor-facing deployment, retrieve the specific written release approval and verify its scope; this source supplies the requirement, not the approval.",
+                "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+              },
+              "kind": "requirement",
+              "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+              "followup": {
+                "outcome": "no_change_found",
+                "evidence": [
+                  {
+                    "source_id": "discovery",
+                    "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+                  }
+                ],
+                "rationale": "The supplied note retains the separate written-release requirement and contains no written release approval. The requirement is current in this source; actual release approval and deployment are not established. Retrieve Ivo Reed’s scoped written approval before any visitor-facing deployment."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "REQ-RELEASE",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "release-approval",
+                  "prototype-scope"
+                ],
+                "status": "accepted",
+                "source_id": "discovery",
+                "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+                "status_quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+                "attention": {
+                  "category": "approval_boundary",
+                  "rationale": "Before visitor-facing deployment, retrieve the specific written release approval and verify its scope; this source supplies the requirement, not the approval.",
+                  "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+                },
+                "kind": "requirement",
+                "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+                "followup": {
+                  "outcome": "no_change_found",
+                  "evidence": [
+                    {
+                      "source_id": "discovery",
+                      "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+                    }
+                  ],
+                  "rationale": "The supplied note retains the separate written-release requirement and contains no written release approval. The requirement is current in this source; actual release approval and deployment are not established. Retrieve Ivo Reed’s scoped written approval before any visitor-facing deployment."
+                }
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "c941cfba3b0e201f3a07583bcf1cae369967d508ffbe48266dbc2a2cc0d9f9de"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "simulation",
+      "confirmed_by": "Fictional study coordinator",
+      "confirmation_reference": "demo://readinglight/study/approval-2",
+      "confirmed_at": "2027-07-22T10:00:00Z",
+      "plan_id": "88266370e7a07b411d4a44b86903cf491cf2f7e5c2f9799dd48883f0b7905030",
+      "ledger_before_sha256": "8d8b1b32e025a4b3f420397a2d8fcacab3aaf744603d1c8f82a126f2eb70f522",
+      "snapshot_sha256": "f4946bf536a34e318969a218328cd6ff9728a337374bed10dcc679ff2225d1d4",
+      "proposal": {
+        "summary": "Remember only the reviewed delta: retire D-041 in favor of accepted D-052; preserve D-052’s prototype-only authority, display/storage/analytics granularity and freshness requirements; retain the privacy rationale and unapproved concept as an open risk and draft. Unchanged inherited records remain intact. This proposal is not memory consent or deployment approval.",
+        "record_ids": [
+          "D-041",
+          "D-052",
+          "REQ-DATA-052",
+          "REQ-FRESH-052",
+          "R-PRIVACY-052",
+          "DESIGN-NESSA-01"
+        ]
+      },
+      "changes": [
+        {
+          "record_id": "D-041",
+          "before": {
+            "record": {
+              "id": "D-041",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "prototype-scope"
+              ],
+              "status": "accepted",
+              "source_id": "discovery",
+              "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+              "status_quote": "Product steward Sela Rowan accepted decision D-041 today:",
+              "attention": {
+                "category": "approval_boundary",
+                "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+                "quote": "This authorizes prototype design only."
+              },
+              "key": "prototype-seat-representation",
+              "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+              "followup": {
+                "outcome": "no_change_found",
+                "evidence": [
+                  {
+                    "source_id": "discovery",
+                    "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+                  },
+                  {
+                    "source_id": "discovery",
+                    "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+                  }
+                ],
+                "rationale": "Checked the complete supplied note for an amended or superseding prototype choice; none is present. Acceptance remains limited to design. Re-fetch D-041 and any later authoritative changes before reuse; this is not an exhaustive workspace check."
+              },
+              "kind": "decision",
+              "title": "Reading room discovery notes"
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "D-041",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability",
+                  "prototype-scope"
+                ],
+                "status": "accepted",
+                "source_id": "discovery",
+                "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+                "status_quote": "Product steward Sela Rowan accepted decision D-041 today:",
+                "attention": {
+                  "category": "approval_boundary",
+                  "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+                  "quote": "This authorizes prototype design only."
+                },
+                "key": "prototype-seat-representation",
+                "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+                "followup": {
+                  "outcome": "no_change_found",
+                  "evidence": [
+                    {
+                      "source_id": "discovery",
+                      "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+                    },
+                    {
+                      "source_id": "discovery",
+                      "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+                    }
+                  ],
+                  "rationale": "Checked the complete supplied note for an amended or superseding prototype choice; none is present. Acceptance remains limited to design. Re-fetch D-041 and any later authoritative changes before reuse; this is not an exhaustive workspace check."
+                },
+                "kind": "decision",
+                "title": "Reading room discovery notes"
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "a767aeec927883466cc78e10168eba08b2570181f2dd0bfdabb8f163db7c6ab6",
+            "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+          },
+          "after": {
+            "record": {
+              "id": "D-041",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "prototype-scope"
+              ],
+              "status": "superseded",
+              "source_id": "discovery",
+              "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+              "status_quote": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+              "status_source_id": "review",
+              "attention": {
+                "category": "approval_boundary",
+                "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+                "quote": "This authorizes prototype design only."
+              },
+              "key": "prototype-seat-representation",
+              "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+              "superseded_by": "D-052",
+              "followup": {
+                "outcome": "changed",
+                "evidence": [
+                  {
+                    "source_id": "review",
+                    "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+                  }
+                ],
+                "rationale": "Signed product-steward review explicitly replaces D-041 with D-052 for both rooms. Checked the later Nessa concept: it expressly lacks review and approval, so it does not change this successor. Visitor deployment remains unauthorized.",
+                "successor_id": "D-052"
+              },
+              "kind": "decision",
+              "title": "Reading room discovery notes"
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "D-041",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability",
+                  "prototype-scope"
+                ],
+                "status": "superseded",
+                "source_id": "discovery",
+                "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+                "status_quote": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+                "status_source_id": "review",
+                "attention": {
+                  "category": "approval_boundary",
+                  "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+                  "quote": "This authorizes prototype design only."
+                },
+                "key": "prototype-seat-representation",
+                "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+                "superseded_by": "D-052",
+                "followup": {
+                  "outcome": "changed",
+                  "evidence": [
+                    {
+                      "source_id": "review",
+                      "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+                    }
+                  ],
+                  "rationale": "Signed product-steward review explicitly replaces D-041 with D-052 for both rooms. Checked the later Nessa concept: it expressly lacks review and approval, so it does not change this successor. Visitor deployment remains unauthorized.",
+                  "successor_id": "D-052"
+                },
+                "kind": "decision",
+                "title": "Reading room discovery notes"
+              },
+              "dependencies": [
+                {
+                  "id": "D-052",
+                  "scope": "two-room-pilot",
+                  "topics": [
+                    "seat-availability",
+                    "prototype-scope"
+                  ],
+                  "status": "accepted",
+                  "source_id": "review",
+                  "quote": "I approve decision D-052, replacing D-041 for both pilot rooms. Staff will choose one availability band: “none,” “a few,” or “several.”",
+                  "status_quote": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+                  "attention": {
+                    "category": "approval_boundary",
+                    "rationale": "The approved replacement governs prototype design; it explicitly does not authorize visitor deployment.",
+                    "quote": "This is the accepted prototype design; it does not authorize visitor deployment."
+                  },
+                  "key": "prototype-seat-representation",
+                  "value": "Staff choose one room-level availability band: none, a few, or several, for both pilot rooms; prototype design only.",
+                  "followup": {
+                    "outcome": "no_change_found",
+                    "evidence": [
+                      {
+                        "source_id": "review",
+                        "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+                      },
+                      {
+                        "source_id": "review",
+                        "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+                      }
+                    ],
+                    "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+                  },
+                  "kind": "decision",
+                  "title": "Prototype review and design correspondence"
+                },
+                {
+                  "id": "R-PRIVACY-052",
+                  "scope": "two-room-pilot",
+                  "topics": [
+                    "seat-availability",
+                    "data-minimization"
+                  ],
+                  "status": "open",
+                  "source_id": "review",
+                  "quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+                  "status_quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+                  "kind": "risk",
+                  "title": "Fine-grained availability can reveal where an individual is sitting"
+                }
+              ],
+              "links": [
+                {
+                  "from_id": "D-052",
+                  "to_id": "R-PRIVACY-052",
+                  "source_id": "review",
+                  "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited. Visitors could otherwise infer where a person is sitting in our small rooms."
+                }
+              ],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                },
+                {
+                  "id": "review",
+                  "url": "demo://readinglight/review",
+                  "revision": "r1",
+                  "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+                }
+              ]
+            },
+            "state_sha256": "abf76b2f4987ca744ff63066367d36edc2b77e3bcbd340ec026ccf6cf2dd5c73"
+          }
+        },
+        {
+          "record_id": "D-052",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "D-052",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "prototype-scope"
+              ],
+              "status": "accepted",
+              "source_id": "review",
+              "quote": "I approve decision D-052, replacing D-041 for both pilot rooms. Staff will choose one availability band: “none,” “a few,” or “several.”",
+              "status_quote": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+              "attention": {
+                "category": "approval_boundary",
+                "rationale": "The approved replacement governs prototype design; it explicitly does not authorize visitor deployment.",
+                "quote": "This is the accepted prototype design; it does not authorize visitor deployment."
+              },
+              "key": "prototype-seat-representation",
+              "value": "Staff choose one room-level availability band: none, a few, or several, for both pilot rooms; prototype design only.",
+              "followup": {
+                "outcome": "no_change_found",
+                "evidence": [
+                  {
+                    "source_id": "review",
+                    "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+                  },
+                  {
+                    "source_id": "review",
+                    "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+                  }
+                ],
+                "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+              },
+              "kind": "decision",
+              "title": "Prototype review and design correspondence"
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "D-052",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability",
+                  "prototype-scope"
+                ],
+                "status": "accepted",
+                "source_id": "review",
+                "quote": "I approve decision D-052, replacing D-041 for both pilot rooms. Staff will choose one availability band: “none,” “a few,” or “several.”",
+                "status_quote": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+                "attention": {
+                  "category": "approval_boundary",
+                  "rationale": "The approved replacement governs prototype design; it explicitly does not authorize visitor deployment.",
+                  "quote": "This is the accepted prototype design; it does not authorize visitor deployment."
+                },
+                "key": "prototype-seat-representation",
+                "value": "Staff choose one room-level availability band: none, a few, or several, for both pilot rooms; prototype design only.",
+                "followup": {
+                  "outcome": "no_change_found",
+                  "evidence": [
+                    {
+                      "source_id": "review",
+                      "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+                    },
+                    {
+                      "source_id": "review",
+                      "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+                    }
+                  ],
+                  "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+                },
+                "kind": "decision",
+                "title": "Prototype review and design correspondence"
+              },
+              "dependencies": [
+                {
+                  "id": "R-PRIVACY-052",
+                  "scope": "two-room-pilot",
+                  "topics": [
+                    "seat-availability",
+                    "data-minimization"
+                  ],
+                  "status": "open",
+                  "source_id": "review",
+                  "quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+                  "status_quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+                  "kind": "risk",
+                  "title": "Fine-grained availability can reveal where an individual is sitting"
+                }
+              ],
+              "links": [
+                {
+                  "from_id": "D-052",
+                  "to_id": "R-PRIVACY-052",
+                  "source_id": "review",
+                  "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited. Visitors could otherwise infer where a person is sitting in our small rooms."
+                }
+              ],
+              "sources": [
+                {
+                  "id": "review",
+                  "url": "demo://readinglight/review",
+                  "revision": "r1",
+                  "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+                }
+              ]
+            },
+            "state_sha256": "7388e0ae34718c3eda2e0454fe92ac0bab0b6f6dce1d969c832e7cf10b25d1ca"
+          }
+        },
+        {
+          "record_id": "DESIGN-NESSA-01",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "DESIGN-NESSA-01",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "data-minimization"
+              ],
+              "status": "draft",
+              "source_id": "review",
+              "quote": "My revised concept offers a much clearer per-seat map, exact vacancy count, and automatic seat-level history.",
+              "status_quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop.",
+              "kind": "design",
+              "title": "Unapproved concept: per-seat map, exact count and seat-level history",
+              "followup": {
+                "outcome": "unresolved",
+                "evidence": [
+                  {
+                    "source_id": "review",
+                    "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+                  },
+                  {
+                    "source_id": "review",
+                    "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited."
+                  }
+                ],
+                "rationale": "The source explicitly withholds approval and proposes features incompatible with D-052. Do not implement it under D-052; a scoped authoritative replacement would be needed before these features could become requirements."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "DESIGN-NESSA-01",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability",
+                  "data-minimization"
+                ],
+                "status": "draft",
+                "source_id": "review",
+                "quote": "My revised concept offers a much clearer per-seat map, exact vacancy count, and automatic seat-level history.",
+                "status_quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop.",
+                "kind": "design",
+                "title": "Unapproved concept: per-seat map, exact count and seat-level history",
+                "followup": {
+                  "outcome": "unresolved",
+                  "evidence": [
+                    {
+                      "source_id": "review",
+                      "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+                    },
+                    {
+                      "source_id": "review",
+                      "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited."
+                    }
+                  ],
+                  "rationale": "The source explicitly withholds approval and proposes features incompatible with D-052. Do not implement it under D-052; a scoped authoritative replacement would be needed before these features could become requirements."
+                }
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "review",
+                  "url": "demo://readinglight/review",
+                  "revision": "r1",
+                  "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+                }
+              ]
+            },
+            "state_sha256": "5edd8ec3d9f2e6002a01827d6897212b66a691c9b837cf9b147b059847fd0445"
+          }
+        },
+        {
+          "record_id": "R-PRIVACY-052",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "R-PRIVACY-052",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "data-minimization"
+              ],
+              "status": "open",
+              "source_id": "review",
+              "quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+              "status_quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+              "kind": "risk",
+              "title": "Fine-grained availability can reveal where an individual is sitting"
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "R-PRIVACY-052",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability",
+                  "data-minimization"
+                ],
+                "status": "open",
+                "source_id": "review",
+                "quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+                "status_quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+                "kind": "risk",
+                "title": "Fine-grained availability can reveal where an individual is sitting"
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "review",
+                  "url": "demo://readinglight/review",
+                  "revision": "r1",
+                  "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+                }
+              ]
+            },
+            "state_sha256": "6a29e88c086e218b81c6d4c6e62dddb479376b0e4d71f5abed728c2f02997eae"
+          }
+        },
+        {
+          "record_id": "REQ-DATA-052",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "REQ-DATA-052",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "data-minimization"
+              ],
+              "status": "accepted",
+              "source_id": "review",
+              "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited.",
+              "status_quote": "This is the accepted prototype design; it does not authorize visitor deployment.",
+              "kind": "requirement",
+              "title": "Availability granularity is restricted in displays, records and analytics",
+              "followup": {
+                "outcome": "no_change_found",
+                "evidence": [
+                  {
+                    "source_id": "review",
+                    "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+                  },
+                  {
+                    "source_id": "review",
+                    "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+                  }
+                ],
+                "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "REQ-DATA-052",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability",
+                  "data-minimization"
+                ],
+                "status": "accepted",
+                "source_id": "review",
+                "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited.",
+                "status_quote": "This is the accepted prototype design; it does not authorize visitor deployment.",
+                "kind": "requirement",
+                "title": "Availability granularity is restricted in displays, records and analytics",
+                "followup": {
+                  "outcome": "no_change_found",
+                  "evidence": [
+                    {
+                      "source_id": "review",
+                      "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+                    },
+                    {
+                      "source_id": "review",
+                      "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+                    }
+                  ],
+                  "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+                }
+              },
+              "dependencies": [
+                {
+                  "id": "R-PRIVACY-052",
+                  "scope": "two-room-pilot",
+                  "topics": [
+                    "seat-availability",
+                    "data-minimization"
+                  ],
+                  "status": "open",
+                  "source_id": "review",
+                  "quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+                  "status_quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+                  "kind": "risk",
+                  "title": "Fine-grained availability can reveal where an individual is sitting"
+                }
+              ],
+              "links": [
+                {
+                  "from_id": "REQ-DATA-052",
+                  "to_id": "R-PRIVACY-052",
+                  "source_id": "review",
+                  "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited. Visitors could otherwise infer where a person is sitting in our small rooms."
+                }
+              ],
+              "sources": [
+                {
+                  "id": "review",
+                  "url": "demo://readinglight/review",
+                  "revision": "r1",
+                  "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+                }
+              ]
+            },
+            "state_sha256": "d917a05cc1c6766a4d8d088667f55cb029716dcee3b9d6415de556f075b0af2d"
+          }
+        },
+        {
+          "record_id": "REQ-FRESH-052",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "REQ-FRESH-052",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "freshness"
+              ],
+              "status": "accepted",
+              "source_id": "review",
+              "quote": "Show an update time and mark information stale after ten minutes.",
+              "status_quote": "This is the accepted prototype design; it does not authorize visitor deployment.",
+              "kind": "requirement",
+              "title": "Display update time and stale status after ten minutes",
+              "followup": {
+                "outcome": "no_change_found",
+                "evidence": [
+                  {
+                    "source_id": "review",
+                    "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+                  },
+                  {
+                    "source_id": "review",
+                    "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+                  }
+                ],
+                "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "REQ-FRESH-052",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability",
+                  "freshness"
+                ],
+                "status": "accepted",
+                "source_id": "review",
+                "quote": "Show an update time and mark information stale after ten minutes.",
+                "status_quote": "This is the accepted prototype design; it does not authorize visitor deployment.",
+                "kind": "requirement",
+                "title": "Display update time and stale status after ten minutes",
+                "followup": {
+                  "outcome": "no_change_found",
+                  "evidence": [
+                    {
+                      "source_id": "review",
+                      "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+                    },
+                    {
+                      "source_id": "review",
+                      "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+                    }
+                  ],
+                  "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+                }
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "review",
+                  "url": "demo://readinglight/review",
+                  "revision": "r1",
+                  "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+                }
+              ]
+            },
+            "state_sha256": "dbee2403936341b02ce403b78c5d601c38ce3a085e9b386e73e2469db6662f50"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "simulation",
+      "confirmed_by": "Fictional study coordinator",
+      "confirmation_reference": "demo://readinglight/study/approval-3",
+      "confirmed_at": "2027-07-26T10:00:00Z",
+      "plan_id": "d8c6c0af24bf08a732a9e451f177c4ab06615f0fcc8034aff9ca4f3fc7b1e1a0",
+      "ledger_before_sha256": "5a8eaa05537471db0fa6d1c81d84328e3d9b432ee58f25faa7df07111c264ace",
+      "snapshot_sha256": "0edf7ad470eb606df04f842c413c3cf1d343e05b98ceef48d756a3ca04edbd4e",
+      "proposal": {
+        "summary": "Propose remembering only the new build 0.8 QA results, incomplete fix and accessibility execution, reported QA approval boundaries, release prerequisites, absent written release decision, and provisional opening. Preserve observed, planned, accepted, and open evidence states. Leave all inherited normalized records and the approved ledger unchanged. No consent, implementation, or release approval is supplied by this proposal.",
+        "record_ids": [
+          "Q-11",
+          "Q-12",
+          "Q-13",
+          "PATCH-Q13-08",
+          "Q-14",
+          "REQ-RELEASE-TESTS-08",
+          "REQ-APPROVAL-BOUNDARY-08",
+          "Q-RELEASE-08",
+          "OPENING-MONDAY",
+          "REQ-STAFF-TRIAL-08"
+        ]
+      },
+      "changes": [
+        {
+          "record_id": "OPENING-MONDAY",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "OPENING-MONDAY",
+              "kind": "task",
+              "title": "Front-desk Monday visitor opening is provisional",
+              "scope": "two-room-pilot",
+              "topics": [
+                "release-readiness",
+                "release-approval"
+              ],
+              "status": "planned",
+              "source_id": "qa",
+              "quote": "The front desk's calendar entry “Monday visitor opening” is provisional.",
+              "status_quote": "The front desk's calendar entry “Monday visitor opening” is provisional.",
+              "attention": {
+                "category": "approval_boundary",
+                "quote": "The front desk's calendar entry “Monday visitor opening” is provisional.",
+                "rationale": "Scheduling is provisional and is not evidence of release authorization."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "OPENING-MONDAY",
+                "kind": "task",
+                "title": "Front-desk Monday visitor opening is provisional",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "release-readiness",
+                  "release-approval"
+                ],
+                "status": "planned",
+                "source_id": "qa",
+                "quote": "The front desk's calendar entry “Monday visitor opening” is provisional.",
+                "status_quote": "The front desk's calendar entry “Monday visitor opening” is provisional.",
+                "attention": {
+                  "category": "approval_boundary",
+                  "quote": "The front desk's calendar entry “Monday visitor opening” is provisional.",
+                  "rationale": "Scheduling is provisional and is not evidence of release authorization."
+                }
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "qa",
+                  "url": "demo://readinglight/qa",
+                  "revision": "r1",
+                  "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+                }
+              ]
+            },
+            "state_sha256": "bee9594e4a04a6e5d8100b32938a7b378011f4e63e92dbcd294e2a1902abf06c"
+          }
+        },
+        {
+          "record_id": "PATCH-Q13-08",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "PATCH-Q13-08",
+              "kind": "task",
+              "title": "Pell Moss proposed a privacy patch; merge and retest remain outstanding",
+              "scope": "two-room-pilot",
+              "topics": [
+                "data-minimization",
+                "build-0.8",
+                "release-readiness"
+              ],
+              "status": "planned",
+              "source_id": "qa",
+              "quote": "Engineer Pell Moss has proposed a patch; it has not been merged or retested.",
+              "status_quote": "Engineer Pell Moss has proposed a patch; it has not been merged or retested.",
+              "attention": {
+                "category": "missing_execution",
+                "quote": "Engineer Pell Moss has proposed a patch; it has not been merged or retested.",
+                "rationale": "A proposed fix is not an implemented fix or a passing privacy retest."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "PATCH-Q13-08",
+                "kind": "task",
+                "title": "Pell Moss proposed a privacy patch; merge and retest remain outstanding",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "data-minimization",
+                  "build-0.8",
+                  "release-readiness"
+                ],
+                "status": "planned",
+                "source_id": "qa",
+                "quote": "Engineer Pell Moss has proposed a patch; it has not been merged or retested.",
+                "status_quote": "Engineer Pell Moss has proposed a patch; it has not been merged or retested.",
+                "attention": {
+                  "category": "missing_execution",
+                  "quote": "Engineer Pell Moss has proposed a patch; it has not been merged or retested.",
+                  "rationale": "A proposed fix is not an implemented fix or a passing privacy retest."
+                }
+              },
+              "dependencies": [
+                {
+                  "id": "Q-13",
+                  "kind": "test_result",
+                  "title": "Build 0.8 privacy check failed: analytics emits seat identifiers and exact counts",
+                  "scope": "two-room-pilot",
+                  "topics": [
+                    "data-minimization",
+                    "build-0.8",
+                    "release-readiness"
+                  ],
+                  "status": "observed",
+                  "source_id": "qa",
+                  "quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+                  "status_quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+                  "attention": {
+                    "category": "known_failure",
+                    "quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+                    "rationale": "The current analytics payload contradicts the accepted display/storage/analytics granularity requirement; passing screen checks do not remedy this failure."
+                  }
+                }
+              ],
+              "links": [
+                {
+                  "from_id": "PATCH-Q13-08",
+                  "to_id": "Q-13",
+                  "source_id": "qa",
+                  "quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation. Engineer Pell Moss has proposed a patch; it has not been merged or retested."
+                }
+              ],
+              "sources": [
+                {
+                  "id": "qa",
+                  "url": "demo://readinglight/qa",
+                  "revision": "r1",
+                  "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+                }
+              ]
+            },
+            "state_sha256": "1f492543ed4caa9e376aa9b2f84db4d101841b657a730588e20b6d7a7208a597"
+          }
+        },
+        {
+          "record_id": "Q-11",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "Q-11",
+              "kind": "test_result",
+              "title": "Build 0.8: availability-band check passed in both rooms",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "build-0.8"
+              ],
+              "status": "observed",
+              "source_id": "qa",
+              "quote": "Executed checks passed: Q-11 verified availability bands in both rooms;",
+              "status_quote": "Executed checks passed: Q-11 verified availability bands in both rooms;"
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "Q-11",
+                "kind": "test_result",
+                "title": "Build 0.8: availability-band check passed in both rooms",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability",
+                  "build-0.8"
+                ],
+                "status": "observed",
+                "source_id": "qa",
+                "quote": "Executed checks passed: Q-11 verified availability bands in both rooms;",
+                "status_quote": "Executed checks passed: Q-11 verified availability bands in both rooms;"
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "qa",
+                  "url": "demo://readinglight/qa",
+                  "revision": "r1",
+                  "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+                }
+              ]
+            },
+            "state_sha256": "0252c7b0361ceef01001f43bd1c6f2c8f4c73bfc2fa2b11aab3e5f65658f358e"
+          }
+        },
+        {
+          "record_id": "Q-12",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "Q-12",
+              "kind": "test_result",
+              "title": "Build 0.8: update-time and ten-minute stale-marker check passed",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "freshness",
+                "build-0.8"
+              ],
+              "status": "observed",
+              "source_id": "qa",
+              "quote": "Q-12 verified update times and the stale marker after ten minutes.",
+              "status_quote": "Executed checks passed: Q-11 verified availability bands in both rooms; Q-12 verified update times and the stale marker after ten minutes."
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "Q-12",
+                "kind": "test_result",
+                "title": "Build 0.8: update-time and ten-minute stale-marker check passed",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability",
+                  "freshness",
+                  "build-0.8"
+                ],
+                "status": "observed",
+                "source_id": "qa",
+                "quote": "Q-12 verified update times and the stale marker after ten minutes.",
+                "status_quote": "Executed checks passed: Q-11 verified availability bands in both rooms; Q-12 verified update times and the stale marker after ten minutes."
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "qa",
+                  "url": "demo://readinglight/qa",
+                  "revision": "r1",
+                  "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+                }
+              ]
+            },
+            "state_sha256": "c5bb4d9c14cd8db494a464377c7b10782699044ca8205231e8ee8a2c94d26d68"
+          }
+        },
+        {
+          "record_id": "Q-13",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "Q-13",
+              "kind": "test_result",
+              "title": "Build 0.8 privacy check failed: analytics emits seat identifiers and exact counts",
+              "scope": "two-room-pilot",
+              "topics": [
+                "data-minimization",
+                "build-0.8",
+                "release-readiness"
+              ],
+              "status": "observed",
+              "source_id": "qa",
+              "quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+              "status_quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+              "attention": {
+                "category": "known_failure",
+                "quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+                "rationale": "The current analytics payload contradicts the accepted display/storage/analytics granularity requirement; passing screen checks do not remedy this failure."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "Q-13",
+                "kind": "test_result",
+                "title": "Build 0.8 privacy check failed: analytics emits seat identifiers and exact counts",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "data-minimization",
+                  "build-0.8",
+                  "release-readiness"
+                ],
+                "status": "observed",
+                "source_id": "qa",
+                "quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+                "status_quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+                "attention": {
+                  "category": "known_failure",
+                  "quote": "Q-13 failed: the visible screen uses bands, but analytics still sends seat_id and exact_free_count from the earlier implementation.",
+                  "rationale": "The current analytics payload contradicts the accepted display/storage/analytics granularity requirement; passing screen checks do not remedy this failure."
+                }
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "qa",
+                  "url": "demo://readinglight/qa",
+                  "revision": "r1",
+                  "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+                }
+              ]
+            },
+            "state_sha256": "377a8d2d403a36be8a577f8a5001a78cd4b18650da46d38135741a4182bb7f59"
+          }
+        },
+        {
+          "record_id": "Q-14",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "Q-14",
+              "kind": "test_case",
+              "title": "Q-14 screen-reader check is planned and unexecuted",
+              "scope": "two-room-pilot",
+              "topics": [
+                "accessibility",
+                "build-0.8",
+                "release-readiness"
+              ],
+              "status": "planned",
+              "source_id": "qa",
+              "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+              "status_quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+              "attention": {
+                "category": "missing_execution",
+                "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+                "rationale": "Visitor release needs an executed, passing screen-reader check; the device problem explains the missing run but does not waive it."
+              },
+              "followup": {
+                "outcome": "no_change_found",
+                "evidence": [
+                  {
+                    "source_id": "qa",
+                    "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable."
+                  }
+                ],
+                "rationale": "Reviewed the full supplied QA report and its approval paragraph; no executed result or passing retest for Q-14 is supplied. QA-plan approval does not execute a test."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "Q-14",
+                "kind": "test_case",
+                "title": "Q-14 screen-reader check is planned and unexecuted",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "accessibility",
+                  "build-0.8",
+                  "release-readiness"
+                ],
+                "status": "planned",
+                "source_id": "qa",
+                "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+                "status_quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+                "attention": {
+                  "category": "missing_execution",
+                  "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+                  "rationale": "Visitor release needs an executed, passing screen-reader check; the device problem explains the missing run but does not waive it."
+                },
+                "followup": {
+                  "outcome": "no_change_found",
+                  "evidence": [
+                    {
+                      "source_id": "qa",
+                      "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable."
+                    }
+                  ],
+                  "rationale": "Reviewed the full supplied QA report and its approval paragraph; no executed result or passing retest for Q-14 is supplied. QA-plan approval does not execute a test."
+                }
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "qa",
+                  "url": "demo://readinglight/qa",
+                  "revision": "r1",
+                  "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+                }
+              ]
+            },
+            "state_sha256": "f0cc479f019fe0b0f2601adcef5eb1a92f0a315b883485ca4b8410240ed72331"
+          }
+        },
+        {
+          "record_id": "Q-RELEASE-08",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "Q-RELEASE-08",
+              "kind": "question",
+              "title": "Written release decision from sole release authority Ivo Reed remains absent",
+              "scope": "two-room-pilot",
+              "topics": [
+                "release-approval",
+                "release-readiness"
+              ],
+              "status": "open",
+              "source_id": "qa",
+              "quote": "Ivo Reed, the sole release authority, has issued no written release decision.",
+              "status_quote": "Ivo Reed, the sole release authority, has issued no written release decision.",
+              "attention": {
+                "category": "approval_boundary",
+                "quote": "Ivo Reed, the sole release authority, has issued no written release decision.",
+                "rationale": "Public opening remains unauthorized until the sole release authority issues a scoped written decision; a calendar entry cannot supply it."
+              },
+              "followup": {
+                "outcome": "unresolved",
+                "evidence": [
+                  {
+                    "source_id": "qa",
+                    "quote": "Ivo Reed, the sole release authority, has issued no written release decision."
+                  }
+                ],
+                "rationale": "The latest supplied report explicitly states that no written decision exists. Obtain Ivo’s scoped written release decision after passing required checks; no external search or release action was authorized for this review."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "Q-RELEASE-08",
+                "kind": "question",
+                "title": "Written release decision from sole release authority Ivo Reed remains absent",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "release-approval",
+                  "release-readiness"
+                ],
+                "status": "open",
+                "source_id": "qa",
+                "quote": "Ivo Reed, the sole release authority, has issued no written release decision.",
+                "status_quote": "Ivo Reed, the sole release authority, has issued no written release decision.",
+                "attention": {
+                  "category": "approval_boundary",
+                  "quote": "Ivo Reed, the sole release authority, has issued no written release decision.",
+                  "rationale": "Public opening remains unauthorized until the sole release authority issues a scoped written decision; a calendar entry cannot supply it."
+                },
+                "followup": {
+                  "outcome": "unresolved",
+                  "evidence": [
+                    {
+                      "source_id": "qa",
+                      "quote": "Ivo Reed, the sole release authority, has issued no written release decision."
+                    }
+                  ],
+                  "rationale": "The latest supplied report explicitly states that no written decision exists. Obtain Ivo’s scoped written release decision after passing required checks; no external search or release action was authorized for this review."
+                }
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "qa",
+                  "url": "demo://readinglight/qa",
+                  "revision": "r1",
+                  "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+                }
+              ]
+            },
+            "state_sha256": "80b3da7368ecac48ba3a0aedfca50ea3534f001dbabe88be0ec3f1baf3feaa29"
+          }
+        },
+        {
+          "record_id": "REQ-APPROVAL-BOUNDARY-08",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "REQ-APPROVAL-BOUNDARY-08",
+              "kind": "requirement",
+              "title": "Reported Sela approval covers prototype design and QA plan only",
+              "scope": "two-room-pilot",
+              "topics": [
+                "prototype-scope",
+                "release-approval"
+              ],
+              "status": "accepted",
+              "source_id": "qa",
+              "quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+              "status_quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+              "attention": {
+                "category": "approval_boundary",
+                "quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+                "rationale": "Do not interpret the product steward’s reported design/plan approval as visitor deployment approval."
+              },
+              "followup": {
+                "outcome": "no_change_found",
+                "evidence": [
+                  {
+                    "source_id": "qa",
+                    "quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment."
+                  }
+                ],
+                "rationale": "Compared the reported email with the separate release requirement and explicit lack of Ivo’s decision. No deployment approval is established."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "REQ-APPROVAL-BOUNDARY-08",
+                "kind": "requirement",
+                "title": "Reported Sela approval covers prototype design and QA plan only",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "prototype-scope",
+                  "release-approval"
+                ],
+                "status": "accepted",
+                "source_id": "qa",
+                "quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+                "status_quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+                "attention": {
+                  "category": "approval_boundary",
+                  "quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+                  "rationale": "Do not interpret the product steward’s reported design/plan approval as visitor deployment approval."
+                },
+                "followup": {
+                  "outcome": "no_change_found",
+                  "evidence": [
+                    {
+                      "source_id": "qa",
+                      "quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment."
+                    }
+                  ],
+                  "rationale": "Compared the reported email with the separate release requirement and explicit lack of Ivo’s decision. No deployment approval is established."
+                }
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "qa",
+                  "url": "demo://readinglight/qa",
+                  "revision": "r1",
+                  "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+                }
+              ]
+            },
+            "state_sha256": "a051a870abea111b9e460f270c765001b73d34d2b65c36bae61af80dd48a1ced"
+          }
+        },
+        {
+          "record_id": "REQ-RELEASE-TESTS-08",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "REQ-RELEASE-TESTS-08",
+              "kind": "requirement",
+              "title": "Visitor release requires passing privacy and screen-reader checks",
+              "scope": "two-room-pilot",
+              "topics": [
+                "release-readiness",
+                "data-minimization",
+                "accessibility"
+              ],
+              "status": "accepted",
+              "source_id": "qa",
+              "quote": "Visitor release requires a passing privacy retest and an executed, passing screen-reader check.",
+              "status_quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+              "attention": {
+                "category": "approval_boundary",
+                "quote": "Visitor release requires a passing privacy retest and an executed, passing screen-reader check.",
+                "rationale": "These QA prerequisites are necessary release evidence, not a substitute for Ivo Reed’s separate written release decision."
+              },
+              "followup": {
+                "outcome": "no_change_found",
+                "evidence": [
+                  {
+                    "source_id": "qa",
+                    "quote": "Visitor release requires a passing privacy retest and an executed, passing screen-reader check."
+                  }
+                ],
+                "rationale": "The QA lead states the release test prerequisites and reports Sela’s approval of the QA plan in the same report. No later waiver or changed test gate appears in the supplied sources; the reported approval is limited to design and the QA plan."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "REQ-RELEASE-TESTS-08",
+                "kind": "requirement",
+                "title": "Visitor release requires passing privacy and screen-reader checks",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "release-readiness",
+                  "data-minimization",
+                  "accessibility"
+                ],
+                "status": "accepted",
+                "source_id": "qa",
+                "quote": "Visitor release requires a passing privacy retest and an executed, passing screen-reader check.",
+                "status_quote": "Sela's email says, “Prototype design and the QA plan approved.” It does not approve deployment.",
+                "attention": {
+                  "category": "approval_boundary",
+                  "quote": "Visitor release requires a passing privacy retest and an executed, passing screen-reader check.",
+                  "rationale": "These QA prerequisites are necessary release evidence, not a substitute for Ivo Reed’s separate written release decision."
+                },
+                "followup": {
+                  "outcome": "no_change_found",
+                  "evidence": [
+                    {
+                      "source_id": "qa",
+                      "quote": "Visitor release requires a passing privacy retest and an executed, passing screen-reader check."
+                    }
+                  ],
+                  "rationale": "The QA lead states the release test prerequisites and reports Sela’s approval of the QA plan in the same report. No later waiver or changed test gate appears in the supplied sources; the reported approval is limited to design and the QA plan."
+                }
+              },
+              "dependencies": [
+                {
+                  "id": "Q-14",
+                  "kind": "test_case",
+                  "title": "Q-14 screen-reader check is planned and unexecuted",
+                  "scope": "two-room-pilot",
+                  "topics": [
+                    "accessibility",
+                    "build-0.8",
+                    "release-readiness"
+                  ],
+                  "status": "planned",
+                  "source_id": "qa",
+                  "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+                  "status_quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+                  "attention": {
+                    "category": "missing_execution",
+                    "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable.",
+                    "rationale": "Visitor release needs an executed, passing screen-reader check; the device problem explains the missing run but does not waive it."
+                  },
+                  "followup": {
+                    "outcome": "no_change_found",
+                    "evidence": [
+                      {
+                        "source_id": "qa",
+                        "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable."
+                      }
+                    ],
+                    "rationale": "Reviewed the full supplied QA report and its approval paragraph; no executed result or passing retest for Q-14 is supplied. QA-plan approval does not execute a test."
+                  }
+                }
+              ],
+              "links": [
+                {
+                  "from_id": "REQ-RELEASE-TESTS-08",
+                  "to_id": "Q-14",
+                  "source_id": "qa",
+                  "quote": "Screen-reader check Q-14 remains unexecuted because the test device was unavailable. Visitor release requires a passing privacy retest and an executed, passing screen-reader check."
+                }
+              ],
+              "sources": [
+                {
+                  "id": "qa",
+                  "url": "demo://readinglight/qa",
+                  "revision": "r1",
+                  "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+                }
+              ]
+            },
+            "state_sha256": "1845d7c43c713605ba36592566055adae99ef5ee14e4ac5465bd02aa3cda0272"
+          }
+        },
+        {
+          "record_id": "REQ-STAFF-TRIAL-08",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "REQ-STAFF-TRIAL-08",
+              "kind": "requirement",
+              "title": "Current reported operating boundary permits supervised staff trials and excludes public opening",
+              "scope": "two-room-pilot",
+              "topics": [
+                "prototype-scope",
+                "release-approval"
+              ],
+              "status": "accepted",
+              "source_id": "qa",
+              "quote": "Staff may continue supervised prototype trials; public opening is not authorized.",
+              "status_quote": "Staff may continue supervised prototype trials; public opening is not authorized.",
+              "attention": {
+                "category": "approval_boundary",
+                "quote": "Staff may continue supervised prototype trials; public opening is not authorized.",
+                "rationale": "This is the operating boundary reported by the QA lead, consistent with prototype-only design approval. It grants no wider release authority."
+              },
+              "followup": {
+                "outcome": "no_change_found",
+                "evidence": [
+                  {
+                    "source_id": "qa",
+                    "quote": "Staff may continue supervised prototype trials; public opening is not authorized."
+                  }
+                ],
+                "rationale": "The final supplied QA paragraph expressly retains supervised staff prototype trials and withholds public opening. This review repeats that reported boundary; it does not issue new permission."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "REQ-STAFF-TRIAL-08",
+                "kind": "requirement",
+                "title": "Current reported operating boundary permits supervised staff trials and excludes public opening",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "prototype-scope",
+                  "release-approval"
+                ],
+                "status": "accepted",
+                "source_id": "qa",
+                "quote": "Staff may continue supervised prototype trials; public opening is not authorized.",
+                "status_quote": "Staff may continue supervised prototype trials; public opening is not authorized.",
+                "attention": {
+                  "category": "approval_boundary",
+                  "quote": "Staff may continue supervised prototype trials; public opening is not authorized.",
+                  "rationale": "This is the operating boundary reported by the QA lead, consistent with prototype-only design approval. It grants no wider release authority."
+                },
+                "followup": {
+                  "outcome": "no_change_found",
+                  "evidence": [
+                    {
+                      "source_id": "qa",
+                      "quote": "Staff may continue supervised prototype trials; public opening is not authorized."
+                    }
+                  ],
+                  "rationale": "The final supplied QA paragraph expressly retains supervised staff prototype trials and withholds public opening. This review repeats that reported boundary; it does not issue new permission."
+                }
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "qa",
+                  "url": "demo://readinglight/qa",
+                  "revision": "r1",
+                  "source_sha256": "01103d5e136155b3ff3485080b26850d58cb35d9ad499946fd6e7cd5a2c270b3"
+                }
+              ]
+            },
+            "state_sha256": "f7c7dc3a134236195a41da89d585b54ed90ecc9908a6d78b184f44f71c4a30b5"
+          }
+        }
+      ]
+    }
+  ]
+}

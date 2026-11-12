@@ -1,0 +1,928 @@
+{
+  "adjudication_version": 1,
+  "suite": "suite-a",
+  "run": "improved-a",
+  "reviewed_at_utc": "2026-11-08T06:10:44.074433+00:00",
+  "audit_scope": {
+    "read_roots": [
+      "work/blind-author/suite-a",
+      "work/blind-runs/baseline-a",
+      "work/blind-runs/improved-a"
+    ],
+    "network_used": false,
+    "real_data_used": false,
+    "subagents_used": false,
+    "repository_or_suite_b_read": false,
+    "frozen_answers_modified": false,
+    "sealed_files_modified": false,
+    "seal_checks": {
+      "response-first.json": true,
+      "response.json": true,
+      "packets.json": true,
+      "packet-research.md": true,
+      "packet-design.md": true,
+      "packet-qa.md": true,
+      "execution-log.json": true
+    },
+    "frozen_answer_sha256": {
+      "expectations.json": "b4cb9279c6a1f32c357b62189065257d5068960a13a667b8d560ab57e5cfbabd",
+      "author-notes.md": "46d2b6841478ae1eb722afefac0c776cd27f4c765c281a461e1cfdd43f14b618"
+    },
+    "input_matches_frozen_suite": {
+      "requests.json": true,
+      "documents.json": true,
+      "raw/page-01.md": true,
+      "raw/page-05.md": true,
+      "raw/page-04.md": true,
+      "raw/page-07.md": true,
+      "raw/page-03.md": true,
+      "raw/page-02.md": true,
+      "raw/page-06.md": true
+    },
+    "exact_source_anchor_count_verified": 120,
+    "score_sha256": "0ee789e2db438a4d66e7dd80cdd376a5c92b828455593ad7a35a65330f8047b1"
+  },
+  "method": "Same frozen meanings, required/allowed relevance bounds and semantic criteria as baseline. All response titles, rationales, quotes, current-status provenance and selected/omitted/gap content were inspected. Exact anchors and enum discrepancies were adjudicated by preserved meaning. Combined/split facts are credited; required selected facts are distinguished from gap-only disclosure. No extraction or packet was changed.",
+  "summary": {
+    "required_fact_instances": 42,
+    "required_selected_fact_instances": 42,
+    "required_fact_instances_in_selected_or_adequate_gaps": 42,
+    "confirmed_missing_fact_instances": 0,
+    "confirmed_wrong_record_instances": 0,
+    "confirmed_domain_semantic_error_instances": 0,
+    "confirmed_packet_diagnostic_error_instances": 1,
+    "classification_error_flags_waived": 4,
+    "unmatched_record_flags_resolved_as_supported": 11,
+    "content_pass_requests": [
+      "research",
+      "design",
+      "qa"
+    ],
+    "overall_pass_including_diagnostics_requests": [
+      "research",
+      "qa"
+    ],
+    "overall_failure_including_diagnostics_requests": [
+      "design"
+    ],
+    "note": "The original deterministic passed=false values are left unchanged. Content passes after semantic adjudication; the design packet still has a false missing-category diagnostic. A true incomplete-source warning does not mean a required fact is missing or that execution/release is approved."
+  },
+  "cases": [
+    {
+      "request_id": "research",
+      "required_fact_count": 12,
+      "required_covered_in_selected": 12,
+      "required_covered_in_selected_or_adequate_gaps": 12,
+      "missing_selected_fact_ids": [],
+      "adequately_disclosed_only_as_gaps_fact_ids": [],
+      "confirmed_missing_fact_ids": [],
+      "confirmed_wrong_record_ids": [],
+      "confirmed_semantic_errors": [],
+      "confirmed_packet_diagnostic_errors": [],
+      "waived_scorer_flags": [
+        {
+          "scorer_category": "classification_errors",
+          "original_flag": {
+            "record_id": "r08",
+            "fact_id": "a-f08",
+            "fields": [
+              "status"
+            ],
+            "actual_kind": "question",
+            "actual_status": "open",
+            "allowed_kinds": [
+              "question",
+              "task"
+            ],
+            "expected_status": "draft"
+          },
+          "disposition": "waived_faithful_enum_alternative",
+          "reason": "Open question preserves the proposed next interview. The title explicitly says proposal and the rationale says neither answered results nor approved notification policy. This is the same faithful open-versus-draft alternative waived in the baseline, with less prescriptive wording.",
+          "evidence": {
+            "id": "r08",
+            "title": "다음 조사에서 품절 발견 시점과 고객 응답 가능 시간을 별도로 확인할 제안",
+            "kind": "question",
+            "status": "open",
+            "rationale": "다음 조사 질문에 대한 제안이며 이미 답을 얻은 결과나 승인된 알림 정책이 아니다.",
+            "evidence": {
+              "passage_id": "a02:2492c7df245be6df",
+              "quote": "인터뷰 진행자는 다음에는 품절을 알게 된 시점과 고객이 응답할 수 있는 시간을 따로 물어보자고 적었다."
+            }
+          }
+        },
+        {
+          "scorer_category": "classification_errors",
+          "original_flag": {
+            "record_id": "r15",
+            "fact_id": "a-f14",
+            "fields": [
+              "status"
+            ],
+            "actual_kind": "question",
+            "actual_status": "open",
+            "allowed_kinds": [
+              "task",
+              "question"
+            ],
+            "expected_status": "draft"
+          },
+          "disposition": "waived_faithful_enum_alternative",
+          "reason": "Open question preserves a memo proposing future comparison dimensions. The title says to consider these items and the rationale denies completed comparison or finalized criteria. It is not an observation or accepted rule; draft versus open does not alter the meaning.",
+          "evidence": {
+            "id": "r15",
+            "title": "후속 비교 항목으로 가격 표시·응답 기한·알림 채널을 검토하자는 메모",
+            "kind": "question",
+            "status": "open",
+            "rationale": "후속 조사에서 아직 비교해야 할 항목에 관한 제안이다. 비교가 수행됐거나 확정된 기준이라고 보지 않는다.",
+            "evidence": {
+              "passage_id": "a03:43099fbaffd887b5",
+              "quote": "후속 비교 표에는 대체품 가격 표시, 응답 기한, 알림 채널을 넣어 보자는 메모가 있다."
+            }
+          }
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "record_id": "r18",
+          "fact_ids": [
+            "a-f17"
+          ],
+          "disposition": "waived_supported_clause_or_subfact",
+          "reason": "The short quote explicitly states the expansion date is undecided. It is a faithful split of a-f17, whose longer frozen anchor covers the first-rollout clause. r17 already includes this fact, so r18 is redundant but true, current and relevant. Do not call it a wrong selection merely for repetition.",
+          "evidence": {
+            "id": "r18",
+            "title": "확대 날짜는 아직 정해지지 않음",
+            "kind": "question",
+            "status": "open",
+            "rationale": "첫 적용 범위의 확정과 확대 시점의 미결정을 구분한다.",
+            "evidence": {
+              "passage_id": "a04:bcc0b45a20cb3424",
+              "quote": "확대 날짜는 아직 정하지 않았다."
+            }
+          }
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "record_id": "r31",
+          "fact_ids": [
+            "a-f27"
+          ],
+          "disposition": "waived_supported_clause_or_subfact",
+          "reason": "The author explicitly permits splitting accepted app notification from undecided SMS resend. r31 is the latter clause, correctly labeled open question; its title and rationale deny adoption. r30 separately preserves the accepted app notification. A fixed accepted enum for the combined fact must not be applied to the open half.",
+          "evidence": {
+            "id": "r31",
+            "title": "문자 재발송은 비용 추정 없이 검토 목록에만 남음",
+            "kind": "question",
+            "status": "open",
+            "rationale": "문자 재발송을 채택한 결정이나 구현 완료로 보지 않는다. 비용 추정이 남은 검토의 전제다.",
+            "evidence": {
+              "passage_id": "a05:4ea1ac5019ea920f",
+              "quote": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+            }
+          }
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "record_id": "r25",
+          "fact_ids": [
+            "a-f23"
+          ],
+          "disposition": "waived_supported_clause_or_subfact",
+          "reason": "This is the exact second clause of a-f23: do not claim the exclusion list prevents all allergies. The frozen anchor is in the candidate-blocking clause, represented by r24. Both are selected where required; no medical efficacy claim is introduced.",
+          "evidence": {
+            "id": "r25",
+            "title": "제외 목록이 모든 알레르기를 예방한다고 안내하지 않음",
+            "kind": "requirement",
+            "status": "accepted",
+            "rationale": "고객 안내에 대한 명시적 제한이다. 제외 목록 기능을 완전한 알레르기 예방책으로 표현할 수 없다.",
+            "evidence": {
+              "passage_id": "a04:1cb63471496f7e21",
+              "quote": "제외 목록이 모든 알레르기를 예방한다고 안내해서는 안 된다."
+            }
+          }
+        }
+      ],
+      "required_fact_record_coverage": {
+        "a-f05": [
+          "r05"
+        ],
+        "a-f06": [
+          "r06"
+        ],
+        "a-f07": [
+          "r07"
+        ],
+        "a-f09": [
+          "r09"
+        ],
+        "a-f10": [
+          "r10"
+        ],
+        "a-f11": [
+          "r11"
+        ],
+        "a-f12": [
+          "r12"
+        ],
+        "a-f13": [
+          "r13"
+        ],
+        "a-f15": [
+          "r14"
+        ],
+        "a-f16": [
+          "r16"
+        ],
+        "a-f17": [
+          "r17"
+        ],
+        "a-f19": [
+          "r20"
+        ]
+      },
+      "task_type_correct": true,
+      "selected_count": 27,
+      "selected_record_ids": [
+        "r16",
+        "r05",
+        "r11",
+        "r17",
+        "r12",
+        "r06",
+        "r07",
+        "r09",
+        "r13",
+        "r20",
+        "r10",
+        "r19",
+        "r21",
+        "r22",
+        "r23",
+        "r24",
+        "r30",
+        "r18",
+        "r08",
+        "r14",
+        "r15",
+        "r31",
+        "r32",
+        "r33",
+        "r26",
+        "r25",
+        "r34"
+      ],
+      "nonblocking_notes": [
+        "a-f11, a-f12, a-f13 and a-f15 now have selected evidence records; no required fact depends solely on generic gap text.",
+        "The incomplete-source warnings remain appropriate because a03 is actually truncated. r14 identifies the specific unknown price-difference result; no result is invented.",
+        "r18 duplicates the undecided expansion date already in r17. This is a minor brevity issue, not obsolete or irrelevant context."
+      ],
+      "content_adjudicated_pass": true,
+      "packet_diagnostics_pass": true,
+      "overall_adjudicated_pass": true,
+      "comparison_to_baseline": {
+        "baseline_required_covered_in_selected": 8,
+        "baseline_required_covered_in_selected_or_adequate_gaps": 10,
+        "baseline_confirmed_missing_fact_ids": [
+          "a-f11",
+          "a-f12"
+        ],
+        "baseline_confirmed_wrong_record_ids": [
+          "deadline-boundary",
+          "deadline-display-open"
+        ],
+        "all_baseline_confirmed_content_failures_fixed": true,
+        "new_confirmed_content_failures": [],
+        "new_diagnostic_error_count": 0,
+        "fixed_baseline_diagnostic_error_count": 0
+      }
+    },
+    {
+      "request_id": "design",
+      "required_fact_count": 15,
+      "required_covered_in_selected": 15,
+      "required_covered_in_selected_or_adequate_gaps": 15,
+      "missing_selected_fact_ids": [],
+      "adequately_disclosed_only_as_gaps_fact_ids": [],
+      "confirmed_missing_fact_ids": [],
+      "confirmed_wrong_record_ids": [],
+      "confirmed_semantic_errors": [],
+      "confirmed_packet_diagnostic_errors": [
+        {
+          "id": "design-false-missing-design-gap",
+          "layer": "packet_diagnostic",
+          "message": "Missing supported design context for feature_design.",
+          "reason": "The packet selects the accepted card information rule r23, deadline/server-clock rule r27, exclusive-final-state requirement r28 and retry-id rule r29, plus all other required facts. Those records are labeled decision or requirement instead of literal design. The warning mistakes absence of a particular kind label for absence of design content. This is a new diagnostic regression relative to baseline.",
+          "supporting_record_ids": [
+            "r23",
+            "r27",
+            "r28",
+            "r29"
+          ],
+          "fact_ids": [
+            "a-f22",
+            "a-f25",
+            "a-f26"
+          ],
+          "evidence": [
+            {
+              "id": "r23",
+              "title": "카드에 원상품·후보 이름, 중량, 가격과 응답 기한을 함께 표시",
+              "kind": "decision",
+              "status": "accepted",
+              "rationale": "명시적 표시 합의로 이전 이름만 표시하는 스케치를 대체했다.",
+              "evidence": {
+                "passage_id": "a04:1cb63471496f7e21",
+                "quote": "카드에는 원래 상품과 후보 각각의 이름, 중량, 가격 및 응답 기한을 함께 표시하기로 했다."
+              }
+            },
+            {
+              "id": "r27",
+              "title": "서버 수신 시각이 오전 10시 전이면 수락; 정각부터 마감; 휴대폰 시계 사용 안 함",
+              "kind": "decision",
+              "status": "accepted",
+              "rationale": "고객 응답과 마감 작업 경합의 경계를 두 담당자가 확인하여 현재 설계로 채택했다. 합의된 수요일 승인 흐름 구현의 경계 조건이다.",
+              "evidence": {
+                "passage_id": "a05:6af6ef7514ba40b5",
+                "quote": "서버가 응답을 받은 시각이 오전 10시보다 이르면 수락을 처리하고, 정확히 오전 10시부터는 마감된 것으로 처리한다. 화면의 휴대폰 시계는 판정 근거로 쓰지 않는다."
+              }
+            },
+            {
+              "id": "r28",
+              "title": "한 품목의 최종 상태는 수락과 환불 중 하나여야 함",
+              "kind": "requirement",
+              "status": "accepted",
+              "rationale": "경합 처리에서 두 최종 상태가 동시에 성립하지 않아야 한다는 요구사항이다. 더 싼 후보의 차액 환불까지 금지하는 의미로 확장하지 않는다.",
+              "evidence": {
+                "passage_id": "a05:4ea1ac5019ea920f",
+                "quote": "하나의 품목에 대해서는 수락과 환불 중 하나만 최종 상태가 되어야 한다."
+              }
+            },
+            {
+              "id": "r29",
+              "title": "환불 재시도는 같은 주문 품목 식별자를 재사용하여 한 번만 생성",
+              "kind": "decision",
+              "status": "accepted",
+              "rationale": "식별자 재사용이라는 처리 선택과 품목별 중복 환불 방지 목적이 명시되어 있다.",
+              "evidence": {
+                "passage_id": "a05:4ea1ac5019ea920f",
+                "quote": "환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다."
+              }
+            }
+          ]
+        }
+      ],
+      "waived_scorer_flags": [
+        {
+          "scorer_category": "classification_errors",
+          "original_flag": {
+            "record_id": "r36",
+            "fact_id": "a-f32",
+            "fields": [
+              "status"
+            ],
+            "actual_kind": "test_result",
+            "actual_status": "observed",
+            "allowed_kinds": [
+              "test_result",
+              "risk"
+            ],
+            "expected_status": "open"
+          },
+          "disposition": "waived_faithful_enum_alternative",
+          "reason": "Observed labels the executed test, not a passing result or resolved defect. The title itself says the error is open and the whole case did not pass; the exact quote and rationale preserve transient wrong success, refresh to pending refund, and unresolved status. A separate open-risk record is unnecessary when all meaning is explicit in this item.",
+          "evidence": {
+            "id": "r36",
+            "title": "정각 응답은 서버 거절됐지만 화면이 잠깐 수락 완료를 표시; 열린 오류로 전체 통과 아님",
+            "kind": "test_result",
+            "status": "observed",
+            "rationale": "서버 거절과 잘못된 일시 표시를 모두 보존한다. 새로고침 후 환불 예정 표시는 최초 오류를 해소한 재시험 성공이 아니다.",
+            "evidence": {
+              "passage_id": "a06:111f76b564777b29",
+              "quote": "오전 10시 정각 응답은 서버에서 거절됐지만 고객 화면에는 잠깐 수락 완료가 표시됐다. 새로고침 뒤에는 환불 예정으로 바뀌었다. 표시 오류는 아직 열려 있고 수정 담당자는 정해졌다. 정각 응답 처리 전체가 통과했다고 보고하지 않기로 했다."
+            }
+          }
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "record_id": "r25",
+          "fact_ids": [
+            "a-f23"
+          ],
+          "disposition": "waived_supported_clause_or_subfact",
+          "reason": "This is the exact second clause of a-f23: do not claim the exclusion list prevents all allergies. The frozen anchor is in the candidate-blocking clause, represented by r24. Both are selected where required; no medical efficacy claim is introduced.",
+          "evidence": {
+            "id": "r25",
+            "title": "제외 목록이 모든 알레르기를 예방한다고 안내하지 않음",
+            "kind": "requirement",
+            "status": "accepted",
+            "rationale": "고객 안내에 대한 명시적 제한이다. 제외 목록 기능을 완전한 알레르기 예방책으로 표현할 수 없다.",
+            "evidence": {
+              "passage_id": "a04:1cb63471496f7e21",
+              "quote": "제외 목록이 모든 알레르기를 예방한다고 안내해서는 안 된다."
+            }
+          }
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "record_id": "r29",
+          "fact_ids": [
+            "a-f26"
+          ],
+          "disposition": "waived_supported_clause_or_subfact",
+          "reason": "This is the exact retry-identifier clause of a-f26; r28 covers mutually exclusive final states. The decision label presents the same normative implementation choice that design/requirement would express. Although decision is outside the frozen kinds listed for a-f26, it does not change the source-supported rule or imply an observed test result.",
+          "evidence": {
+            "id": "r29",
+            "title": "환불 재시도는 같은 주문 품목 식별자를 재사용하여 한 번만 생성",
+            "kind": "decision",
+            "status": "accepted",
+            "rationale": "식별자 재사용이라는 처리 선택과 품목별 중복 환불 방지 목적이 명시되어 있다.",
+            "evidence": {
+              "passage_id": "a05:4ea1ac5019ea920f",
+              "quote": "환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다."
+            }
+          }
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "record_id": "r18",
+          "fact_ids": [
+            "a-f17"
+          ],
+          "disposition": "waived_supported_clause_or_subfact",
+          "reason": "The short quote explicitly states the expansion date is undecided. It is a faithful split of a-f17, whose longer frozen anchor covers the first-rollout clause. r17 already includes this fact, so r18 is redundant but true, current and relevant. Do not call it a wrong selection merely for repetition.",
+          "evidence": {
+            "id": "r18",
+            "title": "확대 날짜는 아직 정해지지 않음",
+            "kind": "question",
+            "status": "open",
+            "rationale": "첫 적용 범위의 확정과 확대 시점의 미결정을 구분한다.",
+            "evidence": {
+              "passage_id": "a04:bcc0b45a20cb3424",
+              "quote": "확대 날짜는 아직 정하지 않았다."
+            }
+          }
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "record_id": "r31",
+          "fact_ids": [
+            "a-f27"
+          ],
+          "disposition": "waived_supported_clause_or_subfact",
+          "reason": "The author explicitly permits splitting accepted app notification from undecided SMS resend. r31 is the latter clause, correctly labeled open question; its title and rationale deny adoption. r30 separately preserves the accepted app notification. A fixed accepted enum for the combined fact must not be applied to the open half.",
+          "evidence": {
+            "id": "r31",
+            "title": "문자 재발송은 비용 추정 없이 검토 목록에만 남음",
+            "kind": "question",
+            "status": "open",
+            "rationale": "문자 재발송을 채택한 결정이나 구현 완료로 보지 않는다. 비용 추정이 남은 검토의 전제다.",
+            "evidence": {
+              "passage_id": "a05:4ea1ac5019ea920f",
+              "quote": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+            }
+          }
+        }
+      ],
+      "required_fact_record_coverage": {
+        "a-f05": [
+          "r05"
+        ],
+        "a-f16": [
+          "r16"
+        ],
+        "a-f17": [
+          "r17"
+        ],
+        "a-f18": [
+          "r19"
+        ],
+        "a-f19": [
+          "r20"
+        ],
+        "a-f20": [
+          "r21"
+        ],
+        "a-f21": [
+          "r22"
+        ],
+        "a-f22": [
+          "r23"
+        ],
+        "a-f23": [
+          "r24",
+          "r25"
+        ],
+        "a-f24": [
+          "r26"
+        ],
+        "a-f25": [
+          "r27"
+        ],
+        "a-f26": [
+          "r28",
+          "r29"
+        ],
+        "a-f27": [
+          "r30",
+          "r31"
+        ],
+        "a-f28": [
+          "r32"
+        ],
+        "a-f30": [
+          "r33"
+        ]
+      },
+      "task_type_correct": true,
+      "selected_count": 24,
+      "selected_record_ids": [
+        "r16",
+        "r20",
+        "r25",
+        "r23",
+        "r24",
+        "r27",
+        "r17",
+        "r19",
+        "r21",
+        "r22",
+        "r26",
+        "r28",
+        "r29",
+        "r30",
+        "r36",
+        "r33",
+        "r32",
+        "r18",
+        "r31",
+        "r05",
+        "r06",
+        "r07",
+        "r09",
+        "r34"
+      ],
+      "nonblocking_notes": [
+        "The optional alias follow-up r34 is selected, replacing baseline budget omission. No item-budget omission remains.",
+        "Successful trial results and future test plan are omitted only from this design request; the known UI failure r36 remains, and all required design facts are present. These omissions are not regressions under the frozen required/allowed distinction.",
+        "r18 repeats the undecided expansion date from r17; this is supported duplication, not an erroneous rule."
+      ],
+      "content_adjudicated_pass": true,
+      "packet_diagnostics_pass": false,
+      "overall_adjudicated_pass": false,
+      "comparison_to_baseline": {
+        "baseline_required_covered_in_selected": 15,
+        "baseline_required_covered_in_selected_or_adequate_gaps": 15,
+        "baseline_confirmed_missing_fact_ids": [],
+        "baseline_confirmed_wrong_record_ids": [
+          "reopen-request",
+          "early-card-sketch"
+        ],
+        "all_baseline_confirmed_content_failures_fixed": true,
+        "new_confirmed_content_failures": [],
+        "new_diagnostic_error_count": 1,
+        "fixed_baseline_diagnostic_error_count": 0
+      }
+    },
+    {
+      "request_id": "qa",
+      "required_fact_count": 15,
+      "required_covered_in_selected": 15,
+      "required_covered_in_selected_or_adequate_gaps": 15,
+      "missing_selected_fact_ids": [],
+      "adequately_disclosed_only_as_gaps_fact_ids": [],
+      "confirmed_missing_fact_ids": [],
+      "confirmed_wrong_record_ids": [],
+      "confirmed_semantic_errors": [],
+      "confirmed_packet_diagnostic_errors": [],
+      "waived_scorer_flags": [
+        {
+          "scorer_category": "classification_errors",
+          "original_flag": {
+            "record_id": "r36",
+            "fact_id": "a-f32",
+            "fields": [
+              "status"
+            ],
+            "actual_kind": "test_result",
+            "actual_status": "observed",
+            "allowed_kinds": [
+              "test_result",
+              "risk"
+            ],
+            "expected_status": "open"
+          },
+          "disposition": "waived_faithful_enum_alternative",
+          "reason": "Observed labels the executed test, not a passing result or resolved defect. The title itself says the error is open and the whole case did not pass; the exact quote and rationale preserve transient wrong success, refresh to pending refund, and unresolved status. A separate open-risk record is unnecessary when all meaning is explicit in this item.",
+          "evidence": {
+            "id": "r36",
+            "title": "정각 응답은 서버 거절됐지만 화면이 잠깐 수락 완료를 표시; 열린 오류로 전체 통과 아님",
+            "kind": "test_result",
+            "status": "observed",
+            "rationale": "서버 거절과 잘못된 일시 표시를 모두 보존한다. 새로고침 후 환불 예정 표시는 최초 오류를 해소한 재시험 성공이 아니다.",
+            "evidence": {
+              "passage_id": "a06:111f76b564777b29",
+              "quote": "오전 10시 정각 응답은 서버에서 거절됐지만 고객 화면에는 잠깐 수락 완료가 표시됐다. 새로고침 뒤에는 환불 예정으로 바뀌었다. 표시 오류는 아직 열려 있고 수정 담당자는 정해졌다. 정각 응답 처리 전체가 통과했다고 보고하지 않기로 했다."
+            }
+          }
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "record_id": "r25",
+          "fact_ids": [
+            "a-f23"
+          ],
+          "disposition": "waived_supported_clause_or_subfact",
+          "reason": "This is the exact second clause of a-f23: do not claim the exclusion list prevents all allergies. The frozen anchor is in the candidate-blocking clause, represented by r24. Both are selected where required; no medical efficacy claim is introduced.",
+          "evidence": {
+            "id": "r25",
+            "title": "제외 목록이 모든 알레르기를 예방한다고 안내하지 않음",
+            "kind": "requirement",
+            "status": "accepted",
+            "rationale": "고객 안내에 대한 명시적 제한이다. 제외 목록 기능을 완전한 알레르기 예방책으로 표현할 수 없다.",
+            "evidence": {
+              "passage_id": "a04:1cb63471496f7e21",
+              "quote": "제외 목록이 모든 알레르기를 예방한다고 안내해서는 안 된다."
+            }
+          }
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "record_id": "r29",
+          "fact_ids": [
+            "a-f26"
+          ],
+          "disposition": "waived_supported_clause_or_subfact",
+          "reason": "This is the exact retry-identifier clause of a-f26; r28 covers mutually exclusive final states. The decision label presents the same normative implementation choice that design/requirement would express. Although decision is outside the frozen kinds listed for a-f26, it does not change the source-supported rule or imply an observed test result.",
+          "evidence": {
+            "id": "r29",
+            "title": "환불 재시도는 같은 주문 품목 식별자를 재사용하여 한 번만 생성",
+            "kind": "decision",
+            "status": "accepted",
+            "rationale": "식별자 재사용이라는 처리 선택과 품목별 중복 환불 방지 목적이 명시되어 있다.",
+            "evidence": {
+              "passage_id": "a05:4ea1ac5019ea920f",
+              "quote": "환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다."
+            }
+          }
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "record_id": "r31",
+          "fact_ids": [
+            "a-f27"
+          ],
+          "disposition": "waived_supported_clause_or_subfact",
+          "reason": "The author explicitly permits splitting accepted app notification from undecided SMS resend. r31 is the latter clause, correctly labeled open question; its title and rationale deny adoption. r30 separately preserves the accepted app notification. A fixed accepted enum for the combined fact must not be applied to the open half.",
+          "evidence": {
+            "id": "r31",
+            "title": "문자 재발송은 비용 추정 없이 검토 목록에만 남음",
+            "kind": "question",
+            "status": "open",
+            "rationale": "문자 재발송을 채택한 결정이나 구현 완료로 보지 않는다. 비용 추정이 남은 검토의 전제다.",
+            "evidence": {
+              "passage_id": "a05:4ea1ac5019ea920f",
+              "quote": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+            }
+          }
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "record_id": "r37",
+          "fact_ids": [
+            "a-f32"
+          ],
+          "disposition": "waived_supported_clause_or_subfact",
+          "reason": "The quote supports assigned remediation work while the defect is still open. Its title explicitly says no completion/retest record, and planned does not claim work has finished. This subordinate task is useful remaining-work context for QA; r36 separately preserves the observed failure and open status.",
+          "evidence": {
+            "id": "r37",
+            "title": "정각 응답 표시 오류 수정 담당자 배정; 수정 완료·재시험 기록 없음",
+            "kind": "task",
+            "status": "planned",
+            "rationale": "담당자 배정과 열린 오류만 확인되므로 실제 수정 진행·완료나 재시험 통과를 추정하지 않는다.",
+            "evidence": {
+              "passage_id": "a06:111f76b564777b29",
+              "quote": "표시 오류는 아직 열려 있고 수정 담당자는 정해졌다."
+            }
+          }
+        }
+      ],
+      "required_fact_record_coverage": {
+        "a-f17": [
+          "r17"
+        ],
+        "a-f18": [
+          "r19"
+        ],
+        "a-f19": [
+          "r20"
+        ],
+        "a-f20": [
+          "r21"
+        ],
+        "a-f21": [
+          "r22"
+        ],
+        "a-f22": [
+          "r23"
+        ],
+        "a-f23": [
+          "r24",
+          "r25"
+        ],
+        "a-f25": [
+          "r27"
+        ],
+        "a-f26": [
+          "r28",
+          "r29"
+        ],
+        "a-f28": [
+          "r32"
+        ],
+        "a-f30": [
+          "r33"
+        ],
+        "a-f31": [
+          "r35"
+        ],
+        "a-f32": [
+          "r36"
+        ],
+        "a-f33": [
+          "r38"
+        ],
+        "a-f34": [
+          "r38"
+        ]
+      },
+      "task_type_correct": true,
+      "selected_count": 22,
+      "selected_record_ids": [
+        "r20",
+        "r25",
+        "r38",
+        "r36",
+        "r35",
+        "r26",
+        "r28",
+        "r23",
+        "r24",
+        "r27",
+        "r29",
+        "r17",
+        "r19",
+        "r21",
+        "r22",
+        "r30",
+        "r33",
+        "r32",
+        "r31",
+        "r16",
+        "r34",
+        "r37"
+      ],
+      "nonblocking_notes": [
+        "The planned four checks remain clearly unexecuted. The baseline false missing-test-case diagnostic is absent.",
+        "Only the generic declared-source-coverage warning remains. A truncated market document still exists in the supplied corpus, so that statement is true; it does not establish a missing QA fact."
+      ],
+      "content_adjudicated_pass": true,
+      "packet_diagnostics_pass": true,
+      "overall_adjudicated_pass": true,
+      "comparison_to_baseline": {
+        "baseline_required_covered_in_selected": 15,
+        "baseline_required_covered_in_selected_or_adequate_gaps": 15,
+        "baseline_confirmed_missing_fact_ids": [],
+        "baseline_confirmed_wrong_record_ids": [
+          "reopen-request",
+          "early-card-sketch",
+          "notice-timing-question",
+          "response-rate-hypothesis"
+        ],
+        "all_baseline_confirmed_content_failures_fixed": true,
+        "new_confirmed_content_failures": [],
+        "new_diagnostic_error_count": 0,
+        "fixed_baseline_diagnostic_error_count": 1
+      }
+    }
+  ],
+  "dependencies_and_lifecycle_audit": {
+    "dependency_link_count": 0,
+    "finding": "links[] and selected relationship_evidence are empty; no new dependency edges are claimed. The new cross-document current-status links are supported by same-project source content.",
+    "reviews": [
+      {
+        "record_id": "r01",
+        "status": "superseded",
+        "successor": "r20",
+        "assessment": "a04 explicitly names and cancels the August automatic substitution decision, then sets explicit acceptance/refund behavior. Grounded cross-document status linkage."
+      },
+      {
+        "record_id": "r02",
+        "status": "superseded",
+        "assessment": "a04 sets the same card to show names, weights, prices and deadline together, resolving the earlier name-only sketch. This is a direct behavioral replacement, not merely a newer unrelated document."
+      },
+      {
+        "record_id": "r03",
+        "status": "superseded",
+        "successor": "r17",
+        "assessment": "a04 explicitly cancels the September full rollout and limits the current pilot scope. Grounded cross-document status linkage."
+      },
+      {
+        "record_id": "r04",
+        "status": "rejected",
+        "assessment": "a04 excludes reopening completed packing from this phase. Title and rationale retain the phase-specific limitation and do not claim the customer need is permanently rejected."
+      }
+    ]
+  },
+  "comparison_to_baseline": {
+    "required_selected_fact_instances": {
+      "baseline": 38,
+      "improved": 42
+    },
+    "required_fact_instances_in_selected_or_adequate_gaps": {
+      "baseline": 40,
+      "improved": 42
+    },
+    "confirmed_missing_fact_instances": {
+      "baseline": 2,
+      "improved": 0
+    },
+    "confirmed_wrong_record_instances": {
+      "baseline": 8,
+      "improved": 0
+    },
+    "confirmed_domain_semantic_error_instances": {
+      "baseline": 0,
+      "improved": 0
+    },
+    "confirmed_packet_diagnostic_error_instances": {
+      "baseline": 1,
+      "improved": 1
+    },
+    "fixes": [
+      "Named competitor observations a-f11/a-f12 are selected, and a-f13/a-f15 are no longer gap-only.",
+      "The old card sketch and reopening request have reconciled current lifecycle status and are omitted from all current packets.",
+      "Research excludes server-boundary and test-build defect records; QA excludes next-interview timing and response-rate hypothesis.",
+      "The historical call-reduction duplicate is consolidated into the current goal.",
+      "Design now selects the optional alias follow-up without a budget omission.",
+      "QA planned cases are recognized as present and the false missing-test-case warning is removed."
+    ],
+    "regressions": [
+      {
+        "request_id": "design",
+        "finding": "New false missing-design-context warning despite complete selected design substance.",
+        "error_id": "design-false-missing-design-gap"
+      }
+    ],
+    "remaining_issues": [
+      "The category-presence diagnostic still depends too literally on one kind label. Its manifestation moved from baseline QA test_case to improved design design.",
+      "A global incomplete-source warning remains in design and QA although the only incomplete page is excluded as irrelevant to those tasks. The statement is true corpus metadata; it should not be interpreted as an identified task-specific missing fact. This was also present in baseline.",
+      "Expansion-date uncertainty is duplicated in r17/r18 for research and design. This is optional brevity improvement, not a confirmed relevance failure."
+    ],
+    "no_confirmed_content_regression": true
+  },
+  "general_findings": [
+    {
+      "finding": "Bounded available evidence survives incomplete-source handling in this run.",
+      "evidence_record_ids": [
+        "r11",
+        "r12",
+        "r13",
+        "r14",
+        "r15"
+      ]
+    },
+    {
+      "finding": "Per-request relevance decisions distinguish useful context from engineering detail or future research tasks.",
+      "evidence": "All baseline confirmed wrong selections are excluded; all frozen required facts remain selected."
+    },
+    {
+      "finding": "Cross-document lifecycle reconciliation prevents stale drafts from consuming current-context slots.",
+      "evidence_record_ids": [
+        "r01",
+        "r02",
+        "r03",
+        "r04"
+      ]
+    },
+    {
+      "finding": "The remaining coverage diagnostic confuses a taxonomy label with a semantic category.",
+      "evidence": "Selected decision/requirement records cover the design meaning, yet the design gap says supported design context is missing."
+    }
+  ],
+  "positive_controls": [
+    "No other-project records selected.",
+    "No superseded automatic substitution or full-rollout policy reintroduced.",
+    "Full and differential refunds and the no-candidate bypass remain distinct.",
+    "The exact server deadline and device-clock exclusion are preserved.",
+    "Allergy evidence, alias possibility and clinical safety claims remain distinct.",
+    "Limited competitor observations are not generalized into verified whole-service or market policies.",
+    "Observed payment-test outcomes do not become live provider refund completion.",
+    "The open UI defect does not become resolved or passed.",
+    "Planned tests do not become executed results."
+  ],
+  "limitations": [
+    "One frozen suite and one improved run; this does not establish general model or implementation accuracy.",
+    "Baseline comparison uses the prior independent adjudication, not unreviewed deterministic errors.",
+    "No source, sealed packet, response or frozen answer was changed.",
+    "Content adequacy does not establish release readiness; actual source unknowns and unfinished work remain."
+  ]
+}

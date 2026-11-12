@@ -1,0 +1,9 @@
+# Local validation and generated archives
+.venv/
+__pycache__/
+*.py[cod]
+dist/
+.DS_Store
+.env
+.env.*
+node_modules/

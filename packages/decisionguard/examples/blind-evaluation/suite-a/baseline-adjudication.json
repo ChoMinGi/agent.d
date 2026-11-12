@@ -1,0 +1,587 @@
+{
+  "adjudication_version": 1,
+  "suite": "suite-a",
+  "run": "baseline-a",
+  "reviewed_at_utc": "2026-11-08T05:58:31.912055+00:00",
+  "audit_scope": {
+    "read_roots": [
+      "work/blind-author/suite-a",
+      "work/blind-runs/baseline-a"
+    ],
+    "network_used": false,
+    "real_data_used": false,
+    "subagents_used": false,
+    "frozen_answers_modified": false,
+    "sealed_files_modified": false,
+    "seal_checks": {
+      "response.json": true,
+      "response-first.json": true,
+      "packets.json": true,
+      "packet-research.md": true,
+      "packet-design.md": true,
+      "packet-qa.md": true,
+      "execution-log.json": true,
+      "build_response.py": true,
+      "finalize_run.py": true,
+      "generated-extraction-job.txt": true
+    },
+    "frozen_answer_sha256": {
+      "expectations.json": "b4cb9279c6a1f32c357b62189065257d5068960a13a667b8d560ab57e5cfbabd",
+      "author-notes.md": "46d2b6841478ae1eb722afefac0c776cd27f4c765c281a461e1cfdd43f14b618"
+    },
+    "skill_read_only_for_limitations": [
+      "skill/SKILL.md",
+      "skill/references/raw-extraction.md",
+      "skill/references/context.md"
+    ],
+    "no_repository_or_suite_b_review": true
+  },
+  "method": "Independent semantic review of all supplied raw pages, request summaries, frozen fact meanings and author notes, all response record titles/rationales/evidence, selected/omitted packet contents, gaps and deterministic flags. Scoring anchors are leads, not semantic proof. Combined/split facts and faithful enum alternatives are credited. Selected-record coverage and adequate gap disclosure are separately counted. Frozen request relevance bounds inform task-scope judgments; confidence is stated for borderline supplemental engineering context.",
+  "summary": {
+    "required_fact_instances": 42,
+    "required_selected_fact_instances": 38,
+    "required_fact_instances_in_selected_or_adequate_gaps": 40,
+    "confirmed_missing_fact_instances": 2,
+    "confirmed_wrong_record_instances": 8,
+    "confirmed_domain_semantic_error_instances": 0,
+    "confirmed_packet_diagnostic_error_instances": 1,
+    "classification_error_flags_waived": 8,
+    "missing_required_flags_waived_as_gap_disclosure": 2,
+    "all_original_case_pass_fail_results_remain_false": true,
+    "note": "A packet can retain correct domain meanings yet fail contextual relevance. Two market observations are present in the sealed extraction but lost during packet selection. This is one blind run, not a generalized accuracy estimate."
+  },
+  "cases": [
+    {
+      "request_id": "research",
+      "task_type_correct": true,
+      "required_fact_count": 12,
+      "missing_selected_fact_ids": [
+        "a-f11",
+        "a-f12",
+        "a-f13",
+        "a-f15"
+      ],
+      "adequately_disclosed_only_as_gaps_fact_ids": [
+        "a-f13",
+        "a-f15"
+      ],
+      "confirmed_missing_fact_ids": [
+        "a-f11",
+        "a-f12"
+      ],
+      "confirmed_wrong_record_ids": [
+        "deadline-boundary",
+        "deadline-display-open"
+      ],
+      "confirmed_semantic_errors": [],
+      "confirmed_packet_diagnostic_errors": [],
+      "waived_scorer_flags": [
+        {
+          "scorer_category": "classification_errors",
+          "reason": "Open question preserves a proposed, unanswered research question. The quote says to ask separately next time; neither title/context nor rationale claims completion or approved product behavior. The supplied schema permits open/resolved/unknown for questions, not draft. The title has slightly stronger wording (조사해야 함), but the question kind and cited proposal keep its status clear.",
+          "record_id": "notice-timing-question",
+          "fact_ids": [
+            "a-f08"
+          ]
+        },
+        {
+          "scorer_category": "missing_required",
+          "reason": "The material research limitation is adequately stated in the packet gap. Keep the missing-selected-record finding, but waive total semantic absence.",
+          "fact_ids": [
+            "a-f13"
+          ]
+        },
+        {
+          "scorer_category": "missing_required",
+          "reason": "The truncated price-difference question is explicitly disclosed in the packet gap. Keep the missing-selected-record finding, but waive total semantic absence.",
+          "fact_ids": [
+            "a-f15"
+          ]
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "reason": "The exact anchor catalog has no entry for this supported goal. The title dates it to August and the rationale explicitly distinguishes the November current goal. Reducing packing calls remains part of a-f16; this is redundant historical context, not adoption of a-f01 or a-f03.",
+          "record_id": "early-call-goal",
+          "fact_ids": [
+            "a-f16"
+          ]
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "reason": "Faithful split of a-f27: the exact quote is its second clause, not the scorer anchor for the first clause. Title, draft status and rationale all say SMS resend is only under consideration and cost is unknown. The author explicitly allows this split.",
+          "record_id": "sms-resend-proposal",
+          "fact_ids": [
+            "a-f27"
+          ]
+        }
+      ],
+      "missing_fact_details": [
+        {
+          "fact_id": "a-f11",
+          "disposition": "confirmed_packet_omission",
+          "evidence": {
+            "record_id": "competitor-observation",
+            "title": "10월 25일 가상 동종 서비스 체험 화면: 너울장 품절 환불, 싹마루 대체 허용 선택",
+            "kind": "market_evidence",
+            "status": "observed",
+            "quote": "10월 25일에 조사자가 가상의 동종 서비스 너울장과 싹마루의 공개 주문 체험 화면을 살펴봤다. 너울장 화면에는 품절 항목을 환불한다는 안내가 있었다. 싹마루 화면에는 고객이 대체를 허용할지 고르는 칸이 있었지만 관찰한 화면에서는 대체될 상품을 미리 고르는 기능을 찾지 못했다.",
+            "passage_id": "a03:e70e6fe18742e402",
+            "rationale": "싹마루에서 개별 대체 상품 사전 선택 기능을 찾지 못한 것은 관찰 화면의 한정된 부재이며 서비스 전체 기능 부재가 아니다. 문서가 불완전하다는 원문 메타데이터를 그대로 둔다."
+          },
+          "reason": "Response.json faithfully extracts the named Neouljang demo-screen refund notice, but the selected packet drops the whole record as incomplete source. The gap mentions refund generically without attributing it to that service. The requested competitor finding cannot be recovered from the final packet alone."
+        },
+        {
+          "fact_id": "a-f12",
+          "disposition": "confirmed_packet_omission",
+          "evidence": {
+            "record_id": "competitor-observation",
+            "title": "10월 25일 가상 동종 서비스 체험 화면: 너울장 품절 환불, 싹마루 대체 허용 선택",
+            "kind": "market_evidence",
+            "status": "observed",
+            "quote": "10월 25일에 조사자가 가상의 동종 서비스 너울장과 싹마루의 공개 주문 체험 화면을 살펴봤다. 너울장 화면에는 품절 항목을 환불한다는 안내가 있었다. 싹마루 화면에는 고객이 대체를 허용할지 고르는 칸이 있었지만 관찰한 화면에서는 대체될 상품을 미리 고르는 기능을 찾지 못했다.",
+            "passage_id": "a03:e70e6fe18742e402",
+            "rationale": "싹마루에서 개별 대체 상품 사전 선택 기능을 찾지 못한 것은 관찰 화면의 한정된 부재이며 서비스 전체 기능 부재가 아니다. 문서가 불완전하다는 원문 메타데이터를 그대로 둔다."
+          },
+          "reason": "Response.json faithfully extracts Ssakmaru substitution permission and the limited observation that advance individual candidate selection was not found. The packet gap only mentions substitution permission generically; it loses named attribution and the not-found-within-observed-screen finding. This is more than an exact-anchor miss."
+        },
+        {
+          "fact_id": "a-f13",
+          "disposition": "covered_only_as_gap",
+          "gap": "a03(책상 위의 두 화면)는 complete=false이고 마지막 가격 차액 안내가 끊겼다. 공개 체험 화면에서 관찰한 환불·대체 허용 선택만 기록되어 있으며 실제 운영·유료 계정·타 지역 및 싹마루 차액 정책은 미확인이다. helper가 불완전 출처의 기록을 제외할 수 있으므로 추출 원문과 해당 누락 이유를 함께 보아야 한다.",
+          "reason": "The gap limits evidence to public demo screens and explicitly marks real operations, paid accounts and other regions unverified. The exact count of two screens and explicit satisfaction/market-standard warning are not repeated, but the material evidence limitation is preserved and no generalized market claim is made. It is not a total missing fact; the separately cited record is still absent."
+        },
+        {
+          "fact_id": "a-f15",
+          "disposition": "covered_only_as_gap",
+          "gap": "a03(책상 위의 두 화면)는 complete=false이고 마지막 가격 차액 안내가 끊겼다. 공개 체험 화면에서 관찰한 환불·대체 허용 선택만 기록되어 있으며 실제 운영·유료 계정·타 지역 및 싹마루 차액 정책은 미확인이다. helper가 불완전 출처의 기록을 제외할 수 있으므로 추출 원문과 해당 누락 이유를 함께 보아야 한다.",
+          "reason": "The gap identifies a03 complete=false, the truncated price-difference material and the unknown Ssakmaru price policy. That is the necessary meaning of a-f15 even though no selected question record remains."
+        }
+      ],
+      "wrong_record_details": [
+        {
+          "record_id": "deadline-boundary",
+          "evidence": {
+            "record_id": "deadline-boundary",
+            "title": "서버 수신이 오전 10시 이전일 때 수락, 정확히 10시부터 마감",
+            "kind": "decision",
+            "status": "accepted",
+            "quote": "서버가 응답을 받은 시각이 오전 10시보다 이르면 수락을 처리하고, 정확히 오전 10시부터는 마감된 것으로 처리한다.",
+            "passage_id": "a05:6af6ef7514ba40b5",
+            "rationale": "동시 처리의 경계 규칙이 확인·채택되었다. 10시 정각을 허용 범위에 넣지 않는다."
+          },
+          "fact_ids": [
+            "a-f25"
+          ],
+          "reason": "The separate server-receipt/10:00 boundary is implementation and QA detail. The current response deadline and policy are already represented by response-resolution; this item adds no customer/competitor finding or grounded next-research question. The frozen broad relevance policy limits a-f25 to design/QA. Uphold as task over-selection, not a factual error.",
+          "confidence": "medium"
+        },
+        {
+          "record_id": "deadline-display-open",
+          "evidence": {
+            "record_id": "deadline-display-open",
+            "title": "10시 정각 응답의 표시 오류는 열려 있고 수정 담당자만 지정됨",
+            "kind": "risk",
+            "status": "open",
+            "quote": "표시 오류는 아직 열려 있고 수정 담당자는 정해졌다. 정각 응답 처리 전체가 통과했다고 보고하지 않기로 했다.",
+            "passage_id": "a06:111f76b564777b29",
+            "rationale": "담당자 지정은 수정 완료나 재시험 통과가 아니다. 문서는 정각 응답 처리 전체를 통과로 보고하지 않기로 했다."
+          },
+          "fact_ids": [
+            "a-f32"
+          ],
+          "reason": "This is a test-build UI defect, not customer research evidence or a question for comparing competitor practices. No cited relationship makes it necessary for this research request. It is a valid a-f32 split, but belongs to design/QA under the frozen relevance policy. The exact-anchor scorer left it unmatched rather than recognizing this relevance mismatch.",
+          "confidence": "medium"
+        }
+      ],
+      "nonblocking_notes": [
+        "Research over-selection is a relevance judgment with medium confidence; these true current implementation facts are not hallucinations. The decisive research failure is loss of named competitor observations despite a 19/30 item budget."
+      ],
+      "required_covered_in_selected": 8,
+      "required_covered_in_selected_or_adequate_gaps": 10,
+      "semantic_content_verdict": "No confirmed title/rationale/quote meaning distortion or current-policy fabrication.",
+      "overall_adjudicated_pass": false
+    },
+    {
+      "request_id": "design",
+      "task_type_correct": true,
+      "required_fact_count": 15,
+      "missing_selected_fact_ids": [],
+      "adequately_disclosed_only_as_gaps_fact_ids": [],
+      "confirmed_missing_fact_ids": [],
+      "confirmed_wrong_record_ids": [
+        "reopen-request",
+        "early-card-sketch"
+      ],
+      "confirmed_semantic_errors": [],
+      "confirmed_packet_diagnostic_errors": [],
+      "waived_scorer_flags": [
+        {
+          "scorer_category": "classification_errors",
+          "reason": "Open question preserves a proposed, unanswered research question. The quote says to ask separately next time; neither title/context nor rationale claims completion or approved product behavior. The supplied schema permits open/resolved/unknown for questions, not draft. The title has slightly stronger wording (조사해야 함), but the question kind and cited proposal keep its status clear.",
+          "record_id": "notice-timing-question",
+          "fact_ids": [
+            "a-f08"
+          ]
+        },
+        {
+          "scorer_category": "classification_errors",
+          "reason": "Observed describes the executed test, not successful remediation. Its quote explicitly says the error is still open, its rationale denies whole-case passage, and selected deadline-display-open carries open status. The supplied test_result schema has observed, not open; author notes allow this faithful split.",
+          "record_id": "observed-deadline-failure",
+          "fact_ids": [
+            "a-f32"
+          ]
+        },
+        {
+          "scorer_category": "classification_errors",
+          "reason": "The title explicitly says next week, the rationale says unexecuted test plan, and the quote says no execution results yet. Draft is a conservative schema label, not a claim that tests passed or were cancelled; test_case does not permit planned in the supplied schema. Both a-f33 and a-f34 remain semantically covered.",
+          "record_id": "planned-unexecuted-tests",
+          "fact_ids": [
+            "a-f33"
+          ]
+        },
+        {
+          "scorer_category": "classification_errors",
+          "reason": "The title explicitly says next week, the rationale says unexecuted test plan, and the quote says no execution results yet. Draft is a conservative schema label, not a claim that tests passed or were cancelled; test_case does not permit planned in the supplied schema. Both a-f33 and a-f34 remain semantically covered.",
+          "record_id": "planned-unexecuted-tests",
+          "fact_ids": [
+            "a-f34"
+          ]
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "reason": "Faithful split of a-f26. The single-final-state item covers exclusive final states and this item covers reused identifiers and one refund. The exact anchor is in the other half of the source paragraph.",
+          "record_id": "refund-idempotency",
+          "fact_ids": [
+            "a-f26"
+          ]
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "reason": "Faithful split of a-f23. The exclusion rule and the prohibition on promising prevention of all allergies are both selected. This exact quote is the second clause, outside the frozen anchor.",
+          "record_id": "allergy-message-limit",
+          "fact_ids": [
+            "a-f23"
+          ]
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "reason": "Faithful split of a-f27: the exact quote is its second clause, not the scorer anchor for the first clause. Title, draft status and rationale all say SMS resend is only under consideration and cost is unknown. The author explicitly allows this split.",
+          "record_id": "sms-resend-proposal",
+          "fact_ids": [
+            "a-f27"
+          ]
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "reason": "Faithful split of a-f32. Its quote directly states the error remains open and the overall boundary case must not be reported as passed. Together with observed-deadline-failure it preserves both observed behavior and unresolved status.",
+          "record_id": "deadline-display-open",
+          "fact_ids": [
+            "a-f32"
+          ]
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "reason": "The exact anchor catalog has no entry for this supported goal. The title dates it to August and the rationale explicitly distinguishes the November current goal. Reducing packing calls remains part of a-f16; this is redundant historical context, not adoption of a-f01 or a-f03.",
+          "record_id": "early-call-goal",
+          "fact_ids": [
+            "a-f16"
+          ]
+        }
+      ],
+      "missing_fact_details": [],
+      "wrong_record_details": [
+        {
+          "record_id": "reopen-request",
+          "evidence": {
+            "record_id": "reopen-request",
+            "title": "완료 주문 재개는 담당자·완료일 없이 기록된 요청",
+            "kind": "requirement",
+            "status": "draft",
+            "quote": "다만 포장 담당자가 이미 끝난 주문도 고칠 수 있게 해 달라는 요청은 기록만 했고 담당자나 완료일은 정하지 않았다.",
+            "passage_id": "a01:cd2139f88f56d02b",
+            "rationale": "요청이 있었다는 사실이며 구현 또는 승인 근거가 아니다. 현재 범위에서는 명시적으로 제외된다. 과거 전면 적용 일정은 a04 폐기 기록으로 추출한다."
+          },
+          "fact_ids": [
+            "a-f04"
+          ],
+          "reason": "The old request is a standalone selected requirement/draft, although its own rationale says it is excluded from the current scope. Current excluded-features already supplies the useful a-f24 constraint. This is stale selection and incomplete current-lifecycle reconciliation, not a false claim that reopening was accepted. The author allows a short historical explanation inside the current exclusion, not an independent stale item.",
+          "confidence": "high"
+        },
+        {
+          "record_id": "early-card-sketch",
+          "evidence": {
+            "record_id": "early-card-sketch",
+            "title": "초기 미확정 스케치: 카드에는 상품명만, 가격·중량은 상세 화면",
+            "kind": "design",
+            "status": "draft",
+            "quote": "대체품 카드에는 상품명만 보이고 가격이나 중량은 상세 화면에서 확인하게 하자는 스케치가 나왔다. 화면이 좁으니 카드에서 금액을 생략하자는 의견은 있었지만 디자인 결론은 내리지 않았다.",
+            "passage_id": "a01:dacb81a5bc271628",
+            "rationale": "좁은 화면을 이유로 나온 스케치이며 채택되지 않았다. 이후의 정보 동시 표시 합의와 구분한다."
+          },
+          "fact_ids": [
+            "a-f02"
+          ],
+          "reason": "The old card sketch is independently selected as design/draft after the accepted a04 card-information rule resolves the same choice. Its historical title and rationale avoid presenting it as adopted, but a complete obsolete alternative still occupies a current-context item. This is stale selection, not fabricated current card behavior.",
+          "confidence": "high"
+        }
+      ],
+      "nonblocking_notes": [
+        "alias-followup was omitted for the 30-item budget, but a-f29 is optional and the gap retains the November 10 follow-up date. Do not invent a required omission. Stale items and redundant history consume capacity that could have held this grounded follow-up."
+      ],
+      "required_covered_in_selected": 15,
+      "required_covered_in_selected_or_adequate_gaps": 15,
+      "semantic_content_verdict": "No confirmed title/rationale/quote meaning distortion or current-policy fabrication.",
+      "overall_adjudicated_pass": false
+    },
+    {
+      "request_id": "qa",
+      "task_type_correct": true,
+      "required_fact_count": 15,
+      "missing_selected_fact_ids": [],
+      "adequately_disclosed_only_as_gaps_fact_ids": [],
+      "confirmed_missing_fact_ids": [],
+      "confirmed_wrong_record_ids": [
+        "reopen-request",
+        "early-card-sketch",
+        "notice-timing-question",
+        "response-rate-hypothesis"
+      ],
+      "confirmed_semantic_errors": [],
+      "confirmed_packet_diagnostic_errors": [
+        {
+          "id": "qa-false-missing-test-case-gap",
+          "layer": "packet_diagnostic",
+          "message": "Missing supported test_case context for qa_review.",
+          "reason": "The same packet selects planned-unexecuted-tests with four explicitly unexecuted checks. The evidence requested by the user includes remaining work, so draft/planned checks satisfy that need without being accepted test cases or passing results. This diagnostic confuses a label/acceptance threshold with semantic absence. It is not an extracted-domain-meaning error.",
+          "evidence": {
+            "record_id": "planned-unexecuted-tests",
+            "title": "다음 주 예정: 무응답·제외 후보 차단·환불 3회 재전송·휴대폰 7분 빠름",
+            "kind": "test_case",
+            "status": "draft",
+            "quote": "무응답 마감, 제외 채소 후보 차단, 환불 요청 세 번 재전송은 다음 주에 시험할 항목이다. 아직 실행 결과는 없다. 휴대폰 시계가 7분 빠른 경우에도 서버 기준으로 처리되는지 함께 확인할 예정이다.",
+            "passage_id": "a06:f0303a283e063998",
+            "rationale": "미실행 시험 계획이다. 계획 문단에 별도 시험 승인 언급이 없어 draft로 보수적으로 분류한다. 휴대폰 시계가 7분 빠른 경우도 서버 기준인지 확인할 예정이며 관찰 결과가 아니다."
+          },
+          "fact_ids": [
+            "a-f33",
+            "a-f34"
+          ]
+        }
+      ],
+      "waived_scorer_flags": [
+        {
+          "scorer_category": "classification_errors",
+          "reason": "Observed describes the executed test, not successful remediation. Its quote explicitly says the error is still open, its rationale denies whole-case passage, and selected deadline-display-open carries open status. The supplied test_result schema has observed, not open; author notes allow this faithful split.",
+          "record_id": "observed-deadline-failure",
+          "fact_ids": [
+            "a-f32"
+          ]
+        },
+        {
+          "scorer_category": "classification_errors",
+          "reason": "The title explicitly says next week, the rationale says unexecuted test plan, and the quote says no execution results yet. Draft is a conservative schema label, not a claim that tests passed or were cancelled; test_case does not permit planned in the supplied schema. Both a-f33 and a-f34 remain semantically covered.",
+          "record_id": "planned-unexecuted-tests",
+          "fact_ids": [
+            "a-f33"
+          ]
+        },
+        {
+          "scorer_category": "classification_errors",
+          "reason": "The title explicitly says next week, the rationale says unexecuted test plan, and the quote says no execution results yet. Draft is a conservative schema label, not a claim that tests passed or were cancelled; test_case does not permit planned in the supplied schema. Both a-f33 and a-f34 remain semantically covered.",
+          "record_id": "planned-unexecuted-tests",
+          "fact_ids": [
+            "a-f34"
+          ]
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "reason": "Faithful split of a-f23. The exclusion rule and the prohibition on promising prevention of all allergies are both selected. This exact quote is the second clause, outside the frozen anchor.",
+          "record_id": "allergy-message-limit",
+          "fact_ids": [
+            "a-f23"
+          ]
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "reason": "Faithful split of a-f27: the exact quote is its second clause, not the scorer anchor for the first clause. Title, draft status and rationale all say SMS resend is only under consideration and cost is unknown. The author explicitly allows this split.",
+          "record_id": "sms-resend-proposal",
+          "fact_ids": [
+            "a-f27"
+          ]
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "reason": "Faithful split of a-f32. Its quote directly states the error remains open and the overall boundary case must not be reported as passed. Together with observed-deadline-failure it preserves both observed behavior and unresolved status.",
+          "record_id": "deadline-display-open",
+          "fact_ids": [
+            "a-f32"
+          ]
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "reason": "Faithful split of a-f26. The single-final-state item covers exclusive final states and this item covers reused identifiers and one refund. The exact anchor is in the other half of the source paragraph.",
+          "record_id": "refund-idempotency",
+          "fact_ids": [
+            "a-f26"
+          ]
+        },
+        {
+          "scorer_category": "unmatched_records_for_review",
+          "reason": "The exact anchor catalog has no entry for this supported goal. The title dates it to August and the rationale explicitly distinguishes the November current goal. Reducing packing calls remains part of a-f16; this is redundant historical context, not adoption of a-f01 or a-f03.",
+          "record_id": "early-call-goal",
+          "fact_ids": [
+            "a-f16"
+          ]
+        }
+      ],
+      "missing_fact_details": [],
+      "wrong_record_details": [
+        {
+          "record_id": "reopen-request",
+          "evidence": {
+            "record_id": "reopen-request",
+            "title": "완료 주문 재개는 담당자·완료일 없이 기록된 요청",
+            "kind": "requirement",
+            "status": "draft",
+            "quote": "다만 포장 담당자가 이미 끝난 주문도 고칠 수 있게 해 달라는 요청은 기록만 했고 담당자나 완료일은 정하지 않았다.",
+            "passage_id": "a01:cd2139f88f56d02b",
+            "rationale": "요청이 있었다는 사실이며 구현 또는 승인 근거가 아니다. 현재 범위에서는 명시적으로 제외된다. 과거 전면 적용 일정은 a04 폐기 기록으로 추출한다."
+          },
+          "fact_ids": [
+            "a-f04"
+          ],
+          "reason": "The old request is a standalone selected requirement/draft, although its own rationale says it is excluded from the current scope. Current excluded-features already supplies the useful a-f24 constraint. This is stale selection and incomplete current-lifecycle reconciliation, not a false claim that reopening was accepted. The author allows a short historical explanation inside the current exclusion, not an independent stale item.",
+          "confidence": "high"
+        },
+        {
+          "record_id": "early-card-sketch",
+          "evidence": {
+            "record_id": "early-card-sketch",
+            "title": "초기 미확정 스케치: 카드에는 상품명만, 가격·중량은 상세 화면",
+            "kind": "design",
+            "status": "draft",
+            "quote": "대체품 카드에는 상품명만 보이고 가격이나 중량은 상세 화면에서 확인하게 하자는 스케치가 나왔다. 화면이 좁으니 카드에서 금액을 생략하자는 의견은 있었지만 디자인 결론은 내리지 않았다.",
+            "passage_id": "a01:dacb81a5bc271628",
+            "rationale": "좁은 화면을 이유로 나온 스케치이며 채택되지 않았다. 이후의 정보 동시 표시 합의와 구분한다."
+          },
+          "fact_ids": [
+            "a-f02"
+          ],
+          "reason": "The old card sketch is independently selected as design/draft after the accepted a04 card-information rule resolves the same choice. Its historical title and rationale avoid presenting it as adopted, but a complete obsolete alternative still occupies a current-context item. This is stale selection, not fabricated current card behavior.",
+          "confidence": "high"
+        },
+        {
+          "record_id": "notice-timing-question",
+          "evidence": {
+            "record_id": "notice-timing-question",
+            "title": "품절 인지 시점과 고객 응답 가능 시간을 따로 조사해야 함",
+            "kind": "question",
+            "status": "open",
+            "quote": "한편 포장 때 처음 발견되는 품절은 전날 알 수 없다. 인터뷰 진행자는 다음에는 품절을 알게 된 시점과 고객이 응답할 수 있는 시간을 따로 물어보자고 적었다.",
+            "passage_id": "a02:2492c7df245be6df",
+            "rationale": "포장 중 처음 발견하는 품절은 전날 알 수 없다는 운영 제약 때문에 전날 알림 선호만으로 흐름을 확정할 수 없다."
+          },
+          "fact_ids": [
+            "a-f08"
+          ],
+          "reason": "This is a proposed next-round interview question about availability, not a remaining functional test or an unresolved product rule. The packet provides no cited dependency connecting it to the requested pre-launch behavior/results review. The frozen allowed scope is research/design. Its wording is otherwise faithful.",
+          "confidence": "high"
+        },
+        {
+          "record_id": "response-rate-hypothesis",
+          "evidence": {
+            "record_id": "response-rate-hypothesis",
+            "title": "비교 정보가 응답률을 높일 것이라는 추측은 미검증",
+            "kind": "assumption",
+            "status": "unverified",
+            "quote": "진행자는 비교 정보가 있으면 응답률도 오를 것 같다고 추측했지만 이 인터뷰에서는 응답률이나 구매 전환을 측정하지 않았다.",
+            "passage_id": "a02:2987cfb1fe299ce2",
+            "rationale": "응답률 상승은 관찰 결과가 아니라 진행자 추측이다. 구매 전환 효과 역시 측정되지 않았다."
+          },
+          "fact_ids": [
+            "a-f10"
+          ],
+          "reason": "An unmeasured response-rate benefit is research/design background; there is no adopted response-rate release criterion or planned QA case in the supplied documents. The launch QA request concerns expected behavior, boundaries, run results and remaining checks. Treat this as task over-selection, not claim inflation.",
+          "confidence": "high"
+        }
+      ],
+      "nonblocking_notes": [],
+      "required_covered_in_selected": 15,
+      "required_covered_in_selected_or_adequate_gaps": 15,
+      "semantic_content_verdict": "No confirmed title/rationale/quote meaning distortion or current-policy fabrication.",
+      "overall_adjudicated_pass": false
+    }
+  ],
+  "general_failure_causes": [
+    {
+      "id": "document-level-incompleteness-overexclusion",
+      "layer": "packet_selection",
+      "finding": "One truncated tail causes intact, bounded observations and source limitations to be excluded together.",
+      "evidence": [
+        "a03 has complete=false because the last price-difference note is truncated.",
+        "response records competitor-observation and competitor-coverage-limits faithfully preserve available evidence.",
+        "Research omitted lists all three competitor records as source content is incomplete despite 19 selected items and a limit of 30."
+      ],
+      "limit": "The failure is evidenced at selection, not failure to read or extract the market page."
+    },
+    {
+      "id": "historical-status-not-reconciled-for-selection",
+      "layer": "model_metadata_and_packet_selection",
+      "finding": "Source-time draft labels remain eligible after later text resolves or excludes those alternatives.",
+      "evidence": [
+        "early-card-sketch and reopen-request remain independent draft selected items in design and QA.",
+        "The current card-information and excluded-features items are also selected.",
+        "The old automatic substitution and rollout are correctly marked superseded and omitted."
+      ],
+      "limit": "Rationales acknowledge history/current exclusion; do not claim the model fabricated adoption of either old proposal."
+    },
+    {
+      "id": "topic-and-kind-match-too-broad-for-request",
+      "layer": "task_interpretation_and_selection",
+      "finding": "Shared product topics plus a generally relevant kind can admit facts without a task-specific need.",
+      "evidence": [
+        "Research task topics include boundary conditions, server clock, final state and refund retries.",
+        "Research selects deadline-boundary/deadline-display-open; QA selects next-interview timing and response-rate hypothesis.",
+        "Selection reasons cite shared topics and kind relevance; links and relationship evidence are empty."
+      ],
+      "limit": "Research engineering extras are a medium-confidence relevance judgment; factual entailment is intact."
+    },
+    {
+      "id": "exact-anchor-and-enum-scoring-artifacts",
+      "layer": "deterministic_scorer",
+      "finding": "One quote anchor and one enum cannot recognize faithful clause splits or status represented across records.",
+      "evidence": [
+        "refund-idempotency, allergy-message-limit, sms-resend-proposal and deadline-display-open are faithful clauses without the respective frozen anchor.",
+        "Question/open and test_result/observed preserve the source meaning; test_case/planned is not even an allowed supplied schema combination.",
+        "All eight scored classification errors preserve proposed/unexecuted/observed/open distinctions in the titles, quotes and rationales."
+      ],
+      "limit": "These are scorer artifacts, not demonstrated extraction errors."
+    },
+    {
+      "id": "gap-coverage-not-counted",
+      "layer": "deterministic_scorer_and_packet_diagnostics",
+      "finding": "Coverage checks ignore adequate gap disclosures and can treat an unaccepted planned test as missing.",
+      "evidence": [
+        "Research gaps adequately state a-f13 and a-f15, although selected records are absent.",
+        "QA contains planned-unexecuted-tests and nevertheless says supported test_case context is missing."
+      ],
+      "limit": "Generic gap wording does not recover the named competitor observations or the limited not-found finding in a-f11/a-f12."
+    }
+  ],
+  "positive_controls": [
+    "No a07 other-project facts appear in selected context.",
+    "The superseded automatic-substitution and full-rollout decisions are excluded.",
+    "Full versus differential refund and no-candidate approval bypass are preserved.",
+    "The strict server-time boundary, exclusive state and refund-idempotency rules are covered in design/QA.",
+    "Interview preference/ingestion limits are not converted to diagnosed allergy evidence.",
+    "Alias risk is not reported as an observed failure.",
+    "Observed test-payment outcomes are not converted to real payment-provider refund verification.",
+    "The deadline UI error is never reported fixed or passed; future tests are never reported executed."
+  ],
+  "limitations": [
+    "No independent re-extraction was performed.",
+    "No current repository implementation or earlier corpus was inspected.",
+    "The review does not certify launch readiness.",
+    "Brief historical or duplicative context is not automatically an error; confirmed stale items are independent selections of alternatives already resolved/excluded."
+  ]
+}

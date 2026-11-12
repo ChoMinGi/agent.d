@@ -1,0 +1,487 @@
+{
+  "schema_version": 1,
+  "coverage": {
+    "scope": "Fictional Lantern Docs supplied project corpus; no live Notion search",
+    "complete": true,
+    "gaps": []
+  },
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Lantern Docs export policy",
+      "url": "demo://lantern-docs/policy",
+      "revision": "fictional-r3",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Export policy\nStatus: accepted.\nD-014: Standard workspace exports expire after 14 days.\nReason: keep download exposure bounded while allowing asynchronous handoffs.\nD-007 is superseded by D-014.\n\nD-014 relies on K-EXP for its exposure rationale.\n",
+      "project_id": "lantern-docs"
+    },
+    {
+      "id": "old",
+      "title": "Historical export decision",
+      "url": "demo://lantern-docs/history",
+      "revision": "fictional-r2",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# History\nStatus: superseded by D-014.\nD-007: Standard workspace exports expire after 7 days.\n",
+      "project_id": "lantern-docs"
+    },
+    {
+      "id": "draft",
+      "title": "Longer retention experiment",
+      "url": "demo://lantern-docs/experiment",
+      "revision": "fictional-r9",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Experiment\nStatus: draft, not approved.\nD-060: Standard workspace exports expire after 60 days.\nWe have not reviewed the exposure impact.\n",
+      "project_id": "lantern-docs"
+    },
+    {
+      "id": "review",
+      "title": "Exposure review",
+      "url": "demo://lantern-docs/evidence",
+      "revision": "fictional-r1",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Exposure review\nAccepted evidence for D-014: exported files can contain private draft documents.\nA longer download window needs a new exposure review and user-facing copy check.\n\nStatus: open.\n",
+      "project_id": "lantern-docs"
+    },
+    {
+      "id": "task",
+      "title": "Expiry cleanup task",
+      "url": "demo://lantern-docs/tasks/cleanup",
+      "revision": "fictional-r4",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# T-022\nT-022 implements D-014: purge standard exports after 14 days.\nAcceptance: expired download links return an expiry message.\n\nStatus: planned.\n",
+      "project_id": "lantern-docs"
+    },
+    {
+      "id": "g-01",
+      "title": "Studio handoff goal",
+      "url": "demo://lantern-docs/g-01",
+      "project_id": "lantern-docs",
+      "revision": "fictional-r1",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Studio handoff goal\nStatus: accepted.\nHelp small creative studios hand off review documents to guests without requiring a recipient account.\n"
+    },
+    {
+      "id": "e-cust",
+      "title": "Fictional studio interviews",
+      "url": "demo://lantern-docs/e-cust",
+      "project_id": "lantern-docs",
+      "revision": "fictional-r1",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Fictional studio interviews\nStatus: observed.\nIn six fictional interviews, four studios reported that recipient account creation delayed document handoff. These interviews did not measure demand for a 60-day window.\n\nE-CUST supplies customer evidence for G-01.\n"
+    },
+    {
+      "id": "e-market",
+      "title": "Fictional competitor comparison",
+      "url": "demo://lantern-docs/e-market",
+      "project_id": "lantern-docs",
+      "revision": "fictional-r1",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Fictional competitor comparison\nStatus: observed.\nThe invented Paper Kite product offers guest downloads for 3 days; invented Folder Finch offers account-based sharing. This two-product exercise is not a market census.\n"
+    },
+    {
+      "id": "r-01",
+      "title": "Download authorization requirement",
+      "url": "demo://lantern-docs/r-01",
+      "project_id": "lantern-docs",
+      "revision": "fictional-r1",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Download authorization requirement\nStatus: accepted.\nA standard export download must be refused at or after its expiry time, even if the stored file has not yet been purged.\n\nR-01 implements the accepted retention rule D-014.\n"
+    },
+    {
+      "id": "a-01",
+      "title": "Export expiry design",
+      "url": "demo://lantern-docs/a-01",
+      "project_id": "lantern-docs",
+      "revision": "fictional-r1",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Export expiry design\nStatus: accepted.\nStore expires_at in UTC. Check expiry on every download request. A background cleanup task removes stored files independently.\n\nA-01 implements R-01.\n\nA-01 must address the cleanup delay risk K-RACE.\n"
+    },
+    {
+      "id": "t-01",
+      "title": "Expiry boundary acceptance cases",
+      "url": "demo://lantern-docs/t-01",
+      "project_id": "lantern-docs",
+      "revision": "fictional-r1",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Expiry boundary acceptance cases\nStatus: accepted.\nTest downloads immediately before, exactly at, and after expires_at. Reject tampered links. Test with the cleanup task deliberately delayed.\n\nT-01 verifies the acceptance behavior in R-01.\n"
+    },
+    {
+      "id": "v-01",
+      "title": "Fictional expiry test run",
+      "url": "demo://lantern-docs/v-01",
+      "project_id": "lantern-docs",
+      "revision": "fictional-r1",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Fictional expiry test run\nStatus: observed.\nFictional run: before-expiry download passed; at-expiry rejection failed when cleanup was delayed. This run does not establish release readiness.\n\nV-01 reports observations from running T-01.\n"
+    },
+    {
+      "id": "h-01",
+      "title": "Long retention conversion assumption",
+      "url": "demo://lantern-docs/h-01",
+      "project_id": "lantern-docs",
+      "revision": "fictional-r1",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Long retention conversion assumption\nStatus: unverified.\nA 60-day export window might improve studio conversion. No conversion measurement currently supports this assumption.\n"
+    },
+    {
+      "id": "q-01",
+      "title": "Retention decision question",
+      "url": "demo://lantern-docs/q-01",
+      "project_id": "lantern-docs",
+      "revision": "fictional-r1",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Retention decision question\nStatus: open.\nHow much retention do studios need, and what exposure is acceptable before changing D-014?\n"
+    },
+    {
+      "id": "k-race",
+      "title": "Cleanup delay exposure",
+      "url": "demo://lantern-docs/k-race",
+      "project_id": "lantern-docs",
+      "revision": "fictional-r1",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Cleanup delay exposure\nStatus: open.\nIf download authorization relies on file deletion, a delayed cleanup task can leave expired links usable.\n"
+    },
+    {
+      "id": "u-01",
+      "title": "Recruiting spreadsheet exports",
+      "url": "demo://lantern-docs/u-01",
+      "project_id": "lantern-docs",
+      "revision": "fictional-r1",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Recruiting spreadsheet exports\nStatus: observed.\nRecruiters export interview scheduling spreadsheets. This record concerns hiring operations, not product document sharing.\n"
+    },
+    {
+      "id": "r-ent",
+      "title": "Enterprise archive exception",
+      "url": "demo://lantern-docs/r-ent",
+      "project_id": "lantern-docs",
+      "revision": "fictional-r1",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Enterprise archive exception\nStatus: accepted.\nEnterprise archival workspaces use a separately contracted retention policy.\n"
+    },
+    {
+      "id": "e-other",
+      "title": "Other project export feedback",
+      "url": "demo://orchard-notes/e-other",
+      "project_id": "orchard-notes",
+      "revision": "fictional-r1",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Other project export feedback\nStatus: observed.\nFictional Orchard Notes customers requested bulk export for an unrelated personal notes product.\n"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-014",
+      "key": "export.retention_days",
+      "scope": "standard",
+      "value": "14",
+      "status": "accepted",
+      "source_id": "policy",
+      "quote": "D-014: Standard workspace exports expire after 14 days.",
+      "status_quote": "Status: accepted.",
+      "topics": [
+        "exports"
+      ]
+    },
+    {
+      "id": "D-007",
+      "key": "export.retention_days",
+      "scope": "standard",
+      "value": "7",
+      "status": "superseded",
+      "source_id": "old",
+      "quote": "D-007: Standard workspace exports expire after 7 days.",
+      "status_quote": "Status: superseded by D-014.",
+      "superseded_by": "D-014",
+      "topics": [
+        "exports"
+      ]
+    },
+    {
+      "id": "D-060",
+      "key": "export.retention_days",
+      "scope": "standard",
+      "value": "60",
+      "status": "draft",
+      "source_id": "draft",
+      "quote": "D-060: Standard workspace exports expire after 60 days.",
+      "status_quote": "Status: draft, not approved.",
+      "topics": [
+        "exports"
+      ]
+    }
+  ],
+  "impacts": [
+    {
+      "decision_id": "D-014",
+      "source_id": "task",
+      "quote": "T-022 implements D-014: purge standard exports after 14 days."
+    },
+    {
+      "decision_id": "D-014",
+      "source_id": "review",
+      "quote": "Accepted evidence for D-014: exported files can contain private draft documents."
+    }
+  ],
+  "context_version": 1,
+  "context_records": [
+    {
+      "id": "G-01",
+      "kind": "goal",
+      "title": "Studio handoff goal",
+      "status": "accepted",
+      "scope": "*",
+      "topics": [
+        "exports"
+      ],
+      "source_id": "g-01",
+      "quote": "Help small creative studios hand off review documents to guests without requiring a recipient account.",
+      "status_quote": "Status: accepted."
+    },
+    {
+      "id": "E-CUST",
+      "kind": "customer_evidence",
+      "title": "Fictional studio interviews",
+      "status": "observed",
+      "scope": "standard",
+      "topics": [
+        "exports"
+      ],
+      "source_id": "e-cust",
+      "quote": "In six fictional interviews, four studios reported that recipient account creation delayed document handoff. These interviews did not measure demand for a 60-day window.",
+      "status_quote": "Status: observed."
+    },
+    {
+      "id": "E-MARKET",
+      "kind": "market_evidence",
+      "title": "Fictional competitor comparison",
+      "status": "observed",
+      "scope": "standard",
+      "topics": [
+        "exports"
+      ],
+      "source_id": "e-market",
+      "quote": "The invented Paper Kite product offers guest downloads for 3 days; invented Folder Finch offers account-based sharing. This two-product exercise is not a market census.",
+      "status_quote": "Status: observed.",
+      "valid_until": "2027-01-01T00:00:00Z"
+    },
+    {
+      "id": "R-01",
+      "kind": "requirement",
+      "title": "Download authorization requirement",
+      "status": "accepted",
+      "scope": "standard",
+      "topics": [
+        "exports"
+      ],
+      "source_id": "r-01",
+      "quote": "A standard export download must be refused at or after its expiry time, even if the stored file has not yet been purged.",
+      "status_quote": "Status: accepted."
+    },
+    {
+      "id": "A-01",
+      "kind": "design",
+      "title": "Export expiry design",
+      "status": "accepted",
+      "scope": "standard",
+      "topics": [
+        "exports"
+      ],
+      "source_id": "a-01",
+      "quote": "Store expires_at in UTC. Check expiry on every download request. A background cleanup task removes stored files independently.",
+      "status_quote": "Status: accepted."
+    },
+    {
+      "id": "T-01",
+      "kind": "test_case",
+      "title": "Expiry boundary acceptance cases",
+      "status": "accepted",
+      "scope": "standard",
+      "topics": [
+        "exports"
+      ],
+      "source_id": "t-01",
+      "quote": "Test downloads immediately before, exactly at, and after expires_at. Reject tampered links. Test with the cleanup task deliberately delayed.",
+      "status_quote": "Status: accepted."
+    },
+    {
+      "id": "V-01",
+      "kind": "test_result",
+      "title": "Fictional expiry test run",
+      "status": "observed",
+      "scope": "standard",
+      "topics": [
+        "exports"
+      ],
+      "source_id": "v-01",
+      "quote": "Fictional run: before-expiry download passed; at-expiry rejection failed when cleanup was delayed. This run does not establish release readiness.",
+      "status_quote": "Status: observed."
+    },
+    {
+      "id": "H-01",
+      "kind": "assumption",
+      "title": "Long retention conversion assumption",
+      "status": "unverified",
+      "scope": "standard",
+      "topics": [
+        "exports"
+      ],
+      "source_id": "h-01",
+      "quote": "A 60-day export window might improve studio conversion. No conversion measurement currently supports this assumption.",
+      "status_quote": "Status: unverified."
+    },
+    {
+      "id": "Q-01",
+      "kind": "question",
+      "title": "Retention decision question",
+      "status": "open",
+      "scope": "standard",
+      "topics": [
+        "exports"
+      ],
+      "source_id": "q-01",
+      "quote": "How much retention do studios need, and what exposure is acceptable before changing D-014?",
+      "status_quote": "Status: open."
+    },
+    {
+      "id": "K-RACE",
+      "kind": "risk",
+      "title": "Cleanup delay exposure",
+      "status": "open",
+      "scope": "standard",
+      "topics": [
+        "cleanup"
+      ],
+      "source_id": "k-race",
+      "quote": "If download authorization relies on file deletion, a delayed cleanup task can leave expired links usable.",
+      "status_quote": "Status: open."
+    },
+    {
+      "id": "U-01",
+      "kind": "customer_evidence",
+      "title": "Recruiting spreadsheet exports",
+      "status": "observed",
+      "scope": "standard",
+      "topics": [
+        "recruiting"
+      ],
+      "source_id": "u-01",
+      "quote": "Recruiters export interview scheduling spreadsheets. This record concerns hiring operations, not product document sharing.",
+      "status_quote": "Status: observed."
+    },
+    {
+      "id": "R-ENT",
+      "kind": "requirement",
+      "title": "Enterprise archive exception",
+      "status": "accepted",
+      "scope": "enterprise",
+      "topics": [
+        "exports"
+      ],
+      "source_id": "r-ent",
+      "quote": "Enterprise archival workspaces use a separately contracted retention policy.",
+      "status_quote": "Status: accepted."
+    },
+    {
+      "id": "E-OTHER",
+      "kind": "customer_evidence",
+      "title": "Other project export feedback",
+      "status": "observed",
+      "scope": "standard",
+      "topics": [
+        "exports"
+      ],
+      "source_id": "e-other",
+      "quote": "Fictional Orchard Notes customers requested bulk export for an unrelated personal notes product.",
+      "status_quote": "Status: observed."
+    },
+    {
+      "id": "K-EXP",
+      "kind": "risk",
+      "title": "Longer download exposure review",
+      "status": "open",
+      "scope": "standard",
+      "topics": [
+        "exposure"
+      ],
+      "source_id": "review",
+      "quote": "A longer download window needs a new exposure review and user-facing copy check.",
+      "status_quote": "Status: open."
+    },
+    {
+      "id": "W-022",
+      "kind": "task",
+      "title": "Expiry cleanup task",
+      "status": "planned",
+      "scope": "standard",
+      "topics": [
+        "exports"
+      ],
+      "source_id": "task",
+      "quote": "T-022 implements D-014: purge standard exports after 14 days.",
+      "status_quote": "Status: planned."
+    }
+  ],
+  "context_links": [
+    {
+      "from_id": "E-CUST",
+      "to_id": "G-01",
+      "source_id": "e-cust",
+      "quote": "E-CUST supplies customer evidence for G-01."
+    },
+    {
+      "from_id": "D-014",
+      "to_id": "K-EXP",
+      "source_id": "policy",
+      "quote": "D-014 relies on K-EXP for its exposure rationale."
+    },
+    {
+      "from_id": "R-01",
+      "to_id": "D-014",
+      "source_id": "r-01",
+      "quote": "R-01 implements the accepted retention rule D-014."
+    },
+    {
+      "from_id": "A-01",
+      "to_id": "R-01",
+      "source_id": "a-01",
+      "quote": "A-01 implements R-01."
+    },
+    {
+      "from_id": "A-01",
+      "to_id": "K-RACE",
+      "source_id": "a-01",
+      "quote": "A-01 must address the cleanup delay risk K-RACE."
+    },
+    {
+      "from_id": "T-01",
+      "to_id": "R-01",
+      "source_id": "t-01",
+      "quote": "T-01 verifies the acceptance behavior in R-01."
+    },
+    {
+      "from_id": "V-01",
+      "to_id": "T-01",
+      "source_id": "v-01",
+      "quote": "V-01 reports observations from running T-01."
+    }
+  ]
+}

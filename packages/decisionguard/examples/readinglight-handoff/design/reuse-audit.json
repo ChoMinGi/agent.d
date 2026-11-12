@@ -1,0 +1,19 @@
+{
+  "unchanged_record_ids": [
+    "CE-001",
+    "CE-002",
+    "G-001",
+    "H-001",
+    "Q-001",
+    "R-001",
+    "REQ-RELEASE"
+  ],
+  "record_equality": true,
+  "discovery_source_binding_unchanged": true,
+  "discovery_source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4",
+  "current_recheck": "Both supplied documents read completely. Q-001 remains open, REQ-RELEASE is not waived, the local evidence/limits and H-001 remain unchanged, G-001 approval remains unknown. Inherited follow-up prose describes the earlier check; any D-041 authority reference there is historical and superseded in current D-041/D-052 records.",
+  "source_count": 2,
+  "passage_count": 9,
+  "no_external_services": true,
+  "no_memory_confirmation_created": true
+}

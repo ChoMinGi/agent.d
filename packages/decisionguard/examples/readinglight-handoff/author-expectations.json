@@ -1,0 +1,145 @@
+{
+  "fixture_id": "readinglight-fictional-lifecycle-01",
+  "fictional": true,
+  "visibility": "Evaluator only. Never provide this file to stage agents or include it in their handoff.",
+  "scope": {
+    "project": "ReadingLight",
+    "organization": "Bracken Civic Library",
+    "pilot": "Two reading rooms at one branch",
+    "purpose": "Help visitors find reading space; non-commercial civic service",
+    "dates": "14–25 July 2027",
+    "sources": ["raw/stage-1.md", "raw/stage-2.md", "raw/stage-3.md"]
+  },
+  "authorities": {
+    "Mira Fen": "Researcher; records observations, not product or release approval",
+    "Oren Vale": "Librarian; supplies an untested broader-market hypothesis",
+    "Sela Rowan": "Product steward; authoritative product and prototype design decisions",
+    "Nessa Clay": "Designer; author of an explicitly unapproved later concept",
+    "Tamsin Orr": "QA lead; reports executed and unexecuted checks",
+    "Pell Moss": "Engineer; proposes an unmerged, untested patch",
+    "Ivo Reed": "Sole authority for separate written visitor-release approval"
+  },
+  "stages": {
+    "stage-1": {
+      "source": "raw/stage-1.md",
+      "observed_facts": [
+        "Six local visitor interviews and two afternoon observations",
+        "Four interviewees reported abandoning a full room",
+        "Nine unnecessary room entries observed"
+      ],
+      "unverified_hypothesis": "A live seat map would reduce interruptions across other branches",
+      "research_uncertainty": {
+        "missing": ["Weekend users", "Screen-reader users"],
+        "effect": "Limits demand generalization; does not block staff-only prototype design"
+      },
+      "accepted_decision": {
+        "id": "D-041",
+        "authority": "Sela Rowan",
+        "date": "2027-07-14",
+        "behavior": "Individual free/occupied seat dots without visitor names",
+        "scope": "Staff-only prototype in the two pilot reading rooms",
+        "approval_type": "Prototype design only"
+      },
+      "expected_handoff": [
+        "Keep observations distinct from broader-market hypothesis",
+        "Preserve D-041, its scope, product authority, and initial accepted status",
+        "Preserve the separate written visitor-release approval boundary",
+        "Do not block prototype design solely because research coverage is incomplete"
+      ]
+    },
+    "stage-2": {
+      "source": "raw/stage-2.md",
+      "supersession": {
+        "old_id": "D-041",
+        "new_id": "D-052",
+        "authority": "Sela Rowan",
+        "date": "2027-07-19",
+        "rationale": "Seat-level information could reveal where a person sits in small rooms",
+        "scope": "Both pilot rooms; every display, stored record, and analytics event"
+      },
+      "current_requirements": [
+        "Staff choose exactly one availability band: none, a few, or several",
+        "Availability displays, stored records, and events use the band and room identifier",
+        "No individual seat identifiers or exact seat counts",
+        "Show update time and mark stale after ten minutes",
+        "Prototype design approval does not authorize visitor deployment"
+      ],
+      "interpretation_note": "Update-time metadata is explicitly required. The band-and-room restriction concerns availability granularity; it should not be interpreted to prohibit the required update timestamp.",
+      "unapproved_contradiction": {
+        "author": "Nessa Clay",
+        "date": "2027-07-21",
+        "proposals": ["Per-seat map", "Exact vacancy count", "Seat-level history"],
+        "status": "Unreviewed and unapproved discussion draft",
+        "effect": "Does not replace D-052 despite being newer and attractive"
+      },
+      "expected_handoff": [
+        "Name D-052 as current and D-041 as superseded",
+        "Preserve the authority, rationale, and non-UI data restrictions",
+        "Treat the later concept as pending rather than as an accepted requirement",
+        "Keep research uncertainty nonblocking for prototype design",
+        "Carry forward the release boundary"
+      ]
+    },
+    "stage-3": {
+      "source": "raw/stage-3.md",
+      "build": "0.8",
+      "executed_passes": {
+        "Q-11": "Band-based display behavior in both rooms",
+        "Q-12": "Update times and ten-minute stale behavior"
+      },
+      "executed_failure": {
+        "id": "Q-13",
+        "evidence": "Analytics sends seat_id and exact_free_count",
+        "violated_decision": "D-052",
+        "release_blocking": true
+      },
+      "unexecuted_check": {
+        "id": "Q-14",
+        "subject": "Screen-reader check",
+        "reason": "Test device unavailable",
+        "status": "Unknown, not passed and not an observed functional failure",
+        "release_blocking": true
+      },
+      "patch": {
+        "author": "Pell Moss",
+        "status": "Proposed; neither merged nor retested",
+        "effect": "Cannot close Q-13"
+      },
+      "approvals": {
+        "existing": "Sela approved prototype design and QA plan",
+        "missing": "Ivo's separate written visitor-release approval",
+        "calendar": "Provisional opening is scheduling intent, not approval or execution",
+        "allowed_now": "Continued supervised staff prototype trials",
+        "not_allowed_now": "Visitor-facing public opening"
+      },
+      "required_next_actions": [
+        "Implement and verify the analytics correction with a passing Q-13 retest",
+        "Execute Q-14 and obtain a passing result",
+        "Obtain separate written release approval from Ivo Reed before visitor opening"
+      ],
+      "expected_handoff": [
+        "Assess against D-052, not superseded D-041 or the unapproved later concept",
+        "Preserve passing, failing, unexecuted, and proposed-work states distinctly",
+        "Report visitor release as blocked and unauthorized",
+        "Distinguish nonblocking research coverage from blocking unexecuted accessibility verification",
+        "Do not infer that the patch or opening has happened"
+      ]
+    }
+  },
+  "critical_errors": [
+    "Presenting the cross-branch interruption hypothesis as a validated market finding",
+    "Blocking prototype design solely on the explicitly nonblocking research gap",
+    "Retaining D-041 after authoritative D-052 supersession",
+    "Promoting Nessa's newer unapproved concept to policy",
+    "Applying D-052 only to the visible display and allowing prohibited analytics",
+    "Treating the proposed patch as implemented or Q-13 as passed",
+    "Treating unexecuted Q-14 as passed or as an observed functional failure",
+    "Treating product approval, QA-plan approval, or calendar intent as release authorization",
+    "Recommending visitor opening before passing required checks and written release approval"
+  ],
+  "evaluation_notes": [
+    "Judge equivalent natural language, not exact answer wording or formatting.",
+    "Stage agents should see the relevant raw source and authorized preceding handoff, never this evaluation map.",
+    "All people, organizations, decisions, observations, and evidence are invented. No private or external sources were used."
+  ]
+}

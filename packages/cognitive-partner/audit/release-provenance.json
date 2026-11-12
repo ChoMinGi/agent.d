@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "source_package": "cognitive-partner-v0.2-eval-r1.zip",
+  "source_sha256": "904d5774b4c40b6211391a7148c7b44b64dd9deccf891f9834c0566b08c1e49e",
+  "behavioral_rules_changed": false,
+  "runtime_files": [
+    {
+      "path": "cognitive-partner/SKILL.md",
+      "source_sha256": "3ed804988f7163691df479f504d103d0b058da7d2d4429963a0d6cdeb3db6c2b",
+      "release_sha256": "b02bf6042bdc7e87bb4a6335ed4855ec964b50887218fbcd755062d7fe617e14",
+      "change": "version-metadata-only"
+    },
+    {
+      "path": "cognitive-partner/agents/openai.yaml",
+      "source_sha256": "e43ce5211077b0ccd889c90533ad1cbea0a85340c9797cd801034d7af00d2a39",
+      "release_sha256": "e43ce5211077b0ccd889c90533ad1cbea0a85340c9797cd801034d7af00d2a39",
+      "change": "unchanged"
+    },
+    {
+      "path": "cognitive-partner/references/contribution-record.md",
+      "source_sha256": "74f5b11baa6196b844bbd084a124958d19e2eda2798ae2e4c524c1f3b92fe400",
+      "release_sha256": "74f5b11baa6196b844bbd084a124958d19e2eda2798ae2e4c524c1f3b92fe400",
+      "change": "unchanged"
+    },
+    {
+      "path": "cognitive-partner/references/examples.md",
+      "source_sha256": "a51c4b63dc503b72fcc8656b2d3a28c8cbefefe3be341ed5660ddb2d1b7e3c67",
+      "release_sha256": "a51c4b63dc503b72fcc8656b2d3a28c8cbefefe3be341ed5660ddb2d1b7e3c67",
+      "change": "unchanged"
+    },
+    {
+      "path": "cognitive-partner/references/intervention-guide.md",
+      "source_sha256": "cc520efdd4f9506ac3b22355872012ffb095516ed5083bd00f1c804baa551fe3",
+      "release_sha256": "cc520efdd4f9506ac3b22355872012ffb095516ed5083bd00f1c804baa551fe3",
+      "change": "unchanged"
+    },
+    {
+      "path": "integration/AGENTS.snippet.md",
+      "source_sha256": "f9a887cf48a27747027c887fd4348eb27fea864e68669edac513844086d60527",
+      "release_sha256": "f9a887cf48a27747027c887fd4348eb27fea864e68669edac513844086d60527",
+      "change": "unchanged"
+    }
+  ],
+  "behavioral_evaluation": "not_run",
+  "learning_effect": "not_tested",
+  "remote_publication": "not_run"
+}

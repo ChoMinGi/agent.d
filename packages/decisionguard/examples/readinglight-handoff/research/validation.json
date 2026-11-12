@@ -1,0 +1,66 @@
+{
+  "raw_extraction_validation": "passed on first attempt",
+  "normalized_snapshot_validation": "passed validate_snapshot and validate_context",
+  "source_preservation": "source.md and normalized snapshot content match the raw source bytes exactly",
+  "context_status": {
+    "research": {
+      "status": "needs_context",
+      "result": null,
+      "gaps": [
+        "Checked only the supplied discovery r1 note. No workspace search or external follow-up was authorized; re-fetch applicable current sources before reuse.",
+        "The cross-branch interruption benefit is untested and weekend/screen-reader interviews are missing. These limit demand and effectiveness claims, not the authorized staff-only prototype design.",
+        "No separate written release approval or evidence of actual implementation/deployment is supplied. This is an evidence boundary, not a claim that such records cannot exist.",
+        "Missing supported goal context for market_research.",
+        "Missing supported market_evidence context for market_research.",
+        "G-001: authority or state is unknown.",
+        "G-001: later decision or authority requires follow-up; do not treat the old state as current."
+      ],
+      "warnings": []
+    },
+    "prototype": {
+      "status": "needs_context",
+      "result": null,
+      "gaps": [
+        "Checked only the supplied discovery r1 note. No workspace search or external follow-up was authorized; re-fetch applicable current sources before reuse.",
+        "The cross-branch interruption benefit is untested and weekend/screen-reader interviews are missing. These limit demand and effectiveness claims, not the authorized staff-only prototype design.",
+        "No separate written release approval or evidence of actual implementation/deployment is supplied. This is an evidence boundary, not a claim that such records cannot exist.",
+        "Missing supported goal context for feature_design.",
+        "G-001: authority or state is unknown.",
+        "G-001: later decision or authority requires follow-up; do not treat the old state as current."
+      ],
+      "warnings": []
+    }
+  },
+  "handoff_operations": [
+    {
+      "operation": "init",
+      "output": "ledger.empty.json",
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "operation": "plan",
+      "output": "plan.json",
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "operation": "plan",
+      "output": "plan.md",
+      "exit_code": 0,
+      "stderr": ""
+    }
+  ],
+  "plan_id": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34",
+  "memory_confirmation_created": false,
+  "ledger_entries": 0,
+  "ledger_receipts": 0,
+  "validation_revisions_required": false,
+  "observed_problems": [
+    "The source does not explicitly establish separate formal approval of the stated goal; G-001 remains unknown. D-041 independently provides accepted prototype-design authority.",
+    "The research profile reports missing supported market evidence, consistent with the untested cross-branch hypothesis.",
+    "The helper phrase later decision or authority requires follow-up is a generic caution caused by unresolved goal authority, not evidence that a newer decision exists.",
+    "No separate design record is supplied; accepted prototype behavior is recorded as D-041. Any classification caution is not proof of complete implementation detail.",
+    "Coverage remains limited to discovery r1; open research and release-evidence boundaries remain visible."
+  ]
+}

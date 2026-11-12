@@ -1,0 +1,95 @@
+{
+  "description": "Author-labeled relevance for a small fictional fixture; not an independent or live benchmark.",
+  "cases": [
+    {
+      "task_type": "market_research",
+      "relevant_ids": [
+        "G-01",
+        "D-014",
+        "D-060",
+        "E-CUST",
+        "E-MARKET",
+        "H-01",
+        "Q-01",
+        "K-EXP"
+      ],
+      "must_include": [
+        "D-014",
+        "K-EXP",
+        "E-CUST",
+        "E-MARKET"
+      ],
+      "forbidden_ids": [
+        "D-007",
+        "U-01",
+        "R-ENT",
+        "E-OTHER"
+      ],
+      "expected_status": "context_prepared"
+    },
+    {
+      "task_type": "feature_design",
+      "relevant_ids": [
+        "G-01",
+        "D-014",
+        "D-060",
+        "E-CUST",
+        "R-01",
+        "A-01",
+        "T-01",
+        "H-01",
+        "Q-01",
+        "W-022",
+        "K-EXP",
+        "K-RACE",
+        "V-01"
+      ],
+      "must_include": [
+        "D-014",
+        "K-EXP",
+        "R-01",
+        "A-01",
+        "K-RACE",
+        "V-01"
+      ],
+      "forbidden_ids": [
+        "D-007",
+        "U-01",
+        "R-ENT",
+        "E-OTHER"
+      ],
+      "expected_status": "context_prepared"
+    },
+    {
+      "task_type": "qa_review",
+      "relevant_ids": [
+        "G-01",
+        "D-014",
+        "D-060",
+        "R-01",
+        "A-01",
+        "T-01",
+        "V-01",
+        "H-01",
+        "Q-01",
+        "W-022",
+        "K-EXP",
+        "K-RACE"
+      ],
+      "must_include": [
+        "D-014",
+        "K-EXP",
+        "T-01",
+        "V-01",
+        "K-RACE"
+      ],
+      "forbidden_ids": [
+        "D-007",
+        "U-01",
+        "R-ENT",
+        "E-OTHER"
+      ],
+      "expected_status": "context_prepared"
+    }
+  ]
+}

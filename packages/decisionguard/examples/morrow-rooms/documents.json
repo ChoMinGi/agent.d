@@ -1,0 +1,75 @@
+{
+  "raw_version": 1,
+  "sources": [
+    {
+      "id": "note-01",
+      "title": "가상 메모 01",
+      "project_id": "morrow-rooms",
+      "url": "demo://morrow-rooms/raw/note-01",
+      "revision": "fictional-1",
+      "fetched_at": "2026-11-07T10:00:00Z",
+      "complete": true,
+      "file": "raw/note-01.md"
+    },
+    {
+      "id": "note-02",
+      "title": "가상 메모 02",
+      "project_id": "morrow-rooms",
+      "url": "demo://morrow-rooms/raw/note-02",
+      "revision": "fictional-1",
+      "fetched_at": "2026-11-07T10:00:00Z",
+      "complete": true,
+      "file": "raw/note-02.md"
+    },
+    {
+      "id": "note-03",
+      "title": "가상 메모 03",
+      "project_id": "morrow-rooms",
+      "url": "demo://morrow-rooms/raw/note-03",
+      "revision": "fictional-1",
+      "fetched_at": "2026-11-07T10:00:00Z",
+      "complete": true,
+      "file": "raw/note-03.md"
+    },
+    {
+      "id": "note-04",
+      "title": "가상 메모 04",
+      "project_id": "morrow-rooms",
+      "url": "demo://morrow-rooms/raw/note-04",
+      "revision": "fictional-1",
+      "fetched_at": "2026-11-07T10:00:00Z",
+      "complete": true,
+      "file": "raw/note-04.md"
+    },
+    {
+      "id": "note-05",
+      "title": "가상 메모 05",
+      "project_id": "morrow-rooms",
+      "url": "demo://morrow-rooms/raw/note-05",
+      "revision": "fictional-1",
+      "fetched_at": "2026-11-07T10:00:00Z",
+      "complete": true,
+      "file": "raw/note-05.md"
+    },
+    {
+      "id": "note-06",
+      "title": "가상 메모 06",
+      "project_id": "morrow-rooms",
+      "url": "demo://morrow-rooms/raw/note-06",
+      "revision": "fictional-1",
+      "fetched_at": "2026-11-07T10:00:00Z",
+      "complete": true,
+      "file": "raw/note-06.md"
+    },
+    {
+      "id": "note-07",
+      "title": "가상 메모 07",
+      "project_id": "cedar-bikes",
+      "url": "demo://cedar-bikes/note-07",
+      "revision": "fictional-1",
+      "fetched_at": "2026-11-07T10:00:00Z",
+      "complete": true,
+      "file": "raw/note-07.md"
+    }
+  ]
+}

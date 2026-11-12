@@ -1,0 +1,28 @@
+{
+  "requests": [
+    {
+      "id": "research",
+      "summary": "스탠더드 예약 취소 방식을 바꾸기 전에, 이용자 불편과 다른 서비스가 보여주는 방식을 근거로 수요를 살펴봐.",
+      "project_id": "morrow-rooms",
+      "scope": "standard",
+      "as_of": "2026-11-08T00:00:00Z",
+      "max_items": 20
+    },
+    {
+      "id": "design",
+      "summary": "스탠더드 예약 취소 화면과 처리 흐름을 설계하려고 해. 확정 조건, 구현 방식, 이미 드러난 문제를 먼저 정리해줘.",
+      "project_id": "morrow-rooms",
+      "scope": "standard",
+      "as_of": "2026-11-08T00:00:00Z",
+      "max_items": 20
+    },
+    {
+      "id": "release",
+      "summary": "스탠더드 예약 취소 변경을 배포해도 되는지 점검하려고 해. 기대 동작, 실제 실행 결과와 남은 결함을 모아줘.",
+      "project_id": "morrow-rooms",
+      "scope": "standard",
+      "as_of": "2026-11-08T00:00:00Z",
+      "max_items": 20
+    }
+  ]
+}

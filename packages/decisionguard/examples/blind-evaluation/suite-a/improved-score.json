@@ -1,0 +1,143 @@
+{
+  "suite": "suite-a",
+  "passed": false,
+  "cases": [
+    {
+      "request_id": "research",
+      "task_type": "market_research",
+      "required_count": 12,
+      "required_covered": 12,
+      "missing_required": [],
+      "selected_count": 27,
+      "wrong_context": [],
+      "unmatched_records_for_review": [
+        "r18",
+        "r31",
+        "r25"
+      ],
+      "classification_errors": [
+        {
+          "record_id": "r08",
+          "fact_id": "a-f08",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "question",
+          "actual_status": "open",
+          "allowed_kinds": [
+            "question",
+            "task"
+          ],
+          "expected_status": "draft"
+        },
+        {
+          "record_id": "r15",
+          "fact_id": "a-f14",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "question",
+          "actual_status": "open",
+          "allowed_kinds": [
+            "task",
+            "question"
+          ],
+          "expected_status": "draft"
+        }
+      ],
+      "task_type_correct": true,
+      "packet_status": "needs_context",
+      "gaps": [
+        "Declared source coverage is incomplete.",
+        "r11: bounded excerpt from an incomplete source; missing context remains unknown.",
+        "r12: bounded excerpt from an incomplete source; missing context remains unknown.",
+        "r13: bounded excerpt from an incomplete source; missing context remains unknown.",
+        "r14: authority or state is unknown.",
+        "r14: bounded excerpt from an incomplete source; missing context remains unknown.",
+        "r15: bounded excerpt from an incomplete source; missing context remains unknown."
+      ],
+      "passed": false
+    },
+    {
+      "request_id": "design",
+      "task_type": "feature_design",
+      "required_count": 15,
+      "required_covered": 15,
+      "missing_required": [],
+      "selected_count": 24,
+      "wrong_context": [],
+      "unmatched_records_for_review": [
+        "r25",
+        "r29",
+        "r18",
+        "r31"
+      ],
+      "classification_errors": [
+        {
+          "record_id": "r36",
+          "fact_id": "a-f32",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "test_result",
+          "actual_status": "observed",
+          "allowed_kinds": [
+            "test_result",
+            "risk"
+          ],
+          "expected_status": "open"
+        }
+      ],
+      "task_type_correct": true,
+      "packet_status": "needs_context",
+      "gaps": [
+        "Declared source coverage is incomplete.",
+        "Missing supported design context for feature_design."
+      ],
+      "passed": false
+    },
+    {
+      "request_id": "qa",
+      "task_type": "qa_review",
+      "required_count": 15,
+      "required_covered": 15,
+      "missing_required": [],
+      "selected_count": 22,
+      "wrong_context": [],
+      "unmatched_records_for_review": [
+        "r25",
+        "r29",
+        "r31",
+        "r37"
+      ],
+      "classification_errors": [
+        {
+          "record_id": "r36",
+          "fact_id": "a-f32",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "test_result",
+          "actual_status": "observed",
+          "allowed_kinds": [
+            "test_result",
+            "risk"
+          ],
+          "expected_status": "open"
+        }
+      ],
+      "task_type_correct": true,
+      "packet_status": "needs_context",
+      "gaps": [
+        "Declared source coverage is incomplete."
+      ],
+      "passed": false
+    }
+  ],
+  "limits": [
+    "Exact fact anchors may miss a valid shorter paraphrase/quote; inspect every flagged item.",
+    "Kind/status labels can admit reasonable alternatives; record adjudication separately without silently changing frozen answers.",
+    "A matched quote is not proof that the model's title, rationale or scope interpretation is entailed.",
+    "Replaying stored packets is not a new blind model trial."
+  ]
+}

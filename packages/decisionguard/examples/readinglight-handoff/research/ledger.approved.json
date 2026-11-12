@@ -1,0 +1,992 @@
+{
+  "handoff_version": 1,
+  "project_id": "readinglight",
+  "entries": [
+    {
+      "record": {
+        "id": "CE-001",
+        "scope": "two-room-pilot",
+        "topics": [
+          "seat-availability",
+          "local-discovery"
+        ],
+        "status": "observed",
+        "source_id": "discovery",
+        "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat;",
+        "status_quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch.",
+        "kind": "customer_evidence",
+        "title": "Four of six interviewees reported abandoning a room after finding no seat"
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "CE-001",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "local-discovery"
+          ],
+          "status": "observed",
+          "source_id": "discovery",
+          "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat;",
+          "status_quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch.",
+          "kind": "customer_evidence",
+          "title": "Four of six interviewees reported abandoning a room after finding no seat"
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          }
+        ]
+      },
+      "state_sha256": "da291feb5cc5a470d594b171fd8408addf394a2838e8b96966d47ddf45a6711a",
+      "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+    },
+    {
+      "record": {
+        "id": "CE-002",
+        "scope": "two-room-pilot",
+        "topics": [
+          "seat-availability",
+          "local-discovery"
+        ],
+        "status": "observed",
+        "source_id": "discovery",
+        "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat; observers counted nine unnecessary room entries.",
+        "status_quote": "observers counted nine unnecessary room entries.",
+        "kind": "customer_evidence",
+        "title": "Nine unnecessary room entries counted during two afternoon observations"
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "CE-002",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "local-discovery"
+          ],
+          "status": "observed",
+          "source_id": "discovery",
+          "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat; observers counted nine unnecessary room entries.",
+          "status_quote": "observers counted nine unnecessary room entries.",
+          "kind": "customer_evidence",
+          "title": "Nine unnecessary room entries counted during two afternoon observations"
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          }
+        ]
+      },
+      "state_sha256": "fc7ff3a998948631341a252672783e48de58221cba6fde75607fd75338a707a0",
+      "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+    },
+    {
+      "record": {
+        "id": "D-041",
+        "scope": "two-room-pilot",
+        "topics": [
+          "seat-availability",
+          "prototype-scope"
+        ],
+        "status": "accepted",
+        "source_id": "discovery",
+        "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+        "status_quote": "Product steward Sela Rowan accepted decision D-041 today:",
+        "attention": {
+          "category": "approval_boundary",
+          "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+          "quote": "This authorizes prototype design only."
+        },
+        "key": "prototype-seat-representation",
+        "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "source_id": "discovery",
+              "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+            },
+            {
+              "source_id": "discovery",
+              "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+            }
+          ],
+          "rationale": "Checked the complete supplied note for an amended or superseding prototype choice; none is present. Acceptance remains limited to design. Re-fetch D-041 and any later authoritative changes before reuse; this is not an exhaustive workspace check."
+        },
+        "kind": "decision",
+        "title": "Reading room discovery notes"
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "D-041",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "prototype-scope"
+          ],
+          "status": "accepted",
+          "source_id": "discovery",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+          "status_quote": "Product steward Sela Rowan accepted decision D-041 today:",
+          "attention": {
+            "category": "approval_boundary",
+            "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+            "quote": "This authorizes prototype design only."
+          },
+          "key": "prototype-seat-representation",
+          "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "discovery",
+                "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+              },
+              {
+                "source_id": "discovery",
+                "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+              }
+            ],
+            "rationale": "Checked the complete supplied note for an amended or superseding prototype choice; none is present. Acceptance remains limited to design. Re-fetch D-041 and any later authoritative changes before reuse; this is not an exhaustive workspace check."
+          },
+          "kind": "decision",
+          "title": "Reading room discovery notes"
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          }
+        ]
+      },
+      "state_sha256": "a767aeec927883466cc78e10168eba08b2570181f2dd0bfdabb8f163db7c6ab6",
+      "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+    },
+    {
+      "record": {
+        "id": "G-001",
+        "scope": "two-room-pilot",
+        "topics": [
+          "seat-availability"
+        ],
+        "status": "unknown",
+        "source_id": "discovery",
+        "quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+        "status_quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+        "kind": "goal",
+        "title": "Stated purpose: help visitors find space in two reading rooms",
+        "followup": {
+          "outcome": "unresolved",
+          "evidence": [
+            {
+              "source_id": "discovery",
+              "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+            }
+          ],
+          "rationale": "Checked all four passages of discovery r1. The purpose is stated but separate goal-approval authority is not identified. If formal goal approval matters, ask the product steward for the applicable decision; D-041 independently authorizes the scoped prototype design."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "G-001",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability"
+          ],
+          "status": "unknown",
+          "source_id": "discovery",
+          "quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+          "status_quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+          "kind": "goal",
+          "title": "Stated purpose: help visitors find space in two reading rooms",
+          "followup": {
+            "outcome": "unresolved",
+            "evidence": [
+              {
+                "source_id": "discovery",
+                "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+              }
+            ],
+            "rationale": "Checked all four passages of discovery r1. The purpose is stated but separate goal-approval authority is not identified. If formal goal approval matters, ask the product steward for the applicable decision; D-041 independently authorizes the scoped prototype design."
+          }
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          }
+        ]
+      },
+      "state_sha256": "226ec6a2c568aa2f31c25efae002f5cc6bdf2889d9cfe97ce5c22ce2ae7a63f5",
+      "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+    },
+    {
+      "record": {
+        "id": "H-001",
+        "scope": "two-room-pilot",
+        "topics": [
+          "cross-branch-demand",
+          "seat-availability"
+        ],
+        "status": "unverified",
+        "source_id": "discovery",
+        "quote": "Librarian Oren Vale suspects that a live seat map would reduce interruptions across other branches; nobody has tested that market hypothesis.",
+        "status_quote": "nobody has tested that market hypothesis.",
+        "kind": "assumption",
+        "title": "Oren Vale hypothesizes that a live seat map reduces interruptions across other branches"
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "H-001",
+          "scope": "two-room-pilot",
+          "topics": [
+            "cross-branch-demand",
+            "seat-availability"
+          ],
+          "status": "unverified",
+          "source_id": "discovery",
+          "quote": "Librarian Oren Vale suspects that a live seat map would reduce interruptions across other branches; nobody has tested that market hypothesis.",
+          "status_quote": "nobody has tested that market hypothesis.",
+          "kind": "assumption",
+          "title": "Oren Vale hypothesizes that a live seat map reduces interruptions across other branches"
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          }
+        ]
+      },
+      "state_sha256": "62531e807717f34918a3ae2fa55fff40c58a3e1cd077a58c6dec59e1db84b3ac",
+      "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+    },
+    {
+      "record": {
+        "id": "Q-001",
+        "scope": "two-room-pilot",
+        "topics": [
+          "research-generalization",
+          "accessibility"
+        ],
+        "status": "open",
+        "source_id": "discovery",
+        "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype.",
+        "status_quote": "Weekend and screen-reader users have not yet been interviewed.",
+        "kind": "question",
+        "title": "Weekend and screen-reader user needs remain unresearched",
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "source_id": "discovery",
+              "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+            }
+          ],
+          "rationale": "Checked the full supplied discovery note for later answers; none resolves these missing interviews. No follow-up document is linked. Preserve the open research need and check newer interviews before making demand or accessibility claims."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "Q-001",
+          "scope": "two-room-pilot",
+          "topics": [
+            "research-generalization",
+            "accessibility"
+          ],
+          "status": "open",
+          "source_id": "discovery",
+          "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype.",
+          "status_quote": "Weekend and screen-reader users have not yet been interviewed.",
+          "kind": "question",
+          "title": "Weekend and screen-reader user needs remain unresearched",
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "discovery",
+                "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+              }
+            ],
+            "rationale": "Checked the full supplied discovery note for later answers; none resolves these missing interviews. No follow-up document is linked. Preserve the open research need and check newer interviews before making demand or accessibility claims."
+          }
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          }
+        ]
+      },
+      "state_sha256": "83618cb7ed6248df1338ed1e07bc9d620b886a0c326a8add53c54d65e98493d8",
+      "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+    },
+    {
+      "record": {
+        "id": "R-001",
+        "scope": "two-room-pilot",
+        "topics": [
+          "research-generalization"
+        ],
+        "status": "open",
+        "source_id": "discovery",
+        "quote": "These are local observations, not evidence about all library users.",
+        "status_quote": "These are local observations, not evidence about all library users.",
+        "kind": "risk",
+        "title": "Local discovery cannot establish demand for all library users"
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "R-001",
+          "scope": "two-room-pilot",
+          "topics": [
+            "research-generalization"
+          ],
+          "status": "open",
+          "source_id": "discovery",
+          "quote": "These are local observations, not evidence about all library users.",
+          "status_quote": "These are local observations, not evidence about all library users.",
+          "kind": "risk",
+          "title": "Local discovery cannot establish demand for all library users"
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          }
+        ]
+      },
+      "state_sha256": "56af9879b92df7b3a985bccbc194367995df7020194c6187ead740ad14c5110b",
+      "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+    },
+    {
+      "record": {
+        "id": "REQ-RELEASE",
+        "scope": "two-room-pilot",
+        "topics": [
+          "release-approval",
+          "prototype-scope"
+        ],
+        "status": "accepted",
+        "source_id": "discovery",
+        "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+        "status_quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+        "attention": {
+          "category": "approval_boundary",
+          "rationale": "Before visitor-facing deployment, retrieve the specific written release approval and verify its scope; this source supplies the requirement, not the approval.",
+          "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+        },
+        "kind": "requirement",
+        "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "source_id": "discovery",
+              "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+            }
+          ],
+          "rationale": "The supplied note retains the separate written-release requirement and contains no written release approval. The requirement is current in this source; actual release approval and deployment are not established. Retrieve Ivo Reed’s scoped written approval before any visitor-facing deployment."
+        }
+      },
+      "project_id": "readinglight",
+      "state": {
+        "record": {
+          "id": "REQ-RELEASE",
+          "scope": "two-room-pilot",
+          "topics": [
+            "release-approval",
+            "prototype-scope"
+          ],
+          "status": "accepted",
+          "source_id": "discovery",
+          "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+          "status_quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+          "attention": {
+            "category": "approval_boundary",
+            "rationale": "Before visitor-facing deployment, retrieve the specific written release approval and verify its scope; this source supplies the requirement, not the approval.",
+            "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+          },
+          "kind": "requirement",
+          "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "discovery",
+                "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+              }
+            ],
+            "rationale": "The supplied note retains the separate written-release requirement and contains no written release approval. The requirement is current in this source; actual release approval and deployment are not established. Retrieve Ivo Reed’s scoped written approval before any visitor-facing deployment."
+          }
+        },
+        "dependencies": [],
+        "links": [],
+        "sources": [
+          {
+            "id": "discovery",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+          }
+        ]
+      },
+      "state_sha256": "c941cfba3b0e201f3a07583bcf1cae369967d508ffbe48266dbc2a2cc0d9f9de",
+      "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+    }
+  ],
+  "receipts": [
+    {
+      "mode": "simulation",
+      "confirmed_by": "Fictional study coordinator",
+      "confirmation_reference": "demo://readinglight/study/approval-1",
+      "confirmed_at": "2027-07-14T10:00:00Z",
+      "plan_id": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34",
+      "ledger_before_sha256": "0e6c6dc31f342e17cc383d00744c37288860a157fa2ae25b11bc767ab6671b00",
+      "snapshot_sha256": "b74ad8205fb9905133e7caee92f1de1258c7f29e9237c614f02a03486134efae",
+      "proposal": {
+        "summary": "Propose remembering the ReadingLight discovery evidence, limits, D-041 prototype choice and separate visitor-facing release prerequisite; preserve every evidence state. No memory approval or execution authority is implied.",
+        "record_ids": [
+          "G-001",
+          "CE-001",
+          "CE-002",
+          "R-001",
+          "H-001",
+          "Q-001",
+          "D-041",
+          "REQ-RELEASE"
+        ]
+      },
+      "changes": [
+        {
+          "record_id": "CE-001",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "CE-001",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "local-discovery"
+              ],
+              "status": "observed",
+              "source_id": "discovery",
+              "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat;",
+              "status_quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch.",
+              "kind": "customer_evidence",
+              "title": "Four of six interviewees reported abandoning a room after finding no seat"
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "CE-001",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability",
+                  "local-discovery"
+                ],
+                "status": "observed",
+                "source_id": "discovery",
+                "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat;",
+                "status_quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch.",
+                "kind": "customer_evidence",
+                "title": "Four of six interviewees reported abandoning a room after finding no seat"
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "da291feb5cc5a470d594b171fd8408addf394a2838e8b96966d47ddf45a6711a"
+          }
+        },
+        {
+          "record_id": "CE-002",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "CE-002",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "local-discovery"
+              ],
+              "status": "observed",
+              "source_id": "discovery",
+              "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat; observers counted nine unnecessary room entries.",
+              "status_quote": "observers counted nine unnecessary room entries.",
+              "kind": "customer_evidence",
+              "title": "Nine unnecessary room entries counted during two afternoon observations"
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "CE-002",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability",
+                  "local-discovery"
+                ],
+                "status": "observed",
+                "source_id": "discovery",
+                "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat; observers counted nine unnecessary room entries.",
+                "status_quote": "observers counted nine unnecessary room entries.",
+                "kind": "customer_evidence",
+                "title": "Nine unnecessary room entries counted during two afternoon observations"
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "fc7ff3a998948631341a252672783e48de58221cba6fde75607fd75338a707a0"
+          }
+        },
+        {
+          "record_id": "D-041",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "D-041",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "prototype-scope"
+              ],
+              "status": "accepted",
+              "source_id": "discovery",
+              "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+              "status_quote": "Product steward Sela Rowan accepted decision D-041 today:",
+              "attention": {
+                "category": "approval_boundary",
+                "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+                "quote": "This authorizes prototype design only."
+              },
+              "key": "prototype-seat-representation",
+              "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+              "followup": {
+                "outcome": "no_change_found",
+                "evidence": [
+                  {
+                    "source_id": "discovery",
+                    "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+                  },
+                  {
+                    "source_id": "discovery",
+                    "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+                  }
+                ],
+                "rationale": "Checked the complete supplied note for an amended or superseding prototype choice; none is present. Acceptance remains limited to design. Re-fetch D-041 and any later authoritative changes before reuse; this is not an exhaustive workspace check."
+              },
+              "kind": "decision",
+              "title": "Reading room discovery notes"
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "D-041",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability",
+                  "prototype-scope"
+                ],
+                "status": "accepted",
+                "source_id": "discovery",
+                "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+                "status_quote": "Product steward Sela Rowan accepted decision D-041 today:",
+                "attention": {
+                  "category": "approval_boundary",
+                  "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+                  "quote": "This authorizes prototype design only."
+                },
+                "key": "prototype-seat-representation",
+                "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+                "followup": {
+                  "outcome": "no_change_found",
+                  "evidence": [
+                    {
+                      "source_id": "discovery",
+                      "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+                    },
+                    {
+                      "source_id": "discovery",
+                      "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+                    }
+                  ],
+                  "rationale": "Checked the complete supplied note for an amended or superseding prototype choice; none is present. Acceptance remains limited to design. Re-fetch D-041 and any later authoritative changes before reuse; this is not an exhaustive workspace check."
+                },
+                "kind": "decision",
+                "title": "Reading room discovery notes"
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "a767aeec927883466cc78e10168eba08b2570181f2dd0bfdabb8f163db7c6ab6"
+          }
+        },
+        {
+          "record_id": "G-001",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "G-001",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability"
+              ],
+              "status": "unknown",
+              "source_id": "discovery",
+              "quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+              "status_quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+              "kind": "goal",
+              "title": "Stated purpose: help visitors find space in two reading rooms",
+              "followup": {
+                "outcome": "unresolved",
+                "evidence": [
+                  {
+                    "source_id": "discovery",
+                    "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+                  }
+                ],
+                "rationale": "Checked all four passages of discovery r1. The purpose is stated but separate goal-approval authority is not identified. If formal goal approval matters, ask the product steward for the applicable decision; D-041 independently authorizes the scoped prototype design."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "G-001",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "seat-availability"
+                ],
+                "status": "unknown",
+                "source_id": "discovery",
+                "quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+                "status_quote": "ReadingLight will help visitors find space in the library's two reading rooms.",
+                "kind": "goal",
+                "title": "Stated purpose: help visitors find space in two reading rooms",
+                "followup": {
+                  "outcome": "unresolved",
+                  "evidence": [
+                    {
+                      "source_id": "discovery",
+                      "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+                    }
+                  ],
+                  "rationale": "Checked all four passages of discovery r1. The purpose is stated but separate goal-approval authority is not identified. If formal goal approval matters, ask the product steward for the applicable decision; D-041 independently authorizes the scoped prototype design."
+                }
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "226ec6a2c568aa2f31c25efae002f5cc6bdf2889d9cfe97ce5c22ce2ae7a63f5"
+          }
+        },
+        {
+          "record_id": "H-001",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "H-001",
+              "scope": "two-room-pilot",
+              "topics": [
+                "cross-branch-demand",
+                "seat-availability"
+              ],
+              "status": "unverified",
+              "source_id": "discovery",
+              "quote": "Librarian Oren Vale suspects that a live seat map would reduce interruptions across other branches; nobody has tested that market hypothesis.",
+              "status_quote": "nobody has tested that market hypothesis.",
+              "kind": "assumption",
+              "title": "Oren Vale hypothesizes that a live seat map reduces interruptions across other branches"
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "H-001",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "cross-branch-demand",
+                  "seat-availability"
+                ],
+                "status": "unverified",
+                "source_id": "discovery",
+                "quote": "Librarian Oren Vale suspects that a live seat map would reduce interruptions across other branches; nobody has tested that market hypothesis.",
+                "status_quote": "nobody has tested that market hypothesis.",
+                "kind": "assumption",
+                "title": "Oren Vale hypothesizes that a live seat map reduces interruptions across other branches"
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "62531e807717f34918a3ae2fa55fff40c58a3e1cd077a58c6dec59e1db84b3ac"
+          }
+        },
+        {
+          "record_id": "Q-001",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "Q-001",
+              "scope": "two-room-pilot",
+              "topics": [
+                "research-generalization",
+                "accessibility"
+              ],
+              "status": "open",
+              "source_id": "discovery",
+              "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype.",
+              "status_quote": "Weekend and screen-reader users have not yet been interviewed.",
+              "kind": "question",
+              "title": "Weekend and screen-reader user needs remain unresearched",
+              "followup": {
+                "outcome": "no_change_found",
+                "evidence": [
+                  {
+                    "source_id": "discovery",
+                    "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+                  }
+                ],
+                "rationale": "Checked the full supplied discovery note for later answers; none resolves these missing interviews. No follow-up document is linked. Preserve the open research need and check newer interviews before making demand or accessibility claims."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "Q-001",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "research-generalization",
+                  "accessibility"
+                ],
+                "status": "open",
+                "source_id": "discovery",
+                "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype.",
+                "status_quote": "Weekend and screen-reader users have not yet been interviewed.",
+                "kind": "question",
+                "title": "Weekend and screen-reader user needs remain unresearched",
+                "followup": {
+                  "outcome": "no_change_found",
+                  "evidence": [
+                    {
+                      "source_id": "discovery",
+                      "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+                    }
+                  ],
+                  "rationale": "Checked the full supplied discovery note for later answers; none resolves these missing interviews. No follow-up document is linked. Preserve the open research need and check newer interviews before making demand or accessibility claims."
+                }
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "83618cb7ed6248df1338ed1e07bc9d620b886a0c326a8add53c54d65e98493d8"
+          }
+        },
+        {
+          "record_id": "R-001",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "R-001",
+              "scope": "two-room-pilot",
+              "topics": [
+                "research-generalization"
+              ],
+              "status": "open",
+              "source_id": "discovery",
+              "quote": "These are local observations, not evidence about all library users.",
+              "status_quote": "These are local observations, not evidence about all library users.",
+              "kind": "risk",
+              "title": "Local discovery cannot establish demand for all library users"
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "R-001",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "research-generalization"
+                ],
+                "status": "open",
+                "source_id": "discovery",
+                "quote": "These are local observations, not evidence about all library users.",
+                "status_quote": "These are local observations, not evidence about all library users.",
+                "kind": "risk",
+                "title": "Local discovery cannot establish demand for all library users"
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "56af9879b92df7b3a985bccbc194367995df7020194c6187ead740ad14c5110b"
+          }
+        },
+        {
+          "record_id": "REQ-RELEASE",
+          "before": null,
+          "after": {
+            "record": {
+              "id": "REQ-RELEASE",
+              "scope": "two-room-pilot",
+              "topics": [
+                "release-approval",
+                "prototype-scope"
+              ],
+              "status": "accepted",
+              "source_id": "discovery",
+              "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+              "status_quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+              "attention": {
+                "category": "approval_boundary",
+                "rationale": "Before visitor-facing deployment, retrieve the specific written release approval and verify its scope; this source supplies the requirement, not the approval.",
+                "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+              },
+              "kind": "requirement",
+              "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+              "followup": {
+                "outcome": "no_change_found",
+                "evidence": [
+                  {
+                    "source_id": "discovery",
+                    "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+                  }
+                ],
+                "rationale": "The supplied note retains the separate written-release requirement and contains no written release approval. The requirement is current in this source; actual release approval and deployment are not established. Retrieve Ivo Reed’s scoped written approval before any visitor-facing deployment."
+              }
+            },
+            "project_id": "readinglight",
+            "state": {
+              "record": {
+                "id": "REQ-RELEASE",
+                "scope": "two-room-pilot",
+                "topics": [
+                  "release-approval",
+                  "prototype-scope"
+                ],
+                "status": "accepted",
+                "source_id": "discovery",
+                "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+                "status_quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+                "attention": {
+                  "category": "approval_boundary",
+                  "rationale": "Before visitor-facing deployment, retrieve the specific written release approval and verify its scope; this source supplies the requirement, not the approval.",
+                  "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+                },
+                "kind": "requirement",
+                "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+                "followup": {
+                  "outcome": "no_change_found",
+                  "evidence": [
+                    {
+                      "source_id": "discovery",
+                      "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+                    }
+                  ],
+                  "rationale": "The supplied note retains the separate written-release requirement and contains no written release approval. The requirement is current in this source; actual release approval and deployment are not established. Retrieve Ivo Reed’s scoped written approval before any visitor-facing deployment."
+                }
+              },
+              "dependencies": [],
+              "links": [],
+              "sources": [
+                {
+                  "id": "discovery",
+                  "url": "demo://readinglight/discovery",
+                  "revision": "r1",
+                  "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+                }
+              ]
+            },
+            "state_sha256": "c941cfba3b0e201f3a07583bcf1cae369967d508ffbe48266dbc2a2cc0d9f9de"
+          }
+        }
+      ]
+    }
+  ]
+}

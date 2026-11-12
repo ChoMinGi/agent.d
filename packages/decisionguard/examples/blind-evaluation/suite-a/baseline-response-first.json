@@ -1,0 +1,1240 @@
+{
+  "raw_version": 1,
+  "job_digest": "0039c57a347a6f7fcd94306b72ef1a95e3e19d935cf3d56eac208ccdd57aac68",
+  "records": [
+    {
+      "id": "early-call-goal",
+      "kind": "goal",
+      "title": "8월 논의: 포장 중 품절 확인 전화를 줄이자는 초기 목적",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "확인 전화",
+        "품절 대체"
+      ],
+      "status": "draft",
+      "rationale": "초기 목적 논의이며, 현재 목표는 11월 합의에서 따로 추출했다. 같은 문단의 과거 무응답 동가 대체 확정은 a04의 명시적 폐기 진술을 근거로 역사 기록에 보존한다.",
+      "evidence": {
+        "passage_id": "a01:5f2a12fd3a1a81eb",
+        "quote": "오늘은 포장 중 품절이 드러났을 때 고객에게 매번 전화를 거는 일을 줄이자는 이야기를 했다."
+      },
+      "status_evidence": {
+        "passage_id": "a01:5f2a12fd3a1a81eb",
+        "quote": "전화를 거는 일을 줄이자는 이야기를 했다."
+      },
+      "scope_evidence": {
+        "passage_id": "a01:5f2a12fd3a1a81eb",
+        "quote": "담초상자는 채소 꾸러미를 출고하는 작은 서비스다. 오늘은 포장 중 품절이 드러났을 때 고객에게 매번 전화를 거는 일을 줄이자는 이야기를 했다. 운영팀은 같은 가격의 채소를 먼저 넣고 저녁에 내역을 알려 주는 방식을 제안했다. 회의에서는 무응답 고객에게 동가 대체품을 넣는 방식을 1차 출시안으로 확정했다."
+      }
+    },
+    {
+      "id": "early-card-sketch",
+      "kind": "design",
+      "title": "초기 미확정 스케치: 카드에는 상품명만, 가격·중량은 상세 화면",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "비교 정보",
+        "대체품 카드"
+      ],
+      "status": "draft",
+      "rationale": "좁은 화면을 이유로 나온 스케치이며 채택되지 않았다. 이후의 정보 동시 표시 합의와 구분한다.",
+      "evidence": {
+        "passage_id": "a01:dacb81a5bc271628",
+        "quote": "대체품 카드에는 상품명만 보이고 가격이나 중량은 상세 화면에서 확인하게 하자는 스케치가 나왔다. 화면이 좁으니 카드에서 금액을 생략하자는 의견은 있었지만 디자인 결론은 내리지 않았다."
+      },
+      "status_evidence": {
+        "passage_id": "a01:dacb81a5bc271628",
+        "quote": "디자인 결론은 내리지 않았다."
+      },
+      "scope_evidence": {
+        "passage_id": "a01:dacb81a5bc271628",
+        "quote": "대체품 카드에는 상품명만 보이고 가격이나 중량은 상세 화면에서 확인하게 하자는 스케치가 나왔다. 화면이 좁으니 카드에서 금액을 생략하자는 의견은 있었지만 디자인 결론은 내리지 않았다."
+      }
+    },
+    {
+      "id": "reopen-request",
+      "kind": "requirement",
+      "title": "완료 주문 재개는 담당자·완료일 없이 기록된 요청",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "완료 주문 재개"
+      ],
+      "status": "draft",
+      "rationale": "요청이 있었다는 사실이며 구현 또는 승인 근거가 아니다. 현재 범위에서는 명시적으로 제외된다. 과거 전면 적용 일정은 a04 폐기 기록으로 추출한다.",
+      "evidence": {
+        "passage_id": "a01:cd2139f88f56d02b",
+        "quote": "다만 포장 담당자가 이미 끝난 주문도 고칠 수 있게 해 달라는 요청은 기록만 했고 담당자나 완료일은 정하지 않았다."
+      },
+      "status_evidence": {
+        "passage_id": "a01:cd2139f88f56d02b",
+        "quote": "요청은 기록만 했고 담당자나 완료일은 정하지 않았다."
+      },
+      "scope_evidence": {
+        "passage_id": "a01:cd2139f88f56d02b",
+        "quote": "9월 15일 출고분부터 전 고객에게 적용하기로 일정을 잡았다. 다만 포장 담당자가 이미 끝난 주문도 고칠 수 있게 해 달라는 요청은 기록만 했고 담당자나 완료일은 정하지 않았다."
+      }
+    },
+    {
+      "id": "customer-comparison",
+      "kind": "customer_evidence",
+      "title": "10월 18~20일 기존 고객 7가구 중 5가구가 가격·양의 한 화면 비교를 원함",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "비교 정보",
+        "대체품 카드"
+      ],
+      "status": "observed",
+      "rationale": "최근 두 달 내 수령한 7가구의 진술이다. 전 고객 선호 비율이나 행동 지표로 일반화하지 않는다.",
+      "evidence": {
+        "passage_id": "a02:519997ceaa5b092b",
+        "quote": "10월 18일부터 20일까지 최근 두 달 안에 꾸러미를 받은 일곱 가구와 이야기했다. 일곱 가구 중 다섯 가구는 대체 채소의 가격과 양을 한 화면에서 비교하고 싶다고 말했다."
+      },
+      "status_evidence": {
+        "passage_id": "a02:519997ceaa5b092b",
+        "quote": "다섯 가구는 대체 채소의 가격과 양을 한 화면에서 비교하고 싶다고 말했다."
+      },
+      "scope_evidence": {
+        "passage_id": "a02:519997ceaa5b092b",
+        "quote": "10월 18일부터 20일까지 최근 두 달 안에 꾸러미를 받은 일곱 가구와 이야기했다. 일곱 가구 중 다섯 가구는 대체 채소의 가격과 양을 한 화면에서 비교하고 싶다고 말했다. 세 가구는 싫어하거나 먹지 못하는 채소가 있어 아무 채소나 넣는 것은 곤란하다고 했다. 이 대화에서 실제 알레르기 진단 여부는 묻지 않았다."
+      }
+    },
+    {
+      "id": "customer-avoidances",
+      "kind": "customer_evidence",
+      "title": "7가구 중 3가구가 싫거나 먹지 못하는 채소 때문에 임의 대체를 우려함",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "제외 채소",
+        "명시적 수락"
+      ],
+      "status": "observed",
+      "rationale": "선호 및 섭취 제약 진술이다. 알레르기 진단 여부를 묻지 않았으므로 알레르기 유병률이나 안전성 근거로 해석하지 않는다.",
+      "evidence": {
+        "passage_id": "a02:519997ceaa5b092b",
+        "quote": "세 가구는 싫어하거나 먹지 못하는 채소가 있어 아무 채소나 넣는 것은 곤란하다고 했다. 이 대화에서 실제 알레르기 진단 여부는 묻지 않았다."
+      },
+      "status_evidence": {
+        "passage_id": "a02:519997ceaa5b092b",
+        "quote": "세 가구는 싫어하거나 먹지 못하는 채소가 있어 아무 채소나 넣는 것은 곤란하다고 했다."
+      },
+      "scope_evidence": {
+        "passage_id": "a02:519997ceaa5b092b",
+        "quote": "10월 18일부터 20일까지 최근 두 달 안에 꾸러미를 받은 일곱 가구와 이야기했다. 일곱 가구 중 다섯 가구는 대체 채소의 가격과 양을 한 화면에서 비교하고 싶다고 말했다. 세 가구는 싫어하거나 먹지 못하는 채소가 있어 아무 채소나 넣는 것은 곤란하다고 했다. 이 대화에서 실제 알레르기 진단 여부는 묻지 않았다."
+      }
+    },
+    {
+      "id": "customer-notice-time",
+      "kind": "customer_evidence",
+      "title": "2가구가 낮 시간 응답 어려움 때문에 전날 저녁 통지를 요청함",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "알림 시점",
+        "응답 기한"
+      ],
+      "status": "observed",
+      "rationale": "두 가구의 요청이며 모든 품절을 전날 알 수 있다는 뜻이나 채택된 알림 정책은 아니다.",
+      "evidence": {
+        "passage_id": "a02:2492c7df245be6df",
+        "quote": "두 가구는 낮에는 휴대폰을 보기 어려우니 전날 저녁에 알려 달라고 했다."
+      },
+      "status_evidence": {
+        "passage_id": "a02:2492c7df245be6df",
+        "quote": "두 가구는 낮에는 휴대폰을 보기 어려우니 전날 저녁에 알려 달라고 했다."
+      },
+      "scope_evidence": {
+        "passage_id": "a02:2492c7df245be6df",
+        "quote": "두 가구는 낮에는 휴대폰을 보기 어려우니 전날 저녁에 알려 달라고 했다. 한편 포장 때 처음 발견되는 품절은 전날 알 수 없다. 인터뷰 진행자는 다음에는 품절을 알게 된 시점과 고객이 응답할 수 있는 시간을 따로 물어보자고 적었다."
+      }
+    },
+    {
+      "id": "notice-timing-question",
+      "kind": "question",
+      "title": "품절 인지 시점과 고객 응답 가능 시간을 따로 조사해야 함",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "알림 시점",
+        "응답 기한"
+      ],
+      "status": "open",
+      "rationale": "포장 중 처음 발견하는 품절은 전날 알 수 없다는 운영 제약 때문에 전날 알림 선호만으로 흐름을 확정할 수 없다.",
+      "evidence": {
+        "passage_id": "a02:2492c7df245be6df",
+        "quote": "한편 포장 때 처음 발견되는 품절은 전날 알 수 없다. 인터뷰 진행자는 다음에는 품절을 알게 된 시점과 고객이 응답할 수 있는 시간을 따로 물어보자고 적었다."
+      },
+      "status_evidence": {
+        "passage_id": "a02:2492c7df245be6df",
+        "quote": "다음에는 품절을 알게 된 시점과 고객이 응답할 수 있는 시간을 따로 물어보자고 적었다."
+      },
+      "scope_evidence": {
+        "passage_id": "a02:2492c7df245be6df",
+        "quote": "두 가구는 낮에는 휴대폰을 보기 어려우니 전날 저녁에 알려 달라고 했다. 한편 포장 때 처음 발견되는 품절은 전날 알 수 없다. 인터뷰 진행자는 다음에는 품절을 알게 된 시점과 고객이 응답할 수 있는 시간을 따로 물어보자고 적었다."
+      }
+    },
+    {
+      "id": "interview-sample-limits",
+      "kind": "customer_evidence",
+      "title": "인터뷰 표본은 소액 적립금을 받은 자발적 기존 고객이며 신규·해지 고객이 없음",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "고객 조사 표본",
+        "비교 정보"
+      ],
+      "status": "observed",
+      "rationale": "자발적 참여와 기존 고객 편중으로 표본 대표성에 제한이 있다. 인터뷰에서 응답률과 구매 전환을 측정하지 않았다는 한계도 유지한다.",
+      "evidence": {
+        "passage_id": "a02:2987cfb1fe299ce2",
+        "quote": "참여자는 모두 마을 게시판 모집에 스스로 응한 기존 고객이고 작은 적립금을 받았다. 신규 고객과 중도 해지자는 없었다. 진행자는 비교 정보가 있으면 응답률도 오를 것 같다고 추측했지만 이 인터뷰에서는 응답률이나 구매 전환을 측정하지 않았다."
+      },
+      "status_evidence": {
+        "passage_id": "a02:2987cfb1fe299ce2",
+        "quote": "참여자는 모두 마을 게시판 모집에 스스로 응한 기존 고객이고 작은 적립금을 받았다."
+      },
+      "scope_evidence": {
+        "passage_id": "a02:2987cfb1fe299ce2",
+        "quote": "참여자는 모두 마을 게시판 모집에 스스로 응한 기존 고객이고 작은 적립금을 받았다. 신규 고객과 중도 해지자는 없었다. 진행자는 비교 정보가 있으면 응답률도 오를 것 같다고 추측했지만 이 인터뷰에서는 응답률이나 구매 전환을 측정하지 않았다."
+      }
+    },
+    {
+      "id": "response-rate-hypothesis",
+      "kind": "assumption",
+      "title": "비교 정보가 응답률을 높일 것이라는 추측은 미검증",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "비교 정보",
+        "응답률"
+      ],
+      "status": "unverified",
+      "rationale": "응답률 상승은 관찰 결과가 아니라 진행자 추측이다. 구매 전환 효과 역시 측정되지 않았다.",
+      "evidence": {
+        "passage_id": "a02:2987cfb1fe299ce2",
+        "quote": "진행자는 비교 정보가 있으면 응답률도 오를 것 같다고 추측했지만 이 인터뷰에서는 응답률이나 구매 전환을 측정하지 않았다."
+      },
+      "status_evidence": {
+        "passage_id": "a02:2987cfb1fe299ce2",
+        "quote": "진행자는 비교 정보가 있으면 응답률도 오를 것 같다고 추측했지만 이 인터뷰에서는 응답률이나 구매 전환을 측정하지 않았다."
+      },
+      "scope_evidence": {
+        "passage_id": "a02:2987cfb1fe299ce2",
+        "quote": "참여자는 모두 마을 게시판 모집에 스스로 응한 기존 고객이고 작은 적립금을 받았다. 신규 고객과 중도 해지자는 없었다. 진행자는 비교 정보가 있으면 응답률도 오를 것 같다고 추측했지만 이 인터뷰에서는 응답률이나 구매 전환을 측정하지 않았다."
+      }
+    },
+    {
+      "id": "competitor-observation",
+      "kind": "market_evidence",
+      "title": "10월 25일 가상 동종 서비스 체험 화면: 너울장 품절 환불, 싹마루 대체 허용 선택",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "동종 서비스 비교",
+        "품절 환불",
+        "명시적 수락"
+      ],
+      "status": "observed",
+      "rationale": "싹마루에서 개별 대체 상품 사전 선택 기능을 찾지 못한 것은 관찰 화면의 한정된 부재이며 서비스 전체 기능 부재가 아니다. 문서가 불완전하다는 원문 메타데이터를 그대로 둔다.",
+      "evidence": {
+        "passage_id": "a03:e70e6fe18742e402",
+        "quote": "10월 25일에 조사자가 가상의 동종 서비스 너울장과 싹마루의 공개 주문 체험 화면을 살펴봤다. 너울장 화면에는 품절 항목을 환불한다는 안내가 있었다. 싹마루 화면에는 고객이 대체를 허용할지 고르는 칸이 있었지만 관찰한 화면에서는 대체될 상품을 미리 고르는 기능을 찾지 못했다."
+      },
+      "status_evidence": {
+        "passage_id": "a03:e70e6fe18742e402",
+        "quote": "10월 25일에 조사자가 가상의 동종 서비스 너울장과 싹마루의 공개 주문 체험 화면을 살펴봤다."
+      },
+      "scope_evidence": {
+        "passage_id": "a03:e70e6fe18742e402",
+        "quote": "10월 25일에 조사자가 가상의 동종 서비스 너울장과 싹마루의 공개 주문 체험 화면을 살펴봤다. 너울장 화면에는 품절 항목을 환불한다는 안내가 있었다. 싹마루 화면에는 고객이 대체를 허용할지 고르는 칸이 있었지만 관찰한 화면에서는 대체될 상품을 미리 고르는 기능을 찾지 못했다."
+      }
+    },
+    {
+      "id": "competitor-coverage-limits",
+      "kind": "market_evidence",
+      "title": "동종 비교는 공개 체험 화면 2개뿐이며 실제 운영·유료 계정·타 지역은 미확인",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "동종 서비스 비교"
+      ],
+      "status": "observed",
+      "rationale": "고객 만족도 우위나 개별 대체품 승인 방식의 시장 표준성을 이 조사로 결론 낼 수 없다.",
+      "evidence": {
+        "passage_id": "a03:aff177cf0a93df24",
+        "quote": "두 서비스의 체험 화면만 본 것이므로 유료 계정, 실제 출고 과정, 다른 지역 정책은 확인하지 못했다. 이 기록만으로 어느 쪽이 고객 만족도가 높다거나 개별 대체품 승인이 시장의 기본 관행이라고 말할 수는 없다."
+      },
+      "status_evidence": {
+        "passage_id": "a03:aff177cf0a93df24",
+        "quote": "유료 계정, 실제 출고 과정, 다른 지역 정책은 확인하지 못했다."
+      },
+      "scope_evidence": {
+        "passage_id": "a03:aff177cf0a93df24",
+        "quote": "두 서비스의 체험 화면만 본 것이므로 유료 계정, 실제 출고 과정, 다른 지역 정책은 확인하지 못했다. 이 기록만으로 어느 쪽이 고객 만족도가 높다거나 개별 대체품 승인이 시장의 기본 관행이라고 말할 수는 없다."
+      }
+    },
+    {
+      "id": "comparison-followup",
+      "kind": "task",
+      "title": "후속 비교 표의 가격 표시·응답 기한·알림 채널은 제안 단계",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "동종 서비스 비교",
+        "비교 정보",
+        "응답 기한",
+        "알림 채널"
+      ],
+      "status": "planned",
+      "rationale": "완료된 조사 내용이 아니라 추가 비교 항목의 메모다.",
+      "evidence": {
+        "passage_id": "a03:43099fbaffd887b5",
+        "quote": "후속 비교 표에는 대체품 가격 표시, 응답 기한, 알림 채널을 넣어 보자는 메모가 있다."
+      },
+      "status_evidence": {
+        "passage_id": "a03:43099fbaffd887b5",
+        "quote": "후속 비교 표에는 대체품 가격 표시, 응답 기한, 알림 채널을 넣어 보자는 메모가 있다."
+      },
+      "scope_evidence": {
+        "passage_id": "a03:43099fbaffd887b5",
+        "quote": "후속 비교 표에는 대체품 가격 표시, 응답 기한, 알림 채널을 넣어 보자는 메모가 있다. 마지막으로 확인하려던 것은 싹마루의 가격 차액 처리 안내였는데 보관된 원문은 여기에서 끊긴다."
+      }
+    },
+    {
+      "id": "competitor-price-gap",
+      "kind": "question",
+      "title": "싹마루 차액 처리 안내는 원문 단절로 확인하지 못함",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "동종 서비스 비교",
+        "차액 환불"
+      ],
+      "status": "open",
+      "rationale": "확인하려던 대상만 명시되어 있고 결론은 없다. 차액 처리 정책을 추정하지 않는다.",
+      "evidence": {
+        "passage_id": "a03:43099fbaffd887b5",
+        "quote": "마지막으로 확인하려던 것은 싹마루의 가격 차액 처리 안내였는데 보관된 원문은 여기에서 끊긴다."
+      },
+      "status_evidence": {
+        "passage_id": "a03:43099fbaffd887b5",
+        "quote": "보관된 원문은 여기에서 끊긴다."
+      },
+      "scope_evidence": {
+        "passage_id": "a03:43099fbaffd887b5",
+        "quote": "후속 비교 표에는 대체품 가격 표시, 응답 기한, 알림 채널을 넣어 보자는 메모가 있다. 마지막으로 확인하려던 것은 싹마루의 가격 차액 처리 안내였는데 보관된 원문은 여기에서 끊긴다."
+      }
+    },
+    {
+      "id": "current-goal",
+      "kind": "goal",
+      "title": "이번 단계 목적: 모르는 채소 수령과 포장 담당자 확인 전화를 줄임",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "품절 대체",
+        "명시적 수락",
+        "확인 전화"
+      ],
+      "status": "accepted",
+      "rationale": "같은 합의 문단에 이번 단계의 목적과 첫 적용 범위가 명시되어 있다.",
+      "evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "이번 단계의 목적은 고객이 모르는 채소를 받는 일을 줄이고 포장 담당자의 확인 전화를 덜어 주는 것이다."
+      },
+      "status_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "11월 2일 합의로"
+      },
+      "scope_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+      }
+    },
+    {
+      "id": "pilot-scope",
+      "kind": "decision",
+      "title": "첫 적용은 한 출고 거점의 수요일 꾸러미이며 확대 날짜는 미정",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "추진 범위",
+        "품절 대체"
+      ],
+      "status": "accepted",
+      "rationale": "9월 전면 적용 일정을 명시적으로 폐기하고 제한된 첫 적용 범위로 바꿨다.",
+      "evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+      },
+      "status_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "11월 2일 합의로"
+      },
+      "scope_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+      },
+      "key": "rollout_scope",
+      "value": "한 출고 거점의 수요일 채소 꾸러미에 먼저 적용; 확대 날짜 미정"
+    },
+    {
+      "id": "old-automatic-substitution",
+      "kind": "decision",
+      "title": "폐기된 8월 무응답 동가 대체 방침",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "명시적 수락",
+        "무응답 마감"
+      ],
+      "status": "superseded",
+      "rationale": "과거 결정이 확정되었던 a01도 읽었으며, 폐기를 직접 밝힌 a04에 역사 기록을 고정해 같은 문서 내 폐기 증거와 현재 후속 규칙을 연결한다. 현재 제약으로 사용하지 않는다.",
+      "evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "11월 2일 합의로 8월 19일의 무응답 동가 대체 방식과 9월 전면 적용 일정은 폐기한다."
+      },
+      "status_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "11월 2일 합의로 8월 19일의 무응답 동가 대체 방식과 9월 전면 적용 일정은 폐기한다."
+      },
+      "scope_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+      },
+      "key": "response_resolution",
+      "value": "무응답 고객에게 동가 대체품 투입",
+      "superseded_by": "response-resolution",
+      "supersession_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "11월 2일 합의로 8월 19일의 무응답 동가 대체 방식과 9월 전면 적용 일정은 폐기한다."
+      }
+    },
+    {
+      "id": "old-full-rollout",
+      "kind": "decision",
+      "title": "폐기된 9월 전 고객 적용 일정",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "추진 범위"
+      ],
+      "status": "superseded",
+      "rationale": "a01은 9월 15일 출고분부터 전 고객 적용 계획을 기록하지만, 현재 폐기는 a04에 명시되어 있다. 후속 적용 범위와 같은 문서에서 증거를 보존한다.",
+      "evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "11월 2일 합의로 8월 19일의 무응답 동가 대체 방식과 9월 전면 적용 일정은 폐기한다."
+      },
+      "status_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "11월 2일 합의로 8월 19일의 무응답 동가 대체 방식과 9월 전면 적용 일정은 폐기한다."
+      },
+      "scope_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+      },
+      "key": "rollout_scope",
+      "value": "9월 전 고객 전면 적용",
+      "superseded_by": "pilot-scope",
+      "supersession_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "11월 2일 합의로 8월 19일의 무응답 동가 대체 방식과 9월 전면 적용 일정은 폐기한다."
+      }
+    },
+    {
+      "id": "candidate-rule",
+      "kind": "decision",
+      "title": "포장 담당자가 등록한 원래 상품 이하 가격의 후보 1개만 제시",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "대체 후보",
+        "비교 정보"
+      ],
+      "status": "accepted",
+      "rationale": "제안 표현이 아닌 현재 처리 규칙의 직접적인 규정 문장이다. 등록 주체·수량·가격 상한을 함께 유지한다.",
+      "evidence": {
+        "passage_id": "a04:6c9d7ee8d8ca4446",
+        "quote": "포장 담당자가 등록한 대체 후보는 원래 상품보다 비싸지 않은 것 한 개만 제시한다."
+      },
+      "status_evidence": {
+        "passage_id": "a04:6c9d7ee8d8ca4446",
+        "quote": "포장 담당자가 등록한 대체 후보는 원래 상품보다 비싸지 않은 것 한 개만 제시한다."
+      },
+      "scope_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+      },
+      "key": "candidate_offer",
+      "value": "포장 담당자 등록 후보 1개; 후보 가격은 원래 상품 가격 이하"
+    },
+    {
+      "id": "response-resolution",
+      "kind": "decision",
+      "title": "명시적 수락만 대체; 거절·당일 10시까지 무응답은 원래 품목 전액 환불",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "명시적 수락",
+        "무응답 마감",
+        "응답 기한",
+        "품절 환불"
+      ],
+      "status": "accepted",
+      "rationale": "조건별 처리와 마감 시각을 명시한 현재 규정이다. 정확히 10시 경계와 시계 기준은 별도 채택된 설계를 함께 확인한다.",
+      "evidence": {
+        "passage_id": "a04:6c9d7ee8d8ca4446",
+        "quote": "고객이 대체품을 명시적으로 수락하면 그 상품으로 바꾸고, 거절하거나 응답 기한인 출고 당일 오전 10시까지 답이 없으면 해당 품목을 빼고 원래 품목 금액 전액을 환불한다."
+      },
+      "status_evidence": {
+        "passage_id": "a04:6c9d7ee8d8ca4446",
+        "quote": "고객이 대체품을 명시적으로 수락하면 그 상품으로 바꾸고, 거절하거나 응답 기한인 출고 당일 오전 10시까지 답이 없으면 해당 품목을 빼고 원래 품목 금액 전액을 환불한다."
+      },
+      "scope_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+      },
+      "key": "response_resolution",
+      "value": "명시적 수락이면 대체; 거절 또는 출고 당일 오전 10시까지 무응답이면 품목 제외 및 원래 금액 전액 환불"
+    },
+    {
+      "id": "cheaper-or-no-candidate",
+      "kind": "decision",
+      "title": "저렴한 후보 수락은 차액 환불, 후보 없음은 승인 질문 없이 품절 품목 환불",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "차액 환불",
+        "후보 없음",
+        "품절 환불"
+      ],
+      "status": "accepted",
+      "rationale": "두 예외 경로의 현재 정산 규칙이며 후속 시험과 연결해 확인할 수 있다.",
+      "evidence": {
+        "passage_id": "a04:6c9d7ee8d8ca4446",
+        "quote": "더 싼 후보를 수락한 경우 차액을 돌려준다. 대체 후보가 없으면 승인을 묻지 않고 품절 품목을 환불한다."
+      },
+      "status_evidence": {
+        "passage_id": "a04:6c9d7ee8d8ca4446",
+        "quote": "더 싼 후보를 수락한 경우 차액을 돌려준다. 대체 후보가 없으면 승인을 묻지 않고 품절 품목을 환불한다."
+      },
+      "scope_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+      },
+      "key": "exception_refund",
+      "value": "더 싼 후보 수락 시 차액 환불; 후보 없으면 승인 질문 없이 품절 품목 환불"
+    },
+    {
+      "id": "card-information",
+      "kind": "requirement",
+      "title": "카드에 원상품·후보 각각 이름·중량·가격과 응답 기한을 함께 표시",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "대체품 카드",
+        "비교 정보",
+        "응답 기한"
+      ],
+      "status": "accepted",
+      "rationale": "동시 표시가 명시적으로 합의되었으므로 8월의 상품명만 보이는 스케치와 구분한다.",
+      "evidence": {
+        "passage_id": "a04:1cb63471496f7e21",
+        "quote": "카드에는 원래 상품과 후보 각각의 이름, 중량, 가격 및 응답 기한을 함께 표시하기로 했다."
+      },
+      "status_evidence": {
+        "passage_id": "a04:1cb63471496f7e21",
+        "quote": "카드에는 원래 상품과 후보 각각의 이름, 중량, 가격 및 응답 기한을 함께 표시하기로 했다."
+      },
+      "scope_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+      }
+    },
+    {
+      "id": "exclude-matching-candidates",
+      "kind": "requirement",
+      "title": "미리 등록한 제외 채소와 일치하는 후보는 제시 금지",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "제외 채소",
+        "대체 후보"
+      ],
+      "status": "accepted",
+      "rationale": "명시된 현재 제약이다. 유사 이름이나 별칭의 일치 기준이 해결되었다고 해석하지 않는다.",
+      "evidence": {
+        "passage_id": "a04:1cb63471496f7e21",
+        "quote": "고객이 미리 등록한 제외 채소와 일치하는 후보는 제시할 수 없다."
+      },
+      "status_evidence": {
+        "passage_id": "a04:1cb63471496f7e21",
+        "quote": "고객이 미리 등록한 제외 채소와 일치하는 후보는 제시할 수 없다."
+      },
+      "scope_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+      }
+    },
+    {
+      "id": "allergy-message-limit",
+      "kind": "requirement",
+      "title": "제외 목록이 모든 알레르기를 예방한다고 안내해서는 안 됨",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "제외 채소",
+        "알레르기 안내"
+      ],
+      "status": "accepted",
+      "rationale": "고객 안내에 대한 명시적 금지이다. 제외 목록 기능의 의료적 효과를 주장하지 않는다.",
+      "evidence": {
+        "passage_id": "a04:1cb63471496f7e21",
+        "quote": "제외 목록이 모든 알레르기를 예방한다고 안내해서는 안 된다."
+      },
+      "status_evidence": {
+        "passage_id": "a04:1cb63471496f7e21",
+        "quote": "제외 목록이 모든 알레르기를 예방한다고 안내해서는 안 된다."
+      },
+      "scope_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+      }
+    },
+    {
+      "id": "excluded-features",
+      "kind": "decision",
+      "title": "이번 범위에서 완료 주문 재개와 고객의 복수 후보 선택을 제외",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "추진 범위",
+        "완료 주문 재개",
+        "대체 후보"
+      ],
+      "status": "accepted",
+      "rationale": "명시된 범위 제외이며 이전의 재개 요청은 채택되지 않았다.",
+      "evidence": {
+        "passage_id": "a04:1cb63471496f7e21",
+        "quote": "포장이 완료된 주문을 다시 여는 기능과 고객이 여러 후보를 고르는 기능은 이번 범위에서 제외한다."
+      },
+      "status_evidence": {
+        "passage_id": "a04:1cb63471496f7e21",
+        "quote": "포장이 완료된 주문을 다시 여는 기능과 고객이 여러 후보를 고르는 기능은 이번 범위에서 제외한다."
+      },
+      "scope_evidence": {
+        "passage_id": "a04:bcc0b45a20cb3424",
+        "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+      },
+      "key": "feature_exclusions",
+      "value": "완료된 포장 주문 재개 및 고객의 여러 후보 선택 제외"
+    },
+    {
+      "id": "deadline-boundary",
+      "kind": "decision",
+      "title": "서버 수신이 오전 10시 이전일 때 수락, 정확히 10시부터 마감",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "응답 기한",
+        "경계 조건",
+        "무응답 마감"
+      ],
+      "status": "accepted",
+      "rationale": "동시 처리의 경계 규칙이 확인·채택되었다. 10시 정각을 허용 범위에 넣지 않는다.",
+      "evidence": {
+        "passage_id": "a05:6af6ef7514ba40b5",
+        "quote": "서버가 응답을 받은 시각이 오전 10시보다 이르면 수락을 처리하고, 정확히 오전 10시부터는 마감된 것으로 처리한다."
+      },
+      "status_evidence": {
+        "passage_id": "a05:6af6ef7514ba40b5",
+        "quote": "이 경계 규칙은 담당자 둘이 확인해 현재 설계로 채택했다."
+      },
+      "scope_evidence": {
+        "passage_id": "a05:6af6ef7514ba40b5",
+        "quote": "구현 논의에서는 고객 응답과 오전 10시 마감 작업이 겹치는 경우를 정리했다. 서버가 응답을 받은 시각이 오전 10시보다 이르면 수락을 처리하고, 정확히 오전 10시부터는 마감된 것으로 처리한다. 화면의 휴대폰 시계는 판정 근거로 쓰지 않는다. 이 경계 규칙은 담당자 둘이 확인해 현재 설계로 채택했다."
+      },
+      "key": "response_time_boundary",
+      "value": "서버 수신 시각 < 오전 10시만 수락; >= 오전 10시는 마감"
+    },
+    {
+      "id": "server-clock-design",
+      "kind": "design",
+      "title": "수락·마감 판정은 서버 수신 시각이며 휴대폰 시계를 사용하지 않음",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "서버 시계",
+        "경계 조건"
+      ],
+      "status": "accepted",
+      "rationale": "휴대폰 표시 시각과 서버 판정을 분리하는 채택된 구현 설계다.",
+      "evidence": {
+        "passage_id": "a05:6af6ef7514ba40b5",
+        "quote": "서버가 응답을 받은 시각이 오전 10시보다 이르면 수락을 처리하고, 정확히 오전 10시부터는 마감된 것으로 처리한다. 화면의 휴대폰 시계는 판정 근거로 쓰지 않는다."
+      },
+      "status_evidence": {
+        "passage_id": "a05:6af6ef7514ba40b5",
+        "quote": "이 경계 규칙은 담당자 둘이 확인해 현재 설계로 채택했다."
+      },
+      "scope_evidence": {
+        "passage_id": "a05:6af6ef7514ba40b5",
+        "quote": "구현 논의에서는 고객 응답과 오전 10시 마감 작업이 겹치는 경우를 정리했다. 서버가 응답을 받은 시각이 오전 10시보다 이르면 수락을 처리하고, 정확히 오전 10시부터는 마감된 것으로 처리한다. 화면의 휴대폰 시계는 판정 근거로 쓰지 않는다. 이 경계 규칙은 담당자 둘이 확인해 현재 설계로 채택했다."
+      }
+    },
+    {
+      "id": "single-final-state",
+      "kind": "requirement",
+      "title": "한 품목의 최종 상태는 수락·환불 중 하나만 가능",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "최종 상태",
+        "품절 환불",
+        "경계 조건"
+      ],
+      "status": "accepted",
+      "rationale": "단일 품목의 상태 불변조건을 명시한 규정이다.",
+      "evidence": {
+        "passage_id": "a05:4ea1ac5019ea920f",
+        "quote": "하나의 품목에 대해서는 수락과 환불 중 하나만 최종 상태가 되어야 한다."
+      },
+      "status_evidence": {
+        "passage_id": "a05:4ea1ac5019ea920f",
+        "quote": "하나의 품목에 대해서는 수락과 환불 중 하나만 최종 상태가 되어야 한다."
+      },
+      "scope_evidence": {
+        "passage_id": "a05:4ea1ac5019ea920f",
+        "quote": "하나의 품목에 대해서는 수락과 환불 중 하나만 최종 상태가 되어야 한다. 환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다. 알림은 앱 알림 한 번으로 시작하기로 했으며, 문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+      }
+    },
+    {
+      "id": "refund-idempotency",
+      "kind": "design",
+      "title": "같은 주문 품목의 재시도 환불은 식별자를 재사용해 한 번만 생성",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "환불 재시도",
+        "품절 환불"
+      ],
+      "status": "accepted",
+      "rationale": "환불 중복 생성을 막기 위한 식별자 재사용 구현 규칙이다. 실제 재전송 시험 결과로 취급하지 않는다.",
+      "evidence": {
+        "passage_id": "a05:4ea1ac5019ea920f",
+        "quote": "환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다."
+      },
+      "status_evidence": {
+        "passage_id": "a05:4ea1ac5019ea920f",
+        "quote": "환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다."
+      },
+      "scope_evidence": {
+        "passage_id": "a05:4ea1ac5019ea920f",
+        "quote": "하나의 품목에 대해서는 수락과 환불 중 하나만 최종 상태가 되어야 한다. 환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다. 알림은 앱 알림 한 번으로 시작하기로 했으며, 문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+      }
+    },
+    {
+      "id": "initial-app-notification",
+      "kind": "decision",
+      "title": "초기 알림은 앱 알림 한 번",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "알림 채널"
+      ],
+      "status": "accepted",
+      "rationale": "시작 채널과 횟수에 대해 명시적으로 정했다. 문자 재발송과 구분한다.",
+      "evidence": {
+        "passage_id": "a05:4ea1ac5019ea920f",
+        "quote": "알림은 앱 알림 한 번으로 시작하기로 했으며, 문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+      },
+      "status_evidence": {
+        "passage_id": "a05:4ea1ac5019ea920f",
+        "quote": "알림은 앱 알림 한 번으로 시작하기로 했으며"
+      },
+      "scope_evidence": {
+        "passage_id": "a05:4ea1ac5019ea920f",
+        "quote": "하나의 품목에 대해서는 수락과 환불 중 하나만 최종 상태가 되어야 한다. 환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다. 알림은 앱 알림 한 번으로 시작하기로 했으며, 문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+      },
+      "key": "initial_notification",
+      "value": "앱 알림 1회"
+    },
+    {
+      "id": "sms-resend-proposal",
+      "kind": "decision",
+      "title": "문자 재발송은 비용 추정 없이 검토 목록에만 남음",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "알림 채널"
+      ],
+      "status": "draft",
+      "rationale": "현재 채택된 기능이 아니라 비용 미확정 상태의 검토안이다.",
+      "evidence": {
+        "passage_id": "a05:4ea1ac5019ea920f",
+        "quote": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+      },
+      "status_evidence": {
+        "passage_id": "a05:4ea1ac5019ea920f",
+        "quote": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+      },
+      "scope_evidence": {
+        "passage_id": "a05:4ea1ac5019ea920f",
+        "quote": "하나의 품목에 대해서는 수락과 환불 중 하나만 최종 상태가 되어야 한다. 환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다. 알림은 앱 알림 한 번으로 시작하기로 했으며, 문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+      },
+      "key": "sms_resend",
+      "value": "문자 재발송 검토 중; 비용 미추정"
+    },
+    {
+      "id": "similar-vegetable-question",
+      "kind": "question",
+      "title": "제외 목록에 없는 비슷한 채소를 이름만으로 허용할 수 있는지 미결",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "제외 채소",
+        "별칭 판정"
+      ],
+      "status": "open",
+      "rationale": "유사 채소와 별칭의 판정 기준이 결정되지 않았다.",
+      "evidence": {
+        "passage_id": "a05:ec138e339a145a84",
+        "quote": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다."
+      },
+      "status_evidence": {
+        "passage_id": "a05:ec138e339a145a84",
+        "quote": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다."
+      },
+      "scope_evidence": {
+        "passage_id": "a05:ec138e339a145a84",
+        "quote": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다. 운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다. 별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다."
+      }
+    },
+    {
+      "id": "alias-followup",
+      "kind": "task",
+      "title": "운영 담당자가 채소 이름·별칭을 정리해 11월 10일 재논의 예정",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "제외 채소",
+        "별칭 판정"
+      ],
+      "status": "planned",
+      "rationale": "담당 역할과 재논의 날짜가 있으며 완료 증거는 없다.",
+      "evidence": {
+        "passage_id": "a05:ec138e339a145a84",
+        "quote": "운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다."
+      },
+      "status_evidence": {
+        "passage_id": "a05:ec138e339a145a84",
+        "quote": "운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다."
+      },
+      "scope_evidence": {
+        "passage_id": "a05:ec138e339a145a84",
+        "quote": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다. 운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다. 별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다."
+      }
+    },
+    {
+      "id": "alias-omission-risk",
+      "kind": "risk",
+      "title": "별칭 누락 시 고객이 제외했다고 생각한 채소가 후보에 노출될 위험",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "제외 채소",
+        "별칭 판정"
+      ],
+      "status": "open",
+      "rationale": "미해결 우려이며 실제 노출 실패를 관찰했다는 기록은 아니다.",
+      "evidence": {
+        "passage_id": "a05:ec138e339a145a84",
+        "quote": "별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다."
+      },
+      "status_evidence": {
+        "passage_id": "a05:ec138e339a145a84",
+        "quote": "별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다."
+      },
+      "scope_evidence": {
+        "passage_id": "a05:ec138e339a145a84",
+        "quote": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다. 운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다. 별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다."
+      }
+    },
+    {
+      "id": "observed-three-paths",
+      "kind": "test_result",
+      "title": "11월 6일 시험 빌드의 저렴한 후보 수락·거절·후보 없음: 상태와 환불액 일치",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "차액 환불",
+        "명시적 수락",
+        "후보 없음",
+        "품절 환불"
+      ],
+      "status": "observed",
+      "rationale": "실행된 세 경로의 관찰 결과다. 시험용 결제 연동만 사용했으며 실제 결제사 환불 완료까지 검증한 결과가 아니다.",
+      "evidence": {
+        "passage_id": "a06:031179910065e21d",
+        "quote": "시험 환경의 11월 6일 빌드에서 저렴한 대체품 수락, 명시적 거절, 후보 없음의 세 경로를 실행했다. 세 경로 모두 주문 품목 상태와 환불 금액이 합의한 규칙과 일치했다. 이것은 시험용 결제 연동 결과이며 실제 결제사의 환불 완료까지 확인한 기록은 아니다."
+      },
+      "status_evidence": {
+        "passage_id": "a06:031179910065e21d",
+        "quote": "세 경로 모두 주문 품목 상태와 환불 금액이 합의한 규칙과 일치했다."
+      },
+      "scope_evidence": {
+        "passage_id": "a06:031179910065e21d",
+        "quote": "시험 환경의 11월 6일 빌드에서 저렴한 대체품 수락, 명시적 거절, 후보 없음의 세 경로를 실행했다. 세 경로 모두 주문 품목 상태와 환불 금액이 합의한 규칙과 일치했다. 이것은 시험용 결제 연동 결과이며 실제 결제사의 환불 완료까지 확인한 기록은 아니다."
+      }
+    },
+    {
+      "id": "observed-deadline-failure",
+      "kind": "test_result",
+      "title": "10시 정각 서버 거절 후 화면은 일시 수락 완료, 새로고침 후 환불 예정",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "경계 조건",
+        "응답 기한",
+        "최종 상태"
+      ],
+      "status": "observed",
+      "rationale": "서버의 거절만으로 전체 경계 처리가 통과했다고 볼 수 없다. 화면 일시 오표시와 새로고침 후 상태를 함께 유지한다.",
+      "evidence": {
+        "passage_id": "a06:111f76b564777b29",
+        "quote": "오전 10시 정각 응답은 서버에서 거절됐지만 고객 화면에는 잠깐 수락 완료가 표시됐다. 새로고침 뒤에는 환불 예정으로 바뀌었다. 표시 오류는 아직 열려 있고 수정 담당자는 정해졌다. 정각 응답 처리 전체가 통과했다고 보고하지 않기로 했다."
+      },
+      "status_evidence": {
+        "passage_id": "a06:111f76b564777b29",
+        "quote": "오전 10시 정각 응답은 서버에서 거절됐지만 고객 화면에는 잠깐 수락 완료가 표시됐다."
+      },
+      "scope_evidence": {
+        "passage_id": "a06:111f76b564777b29",
+        "quote": "오전 10시 정각 응답은 서버에서 거절됐지만 고객 화면에는 잠깐 수락 완료가 표시됐다. 새로고침 뒤에는 환불 예정으로 바뀌었다. 표시 오류는 아직 열려 있고 수정 담당자는 정해졌다. 정각 응답 처리 전체가 통과했다고 보고하지 않기로 했다."
+      }
+    },
+    {
+      "id": "deadline-display-open",
+      "kind": "risk",
+      "title": "10시 정각 응답의 표시 오류는 열려 있고 수정 담당자만 지정됨",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "경계 조건",
+        "대체품 카드",
+        "최종 상태"
+      ],
+      "status": "open",
+      "rationale": "담당자 지정은 수정 완료나 재시험 통과가 아니다. 문서는 정각 응답 처리 전체를 통과로 보고하지 않기로 했다.",
+      "evidence": {
+        "passage_id": "a06:111f76b564777b29",
+        "quote": "표시 오류는 아직 열려 있고 수정 담당자는 정해졌다. 정각 응답 처리 전체가 통과했다고 보고하지 않기로 했다."
+      },
+      "status_evidence": {
+        "passage_id": "a06:111f76b564777b29",
+        "quote": "표시 오류는 아직 열려 있고 수정 담당자는 정해졌다."
+      },
+      "scope_evidence": {
+        "passage_id": "a06:111f76b564777b29",
+        "quote": "오전 10시 정각 응답은 서버에서 거절됐지만 고객 화면에는 잠깐 수락 완료가 표시됐다. 새로고침 뒤에는 환불 예정으로 바뀌었다. 표시 오류는 아직 열려 있고 수정 담당자는 정해졌다. 정각 응답 처리 전체가 통과했다고 보고하지 않기로 했다."
+      }
+    },
+    {
+      "id": "planned-unexecuted-tests",
+      "kind": "test_case",
+      "title": "다음 주 예정: 무응답·제외 후보 차단·환불 3회 재전송·휴대폰 7분 빠름",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "topics": [
+        "무응답 마감",
+        "제외 채소",
+        "환불 재시도",
+        "서버 시계"
+      ],
+      "status": "draft",
+      "rationale": "미실행 시험 계획이다. 계획 문단에 별도 시험 승인 언급이 없어 draft로 보수적으로 분류한다. 휴대폰 시계가 7분 빠른 경우도 서버 기준인지 확인할 예정이며 관찰 결과가 아니다.",
+      "evidence": {
+        "passage_id": "a06:f0303a283e063998",
+        "quote": "무응답 마감, 제외 채소 후보 차단, 환불 요청 세 번 재전송은 다음 주에 시험할 항목이다. 아직 실행 결과는 없다. 휴대폰 시계가 7분 빠른 경우에도 서버 기준으로 처리되는지 함께 확인할 예정이다."
+      },
+      "status_evidence": {
+        "passage_id": "a06:f0303a283e063998",
+        "quote": "다음 주에 시험할 항목이다. 아직 실행 결과는 없다."
+      },
+      "scope_evidence": {
+        "passage_id": "a06:f0303a283e063998",
+        "quote": "무응답 마감, 제외 채소 후보 차단, 환불 요청 세 번 재전송은 다음 주에 시험할 항목이다. 아직 실행 결과는 없다. 휴대폰 시계가 7분 빠른 경우에도 서버 기준으로 처리되는지 함께 확인할 예정이다."
+      }
+    }
+  ],
+  "links": [],
+  "passage_reviews": [
+    {
+      "passage_id": "a01:2cd2c7502b7b06be",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "문서 제목만 있는 표제이며 독립적인 사실·결정·증거는 없다."
+    },
+    {
+      "passage_id": "a01:5f2a12fd3a1a81eb",
+      "action": "extracted",
+      "record_ids": [
+        "early-call-goal"
+      ],
+      "reason": "초기 목표를 추출했다. 역사적 무응답 대체 확정은 a04의 명시적 폐기 문단에 superseded 기록으로 보존했다."
+    },
+    {
+      "passage_id": "a01:dacb81a5bc271628",
+      "action": "extracted",
+      "record_ids": [
+        "early-card-sketch"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    },
+    {
+      "passage_id": "a01:cd2139f88f56d02b",
+      "action": "extracted",
+      "record_ids": [
+        "reopen-request"
+      ],
+      "reason": "미채택 완료 주문 재개 요청을 추출했다. 과거 전면 적용 일정은 a04의 명시적 폐기 문단에 superseded 기록으로 보존했다."
+    },
+    {
+      "passage_id": "a02:1dfb5c76dc607e3e",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "문서 제목만 있는 표제이며 독립적인 사실·결정·증거는 없다."
+    },
+    {
+      "passage_id": "a02:519997ceaa5b092b",
+      "action": "extracted",
+      "record_ids": [
+        "customer-comparison",
+        "customer-avoidances"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    },
+    {
+      "passage_id": "a02:2492c7df245be6df",
+      "action": "extracted",
+      "record_ids": [
+        "customer-notice-time",
+        "notice-timing-question"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    },
+    {
+      "passage_id": "a02:2987cfb1fe299ce2",
+      "action": "extracted",
+      "record_ids": [
+        "interview-sample-limits",
+        "response-rate-hypothesis"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    },
+    {
+      "passage_id": "a03:12fb8e3751346ef2",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "문서 제목만 있는 표제이며 독립적인 사실·결정·증거는 없다."
+    },
+    {
+      "passage_id": "a03:e70e6fe18742e402",
+      "action": "extracted",
+      "record_ids": [
+        "competitor-observation"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    },
+    {
+      "passage_id": "a03:aff177cf0a93df24",
+      "action": "extracted",
+      "record_ids": [
+        "competitor-coverage-limits"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    },
+    {
+      "passage_id": "a03:43099fbaffd887b5",
+      "action": "extracted",
+      "record_ids": [
+        "comparison-followup",
+        "competitor-price-gap"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    },
+    {
+      "passage_id": "a04:9ed5b7d60759567e",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "문서 제목만 있는 표제이며 독립적인 사실·결정·증거는 없다."
+    },
+    {
+      "passage_id": "a04:bcc0b45a20cb3424",
+      "action": "extracted",
+      "record_ids": [
+        "current-goal",
+        "pilot-scope",
+        "old-automatic-substitution",
+        "old-full-rollout"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    },
+    {
+      "passage_id": "a04:6c9d7ee8d8ca4446",
+      "action": "extracted",
+      "record_ids": [
+        "candidate-rule",
+        "response-resolution",
+        "cheaper-or-no-candidate"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    },
+    {
+      "passage_id": "a04:1cb63471496f7e21",
+      "action": "extracted",
+      "record_ids": [
+        "card-information",
+        "exclude-matching-candidates",
+        "allergy-message-limit",
+        "excluded-features"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    },
+    {
+      "passage_id": "a05:c8cac80c03ed83ac",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "문서 제목만 있는 표제이며 독립적인 사실·결정·증거는 없다."
+    },
+    {
+      "passage_id": "a05:6af6ef7514ba40b5",
+      "action": "extracted",
+      "record_ids": [
+        "deadline-boundary",
+        "server-clock-design"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    },
+    {
+      "passage_id": "a05:4ea1ac5019ea920f",
+      "action": "extracted",
+      "record_ids": [
+        "single-final-state",
+        "refund-idempotency",
+        "initial-app-notification",
+        "sms-resend-proposal"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    },
+    {
+      "passage_id": "a05:ec138e339a145a84",
+      "action": "extracted",
+      "record_ids": [
+        "similar-vegetable-question",
+        "alias-followup",
+        "alias-omission-risk"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    },
+    {
+      "passage_id": "a06:75604b91c01d69b5",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "문서 제목만 있는 표제이며 독립적인 사실·결정·증거는 없다."
+    },
+    {
+      "passage_id": "a06:031179910065e21d",
+      "action": "extracted",
+      "record_ids": [
+        "observed-three-paths"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    },
+    {
+      "passage_id": "a06:111f76b564777b29",
+      "action": "extracted",
+      "record_ids": [
+        "observed-deadline-failure",
+        "deadline-display-open"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    },
+    {
+      "passage_id": "a06:f0303a283e063998",
+      "action": "extracted",
+      "record_ids": [
+        "planned-unexecuted-tests"
+      ],
+      "reason": "문단의 서로 다른 사실·상태를 구분하여 추출했다."
+    }
+  ],
+  "task_interpretations": [
+    {
+      "request_id": "research",
+      "type": "market_research",
+      "topics": [
+        "품절 대체",
+        "확인 전화",
+        "명시적 수락",
+        "비교 정보",
+        "대체품 카드",
+        "제외 채소",
+        "알림 시점",
+        "응답 기한",
+        "고객 조사 표본",
+        "응답률",
+        "동종 서비스 비교",
+        "품절 환불",
+        "알림 채널",
+        "차액 환불",
+        "추진 범위",
+        "무응답 마감",
+        "대체 후보",
+        "후보 없음",
+        "알레르기 안내",
+        "완료 주문 재개",
+        "경계 조건",
+        "서버 시계",
+        "최종 상태",
+        "환불 재시도",
+        "별칭 판정"
+      ],
+      "intent_quote": "고객이 겪는 문제, 동종 서비스에서 실제로 확인한 내용, 더 알아봐야 할 점과 현재 추진 범위를 모아 달라.",
+      "rationale": "후속 비교 조사를 위한 고객 문제·동종 관찰·지식 공백과 현재 추진 범위의 준비 요청이다. 전반적 품절 대체 동작 관련 용어를 공통 주제로 연결한다."
+    },
+    {
+      "request_id": "design",
+      "type": "feature_design",
+      "topics": [
+        "품절 대체",
+        "확인 전화",
+        "명시적 수락",
+        "비교 정보",
+        "대체품 카드",
+        "제외 채소",
+        "알림 시점",
+        "응답 기한",
+        "품절 환불",
+        "알림 채널",
+        "차액 환불",
+        "추진 범위",
+        "무응답 마감",
+        "대체 후보",
+        "후보 없음",
+        "알레르기 안내",
+        "완료 주문 재개",
+        "경계 조건",
+        "서버 시계",
+        "최종 상태",
+        "환불 재시도",
+        "별칭 판정"
+      ],
+      "intent_quote": "품절 대체 승인 화면과 처리 흐름을 구체화하려 한다.",
+      "rationale": "화면 정보, 처리 조건, 현재 합의와 미결 문제를 설계하기 위한 준비이다. 알려진 경계 오류와 고객 요구도 설계 문맥에 포함한다."
+    },
+    {
+      "request_id": "qa",
+      "type": "qa_review",
+      "topics": [
+        "품절 대체",
+        "확인 전화",
+        "명시적 수락",
+        "비교 정보",
+        "대체품 카드",
+        "제외 채소",
+        "응답 기한",
+        "품절 환불",
+        "알림 채널",
+        "차액 환불",
+        "추진 범위",
+        "무응답 마감",
+        "대체 후보",
+        "후보 없음",
+        "알레르기 안내",
+        "완료 주문 재개",
+        "경계 조건",
+        "서버 시계",
+        "최종 상태",
+        "환불 재시도",
+        "별칭 판정"
+      ],
+      "intent_quote": "기대 동작과 경계 조건을 확인하고, 이미 실행해 얻은 결과와 남은 확인 작업을 구분",
+      "rationale": "출시 전 기대 동작·경계·실행 결과·미실행 항목을 구분하는 QA 준비 요청이다. 규칙의 채택 상태와 시험 실행 여부를 분리한다."
+    }
+  ],
+  "uncertainties": [
+    "a03(책상 위의 두 화면)는 complete=false이고 마지막 가격 차액 안내가 끊겼다. 공개 체험 화면에서 관찰한 환불·대체 허용 선택만 기록되어 있으며 실제 운영·유료 계정·타 지역 및 싹마루 차액 정책은 미확인이다. helper가 불완전 출처의 기록을 제외할 수 있으므로 추출 원문과 해당 누락 이유를 함께 보아야 한다.",
+    "인터뷰는 최근 수령한 자발적 기존 고객 7가구이며 신규·해지 고객이 없다. 알레르기 진단, 응답률, 구매 전환은 측정하지 않았다.",
+    "제외 채소의 유사 이름·별칭 처리 기준은 미결이며 11월 10일 재논의 예정이다. 확대 날짜와 문자 재발송 비용도 정해지지 않았다.",
+    "11월 6일 시험은 실제 결제사의 환불 완료를 검증하지 않았다. 정각 응답 화면 오류는 열려 있고, 무응답·제외 차단·환불 재전송·시계 오차 시험은 아직 실행되지 않았다.",
+    "오전 10시의 시간대는 원문에 명시되지 않았다. 임의의 시간대나 추가 유효기한을 부여하지 않았다.",
+    "공급된 프로젝트 문서에 한정한 추출이며 전체 작업공간의 완전성이나 출시 승인을 뜻하지 않는다. 링크는 전제·근거 관계가 명시된 경우에만 추가하므로 단순한 주제 유사성은 관계로 만들지 않았다."
+  ]
+}

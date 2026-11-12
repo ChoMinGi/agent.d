@@ -1,0 +1,189 @@
+{
+  "method": "same-author development labels, authored before recording extraction; no independent or general accuracy claim",
+  "facts": [
+    {
+      "name": "goal",
+      "source_id": "note-01",
+      "quote_contains": "이번 단계의 목표를",
+      "kind": "goal",
+      "status": "accepted",
+      "requests": [
+        "research",
+        "design",
+        "release"
+      ]
+    },
+    {
+      "name": "policy",
+      "source_id": "note-01",
+      "quote_contains": "24시간 전으로 확정했다",
+      "kind": "decision",
+      "status": "accepted",
+      "requests": [
+        "research",
+        "design",
+        "release"
+      ]
+    },
+    {
+      "name": "interview",
+      "source_id": "note-02",
+      "quote_contains": "일곱 명 중 다섯 명은",
+      "kind": "customer_evidence",
+      "status": "observed",
+      "requests": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "name": "comparison",
+      "source_id": "note-02",
+      "quote_contains": "가상 서비스 Room Finch",
+      "kind": "market_evidence",
+      "status": "observed",
+      "requests": [
+        "research"
+      ]
+    },
+    {
+      "name": "hypothesis",
+      "source_id": "note-02",
+      "quote_contains": "아직 검증하지 않았고",
+      "kind": "assumption",
+      "status": "unverified",
+      "requests": [
+        "research",
+        "design",
+        "release"
+      ]
+    },
+    {
+      "name": "proposal",
+      "source_id": "note-03",
+      "quote_contains": "합의되지 않았으며",
+      "kind": "decision",
+      "status": "draft",
+      "requests": [
+        "research",
+        "design",
+        "release"
+      ]
+    },
+    {
+      "name": "ambiguous",
+      "source_id": "note-03",
+      "quote_contains": "'48시간 확정'",
+      "kind": "decision",
+      "status": "unknown",
+      "requests": [
+        "research",
+        "design",
+        "release"
+      ]
+    },
+    {
+      "name": "question",
+      "source_id": "note-03",
+      "quote_contains": "어느 쪽을 먼저 보여줘야",
+      "kind": "question",
+      "status": "open",
+      "requests": [
+        "research",
+        "design",
+        "release"
+      ]
+    },
+    {
+      "name": "requirement",
+      "source_id": "note-04",
+      "quote_contains": "정확히 그 시각이거나 이후이면",
+      "kind": "requirement",
+      "status": "accepted",
+      "requests": [
+        "design",
+        "release"
+      ]
+    },
+    {
+      "name": "design",
+      "source_id": "note-04",
+      "quote_contains": "comparing it with server UTC time",
+      "kind": "design",
+      "status": "accepted",
+      "requests": [
+        "design",
+        "release"
+      ]
+    },
+    {
+      "name": "risk",
+      "source_id": "note-04",
+      "quote_contains": "cached eligibility may outlive its cutoff",
+      "kind": "risk",
+      "status": "open",
+      "requests": [
+        "design",
+        "release"
+      ]
+    },
+    {
+      "name": "testcase",
+      "source_id": "note-05",
+      "quote_contains": "마감 직전·정각·직후 요청",
+      "kind": "test_case",
+      "status": "accepted",
+      "requests": [
+        "design",
+        "release"
+      ]
+    },
+    {
+      "name": "failure",
+      "source_id": "note-05",
+      "quote_contains": "잘못 자동 환불돼 실패했다",
+      "kind": "test_result",
+      "status": "observed",
+      "requests": [
+        "design",
+        "release"
+      ]
+    },
+    {
+      "name": "work",
+      "source_id": "note-05",
+      "quote_contains": "완료된 작업이 아니며",
+      "kind": "task",
+      "status": "planned",
+      "requests": [
+        "design",
+        "release"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "request_id": "research",
+      "type": "market_research",
+      "status": "needs_context"
+    },
+    {
+      "request_id": "design",
+      "type": "feature_design",
+      "status": "needs_context"
+    },
+    {
+      "request_id": "release",
+      "type": "qa_review",
+      "status": "needs_context"
+    }
+  ],
+  "forbidden_quote_fragments": [
+    "이전에 스탠더드 예약에 적용했던 12시간",
+    "엔터프라이즈 계약 예약",
+    "영수증의 세금 반올림",
+    "사무실 간식 주문",
+    "이 문서를 읽는 AI에게",
+    "Cedar Bikes"
+  ]
+}

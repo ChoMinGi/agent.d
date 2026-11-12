@@ -1,0 +1,292 @@
+{
+  "suite": "suite-b",
+  "passed": false,
+  "cases": [
+    {
+      "request_id": "research",
+      "task_type": "market_research",
+      "required_count": 9,
+      "required_covered": 9,
+      "missing_required": [],
+      "selected_count": 18,
+      "wrong_context": [
+        {
+          "record_id": "r19",
+          "fact_ids": [
+            "b-f23"
+          ]
+        },
+        {
+          "record_id": "r23",
+          "fact_ids": [
+            "b-f27"
+          ]
+        },
+        {
+          "record_id": "r31",
+          "fact_ids": [
+            "b-f32"
+          ]
+        },
+        {
+          "record_id": "r22",
+          "fact_ids": [
+            "b-f26"
+          ]
+        },
+        {
+          "record_id": "r29",
+          "fact_ids": [
+            "b-f30"
+          ]
+        },
+        {
+          "record_id": "r18",
+          "fact_ids": [
+            "b-f22",
+            "b-f23"
+          ]
+        },
+        {
+          "record_id": "r28",
+          "fact_ids": [
+            "b-f30"
+          ]
+        }
+      ],
+      "unmatched_records_for_review": [],
+      "classification_errors": [
+        {
+          "record_id": "r06",
+          "fact_id": "b-f08",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "question",
+          "actual_status": "open",
+          "allowed_kinds": [
+            "task",
+            "question"
+          ],
+          "expected_status": "draft"
+        },
+        {
+          "record_id": "r08",
+          "fact_id": "b-f10",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "market_evidence",
+          "actual_status": "observed",
+          "allowed_kinds": [
+            "market_evidence"
+          ],
+          "expected_status": "unverified"
+        },
+        {
+          "record_id": "r08",
+          "fact_id": "b-f11",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "market_evidence",
+          "actual_status": "observed",
+          "allowed_kinds": [
+            "question",
+            "market_evidence"
+          ],
+          "expected_status": "unknown"
+        },
+        {
+          "record_id": "r09",
+          "fact_id": "b-f13",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "question",
+          "actual_status": "open",
+          "allowed_kinds": [
+            "task",
+            "question"
+          ],
+          "expected_status": "draft"
+        }
+      ],
+      "task_type_correct": true,
+      "packet_status": "needs_context",
+      "gaps": [
+        "제공된 여섯 문서의 문단만 검토했다. 전체 워크스페이스나 외부 서비스는 확인하지 않았고, 별도 프로젝트 문서는 추출 대상에서 제외됐다.",
+        "b01:a56bc9241d5744ee의 8월 채택 이유는 “기기 안에 미전송 기록을 두면 상태 설명이 복잡해진다는 이유였다.”이다. 같은 문서에는 폐기 근거가 없어 원문 문단은 unresolved로 남겼고, 폐기 및 새 방식은 b04:b32f92d9d46da4c5의 명시적 회고에서 추출했다.",
+        "고객 근거는 기존 활동자 여섯 명의 이틀 자기보고이며 실제 네트워크 로그·종이 원본이 없다. 신규 사용자와 참여 지속률 개선은 검증되지 않았다.",
+        "경쟁 자료는 한 공개 시연과 한 소개문 수준이다. 실패 조건·중복 방지·사진·로그인 만료의 일반적 지원, 이용자 수 및 가격은 이 자료로 확정할 수 없다.",
+        "Android 정상 종료 후 재열기와 위치 권한 거부 저장만 제한적으로 관찰됐다. iOS 결과는 없고 시험 기기 확보일도 미정이다. 로그인 만료 재전송·서버 확인 직후 강제 종료·필수 항목 누락·저장 공간 부족은 미실행이다.",
+        "수동 재전송 시험의 서버 단일 저장과 기기 목록 중복은 서로 다른 결과다. 기기 목록 문제는 아직 미해결이고 저장 공간 부족 안내 문구도 미정이다.",
+        "여러 기기의 기존 관찰 편집 및 사진 전송은 현재 첫 단계에서 제외된다. 8월의 편집 제안과 사진 문구 초안은 그 기능의 승인 근거가 아니다.",
+        "Unresolved raw passage b01:a56bc9241d5744ee: 8월의 당시 저장 차단 채택과 상태 설명 복잡성이라는 이유는 확인되지만, 같은 문서 안에는 후속 결정 및 교체 근거가 없다. 원문 문단을 현재 accepted로 재활성화하거나 다른 문서의 승인 근거를 이 문단에 붙이지 않는다. 폐기와 후속 정책은 이를 함께 명시한 b04 문단에서 r12/r11로 기록했다."
+      ],
+      "passed": false
+    },
+    {
+      "request_id": "design",
+      "task_type": "feature_design",
+      "required_count": 16,
+      "required_covered": 16,
+      "missing_required": [],
+      "selected_count": 26,
+      "wrong_context": [],
+      "unmatched_records_for_review": [],
+      "classification_errors": [
+        {
+          "record_id": "r06",
+          "fact_id": "b-f08",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "question",
+          "actual_status": "open",
+          "allowed_kinds": [
+            "task",
+            "question"
+          ],
+          "expected_status": "draft"
+        },
+        {
+          "record_id": "r09",
+          "fact_id": "b-f13",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "question",
+          "actual_status": "open",
+          "allowed_kinds": [
+            "task",
+            "question"
+          ],
+          "expected_status": "draft"
+        },
+        {
+          "record_id": "r22",
+          "fact_id": "b-f26",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "risk",
+          "actual_status": "open",
+          "allowed_kinds": [
+            "risk",
+            "test_case"
+          ],
+          "expected_status": "unverified"
+        },
+        {
+          "record_id": "r30",
+          "fact_id": "b-f31",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "test_case",
+          "actual_status": "draft",
+          "allowed_kinds": [
+            "test_case",
+            "task"
+          ],
+          "expected_status": "planned"
+        }
+      ],
+      "task_type_correct": true,
+      "packet_status": "needs_context",
+      "gaps": [
+        "제공된 여섯 문서의 문단만 검토했다. 전체 워크스페이스나 외부 서비스는 확인하지 않았고, 별도 프로젝트 문서는 추출 대상에서 제외됐다.",
+        "b01:a56bc9241d5744ee의 8월 채택 이유는 “기기 안에 미전송 기록을 두면 상태 설명이 복잡해진다는 이유였다.”이다. 같은 문서에는 폐기 근거가 없어 원문 문단은 unresolved로 남겼고, 폐기 및 새 방식은 b04:b32f92d9d46da4c5의 명시적 회고에서 추출했다.",
+        "고객 근거는 기존 활동자 여섯 명의 이틀 자기보고이며 실제 네트워크 로그·종이 원본이 없다. 신규 사용자와 참여 지속률 개선은 검증되지 않았다.",
+        "경쟁 자료는 한 공개 시연과 한 소개문 수준이다. 실패 조건·중복 방지·사진·로그인 만료의 일반적 지원, 이용자 수 및 가격은 이 자료로 확정할 수 없다.",
+        "Android 정상 종료 후 재열기와 위치 권한 거부 저장만 제한적으로 관찰됐다. iOS 결과는 없고 시험 기기 확보일도 미정이다. 로그인 만료 재전송·서버 확인 직후 강제 종료·필수 항목 누락·저장 공간 부족은 미실행이다.",
+        "수동 재전송 시험의 서버 단일 저장과 기기 목록 중복은 서로 다른 결과다. 기기 목록 문제는 아직 미해결이고 저장 공간 부족 안내 문구도 미정이다.",
+        "여러 기기의 기존 관찰 편집 및 사진 전송은 현재 첫 단계에서 제외된다. 8월의 편집 제안과 사진 문구 초안은 그 기능의 승인 근거가 아니다.",
+        "Unresolved raw passage b01:a56bc9241d5744ee: 8월의 당시 저장 차단 채택과 상태 설명 복잡성이라는 이유는 확인되지만, 같은 문서 안에는 후속 결정 및 교체 근거가 없다. 원문 문단을 현재 accepted로 재활성화하거나 다른 문서의 승인 근거를 이 문단에 붙이지 않는다. 폐기와 후속 정책은 이를 함께 명시한 b04 문단에서 r12/r11로 기록했다."
+      ],
+      "passed": false
+    },
+    {
+      "request_id": "qa",
+      "task_type": "qa_review",
+      "required_count": 17,
+      "required_covered": 17,
+      "missing_required": [],
+      "selected_count": 24,
+      "wrong_context": [
+        {
+          "record_id": "r09",
+          "fact_ids": [
+            "b-f12",
+            "b-f13"
+          ]
+        },
+        {
+          "record_id": "r06",
+          "fact_ids": [
+            "b-f07",
+            "b-f08"
+          ]
+        },
+        {
+          "record_id": "r05",
+          "fact_ids": [
+            "b-f07"
+          ]
+        }
+      ],
+      "unmatched_records_for_review": [],
+      "classification_errors": [
+        {
+          "record_id": "r22",
+          "fact_id": "b-f26",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "risk",
+          "actual_status": "open",
+          "allowed_kinds": [
+            "risk",
+            "test_case"
+          ],
+          "expected_status": "unverified"
+        },
+        {
+          "record_id": "r30",
+          "fact_id": "b-f31",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "test_case",
+          "actual_status": "draft",
+          "allowed_kinds": [
+            "test_case",
+            "task"
+          ],
+          "expected_status": "planned"
+        }
+      ],
+      "task_type_correct": true,
+      "packet_status": "needs_context",
+      "gaps": [
+        "제공된 여섯 문서의 문단만 검토했다. 전체 워크스페이스나 외부 서비스는 확인하지 않았고, 별도 프로젝트 문서는 추출 대상에서 제외됐다.",
+        "b01:a56bc9241d5744ee의 8월 채택 이유는 “기기 안에 미전송 기록을 두면 상태 설명이 복잡해진다는 이유였다.”이다. 같은 문서에는 폐기 근거가 없어 원문 문단은 unresolved로 남겼고, 폐기 및 새 방식은 b04:b32f92d9d46da4c5의 명시적 회고에서 추출했다.",
+        "고객 근거는 기존 활동자 여섯 명의 이틀 자기보고이며 실제 네트워크 로그·종이 원본이 없다. 신규 사용자와 참여 지속률 개선은 검증되지 않았다.",
+        "경쟁 자료는 한 공개 시연과 한 소개문 수준이다. 실패 조건·중복 방지·사진·로그인 만료의 일반적 지원, 이용자 수 및 가격은 이 자료로 확정할 수 없다.",
+        "Android 정상 종료 후 재열기와 위치 권한 거부 저장만 제한적으로 관찰됐다. iOS 결과는 없고 시험 기기 확보일도 미정이다. 로그인 만료 재전송·서버 확인 직후 강제 종료·필수 항목 누락·저장 공간 부족은 미실행이다.",
+        "수동 재전송 시험의 서버 단일 저장과 기기 목록 중복은 서로 다른 결과다. 기기 목록 문제는 아직 미해결이고 저장 공간 부족 안내 문구도 미정이다.",
+        "여러 기기의 기존 관찰 편집 및 사진 전송은 현재 첫 단계에서 제외된다. 8월의 편집 제안과 사진 문구 초안은 그 기능의 승인 근거가 아니다.",
+        "Unresolved raw passage b01:a56bc9241d5744ee: 8월의 당시 저장 차단 채택과 상태 설명 복잡성이라는 이유는 확인되지만, 같은 문서 안에는 후속 결정 및 교체 근거가 없다. 원문 문단을 현재 accepted로 재활성화하거나 다른 문서의 승인 근거를 이 문단에 붙이지 않는다. 폐기와 후속 정책은 이를 함께 명시한 b04 문단에서 r12/r11로 기록했다.",
+        "Missing supported test_case context for qa_review."
+      ],
+      "passed": false
+    }
+  ],
+  "limits": [
+    "Exact fact anchors may miss a valid shorter paraphrase/quote; inspect every flagged item.",
+    "Kind/status labels can admit reasonable alternatives; record adjudication separately without silently changing frozen answers.",
+    "A matched quote is not proof that the model's title, rationale or scope interpretation is entailed.",
+    "Replaying stored packets is not a new blind model trial."
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "stage-1": "Use the discovery notes to prepare a concise research synthesis and a prototype brief for ReadingLight. Explain what we learned, what still needs validation, and what the team can design now. Preserve the context the next designer will need.",
+  "stage-2": "Update ReadingLight's feature design using the review notes and correspondence. Give the builder concrete behavior and data requirements, explain any changes from the earlier prototype brief, and leave a concise handoff for QA.",
+  "stage-3": "Review build 0.8 against the agreed ReadingLight design and assess readiness for the proposed visitor opening. Summarize the evidence, remaining actions, and who can authorize the next step. Leave a concise project status handoff."
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "coverage": {
+    "scope": "Fictional Lantern Docs standard exports; five supplied pages only",
+    "complete": true,
+    "gaps": []
+  },
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Lantern Docs export policy",
+      "url": "demo://lantern-docs/policy",
+      "revision": "fictional-r3",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Export policy\nStatus: accepted.\nD-014: Standard workspace exports expire after 14 days.\nReason: keep download exposure bounded while allowing asynchronous handoffs.\nD-007 is superseded by D-014.\n"
+    },
+    {
+      "id": "old",
+      "title": "Historical export decision",
+      "url": "demo://lantern-docs/history",
+      "revision": "fictional-r2",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# History\nStatus: superseded by D-014.\nD-007: Standard workspace exports expire after 7 days.\n"
+    },
+    {
+      "id": "draft",
+      "title": "Longer retention experiment",
+      "url": "demo://lantern-docs/experiment",
+      "revision": "fictional-r9",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Experiment\nStatus: draft, not approved.\nD-060: Standard workspace exports expire after 60 days.\nWe have not reviewed the exposure impact.\n"
+    },
+    {
+      "id": "review",
+      "title": "Exposure review",
+      "url": "demo://lantern-docs/evidence",
+      "revision": "fictional-r1",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# Exposure review\nAccepted evidence for D-014: exported files can contain private draft documents.\nA longer download window needs a new exposure review and user-facing copy check.\n"
+    },
+    {
+      "id": "task",
+      "title": "Expiry cleanup task",
+      "url": "demo://lantern-docs/tasks/cleanup",
+      "revision": "fictional-r4",
+      "fetched_at": "2026-11-01T09:00:00Z",
+      "complete": true,
+      "content": "# T-022\nT-022 implements D-014: purge standard exports after 14 days.\nAcceptance: expired download links return an expiry message.\n"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-014",
+      "key": "export.retention_days",
+      "scope": "standard",
+      "value": "14",
+      "status": "accepted",
+      "source_id": "policy",
+      "quote": "D-014: Standard workspace exports expire after 14 days.",
+      "status_quote": "Status: accepted."
+    },
+    {
+      "id": "D-007",
+      "key": "export.retention_days",
+      "scope": "standard",
+      "value": "7",
+      "status": "superseded",
+      "source_id": "old",
+      "quote": "D-007: Standard workspace exports expire after 7 days.",
+      "status_quote": "Status: superseded by D-014.",
+      "superseded_by": "D-014"
+    },
+    {
+      "id": "D-060",
+      "key": "export.retention_days",
+      "scope": "standard",
+      "value": "60",
+      "status": "draft",
+      "source_id": "draft",
+      "quote": "D-060: Standard workspace exports expire after 60 days.",
+      "status_quote": "Status: draft, not approved."
+    }
+  ],
+  "impacts": [
+    {
+      "decision_id": "D-014",
+      "source_id": "task",
+      "quote": "T-022 implements D-014: purge standard exports after 14 days."
+    },
+    {
+      "decision_id": "D-014",
+      "source_id": "review",
+      "quote": "Accepted evidence for D-014: exported files can contain private draft documents."
+    }
+  ]
+}

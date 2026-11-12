@@ -1,0 +1,8 @@
+{
+  "extraction_version": 2,
+  "requests": [
+    {"id":"research","summary":"Willow Atlas 지역 봉사단 시장조사를 준비한다. 실제 문제, 현재 대안, 도입 의향과 미검증 효과에 필요한 맥락을 골라줘.","project_id":"willow-atlas","scope":"trial","as_of":"2027-04-13T10:00:00Z","max_items":16},
+    {"id":"design","summary":"Willow Atlas 오프라인 제출과 시민 지도 공개 기능 설계를 준비한다. 현재 요구, 후속 변경과 미결정 조건을 골라줘.","project_id":"willow-atlas","scope":"trial","as_of":"2027-04-13T10:00:00Z","max_items":16},
+    {"id":"qa","summary":"Willow Atlas 시험판 QA 검토를 준비한다. 현재 동작, 실패와 미실행 시험, 시민 공개 승인 조건을 골라줘.","project_id":"willow-atlas","scope":"trial","as_of":"2027-04-13T10:00:00Z","max_items":16}
+  ]
+}

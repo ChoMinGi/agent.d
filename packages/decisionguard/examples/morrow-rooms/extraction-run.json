@@ -1,0 +1,17 @@
+{
+  "run_date": "2026-11-08",
+  "extractor": "Codex host agent in the implementation session; no separate model service",
+  "input": "documents.json + raw/*.md + requests.json",
+  "output": "recorded-extraction.json",
+  "raw_documents_total": 7,
+  "in_scope_documents": 6,
+  "passages_reviewed": 19,
+  "task_interpretations": 3,
+  "is_independent": false,
+  "notes": [
+    "Same agent authored fixture, expectations, implementation and extraction.",
+    "The host agent read the raw prompt and explicitly supplied semantic classifications; authoring code only serialized that response.",
+    "Automated tests replay this recorded response. They do not call a language model or demonstrate fresh extraction after edits.",
+    "No live Notion pages, external writes or private project data were used."
+  ]
+}

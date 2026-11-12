@@ -1,0 +1,15 @@
+{
+  "changes": [
+    {
+      "source_id": "draft",
+      "before": "We have not reviewed the exposure impact.",
+      "after": "Review required before acceptance: reassess download exposure, revise D-014 if approved, and update T-022 plus expiry copy and tests.",
+      "rationale": "Record the review requirements while leaving this proposal in draft status.",
+      "evidence_ids": [
+        "policy",
+        "review",
+        "task"
+      ]
+    }
+  ]
+}

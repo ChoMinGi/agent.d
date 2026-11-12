@@ -1,0 +1,59 @@
+{
+  "summary": "Use the discovery notes to prepare a concise research synthesis for ReadingLight. Explain what we learned and what still needs validation. Preserve the context the next designer will need.",
+  "project_id": "readinglight",
+  "scope": "two-room-pilot",
+  "as_of": "2027-07-14T10:02:00Z",
+  "max_items": 16,
+  "type": "market_research",
+  "topics": [
+    "seat-availability",
+    "local-discovery",
+    "research-generalization",
+    "cross-branch-demand",
+    "accessibility",
+    "prototype-scope",
+    "release-approval"
+  ],
+  "relevance": [
+    {
+      "record_id": "G-001",
+      "action": "include",
+      "rationale": "Frames the two-room purpose while retaining unknown formal goal-approval status."
+    },
+    {
+      "record_id": "CE-001",
+      "action": "include",
+      "rationale": "Supports the local seating problem and preserves the interview sample size."
+    },
+    {
+      "record_id": "CE-002",
+      "action": "include",
+      "rationale": "Provides the local observational count without an invented rate or intervention effect."
+    },
+    {
+      "record_id": "R-001",
+      "action": "include",
+      "rationale": "Prevents overgeneralizing the local findings into population demand."
+    },
+    {
+      "record_id": "H-001",
+      "action": "include",
+      "rationale": "Identifies the untested benefit hypothesis that must remain separate from observed findings."
+    },
+    {
+      "record_id": "Q-001",
+      "action": "include",
+      "rationale": "Preserves the unrepresented populations and the action-specific limit on demand claims."
+    },
+    {
+      "record_id": "D-041",
+      "action": "include",
+      "rationale": "Defines the accepted prototype scope that research and the next designer must carry forward."
+    },
+    {
+      "record_id": "REQ-RELEASE",
+      "action": "include",
+      "rationale": "Separates design authority from the unestablished visitor-facing release approval."
+    }
+  ]
+}

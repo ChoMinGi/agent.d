@@ -1,0 +1,11 @@
+{
+  "summary": "문서 내보내기·게스트 공유 기능 설계를 준비해줘. 현재 결정, 요구사항, 구현 제약과 미정 사항을 찾아줘.",
+  "type": "feature_design",
+  "project_id": "lantern-docs",
+  "scope": "standard",
+  "topics": [
+    "exports"
+  ],
+  "as_of": "2026-11-07T00:00:00Z",
+  "max_items": 16
+}

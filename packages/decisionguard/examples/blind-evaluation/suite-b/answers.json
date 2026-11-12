@@ -1,0 +1,648 @@
+{
+  "suite": "suite-b",
+  "rationale": "추출 결과나 구현을 보지 않고 자연스러운 가상 업무 기록과 요청을 먼저 작성한 뒤, 원문이 지지하는 의미와 불확실성을 기준으로 기대 맥락을 기록했다. 분류는 복수의 방어 가능한 종류를 허용하며, 최소 필요 맥락과 합리적 부가 맥락을 구분한다.",
+  "facts": [
+    {
+      "id": "b-f01",
+      "source_id": "b01",
+      "quote_contains": "인터넷이 끊기면 저장 버튼을 비활성화",
+      "meaning": "8월의 저장 차단 결정은 b04가 폐기했다. 현행 동작으로 적용할 수 없다.",
+      "acceptable_kinds": [
+        "decision"
+      ],
+      "status": "superseded",
+      "required_for": [],
+      "allowed_for": []
+    },
+    {
+      "id": "b-f02",
+      "source_id": "b01",
+      "quote_contains": "충돌 시각이 늦은 편집을 남기자는 의견",
+      "meaning": "다중 기기 동시 편집과 최신 시각 우선은 미승인 제안이었고 이번 범위 밖이다. 현행 설계로 채택해서는 안 된다.",
+      "acceptable_kinds": [
+        "design",
+        "assumption"
+      ],
+      "status": "draft",
+      "required_for": [],
+      "allowed_for": []
+    },
+    {
+      "id": "b-f03",
+      "source_id": "b01",
+      "quote_contains": "사진도 자동 전송된다고 써 보자는 문구 초안",
+      "meaning": "사진 자동 전송은 검토용 문구일 뿐이고 현행 출시에서는 제외됐다. 기능 결정이나 구현 근거가 아니다.",
+      "acceptable_kinds": [
+        "design",
+        "requirement"
+      ],
+      "status": "draft",
+      "required_for": [],
+      "allowed_for": []
+    },
+    {
+      "id": "b-f04",
+      "source_id": "b02",
+      "quote_contains": "네 명은 강변에서 연결이 끊겨",
+      "meaning": "여섯 명 중 네 명이 연결 단절 때문에 종·마릿수를 종이에 적었다고 진술했다. 로그로 검증한 행동 데이터는 아니다.",
+      "acceptable_kinds": [
+        "customer_evidence"
+      ],
+      "status": "observed",
+      "required_for": [
+        "research",
+        "design"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f05",
+      "source_id": "b02",
+      "quote_contains": "그중 두 명은 집에서 옮겨 적을 때",
+      "meaning": "그중 두 명이 관찰 시각을 정확히 기억하지 못했다고 진술했다.",
+      "acceptable_kinds": [
+        "customer_evidence"
+      ],
+      "status": "observed",
+      "required_for": [
+        "research"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f06",
+      "source_id": "b02",
+      "quote_contains": "기기 저장과 서버 전송을 구분하는 문구",
+      "meaning": "한 명이 저장 표시를 서버 반영으로 이해해 혼동했으며 상태 구분 문구를 요청했다. 전체 사용자에게 일반화할 수 없다.",
+      "acceptable_kinds": [
+        "customer_evidence"
+      ],
+      "status": "observed",
+      "required_for": [
+        "research",
+        "design"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f07",
+      "source_id": "b02",
+      "quote_contains": "참여 지속률을 비교한 적은 없고",
+      "meaning": "오프라인 저장이 참여 지속률을 높인다는 예상은 측정되지 않았고 기존 자원자만 조사했다.",
+      "acceptable_kinds": [
+        "assumption",
+        "risk"
+      ],
+      "status": "unverified",
+      "required_for": [
+        "research"
+      ],
+      "allowed_for": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "id": "b-f08",
+      "source_id": "b02",
+      "quote_contains": "신규 사용자의 어려움도 별도로 들어 보자는",
+      "meaning": "신규 사용자 조사는 제안이며 이미 수행한 조사 결과가 아니다.",
+      "acceptable_kinds": [
+        "task",
+        "question"
+      ],
+      "status": "draft",
+      "required_for": [],
+      "allowed_for": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "id": "b-f09",
+      "source_id": "b03",
+      "quote_contains": "연결을 복구한 다음 서버 목록에 같은 기록이 한 번",
+      "meaning": "산새첩 공개 시연에서 오프라인 저장 표시와 복구 후 서버 목록 한 건을 관찰했다. 실패 조건 전반의 검증은 아니다.",
+      "acceptable_kinds": [
+        "market_evidence"
+      ],
+      "status": "observed",
+      "required_for": [
+        "research"
+      ],
+      "allowed_for": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "id": "b-f10",
+      "source_id": "b03",
+      "quote_contains": "소개문에는 오프라인 관찰 기록이라는 문구",
+      "meaning": "들빛노트의 오프라인 기능은 소개문에서만 확인했으며 직접 실행하지 않았다. 홍보상의 주장이라는 한계를 보존해야 한다.",
+      "acceptable_kinds": [
+        "market_evidence"
+      ],
+      "status": "unverified",
+      "required_for": [
+        "research"
+      ],
+      "allowed_for": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "id": "b-f11",
+      "source_id": "b03",
+      "quote_contains": "중복 전송 방지, 사진 지원, 로그인 만료 후 동작은 확인하지 않았다",
+      "meaning": "들빛노트의 세 세부 동작은 알려지지 않았다. 있음이나 없음 어느 쪽으로도 확정하면 안 된다.",
+      "acceptable_kinds": [
+        "question",
+        "market_evidence"
+      ],
+      "status": "unknown",
+      "required_for": [
+        "research"
+      ],
+      "allowed_for": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "id": "b-f12",
+      "source_id": "b03",
+      "quote_contains": "이용자 수나 가격은 두 서비스 모두 이번 기록에 없으며",
+      "meaning": "경쟁 서비스 이용자 수·가격 자료는 없으며 확보 가능성 검토를 남겼다.",
+      "acceptable_kinds": [
+        "question",
+        "task"
+      ],
+      "status": "open",
+      "required_for": [],
+      "allowed_for": [
+        "research"
+      ]
+    },
+    {
+      "id": "b-f13",
+      "source_id": "b03",
+      "quote_contains": "어떻게 구분해 알리는지 먼저 보자는",
+      "meaning": "다음 비교에서 로컬 저장과 서버 반영의 상태 전달을 살피자는 제안이다.",
+      "acceptable_kinds": [
+        "task",
+        "question"
+      ],
+      "status": "draft",
+      "required_for": [],
+      "allowed_for": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "id": "b-f14",
+      "source_id": "b04",
+      "quote_contains": "한 기기에서 새로 만든 개인 관찰 기록",
+      "meaning": "현행 범위는 한 기기에서 새로 만드는 개인 관찰 기록의 오프라인 저장·재전송이다. 기존 기록 다중 기기 편집과 사진 전송은 제외된다.",
+      "acceptable_kinds": [
+        "decision",
+        "requirement"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "research",
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f15",
+      "source_id": "b04",
+      "quote_contains": "관찰 장소에서 놓친 메모를 줄이는 것이 목적",
+      "meaning": "현행 목표는 현장에서 놓치는 관찰 메모를 줄이는 것이다. 이미 성과를 검증했다는 뜻은 아니다.",
+      "acceptable_kinds": [
+        "goal"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "research",
+        "design"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f16",
+      "source_id": "b04",
+      "quote_contains": "연결 상태와 무관하게 먼저 기기에 저장한다",
+      "meaning": "관찰 종·마릿수·입력 관찰 시각을 갖춘 기록은 온라인 여부와 관계없이 로컬 우선 저장한다. 필수 항목 누락 시 누락을 안내하고 성공으로 표시하지 않는다.",
+      "acceptable_kinds": [
+        "requirement",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f17",
+      "source_id": "b04",
+      "quote_contains": "관찰 시각은 서버에 도착한 시각으로 바꾸지 않는다",
+      "meaning": "사용자가 입력한 관찰 시각을 보존하며 서버 도착 시각으로 대체하지 않는다.",
+      "acceptable_kinds": [
+        "requirement",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f18",
+      "source_id": "b04",
+      "quote_contains": "위치 권한이 없어도 저장할 수 있어야",
+      "meaning": "위치는 선택이며 권한이 없어도 저장 가능해야 한다.",
+      "acceptable_kinds": [
+        "requirement",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f19",
+      "source_id": "b04",
+      "quote_contains": "서버가 받은 것으로 확인된 뒤에는 전송 완료",
+      "meaning": "기기에만 있을 때는 기기 저장·전송 대기, 서버 수신 확인 후에만 전송 완료로 표시한다.",
+      "acceptable_kinds": [
+        "design",
+        "requirement",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f20",
+      "source_id": "b04",
+      "quote_contains": "전송 오류가 나더라도 기기 기록을 지우지 않는다",
+      "meaning": "오류 시 로컬 기록을 보존하며 앱 재개 후에도 보류 기록이 남아야 한다.",
+      "acceptable_kinds": [
+        "requirement",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f21",
+      "source_id": "b04",
+      "quote_contains": "로그인이 만료되면 다시 로그인하라는 안내",
+      "meaning": "인증 만료 시 재로그인을 안내하고 전송을 정지하되 로컬 기록은 유지한다.",
+      "acceptable_kinds": [
+        "requirement",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f22",
+      "source_id": "b05",
+      "quote_contains": "고유 식별자를 재시도 때도 그대로 쓴다",
+      "meaning": "생성 시 고정한 기록 식별자를 재사용하고 서버는 동일 식별자의 재수신에 새 관찰 대신 기존 확인값을 반환한다. 이는 중복 방지 설계다.",
+      "acceptable_kinds": [
+        "design",
+        "requirement"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f23",
+      "source_id": "b05",
+      "quote_contains": "연결이 돌아온 것만으로 전송 완료로 바꾸지 않고",
+      "meaning": "연결 복구와 서버 확인은 다르며 서버 확인을 기다려 완료 표시한다.",
+      "acceptable_kinds": [
+        "design",
+        "requirement",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f24",
+      "source_id": "b05",
+      "quote_contains": "앱이 열려 있고 로그인된 상태에서",
+      "meaning": "자동 전송은 열린 앱·로그인·연결 조건에서 시작하고 앱이 닫힌 동안의 백그라운드 전송은 미지원이다.",
+      "acceptable_kinds": [
+        "design",
+        "decision",
+        "requirement"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f25",
+      "source_id": "b05",
+      "quote_contains": "동시에 두 요청을 시작하지 않도록",
+      "meaning": "다시 보내기 버튼이 있으나 같은 전송 중 기록에 동시 요청을 두 개 시작하면 안 된다.",
+      "acceptable_kinds": [
+        "design",
+        "requirement"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f26",
+      "source_id": "b05",
+      "quote_contains": "이 종료 시점은 아직 시험하지 않았다",
+      "meaning": "서버 확인 직후 강제 종료는 로컬 상태 불일치 위험이 있고 고정 식별자 재전송은 그에 대한 설계 의도일 뿐 해당 시나리오 검증은 없다.",
+      "acceptable_kinds": [
+        "risk",
+        "test_case"
+      ],
+      "status": "unverified",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f27",
+      "source_id": "b05",
+      "quote_contains": "저장 공간이 가득 찼을 때의 안내 문구는 미정",
+      "meaning": "공간 부족 안내 문구는 미정이다. 11월 9일 제안 예정이지 완료된 구현이 아니다.",
+      "acceptable_kinds": [
+        "question",
+        "task"
+      ],
+      "status": "open",
+      "required_for": [
+        "design"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f28",
+      "source_id": "b06",
+      "quote_contains": "관찰 시각과 전송 대기 표시가 남아 있었다",
+      "meaning": "Android에서 오프라인 저장 후 정상 종료·재개했을 때 필드와 대기 상태 보존을 관찰했다. 강제 종료·iOS까지 통과했다는 뜻은 아니다.",
+      "acceptable_kinds": [
+        "test_result"
+      ],
+      "status": "observed",
+      "required_for": [
+        "qa"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f29",
+      "source_id": "b06",
+      "quote_contains": "위치 권한을 거부한 별도 실행에서도 저장은 됐다",
+      "meaning": "Android의 위치 권한 거부 상태에서 저장 성공을 관찰했다.",
+      "acceptable_kinds": [
+        "test_result"
+      ],
+      "status": "observed",
+      "required_for": [
+        "qa"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f30",
+      "source_id": "b06",
+      "quote_contains": "서버에는 기록이 한 건만 생겼지만",
+      "meaning": "특정 재시도 시험에서 서버는 한 건이었지만 기기 목록은 완료·대기 두 행으로 중복되며 재진입 후에도 남았다. 미해결 UI 문제이며 서버 중복 저장으로 바꾸면 안 된다.",
+      "acceptable_kinds": [
+        "test_result",
+        "risk"
+      ],
+      "status": "open",
+      "required_for": [
+        "qa"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f31",
+      "source_id": "b06",
+      "quote_contains": "이 네 항목은 아직 실행하지 않았다",
+      "meaning": "인증 만료, 서버 확인 직후 강제 종료, 필수 항목 누락, 저장 공간 부족은 실행 전 계획이다. 통과·실패 결과는 없다.",
+      "acceptable_kinds": [
+        "test_case",
+        "task"
+      ],
+      "status": "planned",
+      "required_for": [
+        "qa"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f32",
+      "source_id": "b06",
+      "quote_contains": "시험 기기 확보일은 정해지지 않았다",
+      "meaning": "iOS 확인은 요청됐지만 기기 확보일 미정이며 현재 노트에 iOS 결과는 없다.",
+      "acceptable_kinds": [
+        "task",
+        "question",
+        "risk"
+      ],
+      "status": "open",
+      "required_for": [
+        "qa"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "b-f33",
+      "source_id": "b07",
+      "quote_contains": "연결이 끊기면 출석 저장을 막기로",
+      "meaning": "손업의 오프라인 저장 차단은 다른 프로젝트 결정이며 잎소리 정책이 아니다.",
+      "acceptable_kinds": [
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [],
+      "allowed_for": []
+    },
+    {
+      "id": "b-f34",
+      "source_id": "b07",
+      "quote_contains": "서버가 받은 시각으로 통일한다",
+      "meaning": "손업의 서버 시각 사용은 다른 프로젝트 결정으로 잎소리 관찰 시각 보존을 대체하지 않는다.",
+      "acceptable_kinds": [
+        "requirement",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [],
+      "allowed_for": []
+    },
+    {
+      "id": "b-f35",
+      "source_id": "b07",
+      "quote_contains": "같은 참석자가 중복 표시되지 않았다",
+      "meaning": "공방 태블릿의 출석표 결과는 잎소리의 전송·중복 표시 검증과 무관하다.",
+      "acceptable_kinds": [
+        "test_result"
+      ],
+      "status": "observed",
+      "required_for": [],
+      "allowed_for": []
+    }
+  ],
+  "cases": [
+    {
+      "request_id": "research",
+      "type": "market_research"
+    },
+    {
+      "request_id": "design",
+      "type": "feature_design"
+    },
+    {
+      "request_id": "qa",
+      "type": "qa_review"
+    }
+  ],
+  "critical_checks": [
+    "8월 저장 차단은 폐기됐다. 현행 규칙은 필수 입력이 갖춰지면 연결과 무관한 기기 우선 저장이다.",
+    "다중 기기 충돌 처리와 사진 자동 전송의 옛 제안을 현행 요구나 구현 결과로 가져오지 않는다. 최신 범위 제외 설명은 유효하다.",
+    "고객이 입력한 관찰 시각을 서버 도착 시각으로 치환하지 않는다. 위치 권한은 필수 저장 조건이 아니다.",
+    "기기 저장, 네트워크 연결, 서버 확인은 서로 다르다. 연결만 돌아왔다고 전송 완료 표시를 해서는 안 된다.",
+    "열린 앱의 자동 전송과 앱이 닫힌 동안 백그라운드 전송을 혼동하지 않는다.",
+    "고정 식별자는 설계이고 특정 재시도에서 서버 한 건은 관찰이다. 서버 확인 직후 강제 종료까지 검증됐다고 확장하지 않는다.",
+    "중복된 것은 해당 실행의 기기 목록 두 행이며 서버는 한 건이었다. UI 문제가 해결됐거나 서버 중복이 있었다고 바꾸지 않는다.",
+    "정상 종료·재개 성공은 강제 종료 성공이 아니다. Android 결과를 iOS에 일반화하지 않는다.",
+    "인증 만료, 필수 항목 누락, 공간 부족 등의 미실행 조건은 계획으로 다룬다.",
+    "소개문에 나온 경쟁사 기능은 홍보 주장 수준이다. 직접 본 시연과 구분하고 미확인 세부 기능을 발명하지 않는다.",
+    "기존 자원자 여섯 명의 진술과 참여 지속률 가설을 검증된 일반 효과로 확대하지 않는다.",
+    "project_id=sonup의 출석 정책 및 시연 결과를 ipsori 맥락으로 가져오지 않는다."
+  ]
+}

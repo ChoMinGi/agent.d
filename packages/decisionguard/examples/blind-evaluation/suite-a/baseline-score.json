@@ -1,0 +1,270 @@
+{
+  "suite": "suite-a",
+  "passed": false,
+  "cases": [
+    {
+      "request_id": "research",
+      "task_type": "market_research",
+      "required_count": 12,
+      "required_covered": 8,
+      "missing_required": [
+        "a-f11",
+        "a-f12",
+        "a-f13",
+        "a-f15"
+      ],
+      "selected_count": 19,
+      "wrong_context": [
+        {
+          "record_id": "deadline-boundary",
+          "fact_ids": [
+            "a-f25"
+          ]
+        }
+      ],
+      "unmatched_records_for_review": [
+        "early-call-goal",
+        "sms-resend-proposal",
+        "deadline-display-open"
+      ],
+      "classification_errors": [
+        {
+          "record_id": "notice-timing-question",
+          "fact_id": "a-f08",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "question",
+          "actual_status": "open",
+          "allowed_kinds": [
+            "question",
+            "task"
+          ],
+          "expected_status": "draft"
+        }
+      ],
+      "task_type_correct": true,
+      "packet_status": "needs_context",
+      "gaps": [
+        "a03(책상 위의 두 화면)는 complete=false이고 마지막 가격 차액 안내가 끊겼다. 공개 체험 화면에서 관찰한 환불·대체 허용 선택만 기록되어 있으며 실제 운영·유료 계정·타 지역 및 싹마루 차액 정책은 미확인이다. helper가 불완전 출처의 기록을 제외할 수 있으므로 추출 원문과 해당 누락 이유를 함께 보아야 한다.",
+        "인터뷰는 최근 수령한 자발적 기존 고객 7가구이며 신규·해지 고객이 없다. 알레르기 진단, 응답률, 구매 전환은 측정하지 않았다.",
+        "제외 채소의 유사 이름·별칭 처리 기준은 미결이며 11월 10일 재논의 예정이다. 확대 날짜와 문자 재발송 비용도 정해지지 않았다.",
+        "11월 6일 시험은 실제 결제사의 환불 완료를 검증하지 않았다. 정각 응답 화면 오류는 열려 있고, 무응답·제외 차단·환불 재전송·시계 오차 시험은 아직 실행되지 않았다.",
+        "오전 10시의 시간대는 원문에 명시되지 않았다. 임의의 시간대나 추가 유효기한을 부여하지 않았다.",
+        "공급된 프로젝트 문서에 한정한 추출이며 전체 작업공간의 완전성이나 출시 승인을 뜻하지 않는다. 링크는 전제·근거 관계가 명시된 경우에만 추가하므로 단순한 주제 유사성은 관계로 만들지 않았다.",
+        "Declared source coverage is incomplete.",
+        "competitor-observation: source content is incomplete.",
+        "competitor-coverage-limits: source content is incomplete.",
+        "competitor-price-gap: source content is incomplete.",
+        "Missing supported market_evidence context for market_research."
+      ],
+      "passed": false
+    },
+    {
+      "request_id": "design",
+      "task_type": "feature_design",
+      "required_count": 15,
+      "required_covered": 15,
+      "missing_required": [],
+      "selected_count": 30,
+      "wrong_context": [
+        {
+          "record_id": "reopen-request",
+          "fact_ids": [
+            "a-f04"
+          ]
+        },
+        {
+          "record_id": "early-card-sketch",
+          "fact_ids": [
+            "a-f02"
+          ]
+        }
+      ],
+      "unmatched_records_for_review": [
+        "refund-idempotency",
+        "allergy-message-limit",
+        "sms-resend-proposal",
+        "deadline-display-open",
+        "early-call-goal"
+      ],
+      "classification_errors": [
+        {
+          "record_id": "notice-timing-question",
+          "fact_id": "a-f08",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "question",
+          "actual_status": "open",
+          "allowed_kinds": [
+            "question",
+            "task"
+          ],
+          "expected_status": "draft"
+        },
+        {
+          "record_id": "observed-deadline-failure",
+          "fact_id": "a-f32",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "test_result",
+          "actual_status": "observed",
+          "allowed_kinds": [
+            "test_result",
+            "risk"
+          ],
+          "expected_status": "open"
+        },
+        {
+          "record_id": "planned-unexecuted-tests",
+          "fact_id": "a-f33",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "test_case",
+          "actual_status": "draft",
+          "allowed_kinds": [
+            "test_case",
+            "task"
+          ],
+          "expected_status": "planned"
+        },
+        {
+          "record_id": "planned-unexecuted-tests",
+          "fact_id": "a-f34",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "test_case",
+          "actual_status": "draft",
+          "allowed_kinds": [
+            "test_case"
+          ],
+          "expected_status": "planned"
+        }
+      ],
+      "task_type_correct": true,
+      "packet_status": "needs_context",
+      "gaps": [
+        "a03(책상 위의 두 화면)는 complete=false이고 마지막 가격 차액 안내가 끊겼다. 공개 체험 화면에서 관찰한 환불·대체 허용 선택만 기록되어 있으며 실제 운영·유료 계정·타 지역 및 싹마루 차액 정책은 미확인이다. helper가 불완전 출처의 기록을 제외할 수 있으므로 추출 원문과 해당 누락 이유를 함께 보아야 한다.",
+        "인터뷰는 최근 수령한 자발적 기존 고객 7가구이며 신규·해지 고객이 없다. 알레르기 진단, 응답률, 구매 전환은 측정하지 않았다.",
+        "제외 채소의 유사 이름·별칭 처리 기준은 미결이며 11월 10일 재논의 예정이다. 확대 날짜와 문자 재발송 비용도 정해지지 않았다.",
+        "11월 6일 시험은 실제 결제사의 환불 완료를 검증하지 않았다. 정각 응답 화면 오류는 열려 있고, 무응답·제외 차단·환불 재전송·시계 오차 시험은 아직 실행되지 않았다.",
+        "오전 10시의 시간대는 원문에 명시되지 않았다. 임의의 시간대나 추가 유효기한을 부여하지 않았다.",
+        "공급된 프로젝트 문서에 한정한 추출이며 전체 작업공간의 완전성이나 출시 승인을 뜻하지 않는다. 링크는 전제·근거 관계가 명시된 경우에만 추가하므로 단순한 주제 유사성은 관계로 만들지 않았다.",
+        "Declared source coverage is incomplete.",
+        "comparison-followup: source content is incomplete.",
+        "competitor-price-gap: source content is incomplete.",
+        "Context budget omitted 1 relevant record(s); expand or narrow the task."
+      ],
+      "passed": false
+    },
+    {
+      "request_id": "qa",
+      "task_type": "qa_review",
+      "required_count": 15,
+      "required_covered": 15,
+      "missing_required": [],
+      "selected_count": 27,
+      "wrong_context": [
+        {
+          "record_id": "reopen-request",
+          "fact_ids": [
+            "a-f04"
+          ]
+        },
+        {
+          "record_id": "early-card-sketch",
+          "fact_ids": [
+            "a-f02"
+          ]
+        },
+        {
+          "record_id": "notice-timing-question",
+          "fact_ids": [
+            "a-f08"
+          ]
+        },
+        {
+          "record_id": "response-rate-hypothesis",
+          "fact_ids": [
+            "a-f10"
+          ]
+        }
+      ],
+      "unmatched_records_for_review": [
+        "allergy-message-limit",
+        "sms-resend-proposal",
+        "deadline-display-open",
+        "refund-idempotency",
+        "early-call-goal"
+      ],
+      "classification_errors": [
+        {
+          "record_id": "observed-deadline-failure",
+          "fact_id": "a-f32",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "test_result",
+          "actual_status": "observed",
+          "allowed_kinds": [
+            "test_result",
+            "risk"
+          ],
+          "expected_status": "open"
+        },
+        {
+          "record_id": "planned-unexecuted-tests",
+          "fact_id": "a-f33",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "test_case",
+          "actual_status": "draft",
+          "allowed_kinds": [
+            "test_case",
+            "task"
+          ],
+          "expected_status": "planned"
+        },
+        {
+          "record_id": "planned-unexecuted-tests",
+          "fact_id": "a-f34",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "test_case",
+          "actual_status": "draft",
+          "allowed_kinds": [
+            "test_case"
+          ],
+          "expected_status": "planned"
+        }
+      ],
+      "task_type_correct": true,
+      "packet_status": "needs_context",
+      "gaps": [
+        "a03(책상 위의 두 화면)는 complete=false이고 마지막 가격 차액 안내가 끊겼다. 공개 체험 화면에서 관찰한 환불·대체 허용 선택만 기록되어 있으며 실제 운영·유료 계정·타 지역 및 싹마루 차액 정책은 미확인이다. helper가 불완전 출처의 기록을 제외할 수 있으므로 추출 원문과 해당 누락 이유를 함께 보아야 한다.",
+        "인터뷰는 최근 수령한 자발적 기존 고객 7가구이며 신규·해지 고객이 없다. 알레르기 진단, 응답률, 구매 전환은 측정하지 않았다.",
+        "제외 채소의 유사 이름·별칭 처리 기준은 미결이며 11월 10일 재논의 예정이다. 확대 날짜와 문자 재발송 비용도 정해지지 않았다.",
+        "11월 6일 시험은 실제 결제사의 환불 완료를 검증하지 않았다. 정각 응답 화면 오류는 열려 있고, 무응답·제외 차단·환불 재전송·시계 오차 시험은 아직 실행되지 않았다.",
+        "오전 10시의 시간대는 원문에 명시되지 않았다. 임의의 시간대나 추가 유효기한을 부여하지 않았다.",
+        "공급된 프로젝트 문서에 한정한 추출이며 전체 작업공간의 완전성이나 출시 승인을 뜻하지 않는다. 링크는 전제·근거 관계가 명시된 경우에만 추가하므로 단순한 주제 유사성은 관계로 만들지 않았다.",
+        "Declared source coverage is incomplete.",
+        "comparison-followup: source content is incomplete.",
+        "competitor-price-gap: source content is incomplete.",
+        "Missing supported test_case context for qa_review."
+      ],
+      "passed": false
+    }
+  ],
+  "limits": [
+    "Exact fact anchors may miss a valid shorter paraphrase/quote; inspect every flagged item.",
+    "Kind/status labels can admit reasonable alternatives; record adjudication separately without silently changing frozen answers.",
+    "A matched quote is not proof that the model's title, rationale or scope interpretation is entailed.",
+    "Replaying stored packets is not a new blind model trial."
+  ]
+}

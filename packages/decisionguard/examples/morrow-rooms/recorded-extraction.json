@@ -1,0 +1,644 @@
+{
+  "raw_version": 1,
+  "job_digest": "761bd6d97321c6183a5409b37ef713e1aa8e486e893f2205216e8f614a4da4e5",
+  "records": [
+    {
+      "id": "R01",
+      "kind": "goal",
+      "title": "이용자와 운영자가 같은 환불 기준을 본다",
+      "scope": "standard",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "status": "accepted",
+      "evidence": {
+        "passage_id": "note-01:7537d564711b2713",
+        "quote": "Morrow Rooms는 모두 가상인 프로젝트다. 스탠더드 요금제를 쓰는 작은 연습실 운영자가 전화 없이 예약을 정리하게 돕는다. 운영팀은 이번 단계의 목표를 예약 취소 시 이용자와 운영자가 같은 환불 기준을 보게 하는 것으로 합의했다."
+      },
+      "status_evidence": {
+        "passage_id": "note-01:7537d564711b2713",
+        "quote": "Morrow Rooms는 모두 가상인 프로젝트다. 스탠더드 요금제를 쓰는 작은 연습실 운영자가 전화 없이 예약을 정리하게 돕는다. 운영팀은 이번 단계의 목표를 예약 취소 시 이용자와 운영자가 같은 환불 기준을 보게 하는 것으로 합의했다."
+      },
+      "scope_evidence": {
+        "passage_id": "note-01:7537d564711b2713",
+        "quote": "Morrow Rooms는 모두 가상인 프로젝트다. 스탠더드 요금제를 쓰는 작은 연습실 운영자가 전화 없이 예약을 정리하게 돕는다. 운영팀은 이번 단계의 목표를 예약 취소 시 이용자와 운영자가 같은 환불 기준을 보게 하는 것으로 합의했다."
+      },
+      "rationale": "운영팀이 합의한 목표와 스탠더드 대상이 같은 문단에 명시돼 있다."
+    },
+    {
+      "id": "R02",
+      "kind": "decision",
+      "title": "자동 환불 마감선은 이용 시작 24시간 전",
+      "scope": "standard",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "status": "accepted",
+      "evidence": {
+        "passage_id": "note-01:3d6278eba26b03c7",
+        "quote": "10월 회의에서 운영팀은 스탠더드 예약의 자동 환불 마감선을 이용 시작 24시간 전으로 확정했다. 그 시각보다 앞서 취소한 건만 자동 환불하며, 마감 시각부터는 직원의 개별 검토로 보낸다. 빈 방을 다시 예약받을 시간이 필요하다는 것이 이유다."
+      },
+      "status_evidence": {
+        "passage_id": "note-01:3d6278eba26b03c7",
+        "quote": "10월 회의에서 운영팀은 스탠더드 예약의 자동 환불 마감선을 이용 시작 24시간 전으로 확정했다. 그 시각보다 앞서 취소한 건만 자동 환불하며, 마감 시각부터는 직원의 개별 검토로 보낸다. 빈 방을 다시 예약받을 시간이 필요하다는 것이 이유다."
+      },
+      "scope_evidence": {
+        "passage_id": "note-01:3d6278eba26b03c7",
+        "quote": "10월 회의에서 운영팀은 스탠더드 예약의 자동 환불 마감선을 이용 시작 24시간 전으로 확정했다. 그 시각보다 앞서 취소한 건만 자동 환불하며, 마감 시각부터는 직원의 개별 검토로 보낸다. 빈 방을 다시 예약받을 시간이 필요하다는 것이 이유다."
+      },
+      "rationale": "운영팀의 확정과 경계 조건이 직접 명시됐다. 24시간보다 늦게 취소해도 자동 환불한다는 뜻이 아니다.",
+      "key": "automatic-refund-cutoff-hours-before-start",
+      "value": "24"
+    },
+    {
+      "id": "R03",
+      "kind": "decision",
+      "title": "과거 12시간 기준",
+      "scope": "standard",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "status": "superseded",
+      "evidence": {
+        "passage_id": "note-01:884f047e08e4d0c5",
+        "quote": "이전에 스탠더드 예약에 적용했던 12시간 기준은 위 24시간 결정으로 폐기했다. 현재 적용하는 규칙으로 인용하지 않는다."
+      },
+      "status_evidence": {
+        "passage_id": "note-01:884f047e08e4d0c5",
+        "quote": "이전에 스탠더드 예약에 적용했던 12시간 기준은 위 24시간 결정으로 폐기했다. 현재 적용하는 규칙으로 인용하지 않는다."
+      },
+      "scope_evidence": {
+        "passage_id": "note-01:884f047e08e4d0c5",
+        "quote": "이전에 스탠더드 예약에 적용했던 12시간 기준은 위 24시간 결정으로 폐기했다. 현재 적용하는 규칙으로 인용하지 않는다."
+      },
+      "rationale": "위 24시간 결정으로 폐기됐다고 명시되어 현재 규칙으로 쓰지 않는다.",
+      "key": "automatic-refund-cutoff-hours-before-start",
+      "value": "12",
+      "superseded_by": "R02",
+      "supersession_evidence": {
+        "passage_id": "note-01:884f047e08e4d0c5",
+        "quote": "이전에 스탠더드 예약에 적용했던 12시간 기준은 위 24시간 결정으로 폐기했다. 현재 적용하는 규칙으로 인용하지 않는다."
+      }
+    },
+    {
+      "id": "R04",
+      "kind": "customer_evidence",
+      "title": "가상 인터뷰에서 환불 마감 시각을 찾기 어렵다는 응답",
+      "scope": "standard",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "status": "observed",
+      "evidence": {
+        "passage_id": "note-02:0e5ddd058ecd0cea",
+        "quote": "Morrow Rooms 스탠더드 이용자를 가정한 가상 인터뷰 기록이다. 일곱 명 중 다섯 명은 예약 취소의 환불 마감 시각을 찾기 어렵다고 답했다. 더 긴 취소 가능 기간을 원한다고 말한 사람 수는 수집하지 않았다."
+      },
+      "status_evidence": {
+        "passage_id": "note-02:0e5ddd058ecd0cea",
+        "quote": "Morrow Rooms 스탠더드 이용자를 가정한 가상 인터뷰 기록이다. 일곱 명 중 다섯 명은 예약 취소의 환불 마감 시각을 찾기 어렵다고 답했다. 더 긴 취소 가능 기간을 원한다고 말한 사람 수는 수집하지 않았다."
+      },
+      "scope_evidence": {
+        "passage_id": "note-02:0e5ddd058ecd0cea",
+        "quote": "Morrow Rooms 스탠더드 이용자를 가정한 가상 인터뷰 기록이다. 일곱 명 중 다섯 명은 예약 취소의 환불 마감 시각을 찾기 어렵다고 답했다. 더 긴 취소 가능 기간을 원한다고 말한 사람 수는 수집하지 않았다."
+      },
+      "rationale": "관찰한 응답은 정보 발견의 어려움이다. 취소 기간 연장 수요가 관찰됐다고 확대 해석하지 않는다."
+    },
+    {
+      "id": "R05",
+      "kind": "market_evidence",
+      "title": "가상 비교 서비스의 마감 시각 안내 위치",
+      "scope": "standard",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "status": "observed",
+      "evidence": {
+        "passage_id": "note-02:19ebc6dcf06b9de1",
+        "quote": "스탠더드 예약 취소 흐름의 비교 대상으로 만든 가상 서비스 Room Finch는 결제 전에 마지막 자동 환불 시각을 보여준다. 가상 서비스 Studio Pebble은 예약 완료 메일에만 이를 적는다. 두 서비스의 매출이나 실제 이용 전환율을 관찰한 자료는 없다. 실제 시장조사 자료가 아니다."
+      },
+      "status_evidence": {
+        "passage_id": "note-02:19ebc6dcf06b9de1",
+        "quote": "스탠더드 예약 취소 흐름의 비교 대상으로 만든 가상 서비스 Room Finch는 결제 전에 마지막 자동 환불 시각을 보여준다. 가상 서비스 Studio Pebble은 예약 완료 메일에만 이를 적는다. 두 서비스의 매출이나 실제 이용 전환율을 관찰한 자료는 없다. 실제 시장조사 자료가 아니다."
+      },
+      "scope_evidence": {
+        "passage_id": "note-02:19ebc6dcf06b9de1",
+        "quote": "스탠더드 예약 취소 흐름의 비교 대상으로 만든 가상 서비스 Room Finch는 결제 전에 마지막 자동 환불 시각을 보여준다. 가상 서비스 Studio Pebble은 예약 완료 메일에만 이를 적는다. 두 서비스의 매출이나 실제 이용 전환율을 관찰한 자료는 없다. 실제 시장조사 자료가 아니다."
+      },
+      "rationale": "두 가상 서비스의 화면 차이만 기술됐다. 실제 경쟁사 조사나 매출 효과의 근거가 아니다."
+    },
+    {
+      "id": "R06",
+      "kind": "assumption",
+      "title": "72시간 마감선이 운영자의 손실을 줄인다는 가정",
+      "scope": "standard",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "status": "unverified",
+      "evidence": {
+        "passage_id": "note-02:e7395e7fb07ad17e",
+        "quote": "스탠더드 예약 취소 조건을 이용 시작 72시간 전으로 바꾸면 운영자의 예약 손실이 줄 것이라는 추측이 나왔다. 아직 검증하지 않았고 이용자가 덜 예약하게 될 가능성도 모른다."
+      },
+      "status_evidence": {
+        "passage_id": "note-02:e7395e7fb07ad17e",
+        "quote": "스탠더드 예약 취소 조건을 이용 시작 72시간 전으로 바꾸면 운영자의 예약 손실이 줄 것이라는 추측이 나왔다. 아직 검증하지 않았고 이용자가 덜 예약하게 될 가능성도 모른다."
+      },
+      "scope_evidence": {
+        "passage_id": "note-02:e7395e7fb07ad17e",
+        "quote": "스탠더드 예약 취소 조건을 이용 시작 72시간 전으로 바꾸면 운영자의 예약 손실이 줄 것이라는 추측이 나왔다. 아직 검증하지 않았고 이용자가 덜 예약하게 될 가능성도 모른다."
+      },
+      "rationale": "추측이며 미검증이라고 명시됐다. 전환율이나 손실 감소를 확인한 사실이 아니다."
+    },
+    {
+      "id": "R07",
+      "kind": "decision",
+      "title": "72시간 마감선 제안",
+      "scope": "standard",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "status": "draft",
+      "evidence": {
+        "passage_id": "note-03:d667ed9af9933f10",
+        "quote": "어제 회의에서 스탠더드 예약의 자동 환불 마감선을 72시간 전으로 옮기자는 제안이 나왔다. 합의되지 않았으며 현재의 24시간 결정을 대체하지 않는다."
+      },
+      "status_evidence": {
+        "passage_id": "note-03:d667ed9af9933f10",
+        "quote": "어제 회의에서 스탠더드 예약의 자동 환불 마감선을 72시간 전으로 옮기자는 제안이 나왔다. 합의되지 않았으며 현재의 24시간 결정을 대체하지 않는다."
+      },
+      "scope_evidence": {
+        "passage_id": "note-03:d667ed9af9933f10",
+        "quote": "어제 회의에서 스탠더드 예약의 자동 환불 마감선을 72시간 전으로 옮기자는 제안이 나왔다. 합의되지 않았으며 현재의 24시간 결정을 대체하지 않는다."
+      },
+      "rationale": "합의되지 않았고 현재 결정을 대체하지 않는다는 부정을 보존했다.",
+      "key": "automatic-refund-cutoff-hours-before-start",
+      "value": "72"
+    },
+    {
+      "id": "R08",
+      "kind": "decision",
+      "title": "화면에 쓰인 48시간의 권위 불명",
+      "scope": "standard",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "status": "unknown",
+      "evidence": {
+        "passage_id": "note-03:c195fc47a37e6bad",
+        "quote": "스탠더드 예약 취소 화면의 캡처에는 '48시간 확정'이라고 적혀 있었다. 작성자와 승인자를 찾지 못했고 앞뒤 설명도 없다. 실제 정책인지 확인해야 한다."
+      },
+      "status_evidence": {
+        "passage_id": "note-03:c195fc47a37e6bad",
+        "quote": "스탠더드 예약 취소 화면의 캡처에는 '48시간 확정'이라고 적혀 있었다. 작성자와 승인자를 찾지 못했고 앞뒤 설명도 없다. 실제 정책인지 확인해야 한다."
+      },
+      "scope_evidence": {
+        "passage_id": "note-03:c195fc47a37e6bad",
+        "quote": "스탠더드 예약 취소 화면의 캡처에는 '48시간 확정'이라고 적혀 있었다. 작성자와 승인자를 찾지 못했고 앞뒤 설명도 없다. 실제 정책인지 확인해야 한다."
+      },
+      "rationale": "확정이라는 단어가 있어도 승인자를 확인할 수 없으므로 승인된 결정으로 승격하지 않는다.",
+      "key": "automatic-refund-cutoff-hours-before-start",
+      "value": "48"
+    },
+    {
+      "id": "R09",
+      "kind": "question",
+      "title": "표시할 시간대의 우선순위",
+      "scope": "standard",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "status": "open",
+      "evidence": {
+        "passage_id": "note-03:b92ccb5ca5e87aeb",
+        "quote": "스탠더드 예약 취소 안내를 볼 때 이용자 현지 시간과 연습실 시간 중 어느 쪽을 먼저 보여줘야 하는지는 아직 미정이다."
+      },
+      "status_evidence": {
+        "passage_id": "note-03:b92ccb5ca5e87aeb",
+        "quote": "스탠더드 예약 취소 안내를 볼 때 이용자 현지 시간과 연습실 시간 중 어느 쪽을 먼저 보여줘야 하는지는 아직 미정이다."
+      },
+      "scope_evidence": {
+        "passage_id": "note-03:b92ccb5ca5e87aeb",
+        "quote": "스탠더드 예약 취소 안내를 볼 때 이용자 현지 시간과 연습실 시간 중 어느 쪽을 먼저 보여줘야 하는지는 아직 미정이다."
+      },
+      "rationale": "아직 미정인 선택으로 남기며 서버 계산 시간과 혼동하지 않는다."
+    },
+    {
+      "id": "R10",
+      "kind": "requirement",
+      "title": "마감 시각부터 자동 환불 금지 및 검토 대기",
+      "scope": "standard",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "status": "accepted",
+      "evidence": {
+        "passage_id": "note-04:0c701c3c4dbc69cc",
+        "quote": "스탠더드 예약 취소 기능의 수용 조건으로 다음을 승인했다. 24시간 마감선보다 이르면 자동 환불하고, 정확히 그 시각이거나 이후이면 자동 환불하지 않고 검토 대기 상태로 만든다. note-01의 확정된 24시간 정책을 구현하는 조건이다."
+      },
+      "status_evidence": {
+        "passage_id": "note-04:0c701c3c4dbc69cc",
+        "quote": "스탠더드 예약 취소 기능의 수용 조건으로 다음을 승인했다. 24시간 마감선보다 이르면 자동 환불하고, 정확히 그 시각이거나 이후이면 자동 환불하지 않고 검토 대기 상태로 만든다. note-01의 확정된 24시간 정책을 구현하는 조건이다."
+      },
+      "scope_evidence": {
+        "passage_id": "note-04:0c701c3c4dbc69cc",
+        "quote": "스탠더드 예약 취소 기능의 수용 조건으로 다음을 승인했다. 24시간 마감선보다 이르면 자동 환불하고, 정확히 그 시각이거나 이후이면 자동 환불하지 않고 검토 대기 상태로 만든다. note-01의 확정된 24시간 정책을 구현하는 조건이다."
+      },
+      "rationale": "승인된 수용 조건이며 정확히 마감인 경우도 포함한다."
+    },
+    {
+      "id": "R11",
+      "kind": "design",
+      "title": "요청마다 서버 UTC 시각으로 재검사",
+      "scope": "standard",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "status": "accepted",
+      "evidence": {
+        "passage_id": "note-04:8ca88112000fc617",
+        "quote": "For standard-plan booking cancellations, the team approved computing cutoff_at from the room's start time and comparing it with server UTC time on every cancellation request. An earlier price quote cannot authorize a later refund. This design implements the boundary condition in the preceding paragraph and addresses the stale-preview risk described next."
+      },
+      "status_evidence": {
+        "passage_id": "note-04:8ca88112000fc617",
+        "quote": "For standard-plan booking cancellations, the team approved computing cutoff_at from the room's start time and comparing it with server UTC time on every cancellation request. An earlier price quote cannot authorize a later refund. This design implements the boundary condition in the preceding paragraph and addresses the stale-preview risk described next."
+      },
+      "scope_evidence": {
+        "passage_id": "note-04:8ca88112000fc617",
+        "quote": "For standard-plan booking cancellations, the team approved computing cutoff_at from the room's start time and comparing it with server UTC time on every cancellation request. An earlier price quote cannot authorize a later refund. This design implements the boundary condition in the preceding paragraph and addresses the stale-preview risk described next."
+      },
+      "rationale": "영문 booking cancellations를 예약 취소와 같은 주제로 연결했다. 승인된 구현 방식이며 미리보기는 환불 권한이 아니다."
+    },
+    {
+      "id": "R12",
+      "kind": "risk",
+      "title": "오래 열린 미리보기의 자격 정보가 만료될 위험",
+      "scope": "standard",
+      "topics": [
+        "stale-preview"
+      ],
+      "status": "open",
+      "evidence": {
+        "passage_id": "note-04:a80f8476b6321022",
+        "quote": "The refund preview can remain open while time passes. This creates an unresolved stale-preview risk for the standard plan: cached eligibility may outlive its cutoff. The server must re-evaluate the request rather than trust the preview."
+      },
+      "status_evidence": {
+        "passage_id": "note-04:a80f8476b6321022",
+        "quote": "The refund preview can remain open while time passes. This creates an unresolved stale-preview risk for the standard plan: cached eligibility may outlive its cutoff. The server must re-evaluate the request rather than trust the preview."
+      },
+      "scope_evidence": {
+        "passage_id": "note-04:a80f8476b6321022",
+        "quote": "The refund preview can remain open while time passes. This creates an unresolved stale-preview risk for the standard plan: cached eligibility may outlive its cutoff. The server must re-evaluate the request rather than trust the preview."
+      },
+      "rationale": "시간 경과로 캐시가 실제 자격과 어긋날 수 있는 미해결 위험이다. 설계 문단의 명시된 의존 관계로 연결한다."
+    },
+    {
+      "id": "R13",
+      "kind": "design",
+      "title": "영수증 반올림 초안",
+      "scope": "standard",
+      "topics": [
+        "invoice-rounding"
+      ],
+      "status": "draft",
+      "evidence": {
+        "passage_id": "note-04:9a3dcd356dc16431",
+        "quote": "스탠더드 결제 영수증의 세금 반올림을 한 자리로 바꾸는 안은 초안이다. 예약 취소나 자동 환불의 자격 판정과는 무관한 별도 청구서 작업이다."
+      },
+      "status_evidence": {
+        "passage_id": "note-04:9a3dcd356dc16431",
+        "quote": "스탠더드 결제 영수증의 세금 반올림을 한 자리로 바꾸는 안은 초안이다. 예약 취소나 자동 환불의 자격 판정과는 무관한 별도 청구서 작업이다."
+      },
+      "scope_evidence": {
+        "passage_id": "note-04:9a3dcd356dc16431",
+        "quote": "스탠더드 결제 영수증의 세금 반올림을 한 자리로 바꾸는 안은 초안이다. 예약 취소나 자동 환불의 자격 판정과는 무관한 별도 청구서 작업이다."
+      },
+      "rationale": "같은 문서에 있지만 취소 자격과 무관하다고 명시된 청구서 주제다."
+    },
+    {
+      "id": "R14",
+      "kind": "test_case",
+      "title": "마감 경계와 미리보기·시간대 검수 항목",
+      "scope": "standard",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "status": "accepted",
+      "evidence": {
+        "passage_id": "note-05:90cd45a0510c4758",
+        "quote": "스탠더드 예약 취소의 검수 항목으로 마감 직전·정각·직후 요청, 오래 열린 미리보기, 시간대가 다른 이용자를 포함하기로 승인했다. 기대 결과는 note-04의 자동 환불 경계 조건을 따른다."
+      },
+      "status_evidence": {
+        "passage_id": "note-05:90cd45a0510c4758",
+        "quote": "스탠더드 예약 취소의 검수 항목으로 마감 직전·정각·직후 요청, 오래 열린 미리보기, 시간대가 다른 이용자를 포함하기로 승인했다. 기대 결과는 note-04의 자동 환불 경계 조건을 따른다."
+      },
+      "scope_evidence": {
+        "passage_id": "note-05:90cd45a0510c4758",
+        "quote": "스탠더드 예약 취소의 검수 항목으로 마감 직전·정각·직후 요청, 오래 열린 미리보기, 시간대가 다른 이용자를 포함하기로 승인했다. 기대 결과는 note-04의 자동 환불 경계 조건을 따른다."
+      },
+      "rationale": "승인된 검수 계획을 실행 결과와 구별했다."
+    },
+    {
+      "id": "R15",
+      "kind": "test_result",
+      "title": "정각 요청의 잘못된 환불과 재시험 부재",
+      "scope": "standard",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "status": "observed",
+      "evidence": {
+        "passage_id": "note-05:c09af542df14609e",
+        "quote": "스탠더드 예약 취소를 가상으로 실행한 결과, 직전 요청은 기대대로 자동 환불됐다. 정각 요청은 오래된 미리보기를 사용하자 잘못 자동 환불돼 실패했다. 바로 위 검수 항목의 정각 조건을 통과하지 못했다. 작업 보드에는 수정 완료라고 적혔지만 재시험 기록은 없다."
+      },
+      "status_evidence": {
+        "passage_id": "note-05:c09af542df14609e",
+        "quote": "스탠더드 예약 취소를 가상으로 실행한 결과, 직전 요청은 기대대로 자동 환불됐다. 정각 요청은 오래된 미리보기를 사용하자 잘못 자동 환불돼 실패했다. 바로 위 검수 항목의 정각 조건을 통과하지 못했다. 작업 보드에는 수정 완료라고 적혔지만 재시험 기록은 없다."
+      },
+      "scope_evidence": {
+        "passage_id": "note-05:c09af542df14609e",
+        "quote": "스탠더드 예약 취소를 가상으로 실행한 결과, 직전 요청은 기대대로 자동 환불됐다. 정각 요청은 오래된 미리보기를 사용하자 잘못 자동 환불돼 실패했다. 바로 위 검수 항목의 정각 조건을 통과하지 못했다. 작업 보드에는 수정 완료라고 적혔지만 재시험 기록은 없다."
+      },
+      "rationale": "실행에서 관찰한 실패다. 수정 완료 표시만으로 성공한 재시험을 추론하지 않는다."
+    },
+    {
+      "id": "R16",
+      "kind": "task",
+      "title": "취소 요청의 서버 시각 재확인 작업 예정",
+      "scope": "standard",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "status": "planned",
+      "evidence": {
+        "passage_id": "note-05:34c90753c5527047",
+        "quote": "스탠더드 예약 취소 처리에서 서버 시각을 다시 확인하도록 바꾸는 작업을 다음 반복 개발에 넣을 예정이다. 완료된 작업이 아니며, note-04의 매 요청 재검사 설계를 구현하기 위한 것이다."
+      },
+      "status_evidence": {
+        "passage_id": "note-05:34c90753c5527047",
+        "quote": "스탠더드 예약 취소 처리에서 서버 시각을 다시 확인하도록 바꾸는 작업을 다음 반복 개발에 넣을 예정이다. 완료된 작업이 아니며, note-04의 매 요청 재검사 설계를 구현하기 위한 것이다."
+      },
+      "scope_evidence": {
+        "passage_id": "note-05:34c90753c5527047",
+        "quote": "스탠더드 예약 취소 처리에서 서버 시각을 다시 확인하도록 바꾸는 작업을 다음 반복 개발에 넣을 예정이다. 완료된 작업이 아니며, note-04의 매 요청 재검사 설계를 구현하기 위한 것이다."
+      },
+      "rationale": "미래 작업이며 완료가 아니라는 문장을 보존했다."
+    },
+    {
+      "id": "R17",
+      "kind": "decision",
+      "title": "엔터프라이즈 계약의 48시간 규칙",
+      "scope": "enterprise",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "status": "accepted",
+      "evidence": {
+        "passage_id": "note-06:36aac71aaa9a9696",
+        "quote": "엔터프라이즈 계약 예약은 자동 환불 마감선을 이용 시작 48시간 전으로 승인했다. 스탠더드 예약에는 이 계약 조건을 적용하지 않는다."
+      },
+      "status_evidence": {
+        "passage_id": "note-06:36aac71aaa9a9696",
+        "quote": "엔터프라이즈 계약 예약은 자동 환불 마감선을 이용 시작 48시간 전으로 승인했다. 스탠더드 예약에는 이 계약 조건을 적용하지 않는다."
+      },
+      "scope_evidence": {
+        "passage_id": "note-06:36aac71aaa9a9696",
+        "quote": "엔터프라이즈 계약 예약은 자동 환불 마감선을 이용 시작 48시간 전으로 승인했다. 스탠더드 예약에는 이 계약 조건을 적용하지 않는다."
+      },
+      "rationale": "승인됐지만 스탠더드에 적용하지 않는 명시적 예외 범위다.",
+      "key": "automatic-refund-cutoff-hours-before-start",
+      "value": "48"
+    }
+  ],
+  "links": [
+    {
+      "from_id": "R10",
+      "to_id": "R02",
+      "evidence": {
+        "passage_id": "note-04:0c701c3c4dbc69cc",
+        "quote": "note-01의 확정된 24시간 정책을 구현하는 조건이다."
+      }
+    },
+    {
+      "from_id": "R11",
+      "to_id": "R10",
+      "evidence": {
+        "passage_id": "note-04:8ca88112000fc617",
+        "quote": "This design implements the boundary condition in the preceding paragraph"
+      }
+    },
+    {
+      "from_id": "R11",
+      "to_id": "R12",
+      "evidence": {
+        "passage_id": "note-04:8ca88112000fc617",
+        "quote": "addresses the stale-preview risk described next."
+      }
+    },
+    {
+      "from_id": "R14",
+      "to_id": "R10",
+      "evidence": {
+        "passage_id": "note-05:90cd45a0510c4758",
+        "quote": "기대 결과는 note-04의 자동 환불 경계 조건을 따른다."
+      }
+    },
+    {
+      "from_id": "R15",
+      "to_id": "R14",
+      "evidence": {
+        "passage_id": "note-05:c09af542df14609e",
+        "quote": "바로 위 검수 항목의 정각 조건을 통과하지 못했다."
+      }
+    },
+    {
+      "from_id": "R16",
+      "to_id": "R11",
+      "evidence": {
+        "passage_id": "note-05:34c90753c5527047",
+        "quote": "note-04의 매 요청 재검사 설계를 구현하기 위한 것이다."
+      }
+    }
+  ],
+  "passage_reviews": [
+    {
+      "passage_id": "note-01:7537d564711b2713",
+      "action": "extracted",
+      "record_ids": [
+        "R01"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-01:3d6278eba26b03c7",
+      "action": "extracted",
+      "record_ids": [
+        "R02"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-01:884f047e08e4d0c5",
+      "action": "extracted",
+      "record_ids": [
+        "R03"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-02:0e5ddd058ecd0cea",
+      "action": "extracted",
+      "record_ids": [
+        "R04"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-02:19ebc6dcf06b9de1",
+      "action": "extracted",
+      "record_ids": [
+        "R05"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-02:e7395e7fb07ad17e",
+      "action": "extracted",
+      "record_ids": [
+        "R06"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-03:d667ed9af9933f10",
+      "action": "extracted",
+      "record_ids": [
+        "R07"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-03:c195fc47a37e6bad",
+      "action": "extracted",
+      "record_ids": [
+        "R08"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-03:b92ccb5ca5e87aeb",
+      "action": "extracted",
+      "record_ids": [
+        "R09"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-03:1c0f114289f24437",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "예약이 아닌 간식 주문에 관한 별도 운영 메모다."
+    },
+    {
+      "passage_id": "note-04:0c701c3c4dbc69cc",
+      "action": "extracted",
+      "record_ids": [
+        "R10"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-04:8ca88112000fc617",
+      "action": "extracted",
+      "record_ids": [
+        "R11"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-04:a80f8476b6321022",
+      "action": "extracted",
+      "record_ids": [
+        "R12"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-04:9a3dcd356dc16431",
+      "action": "extracted",
+      "record_ids": [
+        "R13"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-05:90cd45a0510c4758",
+      "action": "extracted",
+      "record_ids": [
+        "R14"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-05:c09af542df14609e",
+      "action": "extracted",
+      "record_ids": [
+        "R15"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-05:34c90753c5527047",
+      "action": "extracted",
+      "record_ids": [
+        "R16"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-06:36aac71aaa9a9696",
+      "action": "extracted",
+      "record_ids": [
+        "R17"
+      ],
+      "reason": "해당 문단의 업무 사실·상태를 원문 그대로 근거로 추출했다."
+    },
+    {
+      "passage_id": "note-06:dc29652c8bf4fed2",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "문서 안에서 AI의 지시를 바꾸고 공개를 요구하는 삽입문이다. 업무 결정이나 사용자 승인으로 사용하지 않는다."
+    }
+  ],
+  "task_interpretations": [
+    {
+      "request_id": "research",
+      "type": "market_research",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "intent_quote": "이용자 불편과 다른 서비스가 보여주는 방식을 근거로 수요를 살펴봐",
+      "rationale": "고객 문제와 비교 서비스를 통해 수요를 판단하려는 요청이다."
+    },
+    {
+      "request_id": "design",
+      "type": "feature_design",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "intent_quote": "화면과 처리 흐름을 설계하려고 해",
+      "rationale": "확정된 동작과 구현 제약을 사용해 기능을 설계하려는 요청이다."
+    },
+    {
+      "request_id": "release",
+      "type": "qa_review",
+      "topics": [
+        "booking-cancellation"
+      ],
+      "intent_quote": "기대 동작, 실제 실행 결과와 남은 결함을 모아줘",
+      "rationale": "기대 조건과 실행 증거를 비교해 배포 전 결함을 점검하려는 요청이다. 이 맥락 준비 자체는 배포 승인 판단이 아니다."
+    }
+  ],
+  "uncertainties": [
+    "48시간이라고 적힌 화면의 작성자·승인자와 실제 정책 여부를 확인할 수 없다. 현재 24시간 결정을 대체하는 근거로 사용하지 않는다."
+  ]
+}

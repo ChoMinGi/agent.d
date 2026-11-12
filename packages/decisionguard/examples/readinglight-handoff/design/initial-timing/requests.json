@@ -1,0 +1,13 @@
+{
+  "extraction_version": 2,
+  "requests": [
+    {
+      "id": "feature-design",
+      "summary": "Update ReadingLight’s feature design using the review notes and correspondence. Give the builder concrete behavior and data requirements, explain any changes from the earlier prototype brief, and leave a concise handoff for QA.",
+      "project_id": "readinglight",
+      "scope": "two-room-pilot",
+      "as_of": "2027-07-18T10:02:00Z",
+      "max_items": 20
+    }
+  ]
+}

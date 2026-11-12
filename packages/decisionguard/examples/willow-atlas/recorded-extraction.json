@@ -1,0 +1,1125 @@
+{
+  "raw_version": 2,
+  "job_digest": "60a61e704298613abeefc817708e474cbafa727340f5bde182242ccffa99ec70",
+  "records": [
+    {
+      "id": "purpose",
+      "kind": "goal",
+      "status": "accepted",
+      "title": "지역 봉사단의 오프라인 기록과 검토 후 공유",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "현재 지역 봉사단 시험판 목적을 후속 회의의 검토 조건과 함께 확인했다.",
+      "evidence": {
+        "passage_id": "notebook:61b741e068ccc571",
+        "quote": "합의한 목적: 공원 자원봉사자가 연결이 끊겨도 관측을 적고, 조정자가 검토한 기록만 시민 지도에 공유한다. 첫 범위는 지역 봉사단이며 전문 연구기관 분석은 제외한다."
+      },
+      "status_evidence": {
+        "passage_id": "notebook:61b741e068ccc571",
+        "quote": "합의한 목적: 공원 자원봉사자가 연결이 끊겨도 관측을 적고, 조정자가 검토한 기록만 시민 지도에 공유한다. 첫 범위는 지역 봉사단이며 전문 연구기관 분석은 제외한다."
+      },
+      "scope_evidence": {
+        "passage_id": "notebook:61b741e068ccc571",
+        "quote": "합의한 목적: 공원 자원봉사자가 연결이 끊겨도 관측을 적고, 조정자가 검토한 기록만 시민 지도에 공유한다. 첫 범위는 지역 봉사단이며 전문 연구기관 분석은 제외한다."
+      }
+    },
+    {
+      "id": "old-location",
+      "kind": "decision",
+      "status": "superseded",
+      "title": "철회된 정확한 위치 즉시 공개",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "W-03이 W-01을 명시적으로 철회했다.",
+      "evidence": {
+        "passage_id": "notebook:2404a5c6d365ca07",
+        "quote": "W-01 채택: 제출한 관측은 정확한 지점을 지도에 즉시 공개한다."
+      },
+      "status_evidence": {
+        "passage_id": "council:7b565d5c419ee494",
+        "quote": "W-03은 W-01의 정확한 지점 즉시 공개 방식을 철회한다. 이제 조정자 검토와 관측자 공개 동의가 모두 있는 기록만 250m 격자로 공개한다. 정확한 지점은 시민 지도에 보내지 않는다. 이 공개 방식은 채택되었다."
+      },
+      "scope_evidence": {
+        "passage_id": "notebook:2404a5c6d365ca07",
+        "quote": "W-01 채택: 제출한 관측은 정확한 지점을 지도에 즉시 공개한다."
+      },
+      "key": "map.publication",
+      "value": "exact-immediate",
+      "status_link": {
+        "passage_id": "council:7b565d5c419ee494",
+        "quote": "W-03은 W-01의 정확한 지점 즉시 공개 방식을 철회한다. 이제 조정자 검토와 관측자 공개 동의가 모두 있는 기록만 250m 격자로 공개한다. 정확한 지점은 시민 지도에 보내지 않는다. 이 공개 방식은 채택되었다."
+      },
+      "status_rationale": "후속 회의가 기존 W-01을 명시적으로 철회한다.",
+      "superseded_by": "map",
+      "supersession_evidence": {
+        "passage_id": "council:7b565d5c419ee494",
+        "quote": "W-03은 W-01의 정확한 지점 즉시 공개 방식을 철회한다. 이제 조정자 검토와 관측자 공개 동의가 모두 있는 기록만 250m 격자로 공개한다. 정확한 지점은 시민 지도에 보내지 않는다. 이 공개 방식은 채택되었다."
+      }
+    },
+    {
+      "id": "old-grid",
+      "kind": "question",
+      "status": "resolved",
+      "title": "해소된 공개 격자 크기 질문",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "GRID-2는 후속 회의에서 250m로 답했지만 실제 시험은 미실행이다.",
+      "evidence": {
+        "passage_id": "notebook:e182f7a127ac3b1e",
+        "quote": "GRID-2 질문: 공개 지도의 위치 격자 크기는 아직 미정이다. 다음 운영회의에서 결정한다."
+      },
+      "status_evidence": {
+        "passage_id": "council:4b76edbefccd3872",
+        "quote": "GRID-2의 답변은 250m 격자다. 공개 격자 수치는 확정됐지만 실제 위치 노출 검사는 아직 실행하지 않았다."
+      },
+      "scope_evidence": {
+        "passage_id": "notebook:e182f7a127ac3b1e",
+        "quote": "GRID-2 질문: 공개 지도의 위치 격자 크기는 아직 미정이다. 다음 운영회의에서 결정한다."
+      },
+      "status_link": {
+        "passage_id": "council:4b76edbefccd3872",
+        "quote": "GRID-2의 답변은 250m 격자다. 공개 격자 수치는 확정됐지만 실제 위치 노출 검사는 아직 실행하지 않았다."
+      },
+      "status_rationale": "동일 GRID-2 쟁점을 구체적으로 답한 후속 원문이다."
+    },
+    {
+      "id": "pain",
+      "kind": "customer_evidence",
+      "status": "observed",
+      "title": "가상 여섯 팀 중 세 팀이 종이 관측 재입력을 보고",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "사용 문제 진술을 효과나 시장 전체 수요로 확대하지 않는다.",
+      "evidence": {
+        "passage_id": "field-notes:8f231155a46d1686",
+        "quote": "| 입력 작업 | 가상 인터뷰 6팀 중 3팀이 종이 관측을 저녁에 다시 입력한다고 말했다. | 팀 진술이며 시간 절감 실험은 없다. |"
+      },
+      "status_evidence": {
+        "passage_id": "field-notes:8f231155a46d1686",
+        "quote": "| 입력 작업 | 가상 인터뷰 6팀 중 3팀이 종이 관측을 저녁에 다시 입력한다고 말했다. | 팀 진술이며 시간 절감 실험은 없다. |"
+      },
+      "scope_evidence": {
+        "passage_id": "field-notes:8f231155a46d1686",
+        "quote": "| 입력 작업 | 가상 인터뷰 6팀 중 3팀이 종이 관측을 저녁에 다시 입력한다고 말했다. | 팀 진술이며 시간 절감 실험은 없다. |"
+      }
+    },
+    {
+      "id": "interest",
+      "kind": "customer_evidence",
+      "status": "observed",
+      "title": "두 조정자의 무료 체험 관심; 유료 구매 아님",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "무료 체험 관심은 계약이나 갱신 근거가 아니다.",
+      "evidence": {
+        "passage_id": "field-notes:702dbe6e290a9756",
+        "quote": "| 관심 | 두 조정자가 무료 체험에 참여할 의향을 밝혔다. | 유료 구매나 갱신 약속은 아니다. |"
+      },
+      "status_evidence": {
+        "passage_id": "field-notes:702dbe6e290a9756",
+        "quote": "| 관심 | 두 조정자가 무료 체험에 참여할 의향을 밝혔다. | 유료 구매나 갱신 약속은 아니다. |"
+      },
+      "scope_evidence": {
+        "passage_id": "field-notes:702dbe6e290a9756",
+        "quote": "| 관심 | 두 조정자가 무료 체험에 참여할 의향을 밝혔다. | 유료 구매나 갱신 약속은 아니다. |"
+      }
+    },
+    {
+      "id": "alternatives",
+      "kind": "market_evidence",
+      "status": "observed",
+      "title": "조사한 팀의 기존 대안은 종이 수첩과 무료 폼",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "직접 확인된 가상 조사 범위의 대안만 보존한다.",
+      "evidence": {
+        "passage_id": "field-notes:1f57b1fa37ee121c",
+        "quote": "| 현재 대안 | 여섯 팀은 종이 수첩과 무료 설문 폼을 함께 사용한다고 보고했다. | 가상 인터뷰 관찰이며 전체 시장 점유율은 아니다. |"
+      },
+      "status_evidence": {
+        "passage_id": "field-notes:1f57b1fa37ee121c",
+        "quote": "| 현재 대안 | 여섯 팀은 종이 수첩과 무료 설문 폼을 함께 사용한다고 보고했다. | 가상 인터뷰 관찰이며 전체 시장 점유율은 아니다. |"
+      },
+      "scope_evidence": {
+        "passage_id": "field-notes:1f57b1fa37ee121c",
+        "quote": "| 현재 대안 | 여섯 팀은 종이 수첩과 무료 설문 폼을 함께 사용한다고 보고했다. | 가상 인터뷰 관찰이며 전체 시장 점유율은 아니다. |"
+      }
+    },
+    {
+      "id": "benefit-hypothesis",
+      "kind": "assumption",
+      "status": "unverified",
+      "title": "입력 부담 감소가 유료 도입을 늘린다는 미검증 가설",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "효과와 실제 구매 실험이 없다는 조건을 우선 보존한다.",
+      "evidence": {
+        "passage_id": "field-notes:b5a1ad72984969f5",
+        "quote": "| 기대 효과 | 중복 입력 감소가 유료 도입으로 이어질 수 있다는 가설이다. | 가격 제안과 실제 구매 실험은 미실시다. |"
+      },
+      "status_evidence": {
+        "passage_id": "field-notes:b5a1ad72984969f5",
+        "quote": "| 기대 효과 | 중복 입력 감소가 유료 도입으로 이어질 수 있다는 가설이다. | 가격 제안과 실제 구매 실험은 미실시다. |"
+      },
+      "scope_evidence": {
+        "passage_id": "field-notes:b5a1ad72984969f5",
+        "quote": "| 기대 효과 | 중복 입력 감소가 유료 도입으로 이어질 수 있다는 가설이다. | 가격 제안과 실제 구매 실험은 미실시다. |"
+      }
+    },
+    {
+      "id": "submit",
+      "kind": "decision",
+      "status": "accepted",
+      "title": "기기 저장 후 연결 복구 시 제출",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "후속 회의에서 오프라인 제출 동작을 채택했다.",
+      "evidence": {
+        "passage_id": "council:880fd42e76ce59a4",
+        "quote": "2027-04-10 채택. Willow Atlas 첫 시험판에서 오프라인 관측은 기기에 저장하고 연결 복구 후 제출한다. 관측자는 제출 전 대기 목록을 확인한다."
+      },
+      "status_evidence": {
+        "passage_id": "council:880fd42e76ce59a4",
+        "quote": "2027-04-10 채택. Willow Atlas 첫 시험판에서 오프라인 관측은 기기에 저장하고 연결 복구 후 제출한다. 관측자는 제출 전 대기 목록을 확인한다."
+      },
+      "scope_evidence": {
+        "passage_id": "council:880fd42e76ce59a4",
+        "quote": "2027-04-10 채택. Willow Atlas 첫 시험판에서 오프라인 관측은 기기에 저장하고 연결 복구 후 제출한다. 관측자는 제출 전 대기 목록을 확인한다."
+      },
+      "key": "submit",
+      "value": "기기 저장 후 연결 복구 시 제출"
+    },
+    {
+      "id": "map",
+      "kind": "decision",
+      "status": "accepted",
+      "title": "조정자 검토·관측자 동의 뒤 250m 격자 공개",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "정확한 지점 공개를 대체한 현재 승인 범위다. 더 최신인 초안은 이를 대체하지 않는다.",
+      "evidence": {
+        "passage_id": "council:7b565d5c419ee494",
+        "quote": "W-03은 W-01의 정확한 지점 즉시 공개 방식을 철회한다. 이제 조정자 검토와 관측자 공개 동의가 모두 있는 기록만 250m 격자로 공개한다. 정확한 지점은 시민 지도에 보내지 않는다. 이 공개 방식은 채택되었다."
+      },
+      "status_evidence": {
+        "passage_id": "council:7b565d5c419ee494",
+        "quote": "W-03은 W-01의 정확한 지점 즉시 공개 방식을 철회한다. 이제 조정자 검토와 관측자 공개 동의가 모두 있는 기록만 250m 격자로 공개한다. 정확한 지점은 시민 지도에 보내지 않는다. 이 공개 방식은 채택되었다."
+      },
+      "scope_evidence": {
+        "passage_id": "council:7b565d5c419ee494",
+        "quote": "W-03은 W-01의 정확한 지점 즉시 공개 방식을 철회한다. 이제 조정자 검토와 관측자 공개 동의가 모두 있는 기록만 250m 격자로 공개한다. 정확한 지점은 시민 지도에 보내지 않는다. 이 공개 방식은 채택되었다."
+      },
+      "key": "map.publication",
+      "value": "review-consent-250m",
+      "attention": {
+        "category": "approval_boundary",
+        "rationale": "정확한 지점 공개를 대체한 현재 승인 범위다. 더 최신인 초안은 이를 대체하지 않는다.",
+        "evidence": {
+          "passage_id": "council:7b565d5c419ee494",
+          "quote": "W-03은 W-01의 정확한 지점 즉시 공개 방식을 철회한다. 이제 조정자 검토와 관측자 공개 동의가 모두 있는 기록만 250m 격자로 공개한다. 정확한 지점은 시민 지도에 보내지 않는다. 이 공개 방식은 채택되었다."
+        }
+      }
+    },
+    {
+      "id": "queue",
+      "kind": "requirement",
+      "status": "accepted",
+      "title": "제출 전 기기의 대기 목록 확인",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "표의 이 행만 동작 요구다. 인접 체험 관심·미승인 장치 제안은 포함하지 않는다.",
+      "evidence": {
+        "passage_id": "field-notes:f19c4f8b5348a3d2",
+        "quote": "| 업무 흐름 | 제출 전 관측자는 자기 기기의 대기 목록을 확인할 수 있어야 한다. | W-03 운영회의에서 채택한 요구를 옮겼다. |"
+      },
+      "status_evidence": {
+        "passage_id": "council:880fd42e76ce59a4",
+        "quote": "2027-04-10 채택. Willow Atlas 첫 시험판에서 오프라인 관측은 기기에 저장하고 연결 복구 후 제출한다. 관측자는 제출 전 대기 목록을 확인한다."
+      },
+      "scope_evidence": {
+        "passage_id": "field-notes:f19c4f8b5348a3d2",
+        "quote": "| 업무 흐름 | 제출 전 관측자는 자기 기기의 대기 목록을 확인할 수 있어야 한다. | W-03 운영회의에서 채택한 요구를 옮겼다. |"
+      },
+      "status_link": {
+        "passage_id": "council:880fd42e76ce59a4",
+        "quote": "2027-04-10 채택. Willow Atlas 첫 시험판에서 오프라인 관측은 기기에 저장하고 연결 복구 후 제출한다. 관측자는 제출 전 대기 목록을 확인한다."
+      },
+      "status_rationale": "같은 대기 목록 요구를 W-03 채택 본문에서 확인했다."
+    },
+    {
+      "id": "sequence",
+      "kind": "goal",
+      "status": "accepted",
+      "title": "위치 노출·접근성 검사 후 시민 공개 검토",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "내부 데모와 시민 공개 승인을 분리하는 현재 실행 순서를 보존한다.",
+      "evidence": {
+        "passage_id": "council:a25b5157a76dfa4e",
+        "quote": "지도 공개 전 접근성 검토와 위치 노출 검사를 완료해야 한다는 순서를 채택했다. 내부 화면 데모는 시민 공개 승인이 아니다."
+      },
+      "status_evidence": {
+        "passage_id": "council:a25b5157a76dfa4e",
+        "quote": "지도 공개 전 접근성 검토와 위치 노출 검사를 완료해야 한다는 순서를 채택했다. 내부 화면 데모는 시민 공개 승인이 아니다."
+      },
+      "scope_evidence": {
+        "passage_id": "council:a25b5157a76dfa4e",
+        "quote": "지도 공개 전 접근성 검토와 위치 노출 검사를 완료해야 한다는 순서를 채택했다. 내부 화면 데모는 시민 공개 승인이 아니다."
+      }
+    },
+    {
+      "id": "retention",
+      "kind": "question",
+      "status": "unknown",
+      "title": "보존 메모 접근 불가; 보관 기간 승인값 미확인",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "누락된 후속 문서 때문에 현재 값을 단정할 수 없다.",
+      "evidence": {
+        "passage_id": "working-copy:cd9c16563624c781",
+        "quote": "보존 메모의 연결이 깨져 열 수 없었다. 보관 기간에 관한 현재 승인값을 확인하지 못했다."
+      },
+      "status_evidence": {
+        "passage_id": "working-copy:cd9c16563624c781",
+        "quote": "보존 메모의 연결이 깨져 열 수 없었다. 보관 기간에 관한 현재 승인값을 확인하지 못했다."
+      },
+      "scope_evidence": {
+        "passage_id": "working-copy:cd9c16563624c781",
+        "quote": "보존 메모의 연결이 깨져 열 수 없었다. 보관 기간에 관한 현재 승인값을 확인하지 못했다."
+      },
+      "attention": {
+        "category": "unresolved_policy",
+        "rationale": "누락된 후속 문서 때문에 현재 값을 단정할 수 없다.",
+        "evidence": {
+          "passage_id": "working-copy:cd9c16563624c781",
+          "quote": "보존 메모의 연결이 깨져 열 수 없었다. 보관 기간에 관한 현재 승인값을 확인하지 못했다."
+        }
+      }
+    },
+    {
+      "id": "newer-draft",
+      "kind": "decision",
+      "status": "draft",
+      "title": "미채택 자동 공유 초안",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "새 문서라는 이유로 승인된 검토·동의 방식을 덮어쓰지 않는다.",
+      "evidence": {
+        "passage_id": "working-copy:a8a23f654a6bbedf",
+        "quote": "초안: 조정자 검토를 없애고 모든 관측을 바로 공유하면 빨라질 수 있다. 채택되지 않았으며 W-03을 대체하지 않는다."
+      },
+      "status_evidence": {
+        "passage_id": "working-copy:a8a23f654a6bbedf",
+        "quote": "초안: 조정자 검토를 없애고 모든 관측을 바로 공유하면 빨라질 수 있다. 채택되지 않았으며 W-03을 대체하지 않는다."
+      },
+      "scope_evidence": {
+        "passage_id": "working-copy:a8a23f654a6bbedf",
+        "quote": "초안: 조정자 검토를 없애고 모든 관측을 바로 공유하면 빨라질 수 있다. 채택되지 않았으며 W-03을 대체하지 않는다."
+      },
+      "key": "newer-draft",
+      "value": "미채택 자동 공유 초안"
+    },
+    {
+      "id": "retry-test",
+      "kind": "test_case",
+      "status": "accepted",
+      "title": "재시도·앱 재시작에도 같은 관측 하나만 저장",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "실행 요구사항이다. 통과 결과와 구분한다.",
+      "evidence": {
+        "passage_id": "checks:ab550ae70489358b",
+        "quote": "필수 시험으로 채택: 같은 관측을 연결 복구 뒤 두 번 제출해도 하나만 저장되어야 한다. 오류 뒤 재시도와 앱 재시작도 포함한다."
+      },
+      "status_evidence": {
+        "passage_id": "checks:ab550ae70489358b",
+        "quote": "필수 시험으로 채택: 같은 관측을 연결 복구 뒤 두 번 제출해도 하나만 저장되어야 한다. 오류 뒤 재시도와 앱 재시작도 포함한다."
+      },
+      "scope_evidence": {
+        "passage_id": "checks:ab550ae70489358b",
+        "quote": "필수 시험으로 채택: 같은 관측을 연결 복구 뒤 두 번 제출해도 하나만 저장되어야 한다. 오류 뒤 재시도와 앱 재시작도 포함한다."
+      }
+    },
+    {
+      "id": "failed-run",
+      "kind": "test_result",
+      "status": "observed",
+      "title": "RUN-7 중복 저장 FAIL; 수정 후 재시험 없음",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "관측된 실패를 수정 후보나 계획으로 지우지 않는다.",
+      "evidence": {
+        "passage_id": "checks:e2a17aa9180fb1db",
+        "quote": "가상 실행 RUN-7, build cedar: 재시도 때 관측 두 개가 저장되어 FAIL이었다. 수정 후보는 있지만 재시험 결과는 없다."
+      },
+      "status_evidence": {
+        "passage_id": "checks:e2a17aa9180fb1db",
+        "quote": "가상 실행 RUN-7, build cedar: 재시도 때 관측 두 개가 저장되어 FAIL이었다. 수정 후보는 있지만 재시험 결과는 없다."
+      },
+      "scope_evidence": {
+        "passage_id": "checks:e2a17aa9180fb1db",
+        "quote": "가상 실행 RUN-7, build cedar: 재시도 때 관측 두 개가 저장되어 FAIL이었다. 수정 후보는 있지만 재시험 결과는 없다."
+      },
+      "attention": {
+        "category": "known_failure",
+        "rationale": "관측된 실패를 수정 후보나 계획으로 지우지 않는다.",
+        "evidence": {
+          "passage_id": "checks:e2a17aa9180fb1db",
+          "quote": "가상 실행 RUN-7, build cedar: 재시도 때 관측 두 개가 저장되어 FAIL이었다. 수정 후보는 있지만 재시험 결과는 없다."
+        }
+      }
+    },
+    {
+      "id": "not-run",
+      "kind": "question",
+      "status": "open",
+      "title": "위치·접근성 검사 미실행과 시민 공개 미승인",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "작업 설명을 실제 실행이나 승인 증거로 대체하지 않는다.",
+      "evidence": {
+        "passage_id": "checks:9a727ac5dde30e0e",
+        "quote": "위치 노출 검사와 접근성 검토는 계획만 있으며 실행 기록이 없다. 지도 공개 승인도 아직 없다."
+      },
+      "status_evidence": {
+        "passage_id": "checks:9a727ac5dde30e0e",
+        "quote": "위치 노출 검사와 접근성 검토는 계획만 있으며 실행 기록이 없다. 지도 공개 승인도 아직 없다."
+      },
+      "scope_evidence": {
+        "passage_id": "checks:9a727ac5dde30e0e",
+        "quote": "위치 노출 검사와 접근성 검토는 계획만 있으며 실행 기록이 없다. 지도 공개 승인도 아직 없다."
+      },
+      "attention": {
+        "category": "missing_execution",
+        "rationale": "작업 설명을 실제 실행이나 승인 증거로 대체하지 않는다.",
+        "evidence": {
+          "passage_id": "checks:9a727ac5dde30e0e",
+          "quote": "위치 노출 검사와 접근성 검토는 계획만 있으며 실행 기록이 없다. 지도 공개 승인도 아직 없다."
+        }
+      }
+    },
+    {
+      "id": "release-gate",
+      "kind": "requirement",
+      "status": "accepted",
+      "title": "위치·접근성 실행 증거 후 공개 심사",
+      "scope": "trial",
+      "topics": [
+        "field-observations"
+      ],
+      "rationale": "저장 성공이나 내부 실행 한 건만으로 공개 승인 불가.",
+      "evidence": {
+        "passage_id": "checks:8a46bd2d63bfe2b6",
+        "quote": "채택된 공개 조건: 위치 노출 검사와 접근성 검토 증거가 있어야 시민 지도 공개를 심사할 수 있다. 데이터가 저장됐다는 사실이나 RUN-7의 재시도만으로 공개를 승인하지 않는다."
+      },
+      "status_evidence": {
+        "passage_id": "checks:8a46bd2d63bfe2b6",
+        "quote": "채택된 공개 조건: 위치 노출 검사와 접근성 검토 증거가 있어야 시민 지도 공개를 심사할 수 있다. 데이터가 저장됐다는 사실이나 RUN-7의 재시도만으로 공개를 승인하지 않는다."
+      },
+      "scope_evidence": {
+        "passage_id": "checks:8a46bd2d63bfe2b6",
+        "quote": "채택된 공개 조건: 위치 노출 검사와 접근성 검토 증거가 있어야 시민 지도 공개를 심사할 수 있다. 데이터가 저장됐다는 사실이나 RUN-7의 재시도만으로 공개를 승인하지 않는다."
+      },
+      "attention": {
+        "category": "approval_boundary",
+        "rationale": "저장 성공이나 내부 실행 한 건만으로 공개 승인 불가.",
+        "evidence": {
+          "passage_id": "checks:8a46bd2d63bfe2b6",
+          "quote": "채택된 공개 조건: 위치 노출 검사와 접근성 검토 증거가 있어야 시민 지도 공개를 심사할 수 있다. 데이터가 저장됐다는 사실이나 RUN-7의 재시도만으로 공개를 승인하지 않는다."
+        }
+      }
+    }
+  ],
+  "links": [],
+  "passage_reviews": [
+    {
+      "passage_id": "notebook:bafd0b7fd66966d1",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "표제·표 열 제목·출처 설명 또는 이번 범위 밖 장치/문안 제안이다."
+    },
+    {
+      "passage_id": "notebook:fbf107e3d36b0139",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "표제·표 열 제목·출처 설명 또는 이번 범위 밖 장치/문안 제안이다."
+    },
+    {
+      "passage_id": "notebook:61b741e068ccc571",
+      "action": "extracted",
+      "record_ids": [
+        "purpose"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "notebook:2404a5c6d365ca07",
+      "action": "extracted",
+      "record_ids": [
+        "old-location"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "notebook:e182f7a127ac3b1e",
+      "action": "extracted",
+      "record_ids": [
+        "old-grid"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "notebook:3ba963fad1f81efb",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "오래된 보관 질문은 접근 불가 후속 기록에 합쳤다."
+    },
+    {
+      "passage_id": "field-notes:0c643012bfe118a1",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "표제·표 열 제목·출처 설명 또는 이번 범위 밖 장치/문안 제안이다."
+    },
+    {
+      "passage_id": "field-notes:b17c60c5d57953b4",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "표제·표 열 제목·출처 설명 또는 이번 범위 밖 장치/문안 제안이다."
+    },
+    {
+      "passage_id": "field-notes:3d9d0e3a69b0212f",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "표제·표 열 제목·출처 설명 또는 이번 범위 밖 장치/문안 제안이다."
+    },
+    {
+      "passage_id": "field-notes:8f231155a46d1686",
+      "action": "extracted",
+      "record_ids": [
+        "pain"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "field-notes:702dbe6e290a9756",
+      "action": "extracted",
+      "record_ids": [
+        "interest"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "field-notes:1f57b1fa37ee121c",
+      "action": "extracted",
+      "record_ids": [
+        "alternatives"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "field-notes:8fac2650b906156f",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "표제·표 열 제목·출처 설명 또는 이번 범위 밖 장치/문안 제안이다."
+    },
+    {
+      "passage_id": "field-notes:f19c4f8b5348a3d2",
+      "action": "extracted",
+      "record_ids": [
+        "queue"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "field-notes:b5a1ad72984969f5",
+      "action": "extracted",
+      "record_ids": [
+        "benefit-hypothesis"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "field-notes:980011ecedc257df",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "표제·표 열 제목·출처 설명 또는 이번 범위 밖 장치/문안 제안이다."
+    },
+    {
+      "passage_id": "field-notes:b7945e213e52f0cd",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "표제·표 열 제목·출처 설명 또는 이번 범위 밖 장치/문안 제안이다."
+    },
+    {
+      "passage_id": "council:4dfb38682f84d2fe",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "표제·표 열 제목·출처 설명 또는 이번 범위 밖 장치/문안 제안이다."
+    },
+    {
+      "passage_id": "council:880fd42e76ce59a4",
+      "action": "extracted",
+      "record_ids": [
+        "submit"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "council:7b565d5c419ee494",
+      "action": "extracted",
+      "record_ids": [
+        "map"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "council:4b76edbefccd3872",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "표제·표 열 제목·출처 설명 또는 이번 범위 밖 장치/문안 제안이다."
+    },
+    {
+      "passage_id": "council:a25b5157a76dfa4e",
+      "action": "extracted",
+      "record_ids": [
+        "sequence"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "council:5f705eeaad03f613",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "오래된 보관 질문은 접근 불가 후속 기록에 합쳤다."
+    },
+    {
+      "passage_id": "working-copy:3d0052c46e9f9c39",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "표제·표 열 제목·출처 설명 또는 이번 범위 밖 장치/문안 제안이다."
+    },
+    {
+      "passage_id": "working-copy:a8a23f654a6bbedf",
+      "action": "extracted",
+      "record_ids": [
+        "newer-draft"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "working-copy:cd9c16563624c781",
+      "action": "extracted",
+      "record_ids": [
+        "retention"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "checks:e0e70b7234065ecc",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "표제·표 열 제목·출처 설명 또는 이번 범위 밖 장치/문안 제안이다."
+    },
+    {
+      "passage_id": "checks:ab550ae70489358b",
+      "action": "extracted",
+      "record_ids": [
+        "retry-test"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "checks:e2a17aa9180fb1db",
+      "action": "extracted",
+      "record_ids": [
+        "failed-run"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "checks:9a727ac5dde30e0e",
+      "action": "extracted",
+      "record_ids": [
+        "not-run"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "checks:8a46bd2d63bfe2b6",
+      "action": "extracted",
+      "record_ids": [
+        "release-gate"
+      ],
+      "reason": "원문에서 한 주장과 상태를 분리했다."
+    },
+    {
+      "passage_id": "checks:742c0ff22afe1e23",
+      "action": "irrelevant",
+      "record_ids": [],
+      "reason": "표제·표 열 제목·출처 설명 또는 이번 범위 밖 장치/문안 제안이다."
+    }
+  ],
+  "followup_reviews": [
+    {
+      "record_id": "purpose",
+      "outcome": "no_change_found",
+      "evidence": [
+        {
+          "passage_id": "council:7b565d5c419ee494",
+          "quote": "W-03은 W-01의 정확한 지점 즉시 공개 방식을 철회한다. 이제 조정자 검토와 관측자 공개 동의가 모두 있는 기록만 250m 격자로 공개한다. 정확한 지점은 시민 지도에 보내지 않는다. 이 공개 방식은 채택되었다."
+        }
+      ],
+      "rationale": "현재 지역 봉사단 시험판 목적을 후속 회의의 검토 조건과 함께 확인했다."
+    },
+    {
+      "record_id": "old-location",
+      "outcome": "changed",
+      "evidence": [
+        {
+          "passage_id": "council:7b565d5c419ee494",
+          "quote": "W-03은 W-01의 정확한 지점 즉시 공개 방식을 철회한다. 이제 조정자 검토와 관측자 공개 동의가 모두 있는 기록만 250m 격자로 공개한다. 정확한 지점은 시민 지도에 보내지 않는다. 이 공개 방식은 채택되었다."
+        }
+      ],
+      "rationale": "W-03이 W-01을 명시적으로 철회했다.",
+      "successor_id": "map"
+    },
+    {
+      "record_id": "old-grid",
+      "outcome": "changed",
+      "evidence": [
+        {
+          "passage_id": "council:4b76edbefccd3872",
+          "quote": "GRID-2의 답변은 250m 격자다. 공개 격자 수치는 확정됐지만 실제 위치 노출 검사는 아직 실행하지 않았다."
+        }
+      ],
+      "rationale": "GRID-2는 후속 회의에서 250m로 답했지만 실제 시험은 미실행이다.",
+      "successor_id": "map"
+    },
+    {
+      "record_id": "submit",
+      "outcome": "no_change_found",
+      "evidence": [
+        {
+          "passage_id": "council:880fd42e76ce59a4",
+          "quote": "2027-04-10 채택. Willow Atlas 첫 시험판에서 오프라인 관측은 기기에 저장하고 연결 복구 후 제출한다. 관측자는 제출 전 대기 목록을 확인한다."
+        }
+      ],
+      "rationale": "후속 회의에서 오프라인 제출 동작을 채택했다."
+    },
+    {
+      "record_id": "map",
+      "outcome": "no_change_found",
+      "evidence": [
+        {
+          "passage_id": "working-copy:a8a23f654a6bbedf",
+          "quote": "초안: 조정자 검토를 없애고 모든 관측을 바로 공유하면 빨라질 수 있다. 채택되지 않았으며 W-03을 대체하지 않는다."
+        }
+      ],
+      "rationale": "정확한 지점 공개를 대체한 현재 승인 범위다. 더 최신인 초안은 이를 대체하지 않는다."
+    },
+    {
+      "record_id": "queue",
+      "outcome": "no_change_found",
+      "evidence": [
+        {
+          "passage_id": "council:880fd42e76ce59a4",
+          "quote": "2027-04-10 채택. Willow Atlas 첫 시험판에서 오프라인 관측은 기기에 저장하고 연결 복구 후 제출한다. 관측자는 제출 전 대기 목록을 확인한다."
+        }
+      ],
+      "rationale": "표의 이 행만 동작 요구다. 인접 체험 관심·미승인 장치 제안은 포함하지 않는다."
+    },
+    {
+      "record_id": "sequence",
+      "outcome": "no_change_found",
+      "evidence": [
+        {
+          "passage_id": "checks:8a46bd2d63bfe2b6",
+          "quote": "채택된 공개 조건: 위치 노출 검사와 접근성 검토 증거가 있어야 시민 지도 공개를 심사할 수 있다. 데이터가 저장됐다는 사실이나 RUN-7의 재시도만으로 공개를 승인하지 않는다."
+        }
+      ],
+      "rationale": "내부 데모와 시민 공개 승인을 분리하는 현재 실행 순서를 보존한다."
+    },
+    {
+      "record_id": "retention",
+      "outcome": "unresolved",
+      "evidence": [
+        {
+          "passage_id": "council:5f705eeaad03f613",
+          "quote": "보관 기간은 이번 회의에서 결정하지 않았다. 보존 메모가 아직 도착하지 않아 다음 검토가 필요하다."
+        },
+        {
+          "passage_id": "working-copy:cd9c16563624c781",
+          "quote": "보존 메모의 연결이 깨져 열 수 없었다. 보관 기간에 관한 현재 승인값을 확인하지 못했다."
+        }
+      ],
+      "rationale": "누락된 후속 문서 때문에 현재 값을 단정할 수 없다."
+    },
+    {
+      "record_id": "newer-draft",
+      "outcome": "no_change_found",
+      "evidence": [
+        {
+          "passage_id": "working-copy:a8a23f654a6bbedf",
+          "quote": "초안: 조정자 검토를 없애고 모든 관측을 바로 공유하면 빨라질 수 있다. 채택되지 않았으며 W-03을 대체하지 않는다."
+        }
+      ],
+      "rationale": "새 문서라는 이유로 승인된 검토·동의 방식을 덮어쓰지 않는다."
+    },
+    {
+      "record_id": "retry-test",
+      "outcome": "no_change_found",
+      "evidence": [
+        {
+          "passage_id": "checks:e2a17aa9180fb1db",
+          "quote": "가상 실행 RUN-7, build cedar: 재시도 때 관측 두 개가 저장되어 FAIL이었다. 수정 후보는 있지만 재시험 결과는 없다."
+        }
+      ],
+      "rationale": "실행 요구사항이다. 통과 결과와 구분한다."
+    },
+    {
+      "record_id": "not-run",
+      "outcome": "no_change_found",
+      "evidence": [
+        {
+          "passage_id": "checks:9a727ac5dde30e0e",
+          "quote": "위치 노출 검사와 접근성 검토는 계획만 있으며 실행 기록이 없다. 지도 공개 승인도 아직 없다."
+        }
+      ],
+      "rationale": "작업 설명을 실제 실행이나 승인 증거로 대체하지 않는다."
+    },
+    {
+      "record_id": "release-gate",
+      "outcome": "no_change_found",
+      "evidence": [
+        {
+          "passage_id": "checks:8a46bd2d63bfe2b6",
+          "quote": "채택된 공개 조건: 위치 노출 검사와 접근성 검토 증거가 있어야 시민 지도 공개를 심사할 수 있다. 데이터가 저장됐다는 사실이나 RUN-7의 재시도만으로 공개를 승인하지 않는다."
+        }
+      ],
+      "rationale": "저장 성공이나 내부 실행 한 건만으로 공개 승인 불가."
+    }
+  ],
+  "task_interpretations": [
+    {
+      "request_id": "research",
+      "type": "market_research",
+      "topics": [
+        "field-observations"
+      ],
+      "intent_quote": "시장조사",
+      "rationale": "요청된 작업 목적과 지역 봉사단 시험판 범위를 해석했다.",
+      "relevance": [
+        {
+          "record_id": "purpose",
+          "action": "include",
+          "rationale": "현재 지역 봉사단 시험판 목적을 후속 회의의 검토 조건과 함께 확인했다."
+        },
+        {
+          "record_id": "old-location",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "old-grid",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "pain",
+          "action": "include",
+          "rationale": "사용 문제 진술을 효과나 시장 전체 수요로 확대하지 않는다."
+        },
+        {
+          "record_id": "interest",
+          "action": "include",
+          "rationale": "무료 체험 관심은 계약이나 갱신 근거가 아니다."
+        },
+        {
+          "record_id": "alternatives",
+          "action": "include",
+          "rationale": "직접 확인된 가상 조사 범위의 대안만 보존한다."
+        },
+        {
+          "record_id": "benefit-hypothesis",
+          "action": "include",
+          "rationale": "효과와 실제 구매 실험이 없다는 조건을 우선 보존한다."
+        },
+        {
+          "record_id": "submit",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "map",
+          "action": "include",
+          "rationale": "정확한 지점 공개를 대체한 현재 승인 범위다. 더 최신인 초안은 이를 대체하지 않는다."
+        },
+        {
+          "record_id": "queue",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "sequence",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "retention",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "newer-draft",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "retry-test",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "failed-run",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "not-run",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "release-gate",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        }
+      ]
+    },
+    {
+      "request_id": "design",
+      "type": "feature_design",
+      "topics": [
+        "field-observations"
+      ],
+      "intent_quote": "기능 설계",
+      "rationale": "요청된 작업 목적과 지역 봉사단 시험판 범위를 해석했다.",
+      "relevance": [
+        {
+          "record_id": "purpose",
+          "action": "include",
+          "rationale": "현재 지역 봉사단 시험판 목적을 후속 회의의 검토 조건과 함께 확인했다."
+        },
+        {
+          "record_id": "old-location",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "old-grid",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "pain",
+          "action": "include",
+          "rationale": "사용 문제 진술을 효과나 시장 전체 수요로 확대하지 않는다."
+        },
+        {
+          "record_id": "interest",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "alternatives",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "benefit-hypothesis",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "submit",
+          "action": "include",
+          "rationale": "후속 회의에서 오프라인 제출 동작을 채택했다."
+        },
+        {
+          "record_id": "map",
+          "action": "include",
+          "rationale": "정확한 지점 공개를 대체한 현재 승인 범위다. 더 최신인 초안은 이를 대체하지 않는다."
+        },
+        {
+          "record_id": "queue",
+          "action": "include",
+          "rationale": "표의 이 행만 동작 요구다. 인접 체험 관심·미승인 장치 제안은 포함하지 않는다."
+        },
+        {
+          "record_id": "sequence",
+          "action": "include",
+          "rationale": "내부 데모와 시민 공개 승인을 분리하는 현재 실행 순서를 보존한다."
+        },
+        {
+          "record_id": "retention",
+          "action": "include",
+          "rationale": "누락된 후속 문서 때문에 현재 값을 단정할 수 없다."
+        },
+        {
+          "record_id": "newer-draft",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "retry-test",
+          "action": "include",
+          "rationale": "실행 요구사항이다. 통과 결과와 구분한다."
+        },
+        {
+          "record_id": "failed-run",
+          "action": "include",
+          "rationale": "관측된 실패를 수정 후보나 계획으로 지우지 않는다."
+        },
+        {
+          "record_id": "not-run",
+          "action": "include",
+          "rationale": "작업 설명을 실제 실행이나 승인 증거로 대체하지 않는다."
+        },
+        {
+          "record_id": "release-gate",
+          "action": "include",
+          "rationale": "저장 성공이나 내부 실행 한 건만으로 공개 승인 불가."
+        }
+      ]
+    },
+    {
+      "request_id": "qa",
+      "type": "qa_review",
+      "topics": [
+        "field-observations"
+      ],
+      "intent_quote": "QA 검토",
+      "rationale": "요청된 작업 목적과 지역 봉사단 시험판 범위를 해석했다.",
+      "relevance": [
+        {
+          "record_id": "purpose",
+          "action": "include",
+          "rationale": "현재 지역 봉사단 시험판 목적을 후속 회의의 검토 조건과 함께 확인했다."
+        },
+        {
+          "record_id": "old-location",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "old-grid",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "pain",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "interest",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "alternatives",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "benefit-hypothesis",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "submit",
+          "action": "include",
+          "rationale": "후속 회의에서 오프라인 제출 동작을 채택했다."
+        },
+        {
+          "record_id": "map",
+          "action": "include",
+          "rationale": "정확한 지점 공개를 대체한 현재 승인 범위다. 더 최신인 초안은 이를 대체하지 않는다."
+        },
+        {
+          "record_id": "queue",
+          "action": "include",
+          "rationale": "표의 이 행만 동작 요구다. 인접 체험 관심·미승인 장치 제안은 포함하지 않는다."
+        },
+        {
+          "record_id": "sequence",
+          "action": "include",
+          "rationale": "내부 데모와 시민 공개 승인을 분리하는 현재 실행 순서를 보존한다."
+        },
+        {
+          "record_id": "retention",
+          "action": "include",
+          "rationale": "누락된 후속 문서 때문에 현재 값을 단정할 수 없다."
+        },
+        {
+          "record_id": "newer-draft",
+          "action": "exclude",
+          "rationale": "철회/해소된 역사 또는 해당 작업의 질문과 무관한 맥락이다."
+        },
+        {
+          "record_id": "retry-test",
+          "action": "include",
+          "rationale": "실행 요구사항이다. 통과 결과와 구분한다."
+        },
+        {
+          "record_id": "failed-run",
+          "action": "include",
+          "rationale": "관측된 실패를 수정 후보나 계획으로 지우지 않는다."
+        },
+        {
+          "record_id": "not-run",
+          "action": "include",
+          "rationale": "작업 설명을 실제 실행이나 승인 증거로 대체하지 않는다."
+        },
+        {
+          "record_id": "release-gate",
+          "action": "include",
+          "rationale": "저장 성공이나 내부 실행 한 건만으로 공개 승인 불가."
+        }
+      ]
+    }
+  ],
+  "uncertainties": []
+}

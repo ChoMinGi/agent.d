@@ -1,0 +1,10 @@
+{
+  "method": "Same-author development labels, not an independent blind answer key.",
+  "selected": {
+    "research": ["purpose", "pain", "interest", "alternatives", "benefit-hypothesis", "map"],
+    "design": ["purpose", "pain", "submit", "map", "queue", "sequence", "retention", "retry-test", "failed-run", "not-run", "release-gate"],
+    "qa": ["purpose", "submit", "map", "queue", "sequence", "retention", "retry-test", "failed-run", "not-run", "release-gate"]
+  },
+  "states": {"map":"accepted", "retention":"unknown", "failed-run":"observed", "not-run":"open", "benefit-hypothesis":"unverified"},
+  "qa_priority": ["purpose", "sequence", "map", "retention", "failed-run", "not-run", "release-gate"]
+}

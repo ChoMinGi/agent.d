@@ -1,0 +1,82 @@
+{
+  "package_revision": "v0.2-eval-r1",
+  "skill_version": "0.2.0",
+  "behavior_changed": false,
+  "runtime_integrity": [
+    {
+      "path": "cognitive-partner/SKILL.md",
+      "before": "3ed804988f7163691df479f504d103d0b058da7d2d4429963a0d6cdeb3db6c2b",
+      "after": "3ed804988f7163691df479f504d103d0b058da7d2d4429963a0d6cdeb3db6c2b",
+      "unchanged": true
+    },
+    {
+      "path": "cognitive-partner/agents/openai.yaml",
+      "before": "e43ce5211077b0ccd889c90533ad1cbea0a85340c9797cd801034d7af00d2a39",
+      "after": "e43ce5211077b0ccd889c90533ad1cbea0a85340c9797cd801034d7af00d2a39",
+      "unchanged": true
+    },
+    {
+      "path": "cognitive-partner/references/contribution-record.md",
+      "before": "74f5b11baa6196b844bbd084a124958d19e2eda2798ae2e4c524c1f3b92fe400",
+      "after": "74f5b11baa6196b844bbd084a124958d19e2eda2798ae2e4c524c1f3b92fe400",
+      "unchanged": true
+    },
+    {
+      "path": "cognitive-partner/references/examples.md",
+      "before": "a51c4b63dc503b72fcc8656b2d3a28c8cbefefe3be341ed5660ddb2d1b7e3c67",
+      "after": "a51c4b63dc503b72fcc8656b2d3a28c8cbefefe3be341ed5660ddb2d1b7e3c67",
+      "unchanged": true
+    },
+    {
+      "path": "cognitive-partner/references/intervention-guide.md",
+      "before": "cc520efdd4f9506ac3b22355872012ffb095516ed5083bd00f1c804baa551fe3",
+      "after": "cc520efdd4f9506ac3b22355872012ffb095516ed5083bd00f1c804baa551fe3",
+      "unchanged": true
+    },
+    {
+      "path": "integration/AGENTS.snippet.md",
+      "before": "f9a887cf48a27747027c887fd4348eb27fea864e68669edac513844086d60527",
+      "after": "f9a887cf48a27747027c887fd4348eb27fea864e68669edac513844086d60527",
+      "unchanged": true
+    }
+  ],
+  "evaluation_changes": [
+    {
+      "id": "CP-14",
+      "type": "fixture_repair",
+      "reason": "A 기준과 원문을 제공해 승인 뒤 수행할 작업을 특정함. 원본 입력의 정보 부족 응답은 실패가 아님."
+    },
+    {
+      "id": "CP-22",
+      "type": "fixture_repair",
+      "reason": "분리할 실제 원문과 합의한 구분을 제공함. 기존 원문 부재를 감점하지 않음."
+    },
+    {
+      "id": "CP-26",
+      "type": "fixture_repair",
+      "reason": "작은 예를 비교할 대상과 목표를 명시함. 실제 수치를 꾸며낼 필요가 없도록 자료 부재도 명시함."
+    },
+    {
+      "id": "CP-01",
+      "type": "followup_gate",
+      "reason": "질문과 무관한 고정 사용자 답을 적절한 추론 기여로 오인하지 않도록 적용 조건 명시."
+    },
+    {
+      "id": "CP-24",
+      "type": "followup_gate",
+      "reason": "정책 제안과 실패 실행 순서 추론을 구분."
+    },
+    {
+      "id": "CP-28",
+      "type": "rubric_fairness",
+      "reason": "원본에는 입력 계약이나 범위가 없어 특정 경계를 정답으로 요구할 근거가 없음. 정상 허용 사례 요구는 유지하며 경계를 꾸며내지 않는 동등한 해결을 허용. 기존 응답의 점수는 소급 변경하지 않음."
+    }
+  ],
+  "no_retuning_on_partial_cases": [
+    "CP-08",
+    "CP-13"
+  ],
+  "no_independent_model_evaluation": true,
+  "no_prior_scores_revised": true,
+  "missing_source_controls_preserved": true
+}

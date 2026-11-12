@@ -1,0 +1,723 @@
+{
+  "scope": "deterministic developer-authored schema/integrity tests only",
+  "passed": true,
+  "checks_passed": 158,
+  "checks_total": 158,
+  "original_mutants": [
+    {
+      "mutation": "missing_reference",
+      "outcome": "rejected",
+      "warnings": []
+    },
+    {
+      "mutation": "malformed_input_json",
+      "outcome": "rejected",
+      "warnings": []
+    },
+    {
+      "mutation": "bad_version",
+      "outcome": "rejected",
+      "warnings": []
+    },
+    {
+      "mutation": "duplicate_case_id",
+      "outcome": "rejected",
+      "warnings": []
+    },
+    {
+      "mutation": "rubric_field_leak",
+      "outcome": "rejected",
+      "warnings": []
+    },
+    {
+      "mutation": "invalid_history_shape",
+      "outcome": "rejected",
+      "warnings": []
+    },
+    {
+      "mutation": "invalid_evidence_shape",
+      "outcome": "rejected",
+      "warnings": []
+    },
+    {
+      "mutation": "empty_followup_user",
+      "outcome": "rejected",
+      "warnings": []
+    },
+    {
+      "mutation": "empty_grading_rule",
+      "outcome": "rejected",
+      "warnings": []
+    },
+    {
+      "mutation": "answer_key_in_prompt",
+      "outcome": "review_warning",
+      "warnings": [
+        "inputs[0]: rubric-like content; review provenance, not an automatic leak failure"
+      ]
+    }
+  ],
+  "schema_generalization_claim": "limited to these declared field/type transformations; not semantic or model generalization",
+  "independent_holdout": false,
+  "model_invocations": 0,
+  "human_learning_tested": false,
+  "checks": [
+    {
+      "name": "valid_contract_0",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_1",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_2",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_3",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_4",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_5",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_6",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_7",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_8",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_9",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_10",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_11",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_12",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_13",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_14",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_15",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_16",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_17",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_18",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_19",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_20",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_21",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_22",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_23",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "valid_contract_24",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "invalid_input_['id']_0",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['id']_1",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['id']_2",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['id']_3",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['id']_4",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['id']_5",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['id']_6",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['id']_7",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['user_prompt']_0",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['user_prompt']_1",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['user_prompt']_2",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['user_prompt']_3",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['user_prompt']_4",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['user_prompt']_5",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['user_prompt']_6",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['user_prompt']_7",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['history', 0, 'content']_0",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['history', 0, 'content']_1",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['history', 0, 'content']_2",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['history', 0, 'content']_3",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['history', 0, 'content']_4",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['history', 0, 'content']_5",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['history', 0, 'content']_6",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['history', 0, 'content']_7",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'source']_0",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'source']_1",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'source']_2",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'source']_3",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'source']_4",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'source']_5",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'source']_6",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'source']_7",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'content']_0",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'content']_1",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'content']_2",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'content']_3",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'content']_4",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'content']_5",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'content']_6",
+      "passed": true
+    },
+    {
+      "name": "invalid_input_['available_evidence', 0, 'content']_7",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['label']_0",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['label']_1",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['label']_2",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['label']_3",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['label']_4",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['label']_5",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['label']_6",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['label']_7",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['reasoning_target']_0",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['reasoning_target']_1",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['reasoning_target']_2",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['reasoning_target']_3",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['reasoning_target']_4",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['reasoning_target']_5",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['reasoning_target']_6",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['reasoning_target']_7",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_do', 0]_0",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_do', 0]_1",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_do', 0]_2",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_do', 0]_3",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_do', 0]_4",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_do', 0]_5",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_do', 0]_6",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_do', 0]_7",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_not_do', 0]_0",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_not_do', 0]_1",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_not_do', 0]_2",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_not_do', 0]_3",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_not_do', 0]_4",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_not_do', 0]_5",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_not_do', 0]_6",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['must_not_do', 0]_7",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['provenance_checks', 0]_0",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['provenance_checks', 0]_1",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['provenance_checks', 0]_2",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['provenance_checks', 0]_3",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['provenance_checks', 0]_4",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['provenance_checks', 0]_5",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['provenance_checks', 0]_6",
+      "passed": true
+    },
+    {
+      "name": "invalid_rubric_['provenance_checks', 0]_7",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_user_0",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_use_when_0",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_user_1",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_use_when_1",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_user_2",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_use_when_2",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_user_3",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_use_when_3",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_user_4",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_use_when_4",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_user_5",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_use_when_5",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_user_6",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_use_when_6",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_user_7",
+      "passed": true
+    },
+    {
+      "name": "invalid_followup_use_when_7",
+      "passed": true
+    },
+    {
+      "name": "invalid_nested_history_0",
+      "passed": true
+    },
+    {
+      "name": "invalid_nested_history_1",
+      "passed": true
+    },
+    {
+      "name": "invalid_nested_history_2",
+      "passed": true
+    },
+    {
+      "name": "invalid_nested_history_3",
+      "passed": true
+    },
+    {
+      "name": "invalid_nested_history_4",
+      "passed": true
+    },
+    {
+      "name": "invalid_nested_history_5",
+      "passed": true
+    },
+    {
+      "name": "invalid_nested_available_evidence_0",
+      "passed": true
+    },
+    {
+      "name": "invalid_nested_available_evidence_1",
+      "passed": true
+    },
+    {
+      "name": "invalid_nested_available_evidence_2",
+      "passed": true
+    },
+    {
+      "name": "invalid_nested_available_evidence_3",
+      "passed": true
+    },
+    {
+      "name": "invalid_nested_available_evidence_4",
+      "passed": true
+    },
+    {
+      "name": "invalid_nested_available_evidence_5",
+      "passed": true
+    },
+    {
+      "name": "invalid_role_'invented'",
+      "passed": true
+    },
+    {
+      "name": "invalid_role_'USER'",
+      "passed": true
+    },
+    {
+      "name": "invalid_role_''",
+      "passed": true
+    },
+    {
+      "name": "invalid_role_None",
+      "passed": true
+    },
+    {
+      "name": "invalid_role_5",
+      "passed": true
+    },
+    {
+      "name": "invalid_role_{}",
+      "passed": true
+    },
+    {
+      "name": "legitimate_rubric_quote_not_rejected",
+      "passed": true
+    },
+    {
+      "name": "marker_in_evidence_review_warning",
+      "passed": true
+    },
+    {
+      "name": "integration_missing_reference",
+      "passed": true
+    },
+    {
+      "name": "integration_malformed_input_json",
+      "passed": true
+    },
+    {
+      "name": "integration_bad_version",
+      "passed": true
+    },
+    {
+      "name": "integration_duplicate_case_id",
+      "passed": true
+    },
+    {
+      "name": "integration_rubric_field_leak",
+      "passed": true
+    },
+    {
+      "name": "integration_invalid_history_shape",
+      "passed": true
+    },
+    {
+      "name": "integration_invalid_evidence_shape",
+      "passed": true
+    },
+    {
+      "name": "integration_empty_followup_user",
+      "passed": true
+    },
+    {
+      "name": "integration_empty_grading_rule",
+      "passed": true
+    },
+    {
+      "name": "integration_answer_key_in_prompt",
+      "passed": true
+    },
+    {
+      "name": "valid_order_permutation",
+      "passed": true
+    },
+    {
+      "name": "runtime_frozen_cognitive-partner/SKILL.md",
+      "passed": true
+    },
+    {
+      "name": "runtime_frozen_cognitive-partner/agents/openai.yaml",
+      "passed": true
+    },
+    {
+      "name": "runtime_frozen_cognitive-partner/references/contribution-record.md",
+      "passed": true
+    },
+    {
+      "name": "runtime_frozen_cognitive-partner/references/examples.md",
+      "passed": true
+    },
+    {
+      "name": "runtime_frozen_cognitive-partner/references/intervention-guide.md",
+      "passed": true
+    },
+    {
+      "name": "runtime_frozen_integration/AGENTS.snippet.md",
+      "passed": true
+    }
+  ]
+}

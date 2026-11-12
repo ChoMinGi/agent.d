@@ -1,0 +1,26 @@
+name: Validate DecisionGuard
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -B -m unittest discover -s tests -v
+      - run: python -B scripts/evaluate_context.py
+      - run: python -B scripts/evaluate_raw_context.py
+      - run: python -B scripts/evaluate_context_v2.py
+      - run: python -B scripts/evaluate_handoff.py
+      - name: Verify sealed blind recordings (no model call)
+        run: python -B scripts/evaluate_blind_context.py --compact
+      - run: python scripts/release_check.py --require-git
+      - run: python scripts/release_check.py --zip dist/decisionguard-v0.6.1.zip

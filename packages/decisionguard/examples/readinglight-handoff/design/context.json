@@ -1,0 +1,829 @@
+{
+  "schema_version": 1,
+  "mode": "prepare_context",
+  "task": {
+    "summary": "Update ReadingLight’s feature design using the review notes and correspondence. Give the builder concrete behavior and data requirements, explain any changes from the earlier prototype brief, and leave a concise handoff for QA.",
+    "project_id": "readinglight",
+    "scope": "two-room-pilot",
+    "as_of": "2027-07-22T10:02:00Z",
+    "max_items": 20,
+    "type": "feature_design",
+    "topics": [
+      "seat-availability",
+      "prototype-scope",
+      "data-minimization",
+      "freshness",
+      "release-approval",
+      "research-generalization",
+      "accessibility"
+    ],
+    "relevance": [
+      {
+        "record_id": "CE-001",
+        "action": "include",
+        "rationale": "Local interview evidence explains the problem the room display addresses without generalizing demand."
+      },
+      {
+        "record_id": "CE-002",
+        "action": "include",
+        "rationale": "Observed unnecessary entries support the local design purpose; they are not a measured product result."
+      },
+      {
+        "record_id": "D-041",
+        "action": "include",
+        "rationale": "Keep the explicit replacement trace to explain the earlier brief; inactive status excludes it from current requirements."
+      },
+      {
+        "record_id": "G-001",
+        "action": "include",
+        "rationale": "Retain the stated purpose while keeping its separate formal approval status unknown."
+      },
+      {
+        "record_id": "H-001",
+        "action": "exclude",
+        "rationale": "Cross-branch demand is not needed to choose behavior in the two-room prototype; retain this unverified hypothesis in the snapshot for later research."
+      },
+      {
+        "record_id": "Q-001",
+        "action": "include",
+        "rationale": "The open coverage gap limits user and accessibility claims but expressly does not block staff-only design."
+      },
+      {
+        "record_id": "R-001",
+        "action": "include",
+        "rationale": "Keep the local-research limit visible in design rationale and handoff."
+      },
+      {
+        "record_id": "REQ-RELEASE",
+        "action": "include",
+        "rationale": "Keep the unchanged release-chair prerequisite separate from prototype design authority."
+      },
+      {
+        "record_id": "D-052",
+        "action": "include",
+        "rationale": "Current accepted behavior directly determines the requested revised prototype."
+      },
+      {
+        "record_id": "REQ-DATA-052",
+        "action": "include",
+        "rationale": "Builder and QA need the restriction across every display, stored record and analytics event."
+      },
+      {
+        "record_id": "REQ-FRESH-052",
+        "action": "include",
+        "rationale": "Builder and QA need update-time and ten-minute stale behavior."
+      },
+      {
+        "record_id": "R-PRIVACY-052",
+        "action": "include",
+        "rationale": "Explains why granularity is restricted beyond the display."
+      },
+      {
+        "record_id": "DESIGN-NESSA-01",
+        "action": "include",
+        "rationale": "The correspondence is explicitly in scope; explain why the newer draft cannot enter the build requirements."
+      }
+    ]
+  },
+  "status": "needs_context",
+  "coverage": {
+    "scope": "Supplied raw documents only; workspace discovery not evaluated",
+    "complete": true,
+    "gaps": [
+      "The purpose is stated, but separate formal approval of goal G-001 is not evidenced. D-052 independently supplies scoped prototype design authority.",
+      "No implementation, execution record or test result is supplied. The QA handoff is a proposed test plan, not evidence of passing behavior or release readiness.",
+      "The sources do not specify band thresholds, exact ten-minute equality behavior, timestamp origin, concurrent updates, failure handling or historical-data disposition. Proposed defaults in result.md remain implementation recommendations, not accepted source decisions."
+    ]
+  },
+  "selected": [
+    {
+      "id": "D-052",
+      "title": "Prototype review and design correspondence",
+      "kind": "decision",
+      "status": "accepted",
+      "scope": "two-room-pilot",
+      "evidence": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "I approve decision D-052, replacing D-041 for both pilot rooms. Staff will choose one availability band: “none,” “a few,” or “several.”"
+      },
+      "status_evidence": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+      "status_citation": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+      },
+      "source_complete": true,
+      "partial_context": null,
+      "selection_reasons": [
+        "Task-specific rationale: Current accepted behavior directly determines the requested revised prototype."
+      ],
+      "relationship_evidence": [],
+      "followup": {
+        "outcome": "no_change_found",
+        "evidence": [
+          {
+            "id": "review",
+            "title": "Prototype review and design correspondence",
+            "url": "demo://readinglight/review",
+            "revision": "r1",
+            "fetched_at": "2027-07-22T10:01:00Z",
+            "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+          },
+          {
+            "id": "review",
+            "title": "Prototype review and design correspondence",
+            "url": "demo://readinglight/review",
+            "revision": "r1",
+            "fetched_at": "2027-07-22T10:01:00Z",
+            "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+          }
+        ],
+        "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+      }
+    },
+    {
+      "id": "REQ-RELEASE",
+      "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+      "kind": "requirement",
+      "status": "accepted",
+      "scope": "two-room-pilot",
+      "evidence": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+      },
+      "status_evidence": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+      "status_citation": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+      },
+      "source_complete": true,
+      "partial_context": null,
+      "selection_reasons": [
+        "Task-specific rationale: Keep the unchanged release-chair prerequisite separate from prototype design authority."
+      ],
+      "relationship_evidence": [],
+      "followup": {
+        "outcome": "no_change_found",
+        "evidence": [
+          {
+            "id": "discovery",
+            "title": "Reading room discovery notes",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "fetched_at": "2027-07-22T10:01:00Z",
+            "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+          }
+        ],
+        "rationale": "The supplied note retains the separate written-release requirement and contains no written release approval. The requirement is current in this source; actual release approval and deployment are not established. Retrieve Ivo Reed’s scoped written approval before any visitor-facing deployment."
+      }
+    },
+    {
+      "id": "DESIGN-NESSA-01",
+      "title": "Unapproved concept: per-seat map, exact count and seat-level history",
+      "kind": "design",
+      "status": "draft",
+      "scope": "two-room-pilot",
+      "evidence": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "My revised concept offers a much clearer per-seat map, exact vacancy count, and automatic seat-level history."
+      },
+      "status_evidence": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop.",
+      "status_citation": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+      },
+      "source_complete": true,
+      "partial_context": null,
+      "selection_reasons": [
+        "Task-specific rationale: The correspondence is explicitly in scope; explain why the newer draft cannot enter the build requirements."
+      ],
+      "relationship_evidence": [],
+      "followup": {
+        "outcome": "unresolved",
+        "evidence": [
+          {
+            "id": "review",
+            "title": "Prototype review and design correspondence",
+            "url": "demo://readinglight/review",
+            "revision": "r1",
+            "fetched_at": "2027-07-22T10:01:00Z",
+            "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+          },
+          {
+            "id": "review",
+            "title": "Prototype review and design correspondence",
+            "url": "demo://readinglight/review",
+            "revision": "r1",
+            "fetched_at": "2027-07-22T10:01:00Z",
+            "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited."
+          }
+        ],
+        "rationale": "The source explicitly withholds approval and proposes features incompatible with D-052. Do not implement it under D-052; a scoped authoritative replacement would be needed before these features could become requirements."
+      }
+    },
+    {
+      "id": "R-PRIVACY-052",
+      "title": "Fine-grained availability can reveal where an individual is sitting",
+      "kind": "risk",
+      "status": "open",
+      "scope": "two-room-pilot",
+      "evidence": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Visitors could otherwise infer where a person is sitting in our small rooms."
+      },
+      "status_evidence": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+      "status_citation": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Visitors could otherwise infer where a person is sitting in our small rooms."
+      },
+      "source_complete": true,
+      "partial_context": null,
+      "selection_reasons": [
+        "Task-specific rationale: Explains why granularity is restricted beyond the display.",
+        "Cited prerequisite or rationale for D-052.",
+        "Cited prerequisite or rationale for REQ-DATA-052."
+      ],
+      "relationship_evidence": [
+        {
+          "id": "review",
+          "title": "Prototype review and design correspondence",
+          "url": "demo://readinglight/review",
+          "revision": "r1",
+          "fetched_at": "2027-07-22T10:01:00Z",
+          "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited. Visitors could otherwise infer where a person is sitting in our small rooms."
+        },
+        {
+          "id": "review",
+          "title": "Prototype review and design correspondence",
+          "url": "demo://readinglight/review",
+          "revision": "r1",
+          "fetched_at": "2027-07-22T10:01:00Z",
+          "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited. Visitors could otherwise infer where a person is sitting in our small rooms."
+        }
+      ],
+      "followup": null
+    },
+    {
+      "id": "R-001",
+      "title": "Local discovery cannot establish demand for all library users",
+      "kind": "risk",
+      "status": "open",
+      "scope": "two-room-pilot",
+      "evidence": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "These are local observations, not evidence about all library users."
+      },
+      "status_evidence": "These are local observations, not evidence about all library users.",
+      "status_citation": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "These are local observations, not evidence about all library users."
+      },
+      "source_complete": true,
+      "partial_context": null,
+      "selection_reasons": [
+        "Task-specific rationale: Keep the local-research limit visible in design rationale and handoff."
+      ],
+      "relationship_evidence": [],
+      "followup": null
+    },
+    {
+      "id": "G-001",
+      "title": "Stated purpose: help visitors find space in two reading rooms",
+      "kind": "goal",
+      "status": "unknown",
+      "scope": "two-room-pilot",
+      "evidence": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+      },
+      "status_evidence": "ReadingLight will help visitors find space in the library's two reading rooms.",
+      "status_citation": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+      },
+      "source_complete": true,
+      "partial_context": null,
+      "selection_reasons": [
+        "Task-specific rationale: Retain the stated purpose while keeping its separate formal approval status unknown."
+      ],
+      "relationship_evidence": [],
+      "followup": {
+        "outcome": "unresolved",
+        "evidence": [
+          {
+            "id": "discovery",
+            "title": "Reading room discovery notes",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "fetched_at": "2027-07-22T10:01:00Z",
+            "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+          }
+        ],
+        "rationale": "Checked all four passages of discovery r1. The purpose is stated but separate goal-approval authority is not identified. If formal goal approval matters, ask the product steward for the applicable decision; D-041 independently authorizes the scoped prototype design."
+      }
+    },
+    {
+      "id": "Q-001",
+      "title": "Weekend and screen-reader user needs remain unresearched",
+      "kind": "question",
+      "status": "open",
+      "scope": "two-room-pilot",
+      "evidence": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+      },
+      "status_evidence": "Weekend and screen-reader users have not yet been interviewed.",
+      "status_citation": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Weekend and screen-reader users have not yet been interviewed."
+      },
+      "source_complete": true,
+      "partial_context": null,
+      "selection_reasons": [
+        "Task-specific rationale: The open coverage gap limits user and accessibility claims but expressly does not block staff-only design."
+      ],
+      "relationship_evidence": [],
+      "followup": {
+        "outcome": "no_change_found",
+        "evidence": [
+          {
+            "id": "discovery",
+            "title": "Reading room discovery notes",
+            "url": "demo://readinglight/discovery",
+            "revision": "r1",
+            "fetched_at": "2027-07-22T10:01:00Z",
+            "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+          }
+        ],
+        "rationale": "Checked the full supplied discovery note for later answers; none resolves these missing interviews. No follow-up document is linked. Preserve the open research need and check newer interviews before making demand or accessibility claims."
+      }
+    },
+    {
+      "id": "REQ-DATA-052",
+      "title": "Availability granularity is restricted in displays, records and analytics",
+      "kind": "requirement",
+      "status": "accepted",
+      "scope": "two-room-pilot",
+      "evidence": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited."
+      },
+      "status_evidence": "This is the accepted prototype design; it does not authorize visitor deployment.",
+      "status_citation": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "This is the accepted prototype design; it does not authorize visitor deployment."
+      },
+      "source_complete": true,
+      "partial_context": null,
+      "selection_reasons": [
+        "Task-specific rationale: Builder and QA need the restriction across every display, stored record and analytics event."
+      ],
+      "relationship_evidence": [],
+      "followup": {
+        "outcome": "no_change_found",
+        "evidence": [
+          {
+            "id": "review",
+            "title": "Prototype review and design correspondence",
+            "url": "demo://readinglight/review",
+            "revision": "r1",
+            "fetched_at": "2027-07-22T10:01:00Z",
+            "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+          },
+          {
+            "id": "review",
+            "title": "Prototype review and design correspondence",
+            "url": "demo://readinglight/review",
+            "revision": "r1",
+            "fetched_at": "2027-07-22T10:01:00Z",
+            "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+          }
+        ],
+        "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+      }
+    },
+    {
+      "id": "REQ-FRESH-052",
+      "title": "Display update time and stale status after ten minutes",
+      "kind": "requirement",
+      "status": "accepted",
+      "scope": "two-room-pilot",
+      "evidence": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Show an update time and mark information stale after ten minutes."
+      },
+      "status_evidence": "This is the accepted prototype design; it does not authorize visitor deployment.",
+      "status_citation": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "This is the accepted prototype design; it does not authorize visitor deployment."
+      },
+      "source_complete": true,
+      "partial_context": null,
+      "selection_reasons": [
+        "Task-specific rationale: Builder and QA need update-time and ten-minute stale behavior."
+      ],
+      "relationship_evidence": [],
+      "followup": {
+        "outcome": "no_change_found",
+        "evidence": [
+          {
+            "id": "review",
+            "title": "Prototype review and design correspondence",
+            "url": "demo://readinglight/review",
+            "revision": "r1",
+            "fetched_at": "2027-07-22T10:01:00Z",
+            "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+          },
+          {
+            "id": "review",
+            "title": "Prototype review and design correspondence",
+            "url": "demo://readinglight/review",
+            "revision": "r1",
+            "fetched_at": "2027-07-22T10:01:00Z",
+            "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+          }
+        ],
+        "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+      }
+    },
+    {
+      "id": "CE-001",
+      "title": "Four of six interviewees reported abandoning a room after finding no seat",
+      "kind": "customer_evidence",
+      "status": "observed",
+      "scope": "two-room-pilot",
+      "evidence": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat;"
+      },
+      "status_evidence": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch.",
+      "status_citation": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch."
+      },
+      "source_complete": true,
+      "partial_context": null,
+      "selection_reasons": [
+        "Task-specific rationale: Local interview evidence explains the problem the room display addresses without generalizing demand."
+      ],
+      "relationship_evidence": [],
+      "followup": null
+    },
+    {
+      "id": "CE-002",
+      "title": "Nine unnecessary room entries counted during two afternoon observations",
+      "kind": "customer_evidence",
+      "status": "observed",
+      "scope": "two-room-pilot",
+      "evidence": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat; observers counted nine unnecessary room entries."
+      },
+      "status_evidence": "observers counted nine unnecessary room entries.",
+      "status_citation": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "observers counted nine unnecessary room entries."
+      },
+      "source_complete": true,
+      "partial_context": null,
+      "selection_reasons": [
+        "Task-specific rationale: Observed unnecessary entries support the local design purpose; they are not a measured product result."
+      ],
+      "relationship_evidence": [],
+      "followup": null
+    }
+  ],
+  "attention": [
+    {
+      "id": "D-052",
+      "title": "Prototype review and design correspondence",
+      "kind": "decision",
+      "status": "accepted",
+      "reason": "approval_boundary: The approved replacement governs prototype design; it explicitly does not authorize visitor deployment.",
+      "in_selected": true,
+      "omission_reason": null,
+      "evidence": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "I approve decision D-052, replacing D-041 for both pilot rooms. Staff will choose one availability band: “none,” “a few,” or “several.”"
+      },
+      "status_citation": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+      }
+    },
+    {
+      "id": "REQ-RELEASE",
+      "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+      "kind": "requirement",
+      "status": "accepted",
+      "reason": "approval_boundary: Before visitor-facing deployment, retrieve the specific written release approval and verify its scope; this source supplies the requirement, not the approval.",
+      "in_selected": true,
+      "omission_reason": null,
+      "evidence": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+      },
+      "status_citation": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+      }
+    },
+    {
+      "id": "DESIGN-NESSA-01",
+      "title": "Unapproved concept: per-seat map, exact count and seat-level history",
+      "kind": "design",
+      "status": "draft",
+      "reason": "Follow-up authority remains unresolved.",
+      "in_selected": true,
+      "omission_reason": null,
+      "evidence": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "My revised concept offers a much clearer per-seat map, exact vacancy count, and automatic seat-level history."
+      },
+      "status_citation": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+      }
+    },
+    {
+      "id": "R-PRIVACY-052",
+      "title": "Fine-grained availability can reveal where an individual is sitting",
+      "kind": "risk",
+      "status": "open",
+      "reason": "An applicable question or risk is still open.",
+      "in_selected": true,
+      "omission_reason": null,
+      "evidence": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Visitors could otherwise infer where a person is sitting in our small rooms."
+      },
+      "status_citation": {
+        "id": "review",
+        "title": "Prototype review and design correspondence",
+        "url": "demo://readinglight/review",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Visitors could otherwise infer where a person is sitting in our small rooms."
+      }
+    },
+    {
+      "id": "R-001",
+      "title": "Local discovery cannot establish demand for all library users",
+      "kind": "risk",
+      "status": "open",
+      "reason": "An applicable question or risk is still open.",
+      "in_selected": true,
+      "omission_reason": null,
+      "evidence": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "These are local observations, not evidence about all library users."
+      },
+      "status_citation": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "These are local observations, not evidence about all library users."
+      }
+    },
+    {
+      "id": "G-001",
+      "title": "Stated purpose: help visitors find space in two reading rooms",
+      "kind": "goal",
+      "status": "unknown",
+      "reason": "Follow-up authority remains unresolved.",
+      "in_selected": true,
+      "omission_reason": null,
+      "evidence": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+      },
+      "status_citation": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+      }
+    },
+    {
+      "id": "Q-001",
+      "title": "Weekend and screen-reader user needs remain unresearched",
+      "kind": "question",
+      "status": "open",
+      "reason": "An applicable question or risk is still open.",
+      "in_selected": true,
+      "omission_reason": null,
+      "evidence": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+      },
+      "status_citation": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Weekend and screen-reader users have not yet been interviewed."
+      }
+    }
+  ],
+  "reconciled_history": [
+    {
+      "id": "D-041",
+      "title": "Reading room discovery notes",
+      "status": "superseded",
+      "successor_id": "D-052",
+      "rationale": "Signed product-steward review explicitly replaces D-041 with D-052 for both rooms. Checked the later Nessa concept: it expressly lacks review and approval, so it does not change this successor. Visitor deployment remains unauthorized.",
+      "previous_evidence": {
+        "id": "discovery",
+        "title": "Reading room discovery notes",
+        "url": "demo://readinglight/discovery",
+        "revision": "r1",
+        "fetched_at": "2027-07-22T10:01:00Z",
+        "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+      },
+      "evidence": [
+        {
+          "id": "review",
+          "title": "Prototype review and design correspondence",
+          "url": "demo://readinglight/review",
+          "revision": "r1",
+          "fetched_at": "2027-07-22T10:01:00Z",
+          "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+        }
+      ]
+    }
+  ],
+  "gaps": [
+    "The purpose is stated, but separate formal approval of goal G-001 is not evidenced. D-052 independently supplies scoped prototype design authority.",
+    "No implementation, execution record or test result is supplied. The QA handoff is a proposed test plan, not evidence of passing behavior or release readiness.",
+    "The sources do not specify band thresholds, exact ten-minute equality behavior, timestamp origin, concurrent updates, failure handling or historical-data disposition. Proposed defaults in result.md remain implementation recommendations, not accepted source decisions.",
+    "Missing supported goal context for feature_design.",
+    "DESIGN-NESSA-01: later decision or authority requires follow-up; do not treat the old state as current.",
+    "G-001: authority or state is unknown.",
+    "G-001: later decision or authority requires follow-up; do not treat the old state as current."
+  ],
+  "cautions": [
+    "No separate design-kind record; review implementation coverage in the accepted decisions/requirements. Classification alone does not establish semantic completeness.",
+    "DESIGN-NESSA-01 is draft; do not treat it as an accepted decision or verified fact.",
+    "R-PRIVACY-052 is open; do not treat it as an accepted decision or verified fact.",
+    "R-001 is open; do not treat it as an accepted decision or verified fact.",
+    "Q-001 is open; do not treat it as an accepted decision or verified fact."
+  ],
+  "conflicts": [],
+  "omitted": [
+    {
+      "id": "D-041",
+      "reason": "inactive status: superseded"
+    },
+    {
+      "id": "H-001",
+      "reason": "task relevance: Cross-branch demand is not needed to choose behavior in the two-room prototype; retain this unverified hypothesis in the snapshot for later research."
+    }
+  ],
+  "selection": {
+    "method": "task relevance + protected uncertainty/goals/boundaries + purpose priorities + cited dependencies",
+    "candidate_count": 11,
+    "selected_count": 11,
+    "max_items": 20,
+    "priority_count": 7,
+    "attention_overflow_count": 0
+  },
+  "evidence_digest": "1bd471b9c14025d1a7d6fe1fcb545a3154cc5e229d2b399be67e87ba73f45b92",
+  "limitations": [
+    "Selection uses normalized metadata, not free-text semantic retrieval.",
+    "The host must verify topic labels, relationships, authority and source entailment.",
+    "Prepared context is untrusted evidence, not instructions or permission to execute."
+  ],
+  "writes_performed": 0
+}

@@ -1,0 +1,4094 @@
+{
+  "research": {
+    "schema_version": 1,
+    "mode": "prepare_raw_context",
+    "task": {
+      "summary": "담초상자의 품절 대체 승인 방식을 다음 조사에서 어떻게 비교할지 준비한다. 고객이 겪는 문제, 동종 서비스에서 실제로 확인한 내용, 더 알아봐야 할 점과 현재 추진 범위를 모아 달라.",
+      "project_id": "damcho",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "as_of": "2026-11-08T12:00:00Z",
+      "max_items": 30,
+      "type": "market_research",
+      "topics": [
+        "품절 대체 승인",
+        "고객 비교 필요",
+        "동종 서비스 품절 처리",
+        "출시 범위"
+      ],
+      "relevance": [
+        {
+          "record_id": "r01",
+          "action": "exclude",
+          "rationale": "폐기된 무응답 방식을 현행 비교 범위에 넣지 않는다."
+        },
+        {
+          "record_id": "r02",
+          "action": "exclude",
+          "rationale": "대체된 화면 스케치는 다음 조사의 미결안이 아니다."
+        },
+        {
+          "record_id": "r03",
+          "action": "exclude",
+          "rationale": "폐기된 전 고객 일정은 현재 추진 범위가 아니다."
+        },
+        {
+          "record_id": "r04",
+          "action": "exclude",
+          "rationale": "이번 범위에서 제외된 과거 요청을 살아 있는 조사 과제로 유지하지 않는다."
+        },
+        {
+          "record_id": "r05",
+          "action": "include",
+          "rationale": "가격·양 비교의 고객 문제를 직접 제공한다."
+        },
+        {
+          "record_id": "r06",
+          "action": "include",
+          "rationale": "임의 대체의 고객 문제와 알레르기 미조사 한계를 제공한다."
+        },
+        {
+          "record_id": "r07",
+          "action": "include",
+          "rationale": "알림 시점 선호와 발견 시점의 제약을 분리해 조사하게 한다."
+        },
+        {
+          "record_id": "r08",
+          "action": "include",
+          "rationale": "다음 조사에서 따로 물을 질문을 직접 제공한다."
+        },
+        {
+          "record_id": "r09",
+          "action": "include",
+          "rationale": "조사 표본의 대표성 한계를 드러낸다."
+        },
+        {
+          "record_id": "r10",
+          "action": "include",
+          "rationale": "응답률 상승이라는 검증할 가설과 미측정 지표를 제공한다."
+        },
+        {
+          "record_id": "r11",
+          "action": "include",
+          "rationale": "비교 대상으로 실제 화면에서 확인한 환불 안내를 제공한다."
+        },
+        {
+          "record_id": "r12",
+          "action": "include",
+          "rationale": "대체 허용과 개별 후보 선택의 차이를 관찰 범위 안에서 비교하게 한다."
+        },
+        {
+          "record_id": "r13",
+          "action": "include",
+          "rationale": "동종 서비스 비교의 미확인 범위와 일반화 한계를 드러낸다."
+        },
+        {
+          "record_id": "r14",
+          "action": "include",
+          "rationale": "다음 비교에서 확인해야 할 누락된 차액 처리 정보를 식별한다."
+        },
+        {
+          "record_id": "r15",
+          "action": "include",
+          "rationale": "다음 조사 비교 표의 후보 항목을 제공한다."
+        },
+        {
+          "record_id": "r16",
+          "action": "include",
+          "rationale": "고객 통제와 운영 부담이라는 비교의 목적을 제공한다."
+        },
+        {
+          "record_id": "r17",
+          "action": "include",
+          "rationale": "현재 추진 대상과 확대일 미정을 제공한다."
+        },
+        {
+          "record_id": "r18",
+          "action": "include",
+          "rationale": "현재 범위 이후 확대 시점의 미결정을 드러낸다."
+        },
+        {
+          "record_id": "r19",
+          "action": "include",
+          "rationale": "비교할 현재 대체 승인 방식의 후보 수·가격 조건을 제공한다."
+        },
+        {
+          "record_id": "r20",
+          "action": "include",
+          "rationale": "임의 대체와 비교할 현행 수락·무응답·환불 정책을 제공한다."
+        },
+        {
+          "record_id": "r21",
+          "action": "include",
+          "rationale": "비교할 차액 처리의 현재 기준을 제공한다."
+        },
+        {
+          "record_id": "r22",
+          "action": "include",
+          "rationale": "후보가 없는 경우의 현재 처리 범위를 제공한다."
+        },
+        {
+          "record_id": "r23",
+          "action": "include",
+          "rationale": "고객 비교 정보와 다음 서비스 비교 항목의 현재 기준을 제공한다."
+        },
+        {
+          "record_id": "r24",
+          "action": "include",
+          "rationale": "고객의 임의 대체 우려에 대응하는 현재 제외 규칙을 제공한다."
+        },
+        {
+          "record_id": "r25",
+          "action": "include",
+          "rationale": "고객 문제 조사에서 제외 목록을 의학적 보장으로 해석하지 않게 한다."
+        },
+        {
+          "record_id": "r26",
+          "action": "include",
+          "rationale": "현재 추진 범위 밖 기능을 명확히 한다."
+        },
+        {
+          "record_id": "r27",
+          "action": "exclude",
+          "rationale": "서버 수신 시간의 구현 경계는 고객 문제·동종 서비스 조사 준비와 직접 관계없다."
+        },
+        {
+          "record_id": "r28",
+          "action": "exclude",
+          "rationale": "품목 최종 상태의 동시 처리 요건은 조사 비교 범위에 필요한 정책 요약을 넘는다."
+        },
+        {
+          "record_id": "r29",
+          "action": "exclude",
+          "rationale": "환불 식별자 재사용 구현은 다음 고객·시장 조사와 직접 관계없다."
+        },
+        {
+          "record_id": "r30",
+          "action": "include",
+          "rationale": "알림 채널 비교를 위한 현행 시작 방식을 제공한다."
+        },
+        {
+          "record_id": "r31",
+          "action": "include",
+          "rationale": "알림 대안 비교에서 문자 재발송의 미산정 비용을 남은 질문으로 제공한다."
+        },
+        {
+          "record_id": "r32",
+          "action": "include",
+          "rationale": "고객이 제외했다고 생각하는 범위와 이름·별칭의 차이를 더 조사할 문제로 제공한다."
+        },
+        {
+          "record_id": "r33",
+          "action": "include",
+          "rationale": "제외 목록에 대한 고객 기대를 추가 확인할 명시된 위험이다."
+        },
+        {
+          "record_id": "r34",
+          "action": "include",
+          "rationale": "제외 이름·별칭 조사와 후속 논의의 남은 작업을 제공한다."
+        },
+        {
+          "record_id": "r35",
+          "action": "exclude",
+          "rationale": "시험용 빌드의 처리 결과는 고객·동종 서비스 관찰이 아니며 비교 조사에 직접 필요하지 않다."
+        },
+        {
+          "record_id": "r36",
+          "action": "exclude",
+          "rationale": "출시 전 화면 오류는 다음 고객·동종 서비스 비교 조사 준비와 직접 관련되지 않는다."
+        },
+        {
+          "record_id": "r37",
+          "action": "exclude",
+          "rationale": "표시 오류 담당자 배정은 시장 조사 준비와 무관하다."
+        },
+        {
+          "record_id": "r38",
+          "action": "exclude",
+          "rationale": "미실행 기능 시험 목록은 다음 고객·동종 서비스 조사 항목이 아니다."
+        }
+      ]
+    },
+    "status": "needs_context",
+    "coverage": {
+      "scope": "Supplied raw documents only; workspace discovery not evaluated",
+      "complete": false,
+      "gaps": []
+    },
+    "selected": [
+      {
+        "id": "r16",
+        "title": "고객이 모르는 채소를 받는 일과 포장 담당자 확인 전화를 줄임",
+        "kind": "goal",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "이번 단계의 목적은 고객이 모르는 채소를 받는 일을 줄이고 포장 담당자의 확인 전화를 덜어 주는 것이다."
+        },
+        "status_evidence": "이번 단계의 목적은 고객이 모르는 채소를 받는 일을 줄이고 포장 담당자의 확인 전화를 덜어 주는 것이다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "이번 단계의 목적은 고객이 모르는 채소를 받는 일을 줄이고 포장 담당자의 확인 전화를 덜어 주는 것이다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 고객 통제와 운영 부담이라는 비교의 목적을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "고객이 모르는 채소를 받는 일과 포장 담당자 확인 전화를 줄임",
+          "passage_id": "a04:bcc0b45a20cb3424",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "11월 2일 합의가 이번 단계의 목적을 직접 명시한다. 기존 전화 감소 목표를 별도 중복 기록하지 않는다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:bcc0b45a20cb3424",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r05",
+        "title": "일곱 가구 중 다섯 가구가 대체 채소의 가격·양 동시 비교를 원함",
+        "kind": "customer_evidence",
+        "status": "observed",
+        "scope": "*",
+        "evidence": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "10월 18일부터 20일까지 최근 두 달 안에 꾸러미를 받은 일곱 가구와 이야기했다. 일곱 가구 중 다섯 가구는 대체 채소의 가격과 양을 한 화면에서 비교하고 싶다고 말했다."
+        },
+        "status_evidence": "10월 18일부터 20일까지 최근 두 달 안에 꾸러미를 받은 일곱 가구와 이야기했다. 일곱 가구 중 다섯 가구는 대체 채소의 가격과 양을 한 화면에서 비교하고 싶다고 말했다.",
+        "status_citation": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "10월 18일부터 20일까지 최근 두 달 안에 꾸러미를 받은 일곱 가구와 이야기했다. 일곱 가구 중 다섯 가구는 대체 채소의 가격과 양을 한 화면에서 비교하고 싶다고 말했다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 가격·양 비교의 고객 문제를 직접 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "일곱 가구 중 다섯 가구가 대체 채소의 가격·양 동시 비교를 원함",
+          "passage_id": "a02:519997ceaa5b092b",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "10월 18~20일 기존 고객 7가구 중 5가구의 진술이며 실제 응답률 상승을 관측한 결과는 아니다.",
+          "scope_evidence": "10월 18일부터 20일까지 최근 두 달 안에 꾸러미를 받은 일곱 가구와 이야기했다. 일곱 가구 중 다섯 가구는 대체 채소의 가격과 양을 한 화면에서 비교하고 싶다고 말했다.",
+          "status_source_id": "a02",
+          "status_passage_id": "a02:519997ceaa5b092b",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r11",
+        "title": "가상 동종 서비스 너울장의 공개 체험 화면에서 품절 환불 안내를 관찰",
+        "kind": "market_evidence",
+        "status": "observed",
+        "scope": "*",
+        "evidence": {
+          "id": "a03",
+          "title": "책상 위의 두 화면",
+          "url": "demo://damcho/notes/a03",
+          "revision": "2026-10-25.1",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "10월 25일에 조사자가 가상의 동종 서비스 너울장과 싹마루의 공개 주문 체험 화면을 살펴봤다. 너울장 화면에는 품절 항목을 환불한다는 안내가 있었다."
+        },
+        "status_evidence": "10월 25일에 조사자가 가상의 동종 서비스 너울장과 싹마루의 공개 주문 체험 화면을 살펴봤다. 너울장 화면에는 품절 항목을 환불한다는 안내가 있었다.",
+        "status_citation": {
+          "id": "a03",
+          "title": "책상 위의 두 화면",
+          "url": "demo://damcho/notes/a03",
+          "revision": "2026-10-25.1",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "10월 25일에 조사자가 가상의 동종 서비스 너울장과 싹마루의 공개 주문 체험 화면을 살펴봤다. 너울장 화면에는 품절 항목을 환불한다는 안내가 있었다."
+        },
+        "source_complete": false,
+        "partial_context": {
+          "boundary_quote": "마지막으로 확인하려던 것은 싹마루의 가격 차액 처리 안내였는데 보관된 원문은 여기에서 끊긴다.",
+          "rationale": "공개 체험 화면에서 직접 본 내용과 명시된 조사 한계/미확인 항목만 보존한다. 누락된 차액 처리 안내를 추정하거나 서비스 전체의 정책·기능으로 일반화하지 않는다."
+        },
+        "selection_reasons": [
+          "Task-specific rationale: 비교 대상으로 실제 화면에서 확인한 환불 안내를 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "가상 동종 서비스 너울장의 공개 체험 화면에서 품절 환불 안내를 관찰",
+          "passage_id": "a03:e70e6fe18742e402",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "10월 25일 공개 체험 화면의 관찰에 한정한다. 실제 출고·유료 계정의 작동이나 시장 보편성 증거가 아니다.",
+          "scope_evidence": "10월 25일에 조사자가 가상의 동종 서비스 너울장과 싹마루의 공개 주문 체험 화면을 살펴봤다. 너울장 화면에는 품절 항목을 환불한다는 안내가 있었다.",
+          "status_source_id": "a03",
+          "status_passage_id": "a03:e70e6fe18742e402",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r17",
+        "title": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정; 확대일 미정",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+        },
+        "status_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 현재 추진 대상과 확대일 미정을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정; 확대일 미정",
+          "passage_id": "a04:bcc0b45a20cb3424",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "전체 고객 적용은 폐기되었고 지금의 승인 범위는 한 거점 수요일 꾸러미이다. 실제 첫 출고 날짜는 제공되지 않았다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:bcc0b45a20cb3424",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r12",
+        "title": "싹마루 체험 화면에는 대체 허용 선택이 있었고 관찰 화면에서 후보 사전 선택은 찾지 못함",
+        "kind": "market_evidence",
+        "status": "observed",
+        "scope": "*",
+        "evidence": {
+          "id": "a03",
+          "title": "책상 위의 두 화면",
+          "url": "demo://damcho/notes/a03",
+          "revision": "2026-10-25.1",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "싹마루 화면에는 고객이 대체를 허용할지 고르는 칸이 있었지만 관찰한 화면에서는 대체될 상품을 미리 고르는 기능을 찾지 못했다."
+        },
+        "status_evidence": "싹마루 화면에는 고객이 대체를 허용할지 고르는 칸이 있었지만 관찰한 화면에서는 대체될 상품을 미리 고르는 기능을 찾지 못했다.",
+        "status_citation": {
+          "id": "a03",
+          "title": "책상 위의 두 화면",
+          "url": "demo://damcho/notes/a03",
+          "revision": "2026-10-25.1",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "싹마루 화면에는 고객이 대체를 허용할지 고르는 칸이 있었지만 관찰한 화면에서는 대체될 상품을 미리 고르는 기능을 찾지 못했다."
+        },
+        "source_complete": false,
+        "partial_context": {
+          "boundary_quote": "마지막으로 확인하려던 것은 싹마루의 가격 차액 처리 안내였는데 보관된 원문은 여기에서 끊긴다.",
+          "rationale": "공개 체험 화면에서 직접 본 내용과 명시된 조사 한계/미확인 항목만 보존한다. 누락된 차액 처리 안내를 추정하거나 서비스 전체의 정책·기능으로 일반화하지 않는다."
+        },
+        "selection_reasons": [
+          "Task-specific rationale: 대체 허용과 개별 후보 선택의 차이를 관찰 범위 안에서 비교하게 한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "싹마루 체험 화면에는 대체 허용 선택이 있었고 관찰 화면에서 후보 사전 선택은 찾지 못함",
+          "passage_id": "a03:e70e6fe18742e402",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "찾지 못했다는 진술은 본 화면에만 적용되며 서비스 전체에 해당 기능이 없다는 결론이 아니다.",
+          "scope_evidence": "싹마루 화면에는 고객이 대체를 허용할지 고르는 칸이 있었지만 관찰한 화면에서는 대체될 상품을 미리 고르는 기능을 찾지 못했다.",
+          "status_source_id": "a03",
+          "status_passage_id": "a03:e70e6fe18742e402",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r06",
+        "title": "세 가구는 싫거나 먹지 못하는 채소가 있어 임의 대체를 곤란해함; 진단 여부는 묻지 않음",
+        "kind": "customer_evidence",
+        "status": "observed",
+        "scope": "*",
+        "evidence": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "세 가구는 싫어하거나 먹지 못하는 채소가 있어 아무 채소나 넣는 것은 곤란하다고 했다. 이 대화에서 실제 알레르기 진단 여부는 묻지 않았다."
+        },
+        "status_evidence": "세 가구는 싫어하거나 먹지 못하는 채소가 있어 아무 채소나 넣는 것은 곤란하다고 했다. 이 대화에서 실제 알레르기 진단 여부는 묻지 않았다.",
+        "status_citation": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "세 가구는 싫어하거나 먹지 못하는 채소가 있어 아무 채소나 넣는 것은 곤란하다고 했다. 이 대화에서 실제 알레르기 진단 여부는 묻지 않았다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 임의 대체의 고객 문제와 알레르기 미조사 한계를 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "세 가구는 싫거나 먹지 못하는 채소가 있어 임의 대체를 곤란해함; 진단 여부는 묻지 않음",
+          "passage_id": "a02:519997ceaa5b092b",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "기호·섭취 제한 진술과 알레르기 진단의 미조사를 함께 보존하며 의학적 안전성이나 유병률로 바꾸지 않는다.",
+          "scope_evidence": "세 가구는 싫어하거나 먹지 못하는 채소가 있어 아무 채소나 넣는 것은 곤란하다고 했다. 이 대화에서 실제 알레르기 진단 여부는 묻지 않았다.",
+          "status_source_id": "a02",
+          "status_passage_id": "a02:519997ceaa5b092b",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r07",
+        "title": "두 가구의 전날 저녁 알림 선호와 포장 중 최초 품절 발견의 제약",
+        "kind": "customer_evidence",
+        "status": "observed",
+        "scope": "*",
+        "evidence": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "두 가구는 낮에는 휴대폰을 보기 어려우니 전날 저녁에 알려 달라고 했다. 한편 포장 때 처음 발견되는 품절은 전날 알 수 없다."
+        },
+        "status_evidence": "두 가구는 낮에는 휴대폰을 보기 어려우니 전날 저녁에 알려 달라고 했다. 한편 포장 때 처음 발견되는 품절은 전날 알 수 없다.",
+        "status_citation": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "두 가구는 낮에는 휴대폰을 보기 어려우니 전날 저녁에 알려 달라고 했다. 한편 포장 때 처음 발견되는 품절은 전날 알 수 없다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 알림 시점 선호와 발견 시점의 제약을 분리해 조사하게 한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "두 가구의 전날 저녁 알림 선호와 포장 중 최초 품절 발견의 제약",
+          "passage_id": "a02:2492c7df245be6df",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "두 가구의 시간 제약과 원문이 밝힌 발견 시점의 한계를 함께 보존한다. 전날 알림이 모든 품절에 가능하다는 요구사항으로 만들지 않는다.",
+          "scope_evidence": "두 가구는 낮에는 휴대폰을 보기 어려우니 전날 저녁에 알려 달라고 했다. 한편 포장 때 처음 발견되는 품절은 전날 알 수 없다.",
+          "status_source_id": "a02",
+          "status_passage_id": "a02:2492c7df245be6df",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r09",
+        "title": "표본은 자발적 참여·적립금을 받은 기존 고객이며 신규·중도 해지 고객은 없음",
+        "kind": "customer_evidence",
+        "status": "observed",
+        "scope": "*",
+        "evidence": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "참여자는 모두 마을 게시판 모집에 스스로 응한 기존 고객이고 작은 적립금을 받았다. 신규 고객과 중도 해지자는 없었다."
+        },
+        "status_evidence": "참여자는 모두 마을 게시판 모집에 스스로 응한 기존 고객이고 작은 적립금을 받았다. 신규 고객과 중도 해지자는 없었다.",
+        "status_citation": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "참여자는 모두 마을 게시판 모집에 스스로 응한 기존 고객이고 작은 적립금을 받았다. 신규 고객과 중도 해지자는 없었다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 조사 표본의 대표성 한계를 드러낸다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "표본은 자발적 참여·적립금을 받은 기존 고객이며 신규·중도 해지 고객은 없음",
+          "passage_id": "a02:2987cfb1fe299ce2",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "모집·보상·표본 누락이 인터뷰 해석을 제한한다. 전체 고객 또는 시장의 수요로 일반화하지 않는다.",
+          "scope_evidence": "참여자는 모두 마을 게시판 모집에 스스로 응한 기존 고객이고 작은 적립금을 받았다. 신규 고객과 중도 해지자는 없었다.",
+          "status_source_id": "a02",
+          "status_passage_id": "a02:2987cfb1fe299ce2",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r13",
+        "title": "경쟁 비교는 체험 화면만 확인; 실제 운영·지역 정책·만족도·시장 관행은 미확인",
+        "kind": "market_evidence",
+        "status": "observed",
+        "scope": "*",
+        "evidence": {
+          "id": "a03",
+          "title": "책상 위의 두 화면",
+          "url": "demo://damcho/notes/a03",
+          "revision": "2026-10-25.1",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "두 서비스의 체험 화면만 본 것이므로 유료 계정, 실제 출고 과정, 다른 지역 정책은 확인하지 못했다. 이 기록만으로 어느 쪽이 고객 만족도가 높다거나 개별 대체품 승인이 시장의 기본 관행이라고 말할 수는 없다."
+        },
+        "status_evidence": "두 서비스의 체험 화면만 본 것이므로 유료 계정, 실제 출고 과정, 다른 지역 정책은 확인하지 못했다. 이 기록만으로 어느 쪽이 고객 만족도가 높다거나 개별 대체품 승인이 시장의 기본 관행이라고 말할 수는 없다.",
+        "status_citation": {
+          "id": "a03",
+          "title": "책상 위의 두 화면",
+          "url": "demo://damcho/notes/a03",
+          "revision": "2026-10-25.1",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "두 서비스의 체험 화면만 본 것이므로 유료 계정, 실제 출고 과정, 다른 지역 정책은 확인하지 못했다. 이 기록만으로 어느 쪽이 고객 만족도가 높다거나 개별 대체품 승인이 시장의 기본 관행이라고 말할 수는 없다."
+        },
+        "source_complete": false,
+        "partial_context": {
+          "boundary_quote": "마지막으로 확인하려던 것은 싹마루의 가격 차액 처리 안내였는데 보관된 원문은 여기에서 끊긴다.",
+          "rationale": "공개 체험 화면에서 직접 본 내용과 명시된 조사 한계/미확인 항목만 보존한다. 누락된 차액 처리 안내를 추정하거나 서비스 전체의 정책·기능으로 일반화하지 않는다."
+        },
+        "selection_reasons": [
+          "Task-specific rationale: 동종 서비스 비교의 미확인 범위와 일반화 한계를 드러낸다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "경쟁 비교는 체험 화면만 확인; 실제 운영·지역 정책·만족도·시장 관행은 미확인",
+          "passage_id": "a03:aff177cf0a93df24",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "조사 범위 자체의 명시된 관찰 한계이며 비교 우위나 업계 기준을 추론하지 않는다.",
+          "scope_evidence": "두 서비스의 체험 화면만 본 것이므로 유료 계정, 실제 출고 과정, 다른 지역 정책은 확인하지 못했다. 이 기록만으로 어느 쪽이 고객 만족도가 높다거나 개별 대체품 승인이 시장의 기본 관행이라고 말할 수는 없다.",
+          "status_source_id": "a03",
+          "status_passage_id": "a03:aff177cf0a93df24",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r20",
+        "title": "명시 수락 시 대체; 거절 또는 출고일 오전 10시까지 무응답 시 품목 제외·원상품 전액 환불",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "고객이 대체품을 명시적으로 수락하면 그 상품으로 바꾸고, 거절하거나 응답 기한인 출고 당일 오전 10시까지 답이 없으면 해당 품목을 빼고 원래 품목 금액 전액을 환불한다."
+        },
+        "status_evidence": "고객이 대체품을 명시적으로 수락하면 그 상품으로 바꾸고, 거절하거나 응답 기한인 출고 당일 오전 10시까지 답이 없으면 해당 품목을 빼고 원래 품목 금액 전액을 환불한다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "고객이 대체품을 명시적으로 수락하면 그 상품으로 바꾸고, 거절하거나 응답 기한인 출고 당일 오전 10시까지 답이 없으면 해당 품목을 빼고 원래 품목 금액 전액을 환불한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 임의 대체와 비교할 현행 수락·무응답·환불 정책을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "명시 수락 시 대체; 거절 또는 출고일 오전 10시까지 무응답 시 품목 제외·원상품 전액 환불",
+          "passage_id": "a04:6c9d7ee8d8ca4446",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "무응답 자동 대체의 후속 정책이다. 정확한 정각 판정은 r27의 서버 수신 경계 규칙과 함께 읽는다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:6c9d7ee8d8ca4446",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r10",
+        "title": "비교 정보가 응답률을 높인다는 추측은 미검증",
+        "kind": "assumption",
+        "status": "unverified",
+        "scope": "*",
+        "evidence": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "진행자는 비교 정보가 있으면 응답률도 오를 것 같다고 추측했지만 이 인터뷰에서는 응답률이나 구매 전환을 측정하지 않았다."
+        },
+        "status_evidence": "진행자는 비교 정보가 있으면 응답률도 오를 것 같다고 추측했지만 이 인터뷰에서는 응답률이나 구매 전환을 측정하지 않았다.",
+        "status_citation": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "진행자는 비교 정보가 있으면 응답률도 오를 것 같다고 추측했지만 이 인터뷰에서는 응답률이나 구매 전환을 측정하지 않았다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 응답률 상승이라는 검증할 가설과 미측정 지표를 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "비교 정보가 응답률을 높인다는 추측은 미검증",
+          "passage_id": "a02:2987cfb1fe299ce2",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "관측된 선호와 응답률·구매 전환의 인과 효과를 분리한다. 수치나 효과 크기는 제공되지 않았다.",
+          "scope_evidence": "진행자는 비교 정보가 있으면 응답률도 오를 것 같다고 추측했지만 이 인터뷰에서는 응답률이나 구매 전환을 측정하지 않았다.",
+          "status_source_id": "a02",
+          "status_passage_id": "a02:2987cfb1fe299ce2",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r19",
+        "title": "포장 담당자가 등록한 원상품 이하 가격의 후보 한 개만 제시",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "포장 담당자가 등록한 대체 후보는 원래 상품보다 비싸지 않은 것 한 개만 제시한다."
+        },
+        "status_evidence": "포장 담당자가 등록한 대체 후보는 원래 상품보다 비싸지 않은 것 한 개만 제시한다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "포장 담당자가 등록한 대체 후보는 원래 상품보다 비싸지 않은 것 한 개만 제시한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 비교할 현재 대체 승인 방식의 후보 수·가격 조건을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "포장 담당자가 등록한 원상품 이하 가격의 후보 한 개만 제시",
+          "passage_id": "a04:6c9d7ee8d8ca4446",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "후보 등록 주체·개수·가격 상한을 현재 합의의 단일 후보 규칙으로 보존한다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:6c9d7ee8d8ca4446",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r21",
+        "title": "더 싼 대체 후보를 수락하면 가격 차액 환불",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "더 싼 후보를 수락한 경우 차액을 돌려준다."
+        },
+        "status_evidence": "더 싼 후보를 수락한 경우 차액을 돌려준다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "더 싼 후보를 수락한 경우 차액을 돌려준다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 비교할 차액 처리의 현재 기준을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "더 싼 대체 후보를 수락하면 가격 차액 환불",
+          "passage_id": "a04:6c9d7ee8d8ca4446",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "수락 시에도 싼 후보와 원상품의 차액이 반환되는 조건을 거절 시 전액 환불과 구분한다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:6c9d7ee8d8ca4446",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r22",
+        "title": "후보가 없으면 승인 요청 없이 품절 품목 환불",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "대체 후보가 없으면 승인을 묻지 않고 품절 품목을 환불한다."
+        },
+        "status_evidence": "대체 후보가 없으면 승인을 묻지 않고 품절 품목을 환불한다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "대체 후보가 없으면 승인을 묻지 않고 품절 품목을 환불한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 후보가 없는 경우의 현재 처리 범위를 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "후보가 없으면 승인 요청 없이 품절 품목 환불",
+          "passage_id": "a04:6c9d7ee8d8ca4446",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "대체 후보 부재 분기는 승인 화면으로 고객을 보내지 않는다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:6c9d7ee8d8ca4446",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r23",
+        "title": "카드에 원상품·후보 이름, 중량, 가격과 응답 기한을 함께 표시",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "카드에는 원래 상품과 후보 각각의 이름, 중량, 가격 및 응답 기한을 함께 표시하기로 했다."
+        },
+        "status_evidence": "카드에는 원래 상품과 후보 각각의 이름, 중량, 가격 및 응답 기한을 함께 표시하기로 했다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "카드에는 원래 상품과 후보 각각의 이름, 중량, 가격 및 응답 기한을 함께 표시하기로 했다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 고객 비교 정보와 다음 서비스 비교 항목의 현재 기준을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "카드에 원상품·후보 이름, 중량, 가격과 응답 기한을 함께 표시",
+          "passage_id": "a04:1cb63471496f7e21",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "명시적 표시 합의로 이전 이름만 표시하는 스케치를 대체했다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:1cb63471496f7e21",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r24",
+        "title": "미리 등록한 제외 채소와 일치하는 후보는 제시 불가",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "고객이 미리 등록한 제외 채소와 일치하는 후보는 제시할 수 없다."
+        },
+        "status_evidence": "고객이 미리 등록한 제외 채소와 일치하는 후보는 제시할 수 없다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "고객이 미리 등록한 제외 채소와 일치하는 후보는 제시할 수 없다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 고객의 임의 대체 우려에 대응하는 현재 제외 규칙을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "미리 등록한 제외 채소와 일치하는 후보는 제시 불가",
+          "passage_id": "a04:1cb63471496f7e21",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "등록된 제외 채소의 일치 차단은 확정되었지만 비슷한 채소/별칭 판정은 r32에서 미결로 남아 있다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:1cb63471496f7e21",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r30",
+        "title": "초기 알림은 앱 알림 한 번",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "알림은 앱 알림 한 번으로 시작하기로 했으며,"
+        },
+        "status_evidence": "알림은 앱 알림 한 번으로 시작하기로 했으며,",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "알림은 앱 알림 한 번으로 시작하기로 했으며,"
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 알림 채널 비교를 위한 현행 시작 방식을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "초기 알림은 앱 알림 한 번",
+          "passage_id": "a05:4ea1ac5019ea920f",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "시작 알림 방식은 합의되었고 문자 재발송 검토와 구별된다.",
+          "scope_evidence": "알림은 앱 알림 한 번으로 시작하기로 했으며,",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:4ea1ac5019ea920f",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r18",
+        "title": "확대 날짜는 아직 정해지지 않음",
+        "kind": "question",
+        "status": "open",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "확대 날짜는 아직 정하지 않았다."
+        },
+        "status_evidence": "확대 날짜는 아직 정하지 않았다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "확대 날짜는 아직 정하지 않았다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 현재 범위 이후 확대 시점의 미결정을 드러낸다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "확대 날짜는 아직 정해지지 않음",
+          "passage_id": "a04:bcc0b45a20cb3424",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "첫 적용 범위의 확정과 확대 시점의 미결정을 구분한다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:bcc0b45a20cb3424",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r08",
+        "title": "다음 조사에서 품절 발견 시점과 고객 응답 가능 시간을 별도로 확인할 제안",
+        "kind": "question",
+        "status": "open",
+        "scope": "*",
+        "evidence": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "인터뷰 진행자는 다음에는 품절을 알게 된 시점과 고객이 응답할 수 있는 시간을 따로 물어보자고 적었다."
+        },
+        "status_evidence": "인터뷰 진행자는 다음에는 품절을 알게 된 시점과 고객이 응답할 수 있는 시간을 따로 물어보자고 적었다.",
+        "status_citation": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "인터뷰 진행자는 다음에는 품절을 알게 된 시점과 고객이 응답할 수 있는 시간을 따로 물어보자고 적었다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 다음 조사에서 따로 물을 질문을 직접 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "다음 조사에서 품절 발견 시점과 고객 응답 가능 시간을 별도로 확인할 제안",
+          "passage_id": "a02:2492c7df245be6df",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "다음 조사 질문에 대한 제안이며 이미 답을 얻은 결과나 승인된 알림 정책이 아니다.",
+          "scope_evidence": "인터뷰 진행자는 다음에는 품절을 알게 된 시점과 고객이 응답할 수 있는 시간을 따로 물어보자고 적었다.",
+          "status_source_id": "a02",
+          "status_passage_id": "a02:2492c7df245be6df",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r14",
+        "title": "싹마루 가격 차액 처리 안내는 원문 중단으로 미확인",
+        "kind": "question",
+        "status": "unknown",
+        "scope": "*",
+        "evidence": {
+          "id": "a03",
+          "title": "책상 위의 두 화면",
+          "url": "demo://damcho/notes/a03",
+          "revision": "2026-10-25.1",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "마지막으로 확인하려던 것은 싹마루의 가격 차액 처리 안내였는데 보관된 원문은 여기에서 끊긴다."
+        },
+        "status_evidence": "마지막으로 확인하려던 것은 싹마루의 가격 차액 처리 안내였는데 보관된 원문은 여기에서 끊긴다.",
+        "status_citation": {
+          "id": "a03",
+          "title": "책상 위의 두 화면",
+          "url": "demo://damcho/notes/a03",
+          "revision": "2026-10-25.1",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "마지막으로 확인하려던 것은 싹마루의 가격 차액 처리 안내였는데 보관된 원문은 여기에서 끊긴다."
+        },
+        "source_complete": false,
+        "partial_context": {
+          "boundary_quote": "마지막으로 확인하려던 것은 싹마루의 가격 차액 처리 안내였는데 보관된 원문은 여기에서 끊긴다.",
+          "rationale": "공개 체험 화면에서 직접 본 내용과 명시된 조사 한계/미확인 항목만 보존한다. 누락된 차액 처리 안내를 추정하거나 서비스 전체의 정책·기능으로 일반화하지 않는다."
+        },
+        "selection_reasons": [
+          "Task-specific rationale: 다음 비교에서 확인해야 할 누락된 차액 처리 정보를 식별한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "싹마루 가격 차액 처리 안내는 원문 중단으로 미확인",
+          "passage_id": "a03:43099fbaffd887b5",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "문서가 중단된 지점이 명시되어 있고 결과를 복원할 수 없다. 가격 차액 미환불 또는 환불로 결론내리지 않는다.",
+          "scope_evidence": "마지막으로 확인하려던 것은 싹마루의 가격 차액 처리 안내였는데 보관된 원문은 여기에서 끊긴다.",
+          "status_source_id": "a03",
+          "status_passage_id": "a03:43099fbaffd887b5",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r15",
+        "title": "후속 비교 항목으로 가격 표시·응답 기한·알림 채널을 검토하자는 메모",
+        "kind": "question",
+        "status": "open",
+        "scope": "*",
+        "evidence": {
+          "id": "a03",
+          "title": "책상 위의 두 화면",
+          "url": "demo://damcho/notes/a03",
+          "revision": "2026-10-25.1",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "후속 비교 표에는 대체품 가격 표시, 응답 기한, 알림 채널을 넣어 보자는 메모가 있다."
+        },
+        "status_evidence": "후속 비교 표에는 대체품 가격 표시, 응답 기한, 알림 채널을 넣어 보자는 메모가 있다.",
+        "status_citation": {
+          "id": "a03",
+          "title": "책상 위의 두 화면",
+          "url": "demo://damcho/notes/a03",
+          "revision": "2026-10-25.1",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "후속 비교 표에는 대체품 가격 표시, 응답 기한, 알림 채널을 넣어 보자는 메모가 있다."
+        },
+        "source_complete": false,
+        "partial_context": {
+          "boundary_quote": "마지막으로 확인하려던 것은 싹마루의 가격 차액 처리 안내였는데 보관된 원문은 여기에서 끊긴다.",
+          "rationale": "공개 체험 화면에서 직접 본 내용과 명시된 조사 한계/미확인 항목만 보존한다. 누락된 차액 처리 안내를 추정하거나 서비스 전체의 정책·기능으로 일반화하지 않는다."
+        },
+        "selection_reasons": [
+          "Task-specific rationale: 다음 조사 비교 표의 후보 항목을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "후속 비교 항목으로 가격 표시·응답 기한·알림 채널을 검토하자는 메모",
+          "passage_id": "a03:43099fbaffd887b5",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "후속 조사에서 아직 비교해야 할 항목에 관한 제안이다. 비교가 수행됐거나 확정된 기준이라고 보지 않는다.",
+          "scope_evidence": "후속 비교 표에는 대체품 가격 표시, 응답 기한, 알림 채널을 넣어 보자는 메모가 있다.",
+          "status_source_id": "a03",
+          "status_passage_id": "a03:43099fbaffd887b5",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r31",
+        "title": "문자 재발송은 비용 추정 없이 검토 목록에만 남음",
+        "kind": "question",
+        "status": "open",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+        },
+        "status_evidence": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 알림 대안 비교에서 문자 재발송의 미산정 비용을 남은 질문으로 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "문자 재발송은 비용 추정 없이 검토 목록에만 남음",
+          "passage_id": "a05:4ea1ac5019ea920f",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "문자 재발송을 채택한 결정이나 구현 완료로 보지 않는다. 비용 추정이 남은 검토의 전제다.",
+          "scope_evidence": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:4ea1ac5019ea920f",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r32",
+        "title": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지 미결",
+        "kind": "question",
+        "status": "open",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다."
+        },
+        "status_evidence": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 고객이 제외했다고 생각하는 범위와 이름·별칭의 차이를 더 조사할 문제로 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지 미결",
+          "passage_id": "a05:ec138e339a145a84",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "명시된 제외 목록 일치 차단 규칙과 아직 없는 유사 이름 허용 기준을 분리한다.",
+          "scope_evidence": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:ec138e339a145a84",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r33",
+        "title": "별칭 누락 시 고객이 제외했다고 생각한 채소가 후보로 노출될 위험",
+        "kind": "risk",
+        "status": "open",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다."
+        },
+        "status_evidence": "별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 제외 목록에 대한 고객 기대를 추가 확인할 명시된 위험이다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "별칭 누락 시 고객이 제외했다고 생각한 채소가 후보로 노출될 위험",
+          "passage_id": "a05:ec138e339a145a84",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "실제로 발생했다고 보고된 오류가 아니라 원문이 명시한 미해결 가능성이다.",
+          "scope_evidence": "별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:ec138e339a145a84",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r26",
+        "title": "완료 주문 재개와 고객의 여러 후보 선택은 이번 범위에서 제외",
+        "kind": "requirement",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "포장이 완료된 주문을 다시 여는 기능과 고객이 여러 후보를 고르는 기능은 이번 범위에서 제외한다."
+        },
+        "status_evidence": "포장이 완료된 주문을 다시 여는 기능과 고객이 여러 후보를 고르는 기능은 이번 범위에서 제외한다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "포장이 완료된 주문을 다시 여는 기능과 고객이 여러 후보를 고르는 기능은 이번 범위에서 제외한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 현재 추진 범위 밖 기능을 명확히 한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "완료 주문 재개와 고객의 여러 후보 선택은 이번 범위에서 제외",
+          "passage_id": "a04:1cb63471496f7e21",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "이번 단계의 명시적 기능 제외이며 이전 완료 주문 수정 요청을 현재 미결안으로 남기지 않는다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:1cb63471496f7e21",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r25",
+        "title": "제외 목록이 모든 알레르기를 예방한다고 안내하지 않음",
+        "kind": "requirement",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "제외 목록이 모든 알레르기를 예방한다고 안내해서는 안 된다."
+        },
+        "status_evidence": "제외 목록이 모든 알레르기를 예방한다고 안내해서는 안 된다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "제외 목록이 모든 알레르기를 예방한다고 안내해서는 안 된다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 고객 문제 조사에서 제외 목록을 의학적 보장으로 해석하지 않게 한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "제외 목록이 모든 알레르기를 예방한다고 안내하지 않음",
+          "passage_id": "a04:1cb63471496f7e21",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "고객 안내에 대한 명시적 제한이다. 제외 목록 기능을 완전한 알레르기 예방책으로 표현할 수 없다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:1cb63471496f7e21",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r34",
+        "title": "운영 담당자가 채소 이름·별칭을 정리해 11월 10일 재논의 예정",
+        "kind": "task",
+        "status": "planned",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다."
+        },
+        "status_evidence": "운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 제외 이름·별칭 조사와 후속 논의의 남은 작업을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "운영 담당자가 채소 이름·별칭을 정리해 11월 10일 재논의 예정",
+          "passage_id": "a05:ec138e339a145a84",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "담당 역할과 논의일은 있지만 정리 완료·유사 채소 기준 확정의 기록은 없다.",
+          "scope_evidence": "운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:ec138e339a145a84",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      }
+    ],
+    "gaps": [
+      "Declared source coverage is incomplete.",
+      "r11: bounded excerpt from an incomplete source; missing context remains unknown.",
+      "r12: bounded excerpt from an incomplete source; missing context remains unknown.",
+      "r13: bounded excerpt from an incomplete source; missing context remains unknown.",
+      "r14: authority or state is unknown.",
+      "r14: bounded excerpt from an incomplete source; missing context remains unknown.",
+      "r15: bounded excerpt from an incomplete source; missing context remains unknown."
+    ],
+    "cautions": [
+      "r10 is unverified; do not treat it as an accepted decision or verified fact.",
+      "r18 is open; do not treat it as an accepted decision or verified fact.",
+      "r08 is open; do not treat it as an accepted decision or verified fact.",
+      "r15 is open; do not treat it as an accepted decision or verified fact.",
+      "r31 is open; do not treat it as an accepted decision or verified fact.",
+      "r32 is open; do not treat it as an accepted decision or verified fact.",
+      "r33 is open; do not treat it as an accepted decision or verified fact.",
+      "r34 is planned; it is not an executed result or passing test."
+    ],
+    "conflicts": [],
+    "omitted": [
+      {
+        "id": "r01",
+        "reason": "task relevance: 폐기된 무응답 방식을 현행 비교 범위에 넣지 않는다."
+      },
+      {
+        "id": "r02",
+        "reason": "task relevance: 대체된 화면 스케치는 다음 조사의 미결안이 아니다."
+      },
+      {
+        "id": "r03",
+        "reason": "task relevance: 폐기된 전 고객 일정은 현재 추진 범위가 아니다."
+      },
+      {
+        "id": "r04",
+        "reason": "task relevance: 이번 범위에서 제외된 과거 요청을 살아 있는 조사 과제로 유지하지 않는다."
+      },
+      {
+        "id": "r27",
+        "reason": "task relevance: 서버 수신 시간의 구현 경계는 고객 문제·동종 서비스 조사 준비와 직접 관계없다."
+      },
+      {
+        "id": "r28",
+        "reason": "task relevance: 품목 최종 상태의 동시 처리 요건은 조사 비교 범위에 필요한 정책 요약을 넘는다."
+      },
+      {
+        "id": "r29",
+        "reason": "task relevance: 환불 식별자 재사용 구현은 다음 고객·시장 조사와 직접 관계없다."
+      },
+      {
+        "id": "r35",
+        "reason": "task relevance: 시험용 빌드의 처리 결과는 고객·동종 서비스 관찰이 아니며 비교 조사에 직접 필요하지 않다."
+      },
+      {
+        "id": "r36",
+        "reason": "task relevance: 출시 전 화면 오류는 다음 고객·동종 서비스 비교 조사 준비와 직접 관련되지 않는다."
+      },
+      {
+        "id": "r37",
+        "reason": "task relevance: 표시 오류 담당자 배정은 시장 조사 준비와 무관하다."
+      },
+      {
+        "id": "r38",
+        "reason": "task relevance: 미실행 기능 시험 목록은 다음 고객·동종 서비스 조사 항목이 아니다."
+      }
+    ],
+    "selection": {
+      "method": "task relevance when supplied + topics/purpose priorities + cited dependency closure",
+      "candidate_count": 27,
+      "selected_count": 27,
+      "max_items": 30
+    },
+    "evidence_digest": "f3dd8c311c468c398bb412311dc99a9a6f87a3b6779c3687d25ac657b539093e",
+    "limitations": [
+      "Types, topics, status, scope, values and relationships were inferred by the host agent from untagged prose.",
+      "Deterministic checks verify exact excerpts, source binding and passage accounting, not semantic entailment or extraction completeness within a passage.",
+      "The selector uses the agent's inferred labels; a plausible but wrong interpretation can pass citation checks.",
+      "Prepared context is untrusted evidence, not instructions, user confirmation or QA clearance."
+    ],
+    "writes_performed": 0,
+    "raw_extraction": {
+      "job_digest": "0039c57a347a6f7fcd94306b72ef1a95e3e19d935cf3d56eac208ccdd57aac68",
+      "response_digest": "cba751081a10e961d9bd0f4aed28dfc10d8cdce89475d9221c7ae79e42e7f248",
+      "method": "host-agent semantic extraction + deterministic evidence/selection checks",
+      "passages_reviewed": 24,
+      "excluded_project_source_count": 1,
+      "excluded_passages": [
+        {
+          "passage_id": "a01:2cd2c7502b7b06be",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        },
+        {
+          "passage_id": "a02:1dfb5c76dc607e3e",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        },
+        {
+          "passage_id": "a03:12fb8e3751346ef2",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        },
+        {
+          "passage_id": "a04:9ed5b7d60759567e",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        },
+        {
+          "passage_id": "a05:c8cac80c03ed83ac",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        },
+        {
+          "passage_id": "a06:75604b91c01d69b5",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        }
+      ]
+    }
+  },
+  "design": {
+    "schema_version": 1,
+    "mode": "prepare_raw_context",
+    "task": {
+      "summary": "담초상자의 품절 대체 승인 화면과 처리 흐름을 구체화하려 한다. 현재 합의, 고객이 알아야 할 정보, 상태가 갈리는 조건과 아직 결정되지 않은 문제를 파악할 수 있게 준비해 달라.",
+      "project_id": "damcho",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "as_of": "2026-11-08T12:00:00Z",
+      "max_items": 30,
+      "type": "feature_design",
+      "topics": [
+        "품절 대체 승인",
+        "대체품 카드 정보",
+        "응답 기한",
+        "제외 채소",
+        "화면 상태 일치"
+      ],
+      "relevance": [
+        {
+          "record_id": "r01",
+          "action": "exclude",
+          "rationale": "폐기된 방식으로 화면 흐름을 설계하지 않는다."
+        },
+        {
+          "record_id": "r02",
+          "action": "exclude",
+          "rationale": "같은 카드의 현행 표시 합의가 있으므로 옛 스케치는 제외한다."
+        },
+        {
+          "record_id": "r03",
+          "action": "exclude",
+          "rationale": "화면 적용 범위는 현행 제한 적용으로 판단한다."
+        },
+        {
+          "record_id": "r04",
+          "action": "exclude",
+          "rationale": "현재 제외 합의가 과거 수정 요청을 해소한다."
+        },
+        {
+          "record_id": "r05",
+          "action": "include",
+          "rationale": "고객에게 함께 제공할 정보의 필요를 설명한다."
+        },
+        {
+          "record_id": "r06",
+          "action": "include",
+          "rationale": "후보 차단과 고객 안내를 설계할 때 섭취 제한 진술의 한계를 알려준다."
+        },
+        {
+          "record_id": "r07",
+          "action": "include",
+          "rationale": "고객이 응답할 수 있는 시간과 알림 흐름의 현실적 제약을 알려준다."
+        },
+        {
+          "record_id": "r08",
+          "action": "exclude",
+          "rationale": "후속 인터뷰 제안은 현재 화면·처리 분기 확정과 직접 관계없는 조사 작업이다."
+        },
+        {
+          "record_id": "r09",
+          "action": "include",
+          "rationale": "고객 정보 요구를 설계 전체의 보편적 요구로 과장하지 않게 한다."
+        },
+        {
+          "record_id": "r10",
+          "action": "exclude",
+          "rationale": "응답률 가설은 현재 승인 화면의 동작·미결 분기와 직접 관련되지 않는다."
+        },
+        {
+          "record_id": "r11",
+          "action": "exclude",
+          "rationale": "외부 서비스 안내는 담초의 현재 화면 합의나 처리 조건이 아니다."
+        },
+        {
+          "record_id": "r12",
+          "action": "exclude",
+          "rationale": "외부 화면의 제한된 관찰은 담초의 확정된 화면 규칙을 바꾸지 않는다."
+        },
+        {
+          "record_id": "r13",
+          "action": "exclude",
+          "rationale": "외부 조사 범위 한계는 현재 화면 설계의 미결 사항이 아니다."
+        },
+        {
+          "record_id": "r14",
+          "action": "exclude",
+          "rationale": "다른 서비스의 누락된 차액 안내는 담초의 이미 합의된 차액 처리를 미결로 만들지 않는다."
+        },
+        {
+          "record_id": "r15",
+          "action": "exclude",
+          "rationale": "시장 비교표 제안은 현재 화면과 처리 흐름의 미결 결정이 아니다."
+        },
+        {
+          "record_id": "r16",
+          "action": "include",
+          "rationale": "화면·처리 흐름이 달성할 현재 목표를 제공한다."
+        },
+        {
+          "record_id": "r17",
+          "action": "include",
+          "rationale": "화면과 흐름이 적용될 출시 범위를 한정한다."
+        },
+        {
+          "record_id": "r18",
+          "action": "include",
+          "rationale": "합의되지 않은 적용 확대를 화면 범위에 미리 포함하지 않게 한다."
+        },
+        {
+          "record_id": "r19",
+          "action": "include",
+          "rationale": "등록 주체·후보 수·가격 조건이 화면과 제시 분기를 정한다."
+        },
+        {
+          "record_id": "r20",
+          "action": "include",
+          "rationale": "수락·거절·무응답 상태 전이와 기한을 정한다."
+        },
+        {
+          "record_id": "r21",
+          "action": "include",
+          "rationale": "수락 후 금액 안내와 환불 처리를 구체화한다."
+        },
+        {
+          "record_id": "r22",
+          "action": "include",
+          "rationale": "승인 요청을 생략하는 분기를 구체화한다."
+        },
+        {
+          "record_id": "r23",
+          "action": "include",
+          "rationale": "카드 필수 정보와 표시 구성을 직접 제공한다."
+        },
+        {
+          "record_id": "r24",
+          "action": "include",
+          "rationale": "후보 목록에서 차단해야 할 조건을 제공한다."
+        },
+        {
+          "record_id": "r25",
+          "action": "include",
+          "rationale": "고객에게 허용되지 않는 안내 문구를 한정한다."
+        },
+        {
+          "record_id": "r26",
+          "action": "include",
+          "rationale": "완료 주문과 여러 후보 선택 화면을 범위에 넣지 않게 한다."
+        },
+        {
+          "record_id": "r27",
+          "action": "include",
+          "rationale": "정각 전후와 휴대폰 시계 차이에 따른 상태 판정 기준을 정한다."
+        },
+        {
+          "record_id": "r28",
+          "action": "include",
+          "rationale": "상태 경합 시 모순된 결과가 나오지 않게 할 제약을 제공한다."
+        },
+        {
+          "record_id": "r29",
+          "action": "include",
+          "rationale": "재시도해도 중복 환불이 생기지 않을 처리 제약을 제공한다."
+        },
+        {
+          "record_id": "r30",
+          "action": "include",
+          "rationale": "현재 합의한 알림 채널과 횟수를 정한다."
+        },
+        {
+          "record_id": "r31",
+          "action": "include",
+          "rationale": "채택되지 않은 알림 대안과 필요한 비용 검토를 구분한다."
+        },
+        {
+          "record_id": "r32",
+          "action": "include",
+          "rationale": "유사 채소 허용 분기가 아직 결정되지 않았음을 드러낸다."
+        },
+        {
+          "record_id": "r33",
+          "action": "include",
+          "rationale": "별칭 누락으로 후보가 노출될 설계 위험을 제공한다."
+        },
+        {
+          "record_id": "r34",
+          "action": "include",
+          "rationale": "이름 판정 미결정을 해소할 담당 역할과 후속 논의일을 제공한다."
+        },
+        {
+          "record_id": "r35",
+          "action": "exclude",
+          "rationale": "성공한 시험 세 경로는 합의 내용과 중복되고 현재 화면 미결정에 추가 정보를 주지 않는다."
+        },
+        {
+          "record_id": "r36",
+          "action": "include",
+          "rationale": "서버와 화면 상태가 어긋나는 알려진 실패가 화면 설계에 중요하다."
+        },
+        {
+          "record_id": "r37",
+          "action": "exclude",
+          "rationale": "현재 설계에 필요한 실패 내용은 r36에 있으며 별도 수정 배정은 중복 작업 관리다."
+        },
+        {
+          "record_id": "r38",
+          "action": "exclude",
+          "rationale": "시험 실행 계획은 화면·흐름 규칙과 별도이며 그 규칙은 현행 합의로 이미 포함했다."
+        }
+      ]
+    },
+    "status": "needs_context",
+    "coverage": {
+      "scope": "Supplied raw documents only; workspace discovery not evaluated",
+      "complete": false,
+      "gaps": []
+    },
+    "selected": [
+      {
+        "id": "r16",
+        "title": "고객이 모르는 채소를 받는 일과 포장 담당자 확인 전화를 줄임",
+        "kind": "goal",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "이번 단계의 목적은 고객이 모르는 채소를 받는 일을 줄이고 포장 담당자의 확인 전화를 덜어 주는 것이다."
+        },
+        "status_evidence": "이번 단계의 목적은 고객이 모르는 채소를 받는 일을 줄이고 포장 담당자의 확인 전화를 덜어 주는 것이다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "이번 단계의 목적은 고객이 모르는 채소를 받는 일을 줄이고 포장 담당자의 확인 전화를 덜어 주는 것이다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 화면·처리 흐름이 달성할 현재 목표를 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "고객이 모르는 채소를 받는 일과 포장 담당자 확인 전화를 줄임",
+          "passage_id": "a04:bcc0b45a20cb3424",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "11월 2일 합의가 이번 단계의 목적을 직접 명시한다. 기존 전화 감소 목표를 별도 중복 기록하지 않는다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:bcc0b45a20cb3424",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r20",
+        "title": "명시 수락 시 대체; 거절 또는 출고일 오전 10시까지 무응답 시 품목 제외·원상품 전액 환불",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "고객이 대체품을 명시적으로 수락하면 그 상품으로 바꾸고, 거절하거나 응답 기한인 출고 당일 오전 10시까지 답이 없으면 해당 품목을 빼고 원래 품목 금액 전액을 환불한다."
+        },
+        "status_evidence": "고객이 대체품을 명시적으로 수락하면 그 상품으로 바꾸고, 거절하거나 응답 기한인 출고 당일 오전 10시까지 답이 없으면 해당 품목을 빼고 원래 품목 금액 전액을 환불한다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "고객이 대체품을 명시적으로 수락하면 그 상품으로 바꾸고, 거절하거나 응답 기한인 출고 당일 오전 10시까지 답이 없으면 해당 품목을 빼고 원래 품목 금액 전액을 환불한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 수락·거절·무응답 상태 전이와 기한을 정한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "명시 수락 시 대체; 거절 또는 출고일 오전 10시까지 무응답 시 품목 제외·원상품 전액 환불",
+          "passage_id": "a04:6c9d7ee8d8ca4446",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "무응답 자동 대체의 후속 정책이다. 정확한 정각 판정은 r27의 서버 수신 경계 규칙과 함께 읽는다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:6c9d7ee8d8ca4446",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r25",
+        "title": "제외 목록이 모든 알레르기를 예방한다고 안내하지 않음",
+        "kind": "requirement",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "제외 목록이 모든 알레르기를 예방한다고 안내해서는 안 된다."
+        },
+        "status_evidence": "제외 목록이 모든 알레르기를 예방한다고 안내해서는 안 된다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "제외 목록이 모든 알레르기를 예방한다고 안내해서는 안 된다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 고객에게 허용되지 않는 안내 문구를 한정한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "제외 목록이 모든 알레르기를 예방한다고 안내하지 않음",
+          "passage_id": "a04:1cb63471496f7e21",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "고객 안내에 대한 명시적 제한이다. 제외 목록 기능을 완전한 알레르기 예방책으로 표현할 수 없다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:1cb63471496f7e21",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r23",
+        "title": "카드에 원상품·후보 이름, 중량, 가격과 응답 기한을 함께 표시",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "카드에는 원래 상품과 후보 각각의 이름, 중량, 가격 및 응답 기한을 함께 표시하기로 했다."
+        },
+        "status_evidence": "카드에는 원래 상품과 후보 각각의 이름, 중량, 가격 및 응답 기한을 함께 표시하기로 했다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "카드에는 원래 상품과 후보 각각의 이름, 중량, 가격 및 응답 기한을 함께 표시하기로 했다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 카드 필수 정보와 표시 구성을 직접 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "카드에 원상품·후보 이름, 중량, 가격과 응답 기한을 함께 표시",
+          "passage_id": "a04:1cb63471496f7e21",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "명시적 표시 합의로 이전 이름만 표시하는 스케치를 대체했다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:1cb63471496f7e21",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r24",
+        "title": "미리 등록한 제외 채소와 일치하는 후보는 제시 불가",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "고객이 미리 등록한 제외 채소와 일치하는 후보는 제시할 수 없다."
+        },
+        "status_evidence": "고객이 미리 등록한 제외 채소와 일치하는 후보는 제시할 수 없다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "고객이 미리 등록한 제외 채소와 일치하는 후보는 제시할 수 없다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 후보 목록에서 차단해야 할 조건을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "미리 등록한 제외 채소와 일치하는 후보는 제시 불가",
+          "passage_id": "a04:1cb63471496f7e21",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "등록된 제외 채소의 일치 차단은 확정되었지만 비슷한 채소/별칭 판정은 r32에서 미결로 남아 있다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:1cb63471496f7e21",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r27",
+        "title": "서버 수신 시각이 오전 10시 전이면 수락; 정각부터 마감; 휴대폰 시계 사용 안 함",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "서버가 응답을 받은 시각이 오전 10시보다 이르면 수락을 처리하고, 정확히 오전 10시부터는 마감된 것으로 처리한다. 화면의 휴대폰 시계는 판정 근거로 쓰지 않는다."
+        },
+        "status_evidence": "이 경계 규칙은 담당자 둘이 확인해 현재 설계로 채택했다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "이 경계 규칙은 담당자 둘이 확인해 현재 설계로 채택했다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 정각 전후와 휴대폰 시계 차이에 따른 상태 판정 기준을 정한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "서버 수신 시각이 오전 10시 전이면 수락; 정각부터 마감; 휴대폰 시계 사용 안 함",
+          "passage_id": "a05:6af6ef7514ba40b5",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "고객 응답과 마감 작업 경합의 경계를 두 담당자가 확인하여 현재 설계로 채택했다. 합의된 수요일 승인 흐름 구현의 경계 조건이다.",
+          "scope_evidence": "서버가 응답을 받은 시각이 오전 10시보다 이르면 수락을 처리하고, 정확히 오전 10시부터는 마감된 것으로 처리한다. 화면의 휴대폰 시계는 판정 근거로 쓰지 않는다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:6af6ef7514ba40b5",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r17",
+        "title": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정; 확대일 미정",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+        },
+        "status_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 화면과 흐름이 적용될 출시 범위를 한정한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정; 확대일 미정",
+          "passage_id": "a04:bcc0b45a20cb3424",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "전체 고객 적용은 폐기되었고 지금의 승인 범위는 한 거점 수요일 꾸러미이다. 실제 첫 출고 날짜는 제공되지 않았다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:bcc0b45a20cb3424",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r19",
+        "title": "포장 담당자가 등록한 원상품 이하 가격의 후보 한 개만 제시",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "포장 담당자가 등록한 대체 후보는 원래 상품보다 비싸지 않은 것 한 개만 제시한다."
+        },
+        "status_evidence": "포장 담당자가 등록한 대체 후보는 원래 상품보다 비싸지 않은 것 한 개만 제시한다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "포장 담당자가 등록한 대체 후보는 원래 상품보다 비싸지 않은 것 한 개만 제시한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 등록 주체·후보 수·가격 조건이 화면과 제시 분기를 정한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "포장 담당자가 등록한 원상품 이하 가격의 후보 한 개만 제시",
+          "passage_id": "a04:6c9d7ee8d8ca4446",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "후보 등록 주체·개수·가격 상한을 현재 합의의 단일 후보 규칙으로 보존한다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:6c9d7ee8d8ca4446",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r21",
+        "title": "더 싼 대체 후보를 수락하면 가격 차액 환불",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "더 싼 후보를 수락한 경우 차액을 돌려준다."
+        },
+        "status_evidence": "더 싼 후보를 수락한 경우 차액을 돌려준다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "더 싼 후보를 수락한 경우 차액을 돌려준다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 수락 후 금액 안내와 환불 처리를 구체화한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "더 싼 대체 후보를 수락하면 가격 차액 환불",
+          "passage_id": "a04:6c9d7ee8d8ca4446",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "수락 시에도 싼 후보와 원상품의 차액이 반환되는 조건을 거절 시 전액 환불과 구분한다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:6c9d7ee8d8ca4446",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r22",
+        "title": "후보가 없으면 승인 요청 없이 품절 품목 환불",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "대체 후보가 없으면 승인을 묻지 않고 품절 품목을 환불한다."
+        },
+        "status_evidence": "대체 후보가 없으면 승인을 묻지 않고 품절 품목을 환불한다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "대체 후보가 없으면 승인을 묻지 않고 품절 품목을 환불한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 승인 요청을 생략하는 분기를 구체화한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "후보가 없으면 승인 요청 없이 품절 품목 환불",
+          "passage_id": "a04:6c9d7ee8d8ca4446",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "대체 후보 부재 분기는 승인 화면으로 고객을 보내지 않는다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:6c9d7ee8d8ca4446",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r26",
+        "title": "완료 주문 재개와 고객의 여러 후보 선택은 이번 범위에서 제외",
+        "kind": "requirement",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "포장이 완료된 주문을 다시 여는 기능과 고객이 여러 후보를 고르는 기능은 이번 범위에서 제외한다."
+        },
+        "status_evidence": "포장이 완료된 주문을 다시 여는 기능과 고객이 여러 후보를 고르는 기능은 이번 범위에서 제외한다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "포장이 완료된 주문을 다시 여는 기능과 고객이 여러 후보를 고르는 기능은 이번 범위에서 제외한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 완료 주문과 여러 후보 선택 화면을 범위에 넣지 않게 한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "완료 주문 재개와 고객의 여러 후보 선택은 이번 범위에서 제외",
+          "passage_id": "a04:1cb63471496f7e21",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "이번 단계의 명시적 기능 제외이며 이전 완료 주문 수정 요청을 현재 미결안으로 남기지 않는다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:1cb63471496f7e21",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r28",
+        "title": "한 품목의 최종 상태는 수락과 환불 중 하나여야 함",
+        "kind": "requirement",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "하나의 품목에 대해서는 수락과 환불 중 하나만 최종 상태가 되어야 한다."
+        },
+        "status_evidence": "하나의 품목에 대해서는 수락과 환불 중 하나만 최종 상태가 되어야 한다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "하나의 품목에 대해서는 수락과 환불 중 하나만 최종 상태가 되어야 한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 상태 경합 시 모순된 결과가 나오지 않게 할 제약을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "한 품목의 최종 상태는 수락과 환불 중 하나여야 함",
+          "passage_id": "a05:4ea1ac5019ea920f",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "경합 처리에서 두 최종 상태가 동시에 성립하지 않아야 한다는 요구사항이다. 더 싼 후보의 차액 환불까지 금지하는 의미로 확장하지 않는다.",
+          "scope_evidence": "하나의 품목에 대해서는 수락과 환불 중 하나만 최종 상태가 되어야 한다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:4ea1ac5019ea920f",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r29",
+        "title": "환불 재시도는 같은 주문 품목 식별자를 재사용하여 한 번만 생성",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다."
+        },
+        "status_evidence": "환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 재시도해도 중복 환불이 생기지 않을 처리 제약을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "환불 재시도는 같은 주문 품목 식별자를 재사용하여 한 번만 생성",
+          "passage_id": "a05:4ea1ac5019ea920f",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "식별자 재사용이라는 처리 선택과 품목별 중복 환불 방지 목적이 명시되어 있다.",
+          "scope_evidence": "환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:4ea1ac5019ea920f",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r30",
+        "title": "초기 알림은 앱 알림 한 번",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "알림은 앱 알림 한 번으로 시작하기로 했으며,"
+        },
+        "status_evidence": "알림은 앱 알림 한 번으로 시작하기로 했으며,",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "알림은 앱 알림 한 번으로 시작하기로 했으며,"
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 현재 합의한 알림 채널과 횟수를 정한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "초기 알림은 앱 알림 한 번",
+          "passage_id": "a05:4ea1ac5019ea920f",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "시작 알림 방식은 합의되었고 문자 재발송 검토와 구별된다.",
+          "scope_evidence": "알림은 앱 알림 한 번으로 시작하기로 했으며,",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:4ea1ac5019ea920f",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r36",
+        "title": "정각 응답은 서버 거절됐지만 화면이 잠깐 수락 완료를 표시; 열린 오류로 전체 통과 아님",
+        "kind": "test_result",
+        "status": "observed",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a06",
+          "title": "금요일 기록",
+          "url": "demo://damcho/notes/a06",
+          "revision": "2026-11-06.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "오전 10시 정각 응답은 서버에서 거절됐지만 고객 화면에는 잠깐 수락 완료가 표시됐다. 새로고침 뒤에는 환불 예정으로 바뀌었다. 표시 오류는 아직 열려 있고 수정 담당자는 정해졌다. 정각 응답 처리 전체가 통과했다고 보고하지 않기로 했다."
+        },
+        "status_evidence": "오전 10시 정각 응답은 서버에서 거절됐지만 고객 화면에는 잠깐 수락 완료가 표시됐다. 새로고침 뒤에는 환불 예정으로 바뀌었다. 표시 오류는 아직 열려 있고 수정 담당자는 정해졌다. 정각 응답 처리 전체가 통과했다고 보고하지 않기로 했다.",
+        "status_citation": {
+          "id": "a06",
+          "title": "금요일 기록",
+          "url": "demo://damcho/notes/a06",
+          "revision": "2026-11-06.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "오전 10시 정각 응답은 서버에서 거절됐지만 고객 화면에는 잠깐 수락 완료가 표시됐다. 새로고침 뒤에는 환불 예정으로 바뀌었다. 표시 오류는 아직 열려 있고 수정 담당자는 정해졌다. 정각 응답 처리 전체가 통과했다고 보고하지 않기로 했다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 서버와 화면 상태가 어긋나는 알려진 실패가 화면 설계에 중요하다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "정각 응답은 서버 거절됐지만 화면이 잠깐 수락 완료를 표시; 열린 오류로 전체 통과 아님",
+          "passage_id": "a06:111f76b564777b29",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "서버 거절과 잘못된 일시 표시를 모두 보존한다. 새로고침 후 환불 예정 표시는 최초 오류를 해소한 재시험 성공이 아니다.",
+          "scope_evidence": "오전 10시 정각 응답은 서버에서 거절됐지만 고객 화면에는 잠깐 수락 완료가 표시됐다. 새로고침 뒤에는 환불 예정으로 바뀌었다. 표시 오류는 아직 열려 있고 수정 담당자는 정해졌다. 정각 응답 처리 전체가 통과했다고 보고하지 않기로 했다.",
+          "status_source_id": "a06",
+          "status_passage_id": "a06:111f76b564777b29",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r33",
+        "title": "별칭 누락 시 고객이 제외했다고 생각한 채소가 후보로 노출될 위험",
+        "kind": "risk",
+        "status": "open",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다."
+        },
+        "status_evidence": "별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 별칭 누락으로 후보가 노출될 설계 위험을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "별칭 누락 시 고객이 제외했다고 생각한 채소가 후보로 노출될 위험",
+          "passage_id": "a05:ec138e339a145a84",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "실제로 발생했다고 보고된 오류가 아니라 원문이 명시한 미해결 가능성이다.",
+          "scope_evidence": "별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:ec138e339a145a84",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r32",
+        "title": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지 미결",
+        "kind": "question",
+        "status": "open",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다."
+        },
+        "status_evidence": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 유사 채소 허용 분기가 아직 결정되지 않았음을 드러낸다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지 미결",
+          "passage_id": "a05:ec138e339a145a84",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "명시된 제외 목록 일치 차단 규칙과 아직 없는 유사 이름 허용 기준을 분리한다.",
+          "scope_evidence": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:ec138e339a145a84",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r18",
+        "title": "확대 날짜는 아직 정해지지 않음",
+        "kind": "question",
+        "status": "open",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "확대 날짜는 아직 정하지 않았다."
+        },
+        "status_evidence": "확대 날짜는 아직 정하지 않았다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "확대 날짜는 아직 정하지 않았다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 합의되지 않은 적용 확대를 화면 범위에 미리 포함하지 않게 한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "확대 날짜는 아직 정해지지 않음",
+          "passage_id": "a04:bcc0b45a20cb3424",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "첫 적용 범위의 확정과 확대 시점의 미결정을 구분한다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:bcc0b45a20cb3424",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r31",
+        "title": "문자 재발송은 비용 추정 없이 검토 목록에만 남음",
+        "kind": "question",
+        "status": "open",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+        },
+        "status_evidence": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 채택되지 않은 알림 대안과 필요한 비용 검토를 구분한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "문자 재발송은 비용 추정 없이 검토 목록에만 남음",
+          "passage_id": "a05:4ea1ac5019ea920f",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "문자 재발송을 채택한 결정이나 구현 완료로 보지 않는다. 비용 추정이 남은 검토의 전제다.",
+          "scope_evidence": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:4ea1ac5019ea920f",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r05",
+        "title": "일곱 가구 중 다섯 가구가 대체 채소의 가격·양 동시 비교를 원함",
+        "kind": "customer_evidence",
+        "status": "observed",
+        "scope": "*",
+        "evidence": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "10월 18일부터 20일까지 최근 두 달 안에 꾸러미를 받은 일곱 가구와 이야기했다. 일곱 가구 중 다섯 가구는 대체 채소의 가격과 양을 한 화면에서 비교하고 싶다고 말했다."
+        },
+        "status_evidence": "10월 18일부터 20일까지 최근 두 달 안에 꾸러미를 받은 일곱 가구와 이야기했다. 일곱 가구 중 다섯 가구는 대체 채소의 가격과 양을 한 화면에서 비교하고 싶다고 말했다.",
+        "status_citation": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "10월 18일부터 20일까지 최근 두 달 안에 꾸러미를 받은 일곱 가구와 이야기했다. 일곱 가구 중 다섯 가구는 대체 채소의 가격과 양을 한 화면에서 비교하고 싶다고 말했다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 고객에게 함께 제공할 정보의 필요를 설명한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "일곱 가구 중 다섯 가구가 대체 채소의 가격·양 동시 비교를 원함",
+          "passage_id": "a02:519997ceaa5b092b",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "10월 18~20일 기존 고객 7가구 중 5가구의 진술이며 실제 응답률 상승을 관측한 결과는 아니다.",
+          "scope_evidence": "10월 18일부터 20일까지 최근 두 달 안에 꾸러미를 받은 일곱 가구와 이야기했다. 일곱 가구 중 다섯 가구는 대체 채소의 가격과 양을 한 화면에서 비교하고 싶다고 말했다.",
+          "status_source_id": "a02",
+          "status_passage_id": "a02:519997ceaa5b092b",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r06",
+        "title": "세 가구는 싫거나 먹지 못하는 채소가 있어 임의 대체를 곤란해함; 진단 여부는 묻지 않음",
+        "kind": "customer_evidence",
+        "status": "observed",
+        "scope": "*",
+        "evidence": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "세 가구는 싫어하거나 먹지 못하는 채소가 있어 아무 채소나 넣는 것은 곤란하다고 했다. 이 대화에서 실제 알레르기 진단 여부는 묻지 않았다."
+        },
+        "status_evidence": "세 가구는 싫어하거나 먹지 못하는 채소가 있어 아무 채소나 넣는 것은 곤란하다고 했다. 이 대화에서 실제 알레르기 진단 여부는 묻지 않았다.",
+        "status_citation": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "세 가구는 싫어하거나 먹지 못하는 채소가 있어 아무 채소나 넣는 것은 곤란하다고 했다. 이 대화에서 실제 알레르기 진단 여부는 묻지 않았다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 후보 차단과 고객 안내를 설계할 때 섭취 제한 진술의 한계를 알려준다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "세 가구는 싫거나 먹지 못하는 채소가 있어 임의 대체를 곤란해함; 진단 여부는 묻지 않음",
+          "passage_id": "a02:519997ceaa5b092b",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "기호·섭취 제한 진술과 알레르기 진단의 미조사를 함께 보존하며 의학적 안전성이나 유병률로 바꾸지 않는다.",
+          "scope_evidence": "세 가구는 싫어하거나 먹지 못하는 채소가 있어 아무 채소나 넣는 것은 곤란하다고 했다. 이 대화에서 실제 알레르기 진단 여부는 묻지 않았다.",
+          "status_source_id": "a02",
+          "status_passage_id": "a02:519997ceaa5b092b",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r07",
+        "title": "두 가구의 전날 저녁 알림 선호와 포장 중 최초 품절 발견의 제약",
+        "kind": "customer_evidence",
+        "status": "observed",
+        "scope": "*",
+        "evidence": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "두 가구는 낮에는 휴대폰을 보기 어려우니 전날 저녁에 알려 달라고 했다. 한편 포장 때 처음 발견되는 품절은 전날 알 수 없다."
+        },
+        "status_evidence": "두 가구는 낮에는 휴대폰을 보기 어려우니 전날 저녁에 알려 달라고 했다. 한편 포장 때 처음 발견되는 품절은 전날 알 수 없다.",
+        "status_citation": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "두 가구는 낮에는 휴대폰을 보기 어려우니 전날 저녁에 알려 달라고 했다. 한편 포장 때 처음 발견되는 품절은 전날 알 수 없다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 고객이 응답할 수 있는 시간과 알림 흐름의 현실적 제약을 알려준다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "두 가구의 전날 저녁 알림 선호와 포장 중 최초 품절 발견의 제약",
+          "passage_id": "a02:2492c7df245be6df",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "두 가구의 시간 제약과 원문이 밝힌 발견 시점의 한계를 함께 보존한다. 전날 알림이 모든 품절에 가능하다는 요구사항으로 만들지 않는다.",
+          "scope_evidence": "두 가구는 낮에는 휴대폰을 보기 어려우니 전날 저녁에 알려 달라고 했다. 한편 포장 때 처음 발견되는 품절은 전날 알 수 없다.",
+          "status_source_id": "a02",
+          "status_passage_id": "a02:2492c7df245be6df",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r09",
+        "title": "표본은 자발적 참여·적립금을 받은 기존 고객이며 신규·중도 해지 고객은 없음",
+        "kind": "customer_evidence",
+        "status": "observed",
+        "scope": "*",
+        "evidence": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "참여자는 모두 마을 게시판 모집에 스스로 응한 기존 고객이고 작은 적립금을 받았다. 신규 고객과 중도 해지자는 없었다."
+        },
+        "status_evidence": "참여자는 모두 마을 게시판 모집에 스스로 응한 기존 고객이고 작은 적립금을 받았다. 신규 고객과 중도 해지자는 없었다.",
+        "status_citation": {
+          "id": "a02",
+          "title": "마을 산책 뒤",
+          "url": "demo://damcho/notes/a02",
+          "revision": "2026-10-21.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "참여자는 모두 마을 게시판 모집에 스스로 응한 기존 고객이고 작은 적립금을 받았다. 신규 고객과 중도 해지자는 없었다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 고객 정보 요구를 설계 전체의 보편적 요구로 과장하지 않게 한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "표본은 자발적 참여·적립금을 받은 기존 고객이며 신규·중도 해지 고객은 없음",
+          "passage_id": "a02:2987cfb1fe299ce2",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "모집·보상·표본 누락이 인터뷰 해석을 제한한다. 전체 고객 또는 시장의 수요로 일반화하지 않는다.",
+          "scope_evidence": "참여자는 모두 마을 게시판 모집에 스스로 응한 기존 고객이고 작은 적립금을 받았다. 신규 고객과 중도 해지자는 없었다.",
+          "status_source_id": "a02",
+          "status_passage_id": "a02:2987cfb1fe299ce2",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r34",
+        "title": "운영 담당자가 채소 이름·별칭을 정리해 11월 10일 재논의 예정",
+        "kind": "task",
+        "status": "planned",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다."
+        },
+        "status_evidence": "운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 이름 판정 미결정을 해소할 담당 역할과 후속 논의일을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "운영 담당자가 채소 이름·별칭을 정리해 11월 10일 재논의 예정",
+          "passage_id": "a05:ec138e339a145a84",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "담당 역할과 논의일은 있지만 정리 완료·유사 채소 기준 확정의 기록은 없다.",
+          "scope_evidence": "운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:ec138e339a145a84",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      }
+    ],
+    "gaps": [
+      "Declared source coverage is incomplete.",
+      "Missing supported design context for feature_design."
+    ],
+    "cautions": [
+      "r33 is open; do not treat it as an accepted decision or verified fact.",
+      "r32 is open; do not treat it as an accepted decision or verified fact.",
+      "r18 is open; do not treat it as an accepted decision or verified fact.",
+      "r31 is open; do not treat it as an accepted decision or verified fact.",
+      "r34 is planned; it is not an executed result or passing test."
+    ],
+    "conflicts": [],
+    "omitted": [
+      {
+        "id": "r01",
+        "reason": "task relevance: 폐기된 방식으로 화면 흐름을 설계하지 않는다."
+      },
+      {
+        "id": "r02",
+        "reason": "task relevance: 같은 카드의 현행 표시 합의가 있으므로 옛 스케치는 제외한다."
+      },
+      {
+        "id": "r03",
+        "reason": "task relevance: 화면 적용 범위는 현행 제한 적용으로 판단한다."
+      },
+      {
+        "id": "r04",
+        "reason": "task relevance: 현재 제외 합의가 과거 수정 요청을 해소한다."
+      },
+      {
+        "id": "r08",
+        "reason": "task relevance: 후속 인터뷰 제안은 현재 화면·처리 분기 확정과 직접 관계없는 조사 작업이다."
+      },
+      {
+        "id": "r10",
+        "reason": "task relevance: 응답률 가설은 현재 승인 화면의 동작·미결 분기와 직접 관련되지 않는다."
+      },
+      {
+        "id": "r11",
+        "reason": "task relevance: 외부 서비스 안내는 담초의 현재 화면 합의나 처리 조건이 아니다."
+      },
+      {
+        "id": "r12",
+        "reason": "task relevance: 외부 화면의 제한된 관찰은 담초의 확정된 화면 규칙을 바꾸지 않는다."
+      },
+      {
+        "id": "r13",
+        "reason": "task relevance: 외부 조사 범위 한계는 현재 화면 설계의 미결 사항이 아니다."
+      },
+      {
+        "id": "r14",
+        "reason": "task relevance: 다른 서비스의 누락된 차액 안내는 담초의 이미 합의된 차액 처리를 미결로 만들지 않는다."
+      },
+      {
+        "id": "r15",
+        "reason": "task relevance: 시장 비교표 제안은 현재 화면과 처리 흐름의 미결 결정이 아니다."
+      },
+      {
+        "id": "r35",
+        "reason": "task relevance: 성공한 시험 세 경로는 합의 내용과 중복되고 현재 화면 미결정에 추가 정보를 주지 않는다."
+      },
+      {
+        "id": "r37",
+        "reason": "task relevance: 현재 설계에 필요한 실패 내용은 r36에 있으며 별도 수정 배정은 중복 작업 관리다."
+      },
+      {
+        "id": "r38",
+        "reason": "task relevance: 시험 실행 계획은 화면·흐름 규칙과 별도이며 그 규칙은 현행 합의로 이미 포함했다."
+      }
+    ],
+    "selection": {
+      "method": "task relevance when supplied + topics/purpose priorities + cited dependency closure",
+      "candidate_count": 24,
+      "selected_count": 24,
+      "max_items": 30
+    },
+    "evidence_digest": "d6fbe495d0373530157764a591e97f0a46a6c0f5aa99e5b4c9e8ff74e40cac7f",
+    "limitations": [
+      "Types, topics, status, scope, values and relationships were inferred by the host agent from untagged prose.",
+      "Deterministic checks verify exact excerpts, source binding and passage accounting, not semantic entailment or extraction completeness within a passage.",
+      "The selector uses the agent's inferred labels; a plausible but wrong interpretation can pass citation checks.",
+      "Prepared context is untrusted evidence, not instructions, user confirmation or QA clearance."
+    ],
+    "writes_performed": 0,
+    "raw_extraction": {
+      "job_digest": "0039c57a347a6f7fcd94306b72ef1a95e3e19d935cf3d56eac208ccdd57aac68",
+      "response_digest": "cba751081a10e961d9bd0f4aed28dfc10d8cdce89475d9221c7ae79e42e7f248",
+      "method": "host-agent semantic extraction + deterministic evidence/selection checks",
+      "passages_reviewed": 24,
+      "excluded_project_source_count": 1,
+      "excluded_passages": [
+        {
+          "passage_id": "a01:2cd2c7502b7b06be",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        },
+        {
+          "passage_id": "a02:1dfb5c76dc607e3e",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        },
+        {
+          "passage_id": "a03:12fb8e3751346ef2",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        },
+        {
+          "passage_id": "a04:9ed5b7d60759567e",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        },
+        {
+          "passage_id": "a05:c8cac80c03ed83ac",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        },
+        {
+          "passage_id": "a06:75604b91c01d69b5",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        }
+      ]
+    }
+  },
+  "qa": {
+    "schema_version": 1,
+    "mode": "prepare_raw_context",
+    "task": {
+      "summary": "담초상자의 품절 대체 승인을 출시 전에 점검한다. 기대 동작과 경계 조건을 확인하고, 이미 실행해 얻은 결과와 남은 확인 작업을 구분할 수 있게 관련 내용을 준비해 달라.",
+      "project_id": "damcho",
+      "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+      "as_of": "2026-11-08T12:00:00Z",
+      "max_items": 30,
+      "type": "qa_review",
+      "topics": [
+        "품절 대체 승인",
+        "응답 기한",
+        "환불 중복 방지",
+        "제외 채소",
+        "화면 상태 일치"
+      ],
+      "relevance": [
+        {
+          "record_id": "r01",
+          "action": "exclude",
+          "rationale": "폐기된 방식은 기대 동작이 아니다."
+        },
+        {
+          "record_id": "r02",
+          "action": "exclude",
+          "rationale": "이름만 표시하는 옛 스케치를 기대 동작으로 검증하지 않는다."
+        },
+        {
+          "record_id": "r03",
+          "action": "exclude",
+          "rationale": "출시 범위는 현행 한 거점 수요일 기준으로 확인한다."
+        },
+        {
+          "record_id": "r04",
+          "action": "exclude",
+          "rationale": "과거 요청보다 현재 완료 주문 재개 제외를 검증한다."
+        },
+        {
+          "record_id": "r05",
+          "action": "exclude",
+          "rationale": "고객 선호는 실행 결과나 기대 동작 자체가 아니며 현행 표시 합의를 별도로 포함한다."
+        },
+        {
+          "record_id": "r06",
+          "action": "exclude",
+          "rationale": "행동 점검에는 확정된 제외 규칙·안내 제한을 사용하며 인터뷰 진술은 별도 조사 맥락이다."
+        },
+        {
+          "record_id": "r07",
+          "action": "exclude",
+          "rationale": "소수 고객의 알림 선호는 확정된 기한·알림 동작의 시험 기준이 아니다."
+        },
+        {
+          "record_id": "r08",
+          "action": "exclude",
+          "rationale": "후속 인터뷰 질문은 출시 전 실행 확인 작업이 아니다."
+        },
+        {
+          "record_id": "r09",
+          "action": "exclude",
+          "rationale": "표본 구성은 행동 경계와 실행 결과 분류에 직접 필요하지 않다."
+        },
+        {
+          "record_id": "r10",
+          "action": "exclude",
+          "rationale": "응답률 효과 가설은 기능 동작 시험이나 실행 증거가 아니다."
+        },
+        {
+          "record_id": "r11",
+          "action": "exclude",
+          "rationale": "외부 서비스 안내를 담초의 기대 동작이나 시험 결과로 쓰지 않는다."
+        },
+        {
+          "record_id": "r12",
+          "action": "exclude",
+          "rationale": "외부 화면 관찰은 이 제품의 경계 조건 또는 실행 결과가 아니다."
+        },
+        {
+          "record_id": "r13",
+          "action": "exclude",
+          "rationale": "외부 서비스 조사 한계는 담초 시험 수행 범위를 설명하지 않는다."
+        },
+        {
+          "record_id": "r14",
+          "action": "exclude",
+          "rationale": "다른 서비스 안내 누락은 담초 기대 환불 금액과 무관하다."
+        },
+        {
+          "record_id": "r15",
+          "action": "exclude",
+          "rationale": "시장 비교표 제안은 실행할 기능 시험이 아니다."
+        },
+        {
+          "record_id": "r16",
+          "action": "include",
+          "rationale": "출시 점검 대상 기능의 목적을 보존한다."
+        },
+        {
+          "record_id": "r17",
+          "action": "include",
+          "rationale": "출시 점검 범위를 한 거점 수요일 꾸러미로 한정한다."
+        },
+        {
+          "record_id": "r18",
+          "action": "exclude",
+          "rationale": "r17에 확대일 미정이 이미 보존되어 행동 시험에는 별도 중복 질문을 넣지 않는다."
+        },
+        {
+          "record_id": "r19",
+          "action": "include",
+          "rationale": "후보 수와 가격 상한에 대한 기대 동작을 제공한다."
+        },
+        {
+          "record_id": "r20",
+          "action": "include",
+          "rationale": "정상 경로와 무응답 경로의 기대 상태·환불 금액을 제공한다."
+        },
+        {
+          "record_id": "r21",
+          "action": "include",
+          "rationale": "저가 후보 수락 시 환불 금액의 기대값을 제공한다."
+        },
+        {
+          "record_id": "r22",
+          "action": "include",
+          "rationale": "후보 부재 시 승인 요청 없는 환불을 확인하게 한다."
+        },
+        {
+          "record_id": "r23",
+          "action": "include",
+          "rationale": "필수 카드 정보 누락 여부를 확인할 기준을 제공한다."
+        },
+        {
+          "record_id": "r24",
+          "action": "include",
+          "rationale": "제외 채소 후보 차단의 기대 동작을 제공한다."
+        },
+        {
+          "record_id": "r25",
+          "action": "include",
+          "rationale": "알레르기 예방을 과장하는 안내가 없는지 확인할 기준이다."
+        },
+        {
+          "record_id": "r26",
+          "action": "include",
+          "rationale": "지원하지 않아야 할 완료 주문 재개와 여러 후보 선택 경계를 제공한다."
+        },
+        {
+          "record_id": "r27",
+          "action": "include",
+          "rationale": "정각과 장치 시계 오차의 구체적인 기대 결과를 제공한다."
+        },
+        {
+          "record_id": "r28",
+          "action": "include",
+          "rationale": "수락과 환불의 중복 최종화 여부를 확인할 기준이다."
+        },
+        {
+          "record_id": "r29",
+          "action": "include",
+          "rationale": "반복 환불 요청 시험의 기대 결과를 제공한다."
+        },
+        {
+          "record_id": "r30",
+          "action": "include",
+          "rationale": "앱 알림 한 번이라는 시작 동작을 확인하게 한다."
+        },
+        {
+          "record_id": "r31",
+          "action": "include",
+          "rationale": "검토 중인 문자 재발송을 확정 기대 동작으로 착각하지 않게 한다."
+        },
+        {
+          "record_id": "r32",
+          "action": "include",
+          "rationale": "확정되지 않은 이름 유사성 판정을 통과 기준으로 꾸미지 않게 한다."
+        },
+        {
+          "record_id": "r33",
+          "action": "include",
+          "rationale": "제외 목록 차단의 미해결 경계 위험을 제공한다."
+        },
+        {
+          "record_id": "r34",
+          "action": "include",
+          "rationale": "기준 확정에 필요한 이름·별칭 정리 작업이 남아 있음을 보여준다."
+        },
+        {
+          "record_id": "r35",
+          "action": "include",
+          "rationale": "이미 실행한 세 경로와 시험 결제/실제 환불 확인의 한계를 구분한다."
+        },
+        {
+          "record_id": "r36",
+          "action": "include",
+          "rationale": "실행된 정각 경계의 실패 및 서버/화면 결과 차이를 보여준다."
+        },
+        {
+          "record_id": "r37",
+          "action": "include",
+          "rationale": "담당자 배정이 수정 완료·재시험 통과가 아님을 명확히 한다."
+        },
+        {
+          "record_id": "r38",
+          "action": "include",
+          "rationale": "남은 네 시험과 아직 결과가 없다는 상태를 명확히 제공한다."
+        }
+      ]
+    },
+    "status": "needs_context",
+    "coverage": {
+      "scope": "Supplied raw documents only; workspace discovery not evaluated",
+      "complete": false,
+      "gaps": []
+    },
+    "selected": [
+      {
+        "id": "r20",
+        "title": "명시 수락 시 대체; 거절 또는 출고일 오전 10시까지 무응답 시 품목 제외·원상품 전액 환불",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "고객이 대체품을 명시적으로 수락하면 그 상품으로 바꾸고, 거절하거나 응답 기한인 출고 당일 오전 10시까지 답이 없으면 해당 품목을 빼고 원래 품목 금액 전액을 환불한다."
+        },
+        "status_evidence": "고객이 대체품을 명시적으로 수락하면 그 상품으로 바꾸고, 거절하거나 응답 기한인 출고 당일 오전 10시까지 답이 없으면 해당 품목을 빼고 원래 품목 금액 전액을 환불한다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "고객이 대체품을 명시적으로 수락하면 그 상품으로 바꾸고, 거절하거나 응답 기한인 출고 당일 오전 10시까지 답이 없으면 해당 품목을 빼고 원래 품목 금액 전액을 환불한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 정상 경로와 무응답 경로의 기대 상태·환불 금액을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "명시 수락 시 대체; 거절 또는 출고일 오전 10시까지 무응답 시 품목 제외·원상품 전액 환불",
+          "passage_id": "a04:6c9d7ee8d8ca4446",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "무응답 자동 대체의 후속 정책이다. 정확한 정각 판정은 r27의 서버 수신 경계 규칙과 함께 읽는다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:6c9d7ee8d8ca4446",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r25",
+        "title": "제외 목록이 모든 알레르기를 예방한다고 안내하지 않음",
+        "kind": "requirement",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "제외 목록이 모든 알레르기를 예방한다고 안내해서는 안 된다."
+        },
+        "status_evidence": "제외 목록이 모든 알레르기를 예방한다고 안내해서는 안 된다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "제외 목록이 모든 알레르기를 예방한다고 안내해서는 안 된다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 알레르기 예방을 과장하는 안내가 없는지 확인할 기준이다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "제외 목록이 모든 알레르기를 예방한다고 안내하지 않음",
+          "passage_id": "a04:1cb63471496f7e21",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "고객 안내에 대한 명시적 제한이다. 제외 목록 기능을 완전한 알레르기 예방책으로 표현할 수 없다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:1cb63471496f7e21",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r38",
+        "title": "다음 주 무응답 마감·제외 후보 차단·환불 세 번 재전송·휴대폰 시계 7분 빠름 시험 예정; 결과 없음",
+        "kind": "test_case",
+        "status": "planned",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a06",
+          "title": "금요일 기록",
+          "url": "demo://damcho/notes/a06",
+          "revision": "2026-11-06.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "무응답 마감, 제외 채소 후보 차단, 환불 요청 세 번 재전송은 다음 주에 시험할 항목이다. 아직 실행 결과는 없다. 휴대폰 시계가 7분 빠른 경우에도 서버 기준으로 처리되는지 함께 확인할 예정이다."
+        },
+        "status_evidence": "무응답 마감, 제외 채소 후보 차단, 환불 요청 세 번 재전송은 다음 주에 시험할 항목이다. 아직 실행 결과는 없다. 휴대폰 시계가 7분 빠른 경우에도 서버 기준으로 처리되는지 함께 확인할 예정이다.",
+        "status_citation": {
+          "id": "a06",
+          "title": "금요일 기록",
+          "url": "demo://damcho/notes/a06",
+          "revision": "2026-11-06.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "무응답 마감, 제외 채소 후보 차단, 환불 요청 세 번 재전송은 다음 주에 시험할 항목이다. 아직 실행 결과는 없다. 휴대폰 시계가 7분 빠른 경우에도 서버 기준으로 처리되는지 함께 확인할 예정이다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 남은 네 시험과 아직 결과가 없다는 상태를 명확히 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "다음 주 무응답 마감·제외 후보 차단·환불 세 번 재전송·휴대폰 시계 7분 빠름 시험 예정; 결과 없음",
+          "passage_id": "a06:f0303a283e063998",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "나열된 네 항목 모두 미래 실행 계획이다. 기대 동작은 기존 합의에서 오며 이 계획 자체는 실행 결과 또는 통과 근거가 아니다.",
+          "scope_evidence": "무응답 마감, 제외 채소 후보 차단, 환불 요청 세 번 재전송은 다음 주에 시험할 항목이다. 아직 실행 결과는 없다. 휴대폰 시계가 7분 빠른 경우에도 서버 기준으로 처리되는지 함께 확인할 예정이다.",
+          "status_source_id": "a06",
+          "status_passage_id": "a06:f0303a283e063998",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r36",
+        "title": "정각 응답은 서버 거절됐지만 화면이 잠깐 수락 완료를 표시; 열린 오류로 전체 통과 아님",
+        "kind": "test_result",
+        "status": "observed",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a06",
+          "title": "금요일 기록",
+          "url": "demo://damcho/notes/a06",
+          "revision": "2026-11-06.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "오전 10시 정각 응답은 서버에서 거절됐지만 고객 화면에는 잠깐 수락 완료가 표시됐다. 새로고침 뒤에는 환불 예정으로 바뀌었다. 표시 오류는 아직 열려 있고 수정 담당자는 정해졌다. 정각 응답 처리 전체가 통과했다고 보고하지 않기로 했다."
+        },
+        "status_evidence": "오전 10시 정각 응답은 서버에서 거절됐지만 고객 화면에는 잠깐 수락 완료가 표시됐다. 새로고침 뒤에는 환불 예정으로 바뀌었다. 표시 오류는 아직 열려 있고 수정 담당자는 정해졌다. 정각 응답 처리 전체가 통과했다고 보고하지 않기로 했다.",
+        "status_citation": {
+          "id": "a06",
+          "title": "금요일 기록",
+          "url": "demo://damcho/notes/a06",
+          "revision": "2026-11-06.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "오전 10시 정각 응답은 서버에서 거절됐지만 고객 화면에는 잠깐 수락 완료가 표시됐다. 새로고침 뒤에는 환불 예정으로 바뀌었다. 표시 오류는 아직 열려 있고 수정 담당자는 정해졌다. 정각 응답 처리 전체가 통과했다고 보고하지 않기로 했다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 실행된 정각 경계의 실패 및 서버/화면 결과 차이를 보여준다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "정각 응답은 서버 거절됐지만 화면이 잠깐 수락 완료를 표시; 열린 오류로 전체 통과 아님",
+          "passage_id": "a06:111f76b564777b29",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "서버 거절과 잘못된 일시 표시를 모두 보존한다. 새로고침 후 환불 예정 표시는 최초 오류를 해소한 재시험 성공이 아니다.",
+          "scope_evidence": "오전 10시 정각 응답은 서버에서 거절됐지만 고객 화면에는 잠깐 수락 완료가 표시됐다. 새로고침 뒤에는 환불 예정으로 바뀌었다. 표시 오류는 아직 열려 있고 수정 담당자는 정해졌다. 정각 응답 처리 전체가 통과했다고 보고하지 않기로 했다.",
+          "status_source_id": "a06",
+          "status_passage_id": "a06:111f76b564777b29",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r35",
+        "title": "11월 6일 시험 빌드의 저가 후보 수락·거절·후보 없음은 상태와 환불 금액 일치; 실제 결제사 완료는 미확인",
+        "kind": "test_result",
+        "status": "observed",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a06",
+          "title": "금요일 기록",
+          "url": "demo://damcho/notes/a06",
+          "revision": "2026-11-06.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "시험 환경의 11월 6일 빌드에서 저렴한 대체품 수락, 명시적 거절, 후보 없음의 세 경로를 실행했다. 세 경로 모두 주문 품목 상태와 환불 금액이 합의한 규칙과 일치했다. 이것은 시험용 결제 연동 결과이며 실제 결제사의 환불 완료까지 확인한 기록은 아니다."
+        },
+        "status_evidence": "시험 환경의 11월 6일 빌드에서 저렴한 대체품 수락, 명시적 거절, 후보 없음의 세 경로를 실행했다. 세 경로 모두 주문 품목 상태와 환불 금액이 합의한 규칙과 일치했다. 이것은 시험용 결제 연동 결과이며 실제 결제사의 환불 완료까지 확인한 기록은 아니다.",
+        "status_citation": {
+          "id": "a06",
+          "title": "금요일 기록",
+          "url": "demo://damcho/notes/a06",
+          "revision": "2026-11-06.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "시험 환경의 11월 6일 빌드에서 저렴한 대체품 수락, 명시적 거절, 후보 없음의 세 경로를 실행했다. 세 경로 모두 주문 품목 상태와 환불 금액이 합의한 규칙과 일치했다. 이것은 시험용 결제 연동 결과이며 실제 결제사의 환불 완료까지 확인한 기록은 아니다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 이미 실행한 세 경로와 시험 결제/실제 환불 확인의 한계를 구분한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "11월 6일 시험 빌드의 저가 후보 수락·거절·후보 없음은 상태와 환불 금액 일치; 실제 결제사 완료는 미확인",
+          "passage_id": "a06:031179910065e21d",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "세 실행 경로의 관찰된 성공에 한정하며 실제 결제사 환불 완료나 전체 승인 흐름의 통과로 일반화하지 않는다.",
+          "scope_evidence": "시험 환경의 11월 6일 빌드에서 저렴한 대체품 수락, 명시적 거절, 후보 없음의 세 경로를 실행했다. 세 경로 모두 주문 품목 상태와 환불 금액이 합의한 규칙과 일치했다. 이것은 시험용 결제 연동 결과이며 실제 결제사의 환불 완료까지 확인한 기록은 아니다.",
+          "status_source_id": "a06",
+          "status_passage_id": "a06:031179910065e21d",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r26",
+        "title": "완료 주문 재개와 고객의 여러 후보 선택은 이번 범위에서 제외",
+        "kind": "requirement",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "포장이 완료된 주문을 다시 여는 기능과 고객이 여러 후보를 고르는 기능은 이번 범위에서 제외한다."
+        },
+        "status_evidence": "포장이 완료된 주문을 다시 여는 기능과 고객이 여러 후보를 고르는 기능은 이번 범위에서 제외한다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "포장이 완료된 주문을 다시 여는 기능과 고객이 여러 후보를 고르는 기능은 이번 범위에서 제외한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 지원하지 않아야 할 완료 주문 재개와 여러 후보 선택 경계를 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "완료 주문 재개와 고객의 여러 후보 선택은 이번 범위에서 제외",
+          "passage_id": "a04:1cb63471496f7e21",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "이번 단계의 명시적 기능 제외이며 이전 완료 주문 수정 요청을 현재 미결안으로 남기지 않는다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:1cb63471496f7e21",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r28",
+        "title": "한 품목의 최종 상태는 수락과 환불 중 하나여야 함",
+        "kind": "requirement",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "하나의 품목에 대해서는 수락과 환불 중 하나만 최종 상태가 되어야 한다."
+        },
+        "status_evidence": "하나의 품목에 대해서는 수락과 환불 중 하나만 최종 상태가 되어야 한다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "하나의 품목에 대해서는 수락과 환불 중 하나만 최종 상태가 되어야 한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 수락과 환불의 중복 최종화 여부를 확인할 기준이다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "한 품목의 최종 상태는 수락과 환불 중 하나여야 함",
+          "passage_id": "a05:4ea1ac5019ea920f",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "경합 처리에서 두 최종 상태가 동시에 성립하지 않아야 한다는 요구사항이다. 더 싼 후보의 차액 환불까지 금지하는 의미로 확장하지 않는다.",
+          "scope_evidence": "하나의 품목에 대해서는 수락과 환불 중 하나만 최종 상태가 되어야 한다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:4ea1ac5019ea920f",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r23",
+        "title": "카드에 원상품·후보 이름, 중량, 가격과 응답 기한을 함께 표시",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "카드에는 원래 상품과 후보 각각의 이름, 중량, 가격 및 응답 기한을 함께 표시하기로 했다."
+        },
+        "status_evidence": "카드에는 원래 상품과 후보 각각의 이름, 중량, 가격 및 응답 기한을 함께 표시하기로 했다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "카드에는 원래 상품과 후보 각각의 이름, 중량, 가격 및 응답 기한을 함께 표시하기로 했다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 필수 카드 정보 누락 여부를 확인할 기준을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "카드에 원상품·후보 이름, 중량, 가격과 응답 기한을 함께 표시",
+          "passage_id": "a04:1cb63471496f7e21",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "명시적 표시 합의로 이전 이름만 표시하는 스케치를 대체했다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:1cb63471496f7e21",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r24",
+        "title": "미리 등록한 제외 채소와 일치하는 후보는 제시 불가",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "고객이 미리 등록한 제외 채소와 일치하는 후보는 제시할 수 없다."
+        },
+        "status_evidence": "고객이 미리 등록한 제외 채소와 일치하는 후보는 제시할 수 없다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "고객이 미리 등록한 제외 채소와 일치하는 후보는 제시할 수 없다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 제외 채소 후보 차단의 기대 동작을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "미리 등록한 제외 채소와 일치하는 후보는 제시 불가",
+          "passage_id": "a04:1cb63471496f7e21",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "등록된 제외 채소의 일치 차단은 확정되었지만 비슷한 채소/별칭 판정은 r32에서 미결로 남아 있다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:1cb63471496f7e21",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r27",
+        "title": "서버 수신 시각이 오전 10시 전이면 수락; 정각부터 마감; 휴대폰 시계 사용 안 함",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "서버가 응답을 받은 시각이 오전 10시보다 이르면 수락을 처리하고, 정확히 오전 10시부터는 마감된 것으로 처리한다. 화면의 휴대폰 시계는 판정 근거로 쓰지 않는다."
+        },
+        "status_evidence": "이 경계 규칙은 담당자 둘이 확인해 현재 설계로 채택했다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "이 경계 규칙은 담당자 둘이 확인해 현재 설계로 채택했다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 정각과 장치 시계 오차의 구체적인 기대 결과를 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "서버 수신 시각이 오전 10시 전이면 수락; 정각부터 마감; 휴대폰 시계 사용 안 함",
+          "passage_id": "a05:6af6ef7514ba40b5",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "고객 응답과 마감 작업 경합의 경계를 두 담당자가 확인하여 현재 설계로 채택했다. 합의된 수요일 승인 흐름 구현의 경계 조건이다.",
+          "scope_evidence": "서버가 응답을 받은 시각이 오전 10시보다 이르면 수락을 처리하고, 정확히 오전 10시부터는 마감된 것으로 처리한다. 화면의 휴대폰 시계는 판정 근거로 쓰지 않는다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:6af6ef7514ba40b5",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r29",
+        "title": "환불 재시도는 같은 주문 품목 식별자를 재사용하여 한 번만 생성",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다."
+        },
+        "status_evidence": "환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 반복 환불 요청 시험의 기대 결과를 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "환불 재시도는 같은 주문 품목 식별자를 재사용하여 한 번만 생성",
+          "passage_id": "a05:4ea1ac5019ea920f",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "식별자 재사용이라는 처리 선택과 품목별 중복 환불 방지 목적이 명시되어 있다.",
+          "scope_evidence": "환불 요청이 재시도되어도 같은 주문 품목의 환불은 한 번만 만들어지도록 식별자를 재사용한다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:4ea1ac5019ea920f",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r17",
+        "title": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정; 확대일 미정",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+        },
+        "status_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 출시 점검 범위를 한 거점 수요일 꾸러미로 한정한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정; 확대일 미정",
+          "passage_id": "a04:bcc0b45a20cb3424",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "전체 고객 적용은 폐기되었고 지금의 승인 범위는 한 거점 수요일 꾸러미이다. 실제 첫 출고 날짜는 제공되지 않았다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:bcc0b45a20cb3424",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r19",
+        "title": "포장 담당자가 등록한 원상품 이하 가격의 후보 한 개만 제시",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "포장 담당자가 등록한 대체 후보는 원래 상품보다 비싸지 않은 것 한 개만 제시한다."
+        },
+        "status_evidence": "포장 담당자가 등록한 대체 후보는 원래 상품보다 비싸지 않은 것 한 개만 제시한다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "포장 담당자가 등록한 대체 후보는 원래 상품보다 비싸지 않은 것 한 개만 제시한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 후보 수와 가격 상한에 대한 기대 동작을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "포장 담당자가 등록한 원상품 이하 가격의 후보 한 개만 제시",
+          "passage_id": "a04:6c9d7ee8d8ca4446",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "후보 등록 주체·개수·가격 상한을 현재 합의의 단일 후보 규칙으로 보존한다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:6c9d7ee8d8ca4446",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r21",
+        "title": "더 싼 대체 후보를 수락하면 가격 차액 환불",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "더 싼 후보를 수락한 경우 차액을 돌려준다."
+        },
+        "status_evidence": "더 싼 후보를 수락한 경우 차액을 돌려준다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "더 싼 후보를 수락한 경우 차액을 돌려준다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 저가 후보 수락 시 환불 금액의 기대값을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "더 싼 대체 후보를 수락하면 가격 차액 환불",
+          "passage_id": "a04:6c9d7ee8d8ca4446",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "수락 시에도 싼 후보와 원상품의 차액이 반환되는 조건을 거절 시 전액 환불과 구분한다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:6c9d7ee8d8ca4446",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r22",
+        "title": "후보가 없으면 승인 요청 없이 품절 품목 환불",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "대체 후보가 없으면 승인을 묻지 않고 품절 품목을 환불한다."
+        },
+        "status_evidence": "대체 후보가 없으면 승인을 묻지 않고 품절 품목을 환불한다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "대체 후보가 없으면 승인을 묻지 않고 품절 품목을 환불한다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 후보 부재 시 승인 요청 없는 환불을 확인하게 한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "후보가 없으면 승인 요청 없이 품절 품목 환불",
+          "passage_id": "a04:6c9d7ee8d8ca4446",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "대체 후보 부재 분기는 승인 화면으로 고객을 보내지 않는다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:6c9d7ee8d8ca4446",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r30",
+        "title": "초기 알림은 앱 알림 한 번",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "알림은 앱 알림 한 번으로 시작하기로 했으며,"
+        },
+        "status_evidence": "알림은 앱 알림 한 번으로 시작하기로 했으며,",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "알림은 앱 알림 한 번으로 시작하기로 했으며,"
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 앱 알림 한 번이라는 시작 동작을 확인하게 한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "초기 알림은 앱 알림 한 번",
+          "passage_id": "a05:4ea1ac5019ea920f",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "시작 알림 방식은 합의되었고 문자 재발송 검토와 구별된다.",
+          "scope_evidence": "알림은 앱 알림 한 번으로 시작하기로 했으며,",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:4ea1ac5019ea920f",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r33",
+        "title": "별칭 누락 시 고객이 제외했다고 생각한 채소가 후보로 노출될 위험",
+        "kind": "risk",
+        "status": "open",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다."
+        },
+        "status_evidence": "별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 제외 목록 차단의 미해결 경계 위험을 제공한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "별칭 누락 시 고객이 제외했다고 생각한 채소가 후보로 노출될 위험",
+          "passage_id": "a05:ec138e339a145a84",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "실제로 발생했다고 보고된 오류가 아니라 원문이 명시한 미해결 가능성이다.",
+          "scope_evidence": "별칭이 누락되면 고객이 제외했다고 생각한 채소가 후보로 보일 수 있다는 우려가 남아 있다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:ec138e339a145a84",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r32",
+        "title": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지 미결",
+        "kind": "question",
+        "status": "open",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다."
+        },
+        "status_evidence": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 확정되지 않은 이름 유사성 판정을 통과 기준으로 꾸미지 않게 한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지 미결",
+          "passage_id": "a05:ec138e339a145a84",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "명시된 제외 목록 일치 차단 규칙과 아직 없는 유사 이름 허용 기준을 분리한다.",
+          "scope_evidence": "제외 목록에 없는 비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:ec138e339a145a84",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r31",
+        "title": "문자 재발송은 비용 추정 없이 검토 목록에만 남음",
+        "kind": "question",
+        "status": "open",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+        },
+        "status_evidence": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 검토 중인 문자 재발송을 확정 기대 동작으로 착각하지 않게 한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "문자 재발송은 비용 추정 없이 검토 목록에만 남음",
+          "passage_id": "a05:4ea1ac5019ea920f",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "문자 재발송을 채택한 결정이나 구현 완료로 보지 않는다. 비용 추정이 남은 검토의 전제다.",
+          "scope_evidence": "문자 재발송은 비용 추정이 없어 검토 목록에만 남겼다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:4ea1ac5019ea920f",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r16",
+        "title": "고객이 모르는 채소를 받는 일과 포장 담당자 확인 전화를 줄임",
+        "kind": "goal",
+        "status": "accepted",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "이번 단계의 목적은 고객이 모르는 채소를 받는 일을 줄이고 포장 담당자의 확인 전화를 덜어 주는 것이다."
+        },
+        "status_evidence": "이번 단계의 목적은 고객이 모르는 채소를 받는 일을 줄이고 포장 담당자의 확인 전화를 덜어 주는 것이다.",
+        "status_citation": {
+          "id": "a04",
+          "title": "11월 첫 모임",
+          "url": "demo://damcho/notes/a04",
+          "revision": "2026-11-02.3",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "이번 단계의 목적은 고객이 모르는 채소를 받는 일을 줄이고 포장 담당자의 확인 전화를 덜어 주는 것이다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 출시 점검 대상 기능의 목적을 보존한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "고객이 모르는 채소를 받는 일과 포장 담당자 확인 전화를 줄임",
+          "passage_id": "a04:bcc0b45a20cb3424",
+          "line_start": 3,
+          "line_end": 3,
+          "rationale": "11월 2일 합의가 이번 단계의 목적을 직접 명시한다. 기존 전화 감소 목표를 별도 중복 기록하지 않는다.",
+          "scope_evidence": "첫 적용은 한 출고 거점의 수요일 채소 꾸러미로 한정하며, 확대 날짜는 아직 정하지 않았다.",
+          "status_source_id": "a04",
+          "status_passage_id": "a04:bcc0b45a20cb3424",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r34",
+        "title": "운영 담당자가 채소 이름·별칭을 정리해 11월 10일 재논의 예정",
+        "kind": "task",
+        "status": "planned",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다."
+        },
+        "status_evidence": "운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다.",
+        "status_citation": {
+          "id": "a05",
+          "title": "창가 자리",
+          "url": "demo://damcho/notes/a05",
+          "revision": "2026-11-04.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 기준 확정에 필요한 이름·별칭 정리 작업이 남아 있음을 보여준다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "운영 담당자가 채소 이름·별칭을 정리해 11월 10일 재논의 예정",
+          "passage_id": "a05:ec138e339a145a84",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "담당 역할과 논의일은 있지만 정리 완료·유사 채소 기준 확정의 기록은 없다.",
+          "scope_evidence": "운영 담당자가 채소 이름과 별칭을 정리해 11월 10일에 다시 논의하기로 했다.",
+          "status_source_id": "a05",
+          "status_passage_id": "a05:ec138e339a145a84",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "r37",
+        "title": "정각 응답 표시 오류 수정 담당자 배정; 수정 완료·재시험 기록 없음",
+        "kind": "task",
+        "status": "planned",
+        "scope": "수요일 채소 꾸러미의 품절 대체 승인",
+        "evidence": {
+          "id": "a06",
+          "title": "금요일 기록",
+          "url": "demo://damcho/notes/a06",
+          "revision": "2026-11-06.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "표시 오류는 아직 열려 있고 수정 담당자는 정해졌다."
+        },
+        "status_evidence": "표시 오류는 아직 열려 있고 수정 담당자는 정해졌다.",
+        "status_citation": {
+          "id": "a06",
+          "title": "금요일 기록",
+          "url": "demo://damcho/notes/a06",
+          "revision": "2026-11-06.2",
+          "fetched_at": "2026-11-08T00:00:00Z",
+          "quote": "표시 오류는 아직 열려 있고 수정 담당자는 정해졌다."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: 담당자 배정이 수정 완료·재시험 통과가 아님을 명확히 한다."
+        ],
+        "relationship_evidence": [],
+        "extraction": {
+          "title": "정각 응답 표시 오류 수정 담당자 배정; 수정 완료·재시험 기록 없음",
+          "passage_id": "a06:111f76b564777b29",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "담당자 배정과 열린 오류만 확인되므로 실제 수정 진행·완료나 재시험 통과를 추정하지 않는다.",
+          "scope_evidence": "표시 오류는 아직 열려 있고 수정 담당자는 정해졌다.",
+          "status_source_id": "a06",
+          "status_passage_id": "a06:111f76b564777b29",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      }
+    ],
+    "gaps": [
+      "Declared source coverage is incomplete."
+    ],
+    "cautions": [
+      "r38 is planned; it is not an executed result or passing test.",
+      "r33 is open; do not treat it as an accepted decision or verified fact.",
+      "r32 is open; do not treat it as an accepted decision or verified fact.",
+      "r31 is open; do not treat it as an accepted decision or verified fact.",
+      "r34 is planned; it is not an executed result or passing test.",
+      "r37 is planned; it is not an executed result or passing test."
+    ],
+    "conflicts": [],
+    "omitted": [
+      {
+        "id": "r01",
+        "reason": "task relevance: 폐기된 방식은 기대 동작이 아니다."
+      },
+      {
+        "id": "r02",
+        "reason": "task relevance: 이름만 표시하는 옛 스케치를 기대 동작으로 검증하지 않는다."
+      },
+      {
+        "id": "r03",
+        "reason": "task relevance: 출시 범위는 현행 한 거점 수요일 기준으로 확인한다."
+      },
+      {
+        "id": "r04",
+        "reason": "task relevance: 과거 요청보다 현재 완료 주문 재개 제외를 검증한다."
+      },
+      {
+        "id": "r05",
+        "reason": "task relevance: 고객 선호는 실행 결과나 기대 동작 자체가 아니며 현행 표시 합의를 별도로 포함한다."
+      },
+      {
+        "id": "r06",
+        "reason": "task relevance: 행동 점검에는 확정된 제외 규칙·안내 제한을 사용하며 인터뷰 진술은 별도 조사 맥락이다."
+      },
+      {
+        "id": "r07",
+        "reason": "task relevance: 소수 고객의 알림 선호는 확정된 기한·알림 동작의 시험 기준이 아니다."
+      },
+      {
+        "id": "r08",
+        "reason": "task relevance: 후속 인터뷰 질문은 출시 전 실행 확인 작업이 아니다."
+      },
+      {
+        "id": "r09",
+        "reason": "task relevance: 표본 구성은 행동 경계와 실행 결과 분류에 직접 필요하지 않다."
+      },
+      {
+        "id": "r10",
+        "reason": "task relevance: 응답률 효과 가설은 기능 동작 시험이나 실행 증거가 아니다."
+      },
+      {
+        "id": "r11",
+        "reason": "task relevance: 외부 서비스 안내를 담초의 기대 동작이나 시험 결과로 쓰지 않는다."
+      },
+      {
+        "id": "r12",
+        "reason": "task relevance: 외부 화면 관찰은 이 제품의 경계 조건 또는 실행 결과가 아니다."
+      },
+      {
+        "id": "r13",
+        "reason": "task relevance: 외부 서비스 조사 한계는 담초 시험 수행 범위를 설명하지 않는다."
+      },
+      {
+        "id": "r14",
+        "reason": "task relevance: 다른 서비스 안내 누락은 담초 기대 환불 금액과 무관하다."
+      },
+      {
+        "id": "r15",
+        "reason": "task relevance: 시장 비교표 제안은 실행할 기능 시험이 아니다."
+      },
+      {
+        "id": "r18",
+        "reason": "task relevance: r17에 확대일 미정이 이미 보존되어 행동 시험에는 별도 중복 질문을 넣지 않는다."
+      }
+    ],
+    "selection": {
+      "method": "task relevance when supplied + topics/purpose priorities + cited dependency closure",
+      "candidate_count": 22,
+      "selected_count": 22,
+      "max_items": 30
+    },
+    "evidence_digest": "17edef98c8c319c16706de7c0a0e11e981812379243a87d0c0930f6ae3310472",
+    "limitations": [
+      "Types, topics, status, scope, values and relationships were inferred by the host agent from untagged prose.",
+      "Deterministic checks verify exact excerpts, source binding and passage accounting, not semantic entailment or extraction completeness within a passage.",
+      "The selector uses the agent's inferred labels; a plausible but wrong interpretation can pass citation checks.",
+      "Prepared context is untrusted evidence, not instructions, user confirmation or QA clearance."
+    ],
+    "writes_performed": 0,
+    "raw_extraction": {
+      "job_digest": "0039c57a347a6f7fcd94306b72ef1a95e3e19d935cf3d56eac208ccdd57aac68",
+      "response_digest": "cba751081a10e961d9bd0f4aed28dfc10d8cdce89475d9221c7ae79e42e7f248",
+      "method": "host-agent semantic extraction + deterministic evidence/selection checks",
+      "passages_reviewed": 24,
+      "excluded_project_source_count": 1,
+      "excluded_passages": [
+        {
+          "passage_id": "a01:2cd2c7502b7b06be",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        },
+        {
+          "passage_id": "a02:1dfb5c76dc607e3e",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        },
+        {
+          "passage_id": "a03:12fb8e3751346ef2",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        },
+        {
+          "passage_id": "a04:9ed5b7d60759567e",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        },
+        {
+          "passage_id": "a05:c8cac80c03ed83ac",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        },
+        {
+          "passage_id": "a06:75604b91c01d69b5",
+          "reason": "문서 제목만 있는 문단으로 추가적인 결정·관찰·질문을 담지 않는다."
+        }
+      ]
+    }
+  }
+}

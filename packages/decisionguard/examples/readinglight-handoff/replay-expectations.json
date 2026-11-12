@@ -1,0 +1,131 @@
+{
+  "stages": {
+    "research": {
+      "selected_states": {
+        "CE-001": "observed",
+        "CE-002": "observed",
+        "H-001": "unverified",
+        "R-001": "open",
+        "Q-001": "open",
+        "D-041": "accepted",
+        "REQ-RELEASE": "accepted"
+      },
+      "not_selected": [],
+      "memory_trace": {},
+      "reused": [],
+      "not_reused": [
+        "CE-001",
+        "CE-002",
+        "H-001",
+        "R-001",
+        "Q-001",
+        "D-041",
+        "REQ-RELEASE"
+      ]
+    },
+    "design": {
+      "selected_states": {
+        "D-052": "accepted",
+        "REQ-DATA-052": "accepted",
+        "REQ-FRESH-052": "accepted",
+        "R-PRIVACY-052": "open",
+        "DESIGN-NESSA-01": "draft",
+        "Q-001": "open",
+        "R-001": "open",
+        "REQ-RELEASE": "accepted"
+      },
+      "not_selected": [
+        "D-041",
+        "H-001"
+      ],
+      "memory_trace": {
+        "D-041": "retired",
+        "Q-001": "reusable",
+        "R-001": "reusable",
+        "REQ-RELEASE": "reusable"
+      },
+      "reused": [
+        "Q-001",
+        "R-001",
+        "REQ-RELEASE"
+      ],
+      "not_reused": [
+        "D-041",
+        "H-001",
+        "D-052",
+        "REQ-DATA-052",
+        "REQ-FRESH-052",
+        "R-PRIVACY-052",
+        "DESIGN-NESSA-01"
+      ]
+    },
+    "qa": {
+      "selected_states": {
+        "D-052": "accepted",
+        "DESIGN-NESSA-01": "draft",
+        "G-001": "unknown",
+        "Q-001": "open",
+        "R-001": "open",
+        "R-PRIVACY-052": "open",
+        "REQ-DATA-052": "accepted",
+        "REQ-FRESH-052": "accepted",
+        "REQ-RELEASE": "accepted",
+        "Q-11": "observed",
+        "Q-12": "observed",
+        "Q-13": "observed",
+        "Q-14": "planned",
+        "PATCH-Q13-08": "planned",
+        "OPENING-MONDAY": "planned",
+        "Q-RELEASE-08": "open",
+        "REQ-RELEASE-TESTS-08": "accepted",
+        "REQ-APPROVAL-BOUNDARY-08": "accepted",
+        "REQ-STAFF-TRIAL-08": "accepted"
+      },
+      "not_selected": [
+        "D-041",
+        "CE-001",
+        "CE-002",
+        "H-001"
+      ],
+      "memory_trace": {
+        "D-041": "retired",
+        "D-052": "reusable",
+        "DESIGN-NESSA-01": "reusable",
+        "G-001": "reusable",
+        "Q-001": "reusable",
+        "R-001": "reusable",
+        "R-PRIVACY-052": "reusable",
+        "REQ-DATA-052": "reusable",
+        "REQ-FRESH-052": "reusable",
+        "REQ-RELEASE": "reusable"
+      },
+      "reused": [
+        "D-052",
+        "DESIGN-NESSA-01",
+        "G-001",
+        "Q-001",
+        "R-001",
+        "R-PRIVACY-052",
+        "REQ-DATA-052",
+        "REQ-FRESH-052",
+        "REQ-RELEASE"
+      ],
+      "not_reused": [
+        "D-041",
+        "CE-001",
+        "CE-002",
+        "H-001",
+        "Q-11",
+        "Q-12",
+        "Q-13",
+        "Q-14",
+        "PATCH-Q13-08",
+        "OPENING-MONDAY",
+        "Q-RELEASE-08",
+        "REQ-RELEASE-TESTS-08",
+        "REQ-APPROVAL-BOUNDARY-08",
+        "REQ-STAFF-TRIAL-08"
+      ]
+    }
+  }
+}

@@ -1,0 +1,846 @@
+{
+  "adjudication_version": 1,
+  "suite": "suite-b",
+  "run": "baseline-b",
+  "review_type": "independent semantic adjudication against frozen fictional corpus",
+  "date": "2026-11-08",
+  "review_boundaries": {
+    "read_roots": [
+      "work/blind-author/suite-b",
+      "work/blind-runs/baseline-b"
+    ],
+    "other_suites_runs_repository_or_prior_conversations_read": false,
+    "network_or_external_services_used": false,
+    "subagents_used": false,
+    "frozen_inputs_answers_or_packets_modified": false,
+    "implementation_files_directly_read": false,
+    "note": "Read frozen sources/answers and sealed baseline output/log artifacts only. Logs were used for integrity/procedure context, not implementation diagnosis. This audit precedes access to any improved run."
+  },
+  "method": [
+    "Required meaning is assessed across selected title, exact excerpt, extraction rationale and packet gaps, not exact quote fragments alone.",
+    "A record kind/status is accepted when the prose preserves authority, uncertainty and chronology.",
+    "allowed_for is a strong relevance guide, not a substitute for semantic judgment; qualified useful extras and mixed records are assessed individually.",
+    "Confirmed wrong selections are request-specific relevance errors, distinct from false source claims. No required item was displaced at the max_items limit.",
+    "Coverage counts are fact-request pairs, not independent facts or proof of future-corpus performance."
+  ],
+  "integrity": {
+    "seal_files_verified": 16,
+    "all_seal_hashes_match": true,
+    "response_sha256": "741ba1da9da5255bae30410314939ab3a4b0b0efdb5e15c92c2a59e0c6143157",
+    "packets_sha256": "31384d73a35dd0aee2365d663c67e46a4476f232ce2d07804a1595d07980e9a4",
+    "expectations_sha256": "6ba867726768dc994b1a729f9ca70cbb5d3e04abc2a9db038d5606358b744f0d",
+    "author_notes_sha256": "b9608bcef2dfefdcd781ed7a3d4719b999af55f73824014ac838fa34a63208b2"
+  },
+  "summary": {
+    "required_fact_request_pairs": 42,
+    "covered_required_fact_request_pairs": 42,
+    "confirmed_missing_fact_request_pairs": 0,
+    "confirmed_wrong_selection_pairs": 2,
+    "confirmed_stale_or_cross_project_selections": 0,
+    "confirmed_extracted_fact_distortions": 0,
+    "confirmed_packet_reporting_errors": 1,
+    "critical_behavior_errors": 0,
+    "conclusion": "Complete required semantic coverage; two off-task QA research additions and one misleading QA missing-context warning. Numerous exact-label/split-fact mismatches are waived."
+  },
+  "per_request": {
+    "research": {
+      "selected_record_count": 18,
+      "required_fact_count": 9,
+      "covered_required_fact_count": 9,
+      "confirmed_missing_fact_ids": [],
+      "required_facts_disclosed_only_in_gaps": [],
+      "confirmed_wrong_record_ids": [],
+      "confirmed_wrong_records": [],
+      "confirmed_stale_or_other_project_record_ids": [],
+      "semantic_error_ids": [],
+      "required_fact_coverage": [
+        {
+          "fact_id": "b-f04",
+          "verdict": "covered",
+          "record_ids": [
+            "r03"
+          ],
+          "reason": "r03 preserves 4 of 6 self-reports, paper notes, and absence of logs/original paper; gaps also preserve the sample limitations.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f05",
+          "verdict": "covered",
+          "record_ids": [
+            "r03"
+          ],
+          "reason": "r03 explicitly preserves the two people who could not recall observation time.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f06",
+          "verdict": "covered",
+          "record_ids": [
+            "r04"
+          ],
+          "reason": "r04 preserves the single-person report, requested local/server distinction, and non-generalization to the other five.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f07",
+          "verdict": "covered",
+          "record_ids": [
+            "r05"
+          ],
+          "reason": "r05 explicitly states the retention expectation is unverified and its evidence identifies existing participants only.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f09",
+          "verdict": "covered",
+          "record_ids": [
+            "r07"
+          ],
+          "reason": "r07 preserves the public-demo path and does not generalize to excluded failure conditions.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f10",
+          "verdict": "covered",
+          "record_ids": [
+            "r08"
+          ],
+          "reason": "r08 calls the description text the observed object and explicitly says the product was not run; observed is defensible for observing a claim.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f11",
+          "verdict": "covered",
+          "record_ids": [
+            "r08"
+          ],
+          "reason": "r08 explicitly lists duplicate prevention, photos, and expired-login behavior as unconfirmed; no present/absent feature inference.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f14",
+          "verdict": "covered",
+          "record_ids": [
+            "r11"
+          ],
+          "reason": "r11 preserves one device, newly created personal records, offline saving/retransmission, and exclusions for multi-device edits/photos.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f15",
+          "verdict": "covered",
+          "record_ids": [
+            "r10"
+          ],
+          "reason": "r10 identifies reduced missed field notes as the purpose, without claiming measured success.",
+          "gap_support_indexes": []
+        }
+      ]
+    },
+    "design": {
+      "selected_record_count": 26,
+      "required_fact_count": 16,
+      "covered_required_fact_count": 16,
+      "confirmed_missing_fact_ids": [],
+      "required_facts_disclosed_only_in_gaps": [],
+      "confirmed_wrong_record_ids": [],
+      "confirmed_wrong_records": [],
+      "confirmed_stale_or_other_project_record_ids": [],
+      "semantic_error_ids": [],
+      "required_fact_coverage": [
+        {
+          "fact_id": "b-f04",
+          "verdict": "covered",
+          "record_ids": [
+            "r03"
+          ],
+          "reason": "r03 preserves 4 of 6 self-reports, paper notes, and absence of logs/original paper; gaps also preserve the sample limitations.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f06",
+          "verdict": "covered",
+          "record_ids": [
+            "r04"
+          ],
+          "reason": "r04 preserves the single-person report, requested local/server distinction, and non-generalization to the other five.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f14",
+          "verdict": "covered",
+          "record_ids": [
+            "r11"
+          ],
+          "reason": "r11 preserves one device, newly created personal records, offline saving/retransmission, and exclusions for multi-device edits/photos.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f15",
+          "verdict": "covered",
+          "record_ids": [
+            "r10"
+          ],
+          "reason": "r10 identifies reduced missed field notes as the purpose, without claiming measured success.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f16",
+          "verdict": "covered",
+          "record_ids": [
+            "r13"
+          ],
+          "reason": "r13 combines the three required fields, local-first storage regardless of connectivity, missing-field guidance, and no success indication on missing input.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f17",
+          "verdict": "covered",
+          "record_ids": [
+            "r14"
+          ],
+          "reason": "r14 explicitly prohibits replacing the user-entered observation time with server-arrival time.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f18",
+          "verdict": "covered",
+          "record_ids": [
+            "r14"
+          ],
+          "reason": "r14 preserves optional location and saving without location permission.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f19",
+          "verdict": "covered",
+          "record_ids": [
+            "r15"
+          ],
+          "reason": "r15 preserves both local-only pending text and completion only after confirmed server receipt.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f20",
+          "verdict": "covered",
+          "record_ids": [
+            "r16"
+          ],
+          "reason": "r16 preserves local data on transmission error and pending records across app reopening.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f21",
+          "verdict": "covered",
+          "record_ids": [
+            "r17"
+          ],
+          "reason": "r17 preserves re-login guidance, transmission pause, and retained local record.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f22",
+          "verdict": "covered",
+          "record_ids": [
+            "r18"
+          ],
+          "reason": "r18 preserves the initially created identifier across retries and returning the existing acknowledgment instead of inserting another observation.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f23",
+          "verdict": "covered",
+          "record_ids": [
+            "r19"
+          ],
+          "reason": "r19 explicitly distinguishes restored connectivity from confirmed receipt.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f24",
+          "verdict": "covered",
+          "record_ids": [
+            "r20"
+          ],
+          "reason": "r20 preserves open app, logged-in state, and connectivity prerequisites plus unsupported closed-app background transmission.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f25",
+          "verdict": "covered",
+          "record_ids": [
+            "r21"
+          ],
+          "reason": "r21 preserves the retry button and prohibition on simultaneous duplicate requests for an already transmitting record.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f26",
+          "verdict": "covered",
+          "record_ids": [
+            "r22"
+          ],
+          "reason": "r22 preserves possible local-state loss immediately after acknowledgment, identifier-based design intent, and the untested crash boundary. risk/open is defensible.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f27",
+          "verdict": "covered",
+          "record_ids": [
+            "r23",
+            "r24"
+          ],
+          "reason": "r23/r24 split unresolved copy from the assigned November 9 proposal; neither claims implementation or completion.",
+          "gap_support_indexes": []
+        }
+      ]
+    },
+    "qa": {
+      "selected_record_count": 24,
+      "required_fact_count": 17,
+      "covered_required_fact_count": 17,
+      "confirmed_missing_fact_ids": [],
+      "required_facts_disclosed_only_in_gaps": [],
+      "confirmed_wrong_record_ids": [
+        "r05",
+        "r06"
+      ],
+      "confirmed_wrong_records": [
+        {
+          "record_id": "r05",
+          "fact_ids": [
+            "b-f07"
+          ],
+          "reason": "For the QA request, the unmeasured participant-retention expectation is a product-research outcome hypothesis, not an expected storage/transmission behavior, execution defect, or unexecuted operating condition. It is accurately represented but off-task as a selected QA record. It remains valid in research/design.",
+          "evidence": "r05 title and b02 paragraph 7 discuss participation retention; the QA request asks for expected behavior, execution findings, and unexecuted conditions."
+        },
+        {
+          "record_id": "r06",
+          "fact_ids": [
+            "b-f08"
+          ],
+          "reason": "For the QA request, proposing separate interviews with new users is future customer research, not one of the app execution conditions or behavioral constraints under review. No source connects this interview proposal to the next feature test run. It remains valid in research/design.",
+          "evidence": "r06 quotes 신규 사용자의 어려움도 별도로 들어 보자는 제안이 나왔다; b06 separately defines the next execution bundle."
+        }
+      ],
+      "confirmed_stale_or_other_project_record_ids": [],
+      "semantic_error_ids": [
+        "B-SEM-01"
+      ],
+      "required_fact_coverage": [
+        {
+          "fact_id": "b-f14",
+          "verdict": "covered",
+          "record_ids": [
+            "r11"
+          ],
+          "reason": "r11 preserves one device, newly created personal records, offline saving/retransmission, and exclusions for multi-device edits/photos.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f16",
+          "verdict": "covered",
+          "record_ids": [
+            "r13"
+          ],
+          "reason": "r13 combines the three required fields, local-first storage regardless of connectivity, missing-field guidance, and no success indication on missing input.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f17",
+          "verdict": "covered",
+          "record_ids": [
+            "r14"
+          ],
+          "reason": "r14 explicitly prohibits replacing the user-entered observation time with server-arrival time.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f18",
+          "verdict": "covered",
+          "record_ids": [
+            "r14"
+          ],
+          "reason": "r14 preserves optional location and saving without location permission.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f19",
+          "verdict": "covered",
+          "record_ids": [
+            "r15"
+          ],
+          "reason": "r15 preserves both local-only pending text and completion only after confirmed server receipt.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f20",
+          "verdict": "covered",
+          "record_ids": [
+            "r16"
+          ],
+          "reason": "r16 preserves local data on transmission error and pending records across app reopening.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f21",
+          "verdict": "covered",
+          "record_ids": [
+            "r17"
+          ],
+          "reason": "r17 preserves re-login guidance, transmission pause, and retained local record.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f22",
+          "verdict": "covered",
+          "record_ids": [
+            "r18"
+          ],
+          "reason": "r18 preserves the initially created identifier across retries and returning the existing acknowledgment instead of inserting another observation.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f23",
+          "verdict": "covered",
+          "record_ids": [
+            "r19"
+          ],
+          "reason": "r19 explicitly distinguishes restored connectivity from confirmed receipt.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f24",
+          "verdict": "covered",
+          "record_ids": [
+            "r20"
+          ],
+          "reason": "r20 preserves open app, logged-in state, and connectivity prerequisites plus unsupported closed-app background transmission.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f25",
+          "verdict": "covered",
+          "record_ids": [
+            "r21"
+          ],
+          "reason": "r21 preserves the retry button and prohibition on simultaneous duplicate requests for an already transmitting record.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f26",
+          "verdict": "covered",
+          "record_ids": [
+            "r22"
+          ],
+          "reason": "r22 preserves possible local-state loss immediately after acknowledgment, identifier-based design intent, and the untested crash boundary. risk/open is defensible.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f28",
+          "verdict": "covered",
+          "record_ids": [
+            "r25"
+          ],
+          "reason": "r25 limits the preserved fields/pending-state result to Android airplane-mode storage followed by normal exit/reopen.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f29",
+          "verdict": "covered",
+          "record_ids": [
+            "r26"
+          ],
+          "reason": "r26 preserves the separate permission-denied saving observation and limits platform inference to the Android note.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f30",
+          "verdict": "covered",
+          "record_ids": [
+            "r27",
+            "r28",
+            "r29"
+          ],
+          "reason": "r27/r28/r29 collectively preserve the one server row, two local rows, persistence on reopening, and unresolved UI defect; this split is valid.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f31",
+          "verdict": "covered",
+          "record_ids": [
+            "r30"
+          ],
+          "reason": "r30 explicitly lists all four next-run conditions and says unexecuted. draft versus planned does not erase the plan or imply an outcome.",
+          "gap_support_indexes": []
+        },
+        {
+          "fact_id": "b-f32",
+          "verdict": "covered",
+          "record_ids": [
+            "r31",
+            "r26"
+          ],
+          "reason": "r31 preserves the iOS request and unknown device date. Selected r26 evidence and gaps[4] also explicitly state no iOS run/result; no missing fact remains.",
+          "gap_support_indexes": [
+            4
+          ]
+        }
+      ]
+    }
+  },
+  "semantic_errors": [
+    {
+      "id": "B-SEM-01",
+      "request_id": "qa",
+      "severity": "minor",
+      "layer": "packet_gap_reporting",
+      "record_ids": [
+        "r30"
+      ],
+      "fact_ids": [
+        "b-f31"
+      ],
+      "claim": "Missing supported test_case context for qa_review.",
+      "locations": [
+        "packets.json#/qa/gaps/8",
+        "packet-qa.md:325"
+      ],
+      "counterevidence": [
+        "packets.json#/qa/selected contains r30, kind=test_case, title explicitly lists four next-run/unexecuted conditions.",
+        "packet-qa.md:135-145 displays r30 and its exact b06 source excerpt.",
+        "packets.json#/qa/gaps/4 also explicitly lists the four unexecuted conditions."
+      ],
+      "reason": "The packet has source-supported test-case context at the level requested. The source lacks detailed approved procedures and execution results, but the generated blanket missing-context warning fails to distinguish those narrower absences from the supplied unexecuted conditions.",
+      "impact": "False coverage warning only. b-f31 is covered; do not count this as a missing required fact or treat draft as a failed test.",
+      "repair": "If needed, say that detailed test procedures/expected outcomes are not provided, while retaining the four documented unexecuted conditions."
+    }
+  ],
+  "waived_flags": [
+    {
+      "id": "B-W01",
+      "record_ids": [
+        "r08"
+      ],
+      "fact_ids": [
+        "b-f10",
+        "b-f11"
+      ],
+      "category": "status_and_combined_claim",
+      "reason": "observed describes finding promotional wording. Title, quote, and rationale explicitly deny direct execution and knowledge of three features, as allowed by the author notes."
+    },
+    {
+      "id": "B-W02",
+      "record_ids": [
+        "r13",
+        "r14"
+      ],
+      "fact_ids": [
+        "b-f16",
+        "b-f17",
+        "b-f18"
+      ],
+      "category": "clause_grouping",
+      "reason": "Local-first saving and missing-input validation are both in r13; timestamp preservation/location permission are both in r14. Separate record counts or narrow phrase matches would create false omissions."
+    },
+    {
+      "id": "B-W03",
+      "record_ids": [
+        "r22"
+      ],
+      "fact_ids": [
+        "b-f26"
+      ],
+      "category": "status",
+      "reason": "risk/open accurately represents an unresolved, unverified risk; title explicitly distinguishes design intent from unperformed crash testing."
+    },
+    {
+      "id": "B-W04",
+      "record_ids": [
+        "r23",
+        "r24"
+      ],
+      "fact_ids": [
+        "b-f27"
+      ],
+      "category": "split_fact_and_status",
+      "reason": "question/open plus task/planned preserves unresolved wording and the future proposal commitment. The planned task is not a falsely completed implementation."
+    },
+    {
+      "id": "B-W05",
+      "record_ids": [
+        "r27",
+        "r28",
+        "r29"
+      ],
+      "fact_ids": [
+        "b-f30"
+      ],
+      "category": "split_observation_and_open_defect",
+      "reason": "Observed server outcome, observed UI defect, and open defect status can be separate. All three remain faithful and are not three independent wrong records."
+    },
+    {
+      "id": "B-W06",
+      "record_ids": [
+        "r30"
+      ],
+      "fact_ids": [
+        "b-f31"
+      ],
+      "category": "status",
+      "reason": "draft is less precise than planned, but title/rationale/excerpt explicitly preserve the next-run plan and unexecuted state. Waive a semantic status error while separately flagging the generated false gap."
+    },
+    {
+      "id": "B-W07",
+      "record_ids": [
+        "r31",
+        "r26"
+      ],
+      "fact_ids": [
+        "b-f32"
+      ],
+      "category": "distributed_disclosure",
+      "reason": "The absence of iOS results is explicit in r26 evidence and gaps[4]; r31 supplies unknown device availability. Restricting matching to r31 title would create a false omission."
+    },
+    {
+      "id": "B-W08",
+      "record_ids": [
+        "r06",
+        "r09"
+      ],
+      "fact_ids": [
+        "b-f08",
+        "b-f13"
+      ],
+      "category": "question_status",
+      "reason": "open questions about proposed research are defensible alternatives to draft tasks; text does not present them as completed research or approved feature work. This does not excuse unrelated QA selection."
+    },
+    {
+      "id": "B-W09",
+      "record_ids": [
+        "r01",
+        "r02",
+        "r11",
+        "r12"
+      ],
+      "fact_ids": [
+        "b-f01",
+        "b-f02",
+        "b-f03",
+        "b-f14"
+      ],
+      "category": "historical_scope",
+      "reason": "r01/r02/r12 are not selected in any packet. r11 and gaps explain supersession/exclusions without reviving old policy. r01 decision/draft is awkward but explicitly unapproved, and causes no packet error."
+    },
+    {
+      "id": "B-W10",
+      "request_ids": [
+        "research"
+      ],
+      "record_ids": [
+        "r18",
+        "r19",
+        "r22",
+        "r23",
+        "r28",
+        "r29"
+      ],
+      "fact_ids": [
+        "b-f22",
+        "b-f23",
+        "b-f26",
+        "b-f27",
+        "b-f30"
+      ],
+      "category": "defensible_extra_context",
+      "reason": "Although outside frozen research allowed_for lists, these same-feature state-display mechanisms, unverified crash behavior, unresolved copy, and demonstrated UI defect can inform research on expectations and state communication. They are accurate, qualified, and displace no required facts; do not mechanically count as wrong selections."
+    },
+    {
+      "id": "B-W11",
+      "request_ids": [
+        "design"
+      ],
+      "record_ids": [
+        "r09"
+      ],
+      "fact_ids": [
+        "b-f12",
+        "b-f13"
+      ],
+      "category": "mixed_relevant_record",
+      "reason": "The state-communication comparison proposal is relevant design context. Adjacent user-count/price uncertainty is ancillary; that clause does not make the whole record wrong."
+    }
+  ],
+  "ambiguous_flags": [
+    {
+      "id": "B-A01",
+      "request_ids": [
+        "research"
+      ],
+      "record_ids": [
+        "r31"
+      ],
+      "fact_ids": [
+        "b-f32"
+      ],
+      "issue": "iOS device availability is peripheral to field/market research. It can delimit existing evidence and future platform investigation, but selecting it separately is weak prioritization. No confirmed irrelevant record is counted."
+    },
+    {
+      "id": "B-A02",
+      "request_ids": [
+        "qa"
+      ],
+      "record_ids": [
+        "r09"
+      ],
+      "fact_ids": [
+        "b-f12",
+        "b-f13"
+      ],
+      "issue": "Price/user-count discovery is outside functional QA, while comparing local/server status communication could support an exploratory usability check. The combined record is mixed; do not count the entire record as definitely wrong."
+    },
+    {
+      "id": "B-A03",
+      "request_ids": [
+        "research",
+        "design",
+        "qa"
+      ],
+      "record_ids": [],
+      "fact_ids": [
+        "b-f01"
+      ],
+      "issue": "The repeated unresolved-passage bookkeeping is verbose and may suggest residual uncertainty, but it explicitly says the old rule was superseded via b04/r11/r12. Count no policy reversal or missing current rule."
+    },
+    {
+      "id": "B-A04",
+      "request_ids": [
+        "research",
+        "design",
+        "qa"
+      ],
+      "record_ids": [
+        "r25",
+        "r26",
+        "r27",
+        "r28"
+      ],
+      "fact_ids": [
+        "b-f28",
+        "b-f29",
+        "b-f30"
+      ],
+      "issue": "gaps[4] says only Android normal-reopen and permission-denied saving were observed, which is locally too narrow. The immediately following gap and selected retry records explicitly disclose the retry observation, so the packet as a whole is not adjudicated as concealing it."
+    }
+  ],
+  "fact_record_map": {
+    "b-f01": [
+      "r12"
+    ],
+    "b-f02": [
+      "r01"
+    ],
+    "b-f03": [
+      "r02"
+    ],
+    "b-f04": [
+      "r03"
+    ],
+    "b-f05": [
+      "r03"
+    ],
+    "b-f06": [
+      "r04"
+    ],
+    "b-f07": [
+      "r05"
+    ],
+    "b-f08": [
+      "r06"
+    ],
+    "b-f09": [
+      "r07"
+    ],
+    "b-f10": [
+      "r08"
+    ],
+    "b-f11": [
+      "r08"
+    ],
+    "b-f12": [
+      "r09"
+    ],
+    "b-f13": [
+      "r09"
+    ],
+    "b-f14": [
+      "r11"
+    ],
+    "b-f15": [
+      "r10"
+    ],
+    "b-f16": [
+      "r13"
+    ],
+    "b-f17": [
+      "r14"
+    ],
+    "b-f18": [
+      "r14"
+    ],
+    "b-f19": [
+      "r15"
+    ],
+    "b-f20": [
+      "r16"
+    ],
+    "b-f21": [
+      "r17"
+    ],
+    "b-f22": [
+      "r18"
+    ],
+    "b-f23": [
+      "r19"
+    ],
+    "b-f24": [
+      "r20"
+    ],
+    "b-f25": [
+      "r21"
+    ],
+    "b-f26": [
+      "r22"
+    ],
+    "b-f27": [
+      "r23",
+      "r24"
+    ],
+    "b-f28": [
+      "r25"
+    ],
+    "b-f29": [
+      "r26"
+    ],
+    "b-f30": [
+      "r27",
+      "r28",
+      "r29"
+    ],
+    "b-f31": [
+      "r30"
+    ],
+    "b-f32": [
+      "r31",
+      "r26"
+    ],
+    "b-f33": [],
+    "b-f34": [],
+    "b-f35": []
+  },
+  "critical_check_assessment": {
+    "checks_reviewed": 12,
+    "confirmed_failures": [],
+    "reason": "No active old save-block policy, multi-device/photo scope inflation, server-time substitution, location-permission requirement, network/server-confirmation confusion, background-transmission claim, universal retry proof, server/UI duplication conflation, Android/iOS generalization, invented run result, direct verification of promotional claims, or other-project contamination found."
+  }
+}

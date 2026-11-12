@@ -1,0 +1,232 @@
+{
+  "suite": "suite-b",
+  "passed": false,
+  "cases": [
+    {
+      "request_id": "research",
+      "task_type": "market_research",
+      "required_count": 9,
+      "required_covered": 9,
+      "missing_required": [],
+      "selected_count": 15,
+      "wrong_context": [],
+      "unmatched_records_for_review": [
+        "no_background",
+        "release_exclusions"
+      ],
+      "classification_errors": [
+        {
+          "record_id": "new_user_inquiry",
+          "fact_id": "b-f08",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "task",
+          "actual_status": "planned",
+          "allowed_kinds": [
+            "task",
+            "question"
+          ],
+          "expected_status": "draft"
+        },
+        {
+          "record_id": "competitor_promo",
+          "fact_id": "b-f10",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "market_evidence",
+          "actual_status": "observed",
+          "allowed_kinds": [
+            "market_evidence"
+          ],
+          "expected_status": "unverified"
+        },
+        {
+          "record_id": "competitor_promo",
+          "fact_id": "b-f11",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "market_evidence",
+          "actual_status": "observed",
+          "allowed_kinds": [
+            "question",
+            "market_evidence"
+          ],
+          "expected_status": "unknown"
+        },
+        {
+          "record_id": "comparison_direction",
+          "fact_id": "b-f13",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "task",
+          "actual_status": "planned",
+          "allowed_kinds": [
+            "task",
+            "question"
+          ],
+          "expected_status": "draft"
+        }
+      ],
+      "task_type_correct": true,
+      "packet_status": "context_prepared",
+      "gaps": [],
+      "passed": false
+    },
+    {
+      "request_id": "design",
+      "task_type": "feature_design",
+      "required_count": 16,
+      "required_covered": 16,
+      "missing_required": [],
+      "selected_count": 26,
+      "wrong_context": [],
+      "unmatched_records_for_review": [
+        "missing_fields",
+        "no_background",
+        "release_exclusions",
+        "server_dedupe",
+        "retain_on_reopen"
+      ],
+      "classification_errors": [
+        {
+          "record_id": "retry_identity",
+          "fact_id": "b-f22",
+          "fields": [
+            "kind"
+          ],
+          "actual_kind": "decision",
+          "actual_status": "accepted",
+          "allowed_kinds": [
+            "design",
+            "requirement"
+          ],
+          "expected_status": "accepted"
+        },
+        {
+          "record_id": "crash_risk",
+          "fact_id": "b-f26",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "risk",
+          "actual_status": "open",
+          "allowed_kinds": [
+            "risk",
+            "test_case"
+          ],
+          "expected_status": "unverified"
+        },
+        {
+          "record_id": "duplicate_ui",
+          "fact_id": "b-f30",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "test_result",
+          "actual_status": "observed",
+          "allowed_kinds": [
+            "test_result",
+            "risk"
+          ],
+          "expected_status": "open"
+        }
+      ],
+      "task_type_correct": true,
+      "packet_status": "needs_context",
+      "gaps": [
+        "Missing supported design context for feature_design."
+      ],
+      "passed": false
+    },
+    {
+      "request_id": "qa",
+      "task_type": "qa_review",
+      "required_count": 17,
+      "required_covered": 17,
+      "missing_required": [],
+      "selected_count": 25,
+      "wrong_context": [],
+      "unmatched_records_for_review": [
+        "missing_fields",
+        "retain_on_reopen",
+        "no_background",
+        "release_exclusions",
+        "server_dedupe"
+      ],
+      "classification_errors": [
+        {
+          "record_id": "retry_identity",
+          "fact_id": "b-f22",
+          "fields": [
+            "kind"
+          ],
+          "actual_kind": "decision",
+          "actual_status": "accepted",
+          "allowed_kinds": [
+            "design",
+            "requirement"
+          ],
+          "expected_status": "accepted"
+        },
+        {
+          "record_id": "crash_risk",
+          "fact_id": "b-f26",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "risk",
+          "actual_status": "open",
+          "allowed_kinds": [
+            "risk",
+            "test_case"
+          ],
+          "expected_status": "unverified"
+        },
+        {
+          "record_id": "duplicate_ui",
+          "fact_id": "b-f30",
+          "fields": [
+            "status"
+          ],
+          "actual_kind": "test_result",
+          "actual_status": "observed",
+          "allowed_kinds": [
+            "test_result",
+            "risk"
+          ],
+          "expected_status": "open"
+        },
+        {
+          "record_id": "ios_request",
+          "fact_id": "b-f32",
+          "fields": [
+            "kind",
+            "status"
+          ],
+          "actual_kind": "test_case",
+          "actual_status": "draft",
+          "allowed_kinds": [
+            "task",
+            "question",
+            "risk"
+          ],
+          "expected_status": "open"
+        }
+      ],
+      "task_type_correct": true,
+      "packet_status": "context_prepared",
+      "gaps": [],
+      "passed": false
+    }
+  ],
+  "limits": [
+    "Exact fact anchors may miss a valid shorter paraphrase/quote; inspect every flagged item.",
+    "Kind/status labels can admit reasonable alternatives; record adjudication separately without silently changing frozen answers.",
+    "A matched quote is not proof that the model's title, rationale or scope interpretation is entailed.",
+    "Replaying stored packets is not a new blind model trial."
+  ]
+}

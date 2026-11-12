@@ -1,0 +1,28 @@
+{
+  "project_id": "readinglight",
+  "method": "Separate-author fiction; three fresh task agents; hidden answer key; simulated confirmations; separate semantic reviewer.",
+  "isolation": "No inherited conversation. Allowed file paths supplied in instructions, not OS-enforced isolation.",
+  "baseline_comparison": false,
+  "external_services": false,
+  "raw_sources": {
+    "discovery": "raw/stage-1.md",
+    "review": "raw/stage-2.md",
+    "qa": "raw/stage-3.md"
+  },
+  "stages": [
+    {
+      "id": "research",
+      "refresh_started_at": "2027-07-14T10:00:30Z",
+      "task_file": "task.research.json"
+    },
+    {
+      "id": "design",
+      "refresh_started_at": "2027-07-22T10:00:30Z"
+    },
+    {
+      "id": "qa",
+      "refresh_started_at": "2027-07-26T10:00:30Z"
+    }
+  ],
+  "interruption": "QA and semantic reviewer temporarily stopped at a service usage limit and resumed in the same separate agents with unchanged read restrictions."
+}

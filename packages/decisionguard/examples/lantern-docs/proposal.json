@@ -1,0 +1,10 @@
+{
+  "summary": "Extend standard export retention from 14 to 60 days.",
+  "claims": [
+    {
+      "key": "export.retention_days",
+      "scope": "standard",
+      "value": "60"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "문서 내보내기·게스트 공유의 QA 검토를 준비해줘. 승인 기준, 경계 조건, 테스트 결과와 남은 위험을 찾아줘.",
+  "type": "qa_review",
+  "project_id": "lantern-docs",
+  "scope": "standard",
+  "topics": [
+    "exports"
+  ],
+  "as_of": "2026-11-07T00:00:00Z",
+  "max_items": 16
+}

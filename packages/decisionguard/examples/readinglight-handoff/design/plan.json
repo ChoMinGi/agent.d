@@ -1,0 +1,667 @@
+{
+  "handoff_version": 1,
+  "project_id": "readinglight",
+  "ledger_sha256": "8d8b1b32e025a4b3f420397a2d8fcacab3aaf744603d1c8f82a126f2eb70f522",
+  "snapshot_sha256": "f4946bf536a34e318969a218328cd6ff9728a337374bed10dcc679ff2225d1d4",
+  "proposal": {
+    "summary": "Remember only the reviewed delta: retire D-041 in favor of accepted D-052; preserve D-052’s prototype-only authority, display/storage/analytics granularity and freshness requirements; retain the privacy rationale and unapproved concept as an open risk and draft. Unchanged inherited records remain intact. This proposal is not memory consent or deployment approval.",
+    "record_ids": [
+      "D-041",
+      "D-052",
+      "REQ-DATA-052",
+      "REQ-FRESH-052",
+      "R-PRIVACY-052",
+      "DESIGN-NESSA-01"
+    ]
+  },
+  "changes": [
+    {
+      "record_id": "D-041",
+      "before": {
+        "record": {
+          "id": "D-041",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "prototype-scope"
+          ],
+          "status": "accepted",
+          "source_id": "discovery",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+          "status_quote": "Product steward Sela Rowan accepted decision D-041 today:",
+          "attention": {
+            "category": "approval_boundary",
+            "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+            "quote": "This authorizes prototype design only."
+          },
+          "key": "prototype-seat-representation",
+          "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "discovery",
+                "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+              },
+              {
+                "source_id": "discovery",
+                "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+              }
+            ],
+            "rationale": "Checked the complete supplied note for an amended or superseding prototype choice; none is present. Acceptance remains limited to design. Re-fetch D-041 and any later authoritative changes before reuse; this is not an exhaustive workspace check."
+          },
+          "kind": "decision",
+          "title": "Reading room discovery notes"
+        },
+        "project_id": "readinglight",
+        "state": {
+          "record": {
+            "id": "D-041",
+            "scope": "two-room-pilot",
+            "topics": [
+              "seat-availability",
+              "prototype-scope"
+            ],
+            "status": "accepted",
+            "source_id": "discovery",
+            "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+            "status_quote": "Product steward Sela Rowan accepted decision D-041 today:",
+            "attention": {
+              "category": "approval_boundary",
+              "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+              "quote": "This authorizes prototype design only."
+            },
+            "key": "prototype-seat-representation",
+            "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+            "followup": {
+              "outcome": "no_change_found",
+              "evidence": [
+                {
+                  "source_id": "discovery",
+                  "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+                },
+                {
+                  "source_id": "discovery",
+                  "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+                }
+              ],
+              "rationale": "Checked the complete supplied note for an amended or superseding prototype choice; none is present. Acceptance remains limited to design. Re-fetch D-041 and any later authoritative changes before reuse; this is not an exhaustive workspace check."
+            },
+            "kind": "decision",
+            "title": "Reading room discovery notes"
+          },
+          "dependencies": [],
+          "links": [],
+          "sources": [
+            {
+              "id": "discovery",
+              "url": "demo://readinglight/discovery",
+              "revision": "r1",
+              "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+            }
+          ]
+        },
+        "state_sha256": "a767aeec927883466cc78e10168eba08b2570181f2dd0bfdabb8f163db7c6ab6",
+        "approved_in": "0ad274b98ed2ace95f55dda655c1c50cf8b924f706d6554811f350a02a177f34"
+      },
+      "after": {
+        "record": {
+          "id": "D-041",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "prototype-scope"
+          ],
+          "status": "superseded",
+          "source_id": "discovery",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+          "status_quote": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+          "status_source_id": "review",
+          "attention": {
+            "category": "approval_boundary",
+            "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+            "quote": "This authorizes prototype design only."
+          },
+          "key": "prototype-seat-representation",
+          "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+          "superseded_by": "D-052",
+          "followup": {
+            "outcome": "changed",
+            "evidence": [
+              {
+                "source_id": "review",
+                "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+              }
+            ],
+            "rationale": "Signed product-steward review explicitly replaces D-041 with D-052 for both rooms. Checked the later Nessa concept: it expressly lacks review and approval, so it does not change this successor. Visitor deployment remains unauthorized.",
+            "successor_id": "D-052"
+          },
+          "kind": "decision",
+          "title": "Reading room discovery notes"
+        },
+        "project_id": "readinglight",
+        "state": {
+          "record": {
+            "id": "D-041",
+            "scope": "two-room-pilot",
+            "topics": [
+              "seat-availability",
+              "prototype-scope"
+            ],
+            "status": "superseded",
+            "source_id": "discovery",
+            "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only.",
+            "status_quote": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+            "status_source_id": "review",
+            "attention": {
+              "category": "approval_boundary",
+              "rationale": "Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+              "quote": "This authorizes prototype design only."
+            },
+            "key": "prototype-seat-representation",
+            "value": "Individual free/occupied seat dots without visitor names in the two pilot rooms; prototype design only.",
+            "superseded_by": "D-052",
+            "followup": {
+              "outcome": "changed",
+              "evidence": [
+                {
+                  "source_id": "review",
+                  "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+                }
+              ],
+              "rationale": "Signed product-steward review explicitly replaces D-041 with D-052 for both rooms. Checked the later Nessa concept: it expressly lacks review and approval, so it does not change this successor. Visitor deployment remains unauthorized.",
+              "successor_id": "D-052"
+            },
+            "kind": "decision",
+            "title": "Reading room discovery notes"
+          },
+          "dependencies": [
+            {
+              "id": "D-052",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "prototype-scope"
+              ],
+              "status": "accepted",
+              "source_id": "review",
+              "quote": "I approve decision D-052, replacing D-041 for both pilot rooms. Staff will choose one availability band: “none,” “a few,” or “several.”",
+              "status_quote": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+              "attention": {
+                "category": "approval_boundary",
+                "rationale": "The approved replacement governs prototype design; it explicitly does not authorize visitor deployment.",
+                "quote": "This is the accepted prototype design; it does not authorize visitor deployment."
+              },
+              "key": "prototype-seat-representation",
+              "value": "Staff choose one room-level availability band: none, a few, or several, for both pilot rooms; prototype design only.",
+              "followup": {
+                "outcome": "no_change_found",
+                "evidence": [
+                  {
+                    "source_id": "review",
+                    "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+                  },
+                  {
+                    "source_id": "review",
+                    "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+                  }
+                ],
+                "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+              },
+              "kind": "decision",
+              "title": "Prototype review and design correspondence"
+            },
+            {
+              "id": "R-PRIVACY-052",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "data-minimization"
+              ],
+              "status": "open",
+              "source_id": "review",
+              "quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+              "status_quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+              "kind": "risk",
+              "title": "Fine-grained availability can reveal where an individual is sitting"
+            }
+          ],
+          "links": [
+            {
+              "from_id": "D-052",
+              "to_id": "R-PRIVACY-052",
+              "source_id": "review",
+              "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited. Visitors could otherwise infer where a person is sitting in our small rooms."
+            }
+          ],
+          "sources": [
+            {
+              "id": "discovery",
+              "url": "demo://readinglight/discovery",
+              "revision": "r1",
+              "source_sha256": "396de7bceed88690a7eea8344e56ca0b80783833092a2efa2b19b9fa1ef92cf4"
+            },
+            {
+              "id": "review",
+              "url": "demo://readinglight/review",
+              "revision": "r1",
+              "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+            }
+          ]
+        },
+        "state_sha256": "abf76b2f4987ca744ff63066367d36edc2b77e3bcbd340ec026ccf6cf2dd5c73"
+      }
+    },
+    {
+      "record_id": "D-052",
+      "before": null,
+      "after": {
+        "record": {
+          "id": "D-052",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "prototype-scope"
+          ],
+          "status": "accepted",
+          "source_id": "review",
+          "quote": "I approve decision D-052, replacing D-041 for both pilot rooms. Staff will choose one availability band: “none,” “a few,” or “several.”",
+          "status_quote": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+          "attention": {
+            "category": "approval_boundary",
+            "rationale": "The approved replacement governs prototype design; it explicitly does not authorize visitor deployment.",
+            "quote": "This is the accepted prototype design; it does not authorize visitor deployment."
+          },
+          "key": "prototype-seat-representation",
+          "value": "Staff choose one room-level availability band: none, a few, or several, for both pilot rooms; prototype design only.",
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "review",
+                "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+              },
+              {
+                "source_id": "review",
+                "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+              }
+            ],
+            "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+          },
+          "kind": "decision",
+          "title": "Prototype review and design correspondence"
+        },
+        "project_id": "readinglight",
+        "state": {
+          "record": {
+            "id": "D-052",
+            "scope": "two-room-pilot",
+            "topics": [
+              "seat-availability",
+              "prototype-scope"
+            ],
+            "status": "accepted",
+            "source_id": "review",
+            "quote": "I approve decision D-052, replacing D-041 for both pilot rooms. Staff will choose one availability band: “none,” “a few,” or “several.”",
+            "status_quote": "I approve decision D-052, replacing D-041 for both pilot rooms.",
+            "attention": {
+              "category": "approval_boundary",
+              "rationale": "The approved replacement governs prototype design; it explicitly does not authorize visitor deployment.",
+              "quote": "This is the accepted prototype design; it does not authorize visitor deployment."
+            },
+            "key": "prototype-seat-representation",
+            "value": "Staff choose one room-level availability band: none, a few, or several, for both pilot rooms; prototype design only.",
+            "followup": {
+              "outcome": "no_change_found",
+              "evidence": [
+                {
+                  "source_id": "review",
+                  "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+                },
+                {
+                  "source_id": "review",
+                  "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+                }
+              ],
+              "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+            },
+            "kind": "decision",
+            "title": "Prototype review and design correspondence"
+          },
+          "dependencies": [
+            {
+              "id": "R-PRIVACY-052",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "data-minimization"
+              ],
+              "status": "open",
+              "source_id": "review",
+              "quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+              "status_quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+              "kind": "risk",
+              "title": "Fine-grained availability can reveal where an individual is sitting"
+            }
+          ],
+          "links": [
+            {
+              "from_id": "D-052",
+              "to_id": "R-PRIVACY-052",
+              "source_id": "review",
+              "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited. Visitors could otherwise infer where a person is sitting in our small rooms."
+            }
+          ],
+          "sources": [
+            {
+              "id": "review",
+              "url": "demo://readinglight/review",
+              "revision": "r1",
+              "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+            }
+          ]
+        },
+        "state_sha256": "7388e0ae34718c3eda2e0454fe92ac0bab0b6f6dce1d969c832e7cf10b25d1ca"
+      }
+    },
+    {
+      "record_id": "DESIGN-NESSA-01",
+      "before": null,
+      "after": {
+        "record": {
+          "id": "DESIGN-NESSA-01",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "data-minimization"
+          ],
+          "status": "draft",
+          "source_id": "review",
+          "quote": "My revised concept offers a much clearer per-seat map, exact vacancy count, and automatic seat-level history.",
+          "status_quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop.",
+          "kind": "design",
+          "title": "Unapproved concept: per-seat map, exact count and seat-level history",
+          "followup": {
+            "outcome": "unresolved",
+            "evidence": [
+              {
+                "source_id": "review",
+                "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+              },
+              {
+                "source_id": "review",
+                "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited."
+              }
+            ],
+            "rationale": "The source explicitly withholds approval and proposes features incompatible with D-052. Do not implement it under D-052; a scoped authoritative replacement would be needed before these features could become requirements."
+          }
+        },
+        "project_id": "readinglight",
+        "state": {
+          "record": {
+            "id": "DESIGN-NESSA-01",
+            "scope": "two-room-pilot",
+            "topics": [
+              "seat-availability",
+              "data-minimization"
+            ],
+            "status": "draft",
+            "source_id": "review",
+            "quote": "My revised concept offers a much clearer per-seat map, exact vacancy count, and automatic seat-level history.",
+            "status_quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop.",
+            "kind": "design",
+            "title": "Unapproved concept: per-seat map, exact count and seat-level history",
+            "followup": {
+              "outcome": "unresolved",
+              "evidence": [
+                {
+                  "source_id": "review",
+                  "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+                },
+                {
+                  "source_id": "review",
+                  "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited."
+                }
+              ],
+              "rationale": "The source explicitly withholds approval and proposes features incompatible with D-052. Do not implement it under D-052; a scoped authoritative replacement would be needed before these features could become requirements."
+            }
+          },
+          "dependencies": [],
+          "links": [],
+          "sources": [
+            {
+              "id": "review",
+              "url": "demo://readinglight/review",
+              "revision": "r1",
+              "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+            }
+          ]
+        },
+        "state_sha256": "5edd8ec3d9f2e6002a01827d6897212b66a691c9b837cf9b147b059847fd0445"
+      }
+    },
+    {
+      "record_id": "R-PRIVACY-052",
+      "before": null,
+      "after": {
+        "record": {
+          "id": "R-PRIVACY-052",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "data-minimization"
+          ],
+          "status": "open",
+          "source_id": "review",
+          "quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+          "status_quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+          "kind": "risk",
+          "title": "Fine-grained availability can reveal where an individual is sitting"
+        },
+        "project_id": "readinglight",
+        "state": {
+          "record": {
+            "id": "R-PRIVACY-052",
+            "scope": "two-room-pilot",
+            "topics": [
+              "seat-availability",
+              "data-minimization"
+            ],
+            "status": "open",
+            "source_id": "review",
+            "quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+            "status_quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+            "kind": "risk",
+            "title": "Fine-grained availability can reveal where an individual is sitting"
+          },
+          "dependencies": [],
+          "links": [],
+          "sources": [
+            {
+              "id": "review",
+              "url": "demo://readinglight/review",
+              "revision": "r1",
+              "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+            }
+          ]
+        },
+        "state_sha256": "6a29e88c086e218b81c6d4c6e62dddb479376b0e4d71f5abed728c2f02997eae"
+      }
+    },
+    {
+      "record_id": "REQ-DATA-052",
+      "before": null,
+      "after": {
+        "record": {
+          "id": "REQ-DATA-052",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "data-minimization"
+          ],
+          "status": "accepted",
+          "source_id": "review",
+          "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited.",
+          "status_quote": "This is the accepted prototype design; it does not authorize visitor deployment.",
+          "kind": "requirement",
+          "title": "Availability granularity is restricted in displays, records and analytics",
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "review",
+                "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+              },
+              {
+                "source_id": "review",
+                "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+              }
+            ],
+            "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+          }
+        },
+        "project_id": "readinglight",
+        "state": {
+          "record": {
+            "id": "REQ-DATA-052",
+            "scope": "two-room-pilot",
+            "topics": [
+              "seat-availability",
+              "data-minimization"
+            ],
+            "status": "accepted",
+            "source_id": "review",
+            "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited.",
+            "status_quote": "This is the accepted prototype design; it does not authorize visitor deployment.",
+            "kind": "requirement",
+            "title": "Availability granularity is restricted in displays, records and analytics",
+            "followup": {
+              "outcome": "no_change_found",
+              "evidence": [
+                {
+                  "source_id": "review",
+                  "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+                },
+                {
+                  "source_id": "review",
+                  "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+                }
+              ],
+              "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+            }
+          },
+          "dependencies": [
+            {
+              "id": "R-PRIVACY-052",
+              "scope": "two-room-pilot",
+              "topics": [
+                "seat-availability",
+                "data-minimization"
+              ],
+              "status": "open",
+              "source_id": "review",
+              "quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+              "status_quote": "Visitors could otherwise infer where a person is sitting in our small rooms.",
+              "kind": "risk",
+              "title": "Fine-grained availability can reveal where an individual is sitting"
+            }
+          ],
+          "links": [
+            {
+              "from_id": "REQ-DATA-052",
+              "to_id": "R-PRIVACY-052",
+              "source_id": "review",
+              "quote": "Availability detail in every display, stored record, and analytics event is limited to the band and room identifier; individual seat identifiers and exact seat counts are prohibited. Visitors could otherwise infer where a person is sitting in our small rooms."
+            }
+          ],
+          "sources": [
+            {
+              "id": "review",
+              "url": "demo://readinglight/review",
+              "revision": "r1",
+              "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+            }
+          ]
+        },
+        "state_sha256": "d917a05cc1c6766a4d8d088667f55cb029716dcee3b9d6415de556f075b0af2d"
+      }
+    },
+    {
+      "record_id": "REQ-FRESH-052",
+      "before": null,
+      "after": {
+        "record": {
+          "id": "REQ-FRESH-052",
+          "scope": "two-room-pilot",
+          "topics": [
+            "seat-availability",
+            "freshness"
+          ],
+          "status": "accepted",
+          "source_id": "review",
+          "quote": "Show an update time and mark information stale after ten minutes.",
+          "status_quote": "This is the accepted prototype design; it does not authorize visitor deployment.",
+          "kind": "requirement",
+          "title": "Display update time and stale status after ten minutes",
+          "followup": {
+            "outcome": "no_change_found",
+            "evidence": [
+              {
+                "source_id": "review",
+                "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+              },
+              {
+                "source_id": "review",
+                "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+              }
+            ],
+            "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+          }
+        },
+        "project_id": "readinglight",
+        "state": {
+          "record": {
+            "id": "REQ-FRESH-052",
+            "scope": "two-room-pilot",
+            "topics": [
+              "seat-availability",
+              "freshness"
+            ],
+            "status": "accepted",
+            "source_id": "review",
+            "quote": "Show an update time and mark information stale after ten minutes.",
+            "status_quote": "This is the accepted prototype design; it does not authorize visitor deployment.",
+            "kind": "requirement",
+            "title": "Display update time and stale status after ten minutes",
+            "followup": {
+              "outcome": "no_change_found",
+              "evidence": [
+                {
+                  "source_id": "review",
+                  "quote": "I approve decision D-052, replacing D-041 for both pilot rooms."
+                },
+                {
+                  "source_id": "review",
+                  "quote": "Sela has not reviewed or approved it. Please treat this as a discussion draft for next week's workshop."
+                }
+              ],
+              "rationale": "Checked the signed review and the later circulated concept in the complete supplied review r1. The later concept expressly lacks Sela’s approval; it does not supersede the accepted D-052 prototype requirements. No other follow-up source is supplied."
+            }
+          },
+          "dependencies": [],
+          "links": [],
+          "sources": [
+            {
+              "id": "review",
+              "url": "demo://readinglight/review",
+              "revision": "r1",
+              "source_sha256": "fee4fa9cfe10138c8512457fae2bc00b446e017818bed2a0d82c8a0ac6ce9363"
+            }
+          ]
+        },
+        "state_sha256": "dbee2403936341b02ce403b78c5d601c38ce3a085e9b386e73e2469db6662f50"
+      }
+    }
+  ],
+  "plan_id": "88266370e7a07b411d4a44b86903cf491cf2f7e5c2f9799dd48883f0b7905030"
+}

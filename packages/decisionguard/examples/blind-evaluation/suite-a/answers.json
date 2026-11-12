@@ -1,0 +1,675 @@
+{
+  "suite": "suite-a",
+  "rationale": "추출 결과나 구현을 보지 않고 자연스러운 가상 업무 기록과 요청을 먼저 작성한 뒤, 원문이 지지하는 의미와 불확실성을 기준으로 기대 맥락을 기록했다. 분류는 복수의 방어 가능한 종류를 허용하며, 최소 필요 맥락과 합리적 부가 맥락을 구분한다.",
+  "facts": [
+    {
+      "id": "a-f01",
+      "source_id": "a01",
+      "quote_contains": "무응답 고객에게 동가 대체품을 넣는 방식을 1차 출시안으로 확정했다",
+      "meaning": "8월의 자동 대체 결정은 a04가 명시적으로 폐기했다. 현재 방식으로 채택하면 안 된다.",
+      "acceptable_kinds": [
+        "decision"
+      ],
+      "status": "superseded",
+      "required_for": [],
+      "allowed_for": []
+    },
+    {
+      "id": "a-f02",
+      "source_id": "a01",
+      "quote_contains": "카드에서 금액을 생략하자는 의견은 있었지만",
+      "meaning": "금액 생략은 당시 미결 스케치이고 a04의 가격 동시 표시 결정으로 대체되었다.",
+      "acceptable_kinds": [
+        "design",
+        "question"
+      ],
+      "status": "superseded",
+      "required_for": [],
+      "allowed_for": []
+    },
+    {
+      "id": "a-f03",
+      "source_id": "a01",
+      "quote_contains": "9월 15일 출고분부터 전 고객에게",
+      "meaning": "과거 전면 적용 일정은 a04가 폐기했다. 현행 출시 일정이 아니다.",
+      "acceptable_kinds": [
+        "decision",
+        "task"
+      ],
+      "status": "superseded",
+      "required_for": [],
+      "allowed_for": []
+    },
+    {
+      "id": "a-f04",
+      "source_id": "a01",
+      "quote_contains": "담당자나 완료일은 정하지 않았다",
+      "meaning": "완료 주문 재개는 과거 요청에 불과하며 a04가 이번 범위에서 제외했다.",
+      "acceptable_kinds": [
+        "question",
+        "requirement"
+      ],
+      "status": "rejected",
+      "required_for": [],
+      "allowed_for": []
+    },
+    {
+      "id": "a-f05",
+      "source_id": "a02",
+      "quote_contains": "일곱 가구 중 다섯 가구는",
+      "meaning": "기존 고객 일곱 가구 중 다섯 가구가 대체품 가격과 양의 한 화면 비교를 원했다. 소규모 인터뷰 진술이다.",
+      "acceptable_kinds": [
+        "customer_evidence"
+      ],
+      "status": "observed",
+      "required_for": [
+        "research",
+        "design"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f06",
+      "source_id": "a02",
+      "quote_contains": "세 가구는 싫어하거나 먹지 못하는 채소",
+      "meaning": "세 가구의 선호·섭취 제한이 관찰됐고 알레르기 진단 여부는 조사하지 않았다. 임상적 알레르기 근거로 확대할 수 없다.",
+      "acceptable_kinds": [
+        "customer_evidence"
+      ],
+      "status": "observed",
+      "required_for": [
+        "research"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f07",
+      "source_id": "a02",
+      "quote_contains": "두 가구는 낮에는 휴대폰을 보기 어려우니",
+      "meaning": "두 가구는 전날 저녁 알림을 원했으나 포장 때 알게 되는 품절에는 적용하기 어렵다. 이는 확정된 알림 요구사항이 아니다.",
+      "acceptable_kinds": [
+        "customer_evidence",
+        "risk"
+      ],
+      "status": "observed",
+      "required_for": [
+        "research"
+      ],
+      "allowed_for": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "id": "a-f08",
+      "source_id": "a02",
+      "quote_contains": "품절을 알게 된 시점과 고객이 응답할 수 있는 시간을",
+      "meaning": "응답 가능 시간과 품절 발견 시점에 관한 추가 질문이 제안돼 있다.",
+      "acceptable_kinds": [
+        "question",
+        "task"
+      ],
+      "status": "draft",
+      "required_for": [],
+      "allowed_for": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "id": "a-f09",
+      "source_id": "a02",
+      "quote_contains": "신규 고객과 중도 해지자는 없었다",
+      "meaning": "인터뷰는 적립금을 받은 자발적 기존 고객만 포함하며 모집 편향과 미포함 집단이 있다.",
+      "acceptable_kinds": [
+        "customer_evidence",
+        "risk"
+      ],
+      "status": "observed",
+      "required_for": [
+        "research"
+      ],
+      "allowed_for": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "id": "a-f10",
+      "source_id": "a02",
+      "quote_contains": "비교 정보가 있으면 응답률도 오를 것 같다고 추측",
+      "meaning": "비교 정보가 응답률을 높인다는 것은 아직 검증되지 않은 가설이며 측정 결과가 없다.",
+      "acceptable_kinds": [
+        "assumption"
+      ],
+      "status": "unverified",
+      "required_for": [
+        "research"
+      ],
+      "allowed_for": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "id": "a-f11",
+      "source_id": "a03",
+      "quote_contains": "너울장 화면에는 품절 항목을 환불한다는 안내",
+      "meaning": "너울장 체험 화면에서 품절 환불 안내를 관찰했다. 실제 출고 정책 전반의 검증은 아니다.",
+      "acceptable_kinds": [
+        "market_evidence"
+      ],
+      "status": "observed",
+      "required_for": [
+        "research"
+      ],
+      "allowed_for": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "id": "a-f12",
+      "source_id": "a03",
+      "quote_contains": "관찰한 화면에서는 대체될 상품을 미리 고르는 기능을 찾지 못했다",
+      "meaning": "싹마루 화면에서는 대체 허용 선택이 보였으나 개별 후보 선택은 발견하지 못했다. 서비스 전체에 없다고 단정할 수 없다.",
+      "acceptable_kinds": [
+        "market_evidence"
+      ],
+      "status": "observed",
+      "required_for": [
+        "research"
+      ],
+      "allowed_for": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "id": "a-f13",
+      "source_id": "a03",
+      "quote_contains": "유료 계정, 실제 출고 과정, 다른 지역 정책은 확인하지 못했다",
+      "meaning": "시장 조사 범위는 체험 화면 두 개이며 만족도 우위나 시장 기본 관행을 입증하지 않는다.",
+      "acceptable_kinds": [
+        "market_evidence",
+        "risk"
+      ],
+      "status": "observed",
+      "required_for": [
+        "research"
+      ],
+      "allowed_for": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "id": "a-f14",
+      "source_id": "a03",
+      "quote_contains": "대체품 가격 표시, 응답 기한, 알림 채널",
+      "meaning": "후속 비교 항목 제안이며 이 항목에 대한 경쟁사 결과가 확보된 것은 아니다.",
+      "acceptable_kinds": [
+        "task",
+        "question"
+      ],
+      "status": "draft",
+      "required_for": [],
+      "allowed_for": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "id": "a-f15",
+      "source_id": "a03",
+      "quote_contains": "보관된 원문은 여기에서 끊긴다",
+      "meaning": "가격 차액 처리 조사는 원문이 잘려 결과를 알 수 없다. source.complete=false도 이를 뒷받침한다.",
+      "acceptable_kinds": [
+        "question",
+        "risk"
+      ],
+      "status": "unknown",
+      "required_for": [
+        "research"
+      ],
+      "allowed_for": [
+        "research",
+        "design"
+      ]
+    },
+    {
+      "id": "a-f16",
+      "source_id": "a04",
+      "quote_contains": "고객이 모르는 채소를 받는 일을 줄이고",
+      "meaning": "현행 목적은 예상하지 못한 채소 수령과 운영 확인 전화를 줄이는 것이다. 수치 성과가 이미 달성됐다는 뜻은 아니다.",
+      "acceptable_kinds": [
+        "goal"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "research",
+        "design"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f17",
+      "source_id": "a04",
+      "quote_contains": "한 출고 거점의 수요일 채소 꾸러미로 한정",
+      "meaning": "첫 적용은 한 거점 수요일 꾸러미이며 확대 날짜는 미정이다.",
+      "acceptable_kinds": [
+        "decision",
+        "requirement"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "research",
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f18",
+      "source_id": "a04",
+      "quote_contains": "원래 상품보다 비싸지 않은 것 한 개만 제시한다",
+      "meaning": "운영자가 등록하는 후보는 한 개이고 원품보다 비싸지 않아야 한다.",
+      "acceptable_kinds": [
+        "requirement",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f19",
+      "source_id": "a04",
+      "quote_contains": "고객이 대체품을 명시적으로 수락하면",
+      "meaning": "대체에는 명시적 수락이 필요하며 거절 또는 오전 10시까지 무응답이면 품목 제외 후 원래 금액 전액 환불이다. 자동 대체는 아니다.",
+      "acceptable_kinds": [
+        "requirement",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "research",
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f20",
+      "source_id": "a04",
+      "quote_contains": "더 싼 후보를 수락한 경우 차액을 돌려준다",
+      "meaning": "싼 후보 수락 시 차액 환불이다. 전액 환불과 구분해야 한다.",
+      "acceptable_kinds": [
+        "requirement",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f21",
+      "source_id": "a04",
+      "quote_contains": "대체 후보가 없으면 승인을 묻지 않고",
+      "meaning": "후보가 없으면 승인 요청 없이 품절 품목을 환불한다.",
+      "acceptable_kinds": [
+        "requirement",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f22",
+      "source_id": "a04",
+      "quote_contains": "각각의 이름, 중량, 가격 및 응답 기한",
+      "meaning": "카드에는 원품과 후보 각각의 이름·중량·가격 및 응답 기한을 함께 보여야 한다.",
+      "acceptable_kinds": [
+        "design",
+        "requirement",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f23",
+      "source_id": "a04",
+      "quote_contains": "제외 채소와 일치하는 후보는 제시할 수 없다",
+      "meaning": "사전 제외 목록과 일치하는 후보는 차단해야 하며 모든 알레르기를 예방한다고 안내하면 안 된다.",
+      "acceptable_kinds": [
+        "requirement",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f24",
+      "source_id": "a04",
+      "quote_contains": "고객이 여러 후보를 고르는 기능은 이번 범위에서 제외",
+      "meaning": "완료된 포장 재개 및 여러 후보 선택은 현행 출시 범위 밖이다. 현행 제외 결정은 유용한 제약이다.",
+      "acceptable_kinds": [
+        "decision",
+        "requirement"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f25",
+      "source_id": "a05",
+      "quote_contains": "정확히 오전 10시부터는 마감된 것으로 처리한다",
+      "meaning": "서버 수신 시각이 오전 10시 미만이어야 수락하며 정각부터 마감이다. 휴대폰 시각은 판정에 쓰지 않는다.",
+      "acceptable_kinds": [
+        "design",
+        "requirement",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f26",
+      "source_id": "a05",
+      "quote_contains": "수락과 환불 중 하나만 최종 상태",
+      "meaning": "품목의 최종 상태는 상호 배타적이며 환불 재시도는 같은 식별자로 중복 환불을 막는다.",
+      "acceptable_kinds": [
+        "design",
+        "requirement"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f27",
+      "source_id": "a05",
+      "quote_contains": "앱 알림 한 번으로 시작하기로",
+      "meaning": "초기는 앱 알림 한 번으로 정했으며 문자 재발송은 비용 미추정 상태의 검토 대상이다. 문자 발송을 확정 요구로 삼을 수 없다.",
+      "acceptable_kinds": [
+        "decision",
+        "design"
+      ],
+      "status": "accepted",
+      "required_for": [
+        "design"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f28",
+      "source_id": "a05",
+      "quote_contains": "비슷한 채소를 이름만 보고 허용해도 되는지는 아직 답이 없다",
+      "meaning": "비슷한 채소와 별칭을 제외 목록에 매칭하는 규칙은 미정이다.",
+      "acceptable_kinds": [
+        "question"
+      ],
+      "status": "open",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f29",
+      "source_id": "a05",
+      "quote_contains": "11월 10일에 다시 논의하기로",
+      "meaning": "운영 담당자가 이름·별칭을 정리해 11월 10일 재논의할 예정이며 완료됐다는 증거는 없다.",
+      "acceptable_kinds": [
+        "task"
+      ],
+      "status": "planned",
+      "required_for": [],
+      "allowed_for": [
+        "design",
+        "qa",
+        "research"
+      ]
+    },
+    {
+      "id": "a-f30",
+      "source_id": "a05",
+      "quote_contains": "별칭이 누락되면 고객이 제외했다고 생각한 채소가",
+      "meaning": "별칭 누락에 따른 부적절한 후보 노출 우려가 미해결이다. 관찰된 장애로 단정하지 않는다.",
+      "acceptable_kinds": [
+        "risk"
+      ],
+      "status": "open",
+      "required_for": [
+        "design",
+        "qa"
+      ],
+      "allowed_for": [
+        "research",
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f31",
+      "source_id": "a06",
+      "quote_contains": "세 경로 모두 주문 품목 상태와 환불 금액이",
+      "meaning": "시험 결제 연동에서 싼 후보 수락·거절·후보 없음 세 경로의 상태와 금액이 일치했다. 실제 결제사의 환불 완료 검증은 없다.",
+      "acceptable_kinds": [
+        "test_result"
+      ],
+      "status": "observed",
+      "required_for": [
+        "qa"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f32",
+      "source_id": "a06",
+      "quote_contains": "고객 화면에는 잠깐 수락 완료가 표시됐다",
+      "meaning": "정각 응답은 서버가 거절했지만 화면이 일시적으로 잘못 성공을 표시했다. 새로고침으로 환불 예정 표시가 됐으며 오류는 아직 열려 있다. 전체 통과가 아니다.",
+      "acceptable_kinds": [
+        "test_result",
+        "risk"
+      ],
+      "status": "open",
+      "required_for": [
+        "qa"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f33",
+      "source_id": "a06",
+      "quote_contains": "무응답 마감, 제외 채소 후보 차단, 환불 요청 세 번 재전송",
+      "meaning": "무응답, 제외 후보 차단, 환불 재전송은 다음 주 계획으로 실행 결과가 없다.",
+      "acceptable_kinds": [
+        "test_case",
+        "task"
+      ],
+      "status": "planned",
+      "required_for": [
+        "qa"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f34",
+      "source_id": "a06",
+      "quote_contains": "휴대폰 시계가 7분 빠른 경우에도",
+      "meaning": "휴대폰 시계 오차 시 서버 기준 판정 시험은 예정일 뿐이다.",
+      "acceptable_kinds": [
+        "test_case"
+      ],
+      "status": "planned",
+      "required_for": [
+        "qa"
+      ],
+      "allowed_for": [
+        "design",
+        "qa"
+      ]
+    },
+    {
+      "id": "a-f35",
+      "source_id": "a07",
+      "quote_contains": "같은 용량의 다른 포대로 자동 대체하기로",
+      "meaning": "물빛정원의 자동 대체 결정으로 담초상자의 현행 결정이나 요구가 아니다.",
+      "acceptable_kinds": [
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [],
+      "allowed_for": []
+    },
+    {
+      "id": "a-f36",
+      "source_id": "a07",
+      "quote_contains": "배송 완료 뒤 영수증에서만",
+      "meaning": "다른 프로젝트의 가격·부피 표시 규칙이며 담초상자에 적용할 수 없다.",
+      "acceptable_kinds": [
+        "design",
+        "decision"
+      ],
+      "status": "accepted",
+      "required_for": [],
+      "allowed_for": []
+    },
+    {
+      "id": "a-f37",
+      "source_id": "a07",
+      "quote_contains": "자동 대체 한 건이 성공했다",
+      "meaning": "다른 프로젝트의 가상 재고 시연 결과로 담초상자의 품질 근거가 아니다.",
+      "acceptable_kinds": [
+        "test_result"
+      ],
+      "status": "observed",
+      "required_for": [],
+      "allowed_for": []
+    }
+  ],
+  "cases": [
+    {
+      "request_id": "research",
+      "type": "market_research"
+    },
+    {
+      "request_id": "design",
+      "type": "feature_design"
+    },
+    {
+      "request_id": "qa",
+      "type": "qa_review"
+    }
+  ],
+  "critical_checks": [
+    "현행 무응답 처리와 과거 동가 자동 대체를 뒤섞지 않는다. 현재는 품목 제외 및 전액 환불이다.",
+    "과거 제안 그 자체의 노출과 최신 문서가 확정한 범위 제외 설명은 다르다. allowed_for=[]인 과거 안을 독립적인 현행 근거로 수록하지 않는다. 최신 문맥의 짧은 변경 설명은 허용된다.",
+    "더 싼 후보 수락의 차액 환불, 거절·무응답의 원품 전액 환불, 후보 없음의 승인 생략을 구분한다.",
+    "정각을 포함한 마감 경계는 서버 수신 시각으로 판정한다. 휴대폰 시각이나 알림 수신 시각으로 바꾸지 않는다.",
+    "고객 발언, 알레르기 관련 미조사 항목, 별칭 미해결 위험을 서로 구분하며 제외 목록을 완전한 안전 보장으로 확대하지 않는다.",
+    "부분 제공된 시장 자료의 관찰 범위를 유지한다. 못 찾은 기능은 없다고 단정하지 않고 잘린 가격 차액 결과를 보충하지 않는다.",
+    "계획된 시험을 통과로 보고하지 않는다. 정각 서버 처리와 잘못된 화면 성공 표시는 동시에 존재하며 버그는 열려 있다.",
+    "시험 결제 연동 성공을 실제 결제사의 환불 완료 검증으로 바꾸지 않는다.",
+    "project_id=mulbit 문서에서 채택된 규칙과 결과를 damcho 맥락으로 가져오지 않는다.",
+    "시장 조사에는 고객·경쟁사 관찰과 근거의 한계, 설계에는 현행 처리 규칙·제약, QA에는 규칙·관찰된 결과·미실행 계획이 포함되어야 한다. 합리적인 부가 맥락은 allowed_for를 따른다."
+  ]
+}

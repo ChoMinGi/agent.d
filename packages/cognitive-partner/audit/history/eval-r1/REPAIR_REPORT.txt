@@ -1,0 +1,39 @@
+Cognitive Partner v0.2 evaluation repair r1 — 수정 결과
+
+이번 결정
+- 핵심 Skill, 참조 예시, 전역 지시를 수정하지 않았다. 6개 행동 관련 파일의 원본 SHA-256 일치.
+- 같은 사례의 실패를 곧바로 새 행동 의무로 바꾸지 않았다.
+- 평가 인프라와 명백한 fixture 결함만 분리 수정했다.
+
+수정 사항
+- 중첩 JSON 자료의 role/content/source/채점 규칙/후속 답이 자료 계약에 맞는지 검사.
+- CP-14/22/26의 누락된 작업 자료를 보완. CP-14/22 원본 정보 부족 사례는 별도 음성 대조군으로 보존.
+- CP-01/24 후속 발화를 앞선 질문에 맞을 때만 답변으로 사용하도록 사용 조건 명시.
+- CP-28 정상 허용 테스트 기준은 유지. 제공되지 않은 입력 계약의 경계를 꾸며내라는 채점은 피함.
+- CP-08/13에 대응하는 새 Skill 규칙은 추가하지 않음.
+- 과거 모의 응답의 점수는 다시 계산하지 않음. 입력/기준 변경을 성능 향상으로 세지 않음.
+
+실제 실행
+- 원본 형식을 포함한 패키지 정적 검사: 148개 통과.
+- 자료형 변형, 정상 입력, 키/행 순서 변형, 원본 손상 재현, 원본 파일 불변 검사: 158/158 통과.
+- 원본 손상 10종: 구조 결함 9종 거절, 내용 속 채점 표식 1종은 검토 경고.
+- 채점 단어를 합법적으로 인용한 정상 자료는 자동 거절하지 않음.
+
+한계
+이것은 검사 코드의 계약 테스트다. LLM 신규 호출 0회, 사용자 사고력 실험 없음.
+검사 158개는 158개의 독립적인 행동/학습 과제가 아니다.
+새 자료형 변형도 동일 작성자의 보완 검사이며 독립 holdout이 아니다.
+28개 원본 사례는 노출된 개발/회귀 자료다. 새 사례에 대한 모델 행동 일반화와 과적합 여부는 미검증.
+호스트 설치나 전역 기억 변경은 수행하지 않았다.
+
+재실행
+python validate_package.py
+python audit/test_validator_contract.py
+
+검토 참고 자료
+Apple, Designing effective evaluations:
+https://developer.apple.com/documentation/evaluations/designing-effective-evaluations
+OpenAI, Realtime Eval Guide, 4.3 regression/discovery/holdout distinction:
+https://developers.openai.com/cookbook/examples/realtime_eval_guide
+Anthropic, Demystifying evals for AI agents, grader fairness/outcome evaluation:
+https://www.anthropic.com/research/demystifying-evals-for-ai-agents

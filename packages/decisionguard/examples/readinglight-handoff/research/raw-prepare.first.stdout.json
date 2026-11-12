@@ -1,0 +1,1364 @@
+{
+  "research": {
+    "schema_version": 1,
+    "mode": "prepare_raw_context",
+    "task": {
+      "summary": "Use the discovery notes to prepare a concise research synthesis for ReadingLight. Explain what we learned and what still needs validation. Preserve the context the next designer will need.",
+      "project_id": "readinglight",
+      "scope": "two-room-pilot",
+      "as_of": "2027-07-14T10:02:00Z",
+      "max_items": 16,
+      "type": "market_research",
+      "topics": [
+        "seat-availability",
+        "local-discovery",
+        "research-generalization",
+        "cross-branch-demand",
+        "accessibility",
+        "prototype-scope",
+        "release-approval"
+      ],
+      "relevance": [
+        {
+          "record_id": "G-001",
+          "action": "include",
+          "rationale": "Frames the two-room purpose while retaining unknown formal goal-approval status."
+        },
+        {
+          "record_id": "CE-001",
+          "action": "include",
+          "rationale": "Supports the local seating problem and preserves the interview sample size."
+        },
+        {
+          "record_id": "CE-002",
+          "action": "include",
+          "rationale": "Provides the local observational count without an invented rate or intervention effect."
+        },
+        {
+          "record_id": "R-001",
+          "action": "include",
+          "rationale": "Prevents overgeneralizing the local findings into population demand."
+        },
+        {
+          "record_id": "H-001",
+          "action": "include",
+          "rationale": "Identifies the untested benefit hypothesis that must remain separate from observed findings."
+        },
+        {
+          "record_id": "Q-001",
+          "action": "include",
+          "rationale": "Preserves the unrepresented populations and the action-specific limit on demand claims."
+        },
+        {
+          "record_id": "D-041",
+          "action": "include",
+          "rationale": "Defines the accepted prototype scope that research and the next designer must carry forward."
+        },
+        {
+          "record_id": "REQ-RELEASE",
+          "action": "include",
+          "rationale": "Separates design authority from the unestablished visitor-facing release approval."
+        }
+      ]
+    },
+    "status": "needs_context",
+    "coverage": {
+      "scope": "Supplied raw documents only; workspace discovery not evaluated",
+      "complete": true,
+      "gaps": [
+        "Checked only the supplied discovery r1 note. No workspace search or external follow-up was authorized; re-fetch applicable current sources before reuse.",
+        "The cross-branch interruption benefit is untested and weekend/screen-reader interviews are missing. These limit demand and effectiveness claims, not the authorized staff-only prototype design.",
+        "No separate written release approval or evidence of actual implementation/deployment is supplied. This is an evidence boundary, not a claim that such records cannot exist."
+      ]
+    },
+    "selected": [
+      {
+        "id": "G-001",
+        "title": "Stated purpose: help visitors find space in two reading rooms",
+        "kind": "goal",
+        "status": "unknown",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+        },
+        "status_evidence": "ReadingLight will help visitors find space in the library's two reading rooms.",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Frames the two-room purpose while retaining unknown formal goal-approval status."
+        ],
+        "relationship_evidence": [],
+        "followup": {
+          "outcome": "unresolved",
+          "evidence": [
+            {
+              "id": "discovery",
+              "title": "Reading room discovery notes",
+              "url": "demo://readinglight/discovery",
+              "revision": "r1",
+              "fetched_at": "2027-07-14T10:01:00Z",
+              "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+            }
+          ],
+          "rationale": "Checked all four passages of discovery r1. The purpose is stated but separate goal-approval authority is not identified. If formal goal approval matters, ask the product steward for the applicable decision; D-041 independently authorizes the scoped prototype design."
+        },
+        "extraction": {
+          "title": "Stated purpose: help visitors find space in two reading rooms",
+          "passage_id": "discovery:fbde0bfe19411f2e",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "The notes state the intended goal, but do not identify separate acceptance of this goal; unknown is retained for formal authority rather than inferring it from a future-tense statement.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:fbde0bfe19411f2e",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "D-041",
+        "title": "Accepted prototype: individual free/occupied seat dots without visitor names in the two rooms",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+        },
+        "status_evidence": "Product steward Sela Rowan accepted decision D-041 today:",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today:"
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Defines the accepted prototype scope that research and the next designer must carry forward."
+        ],
+        "relationship_evidence": [],
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "id": "discovery",
+              "title": "Reading room discovery notes",
+              "url": "demo://readinglight/discovery",
+              "revision": "r1",
+              "fetched_at": "2027-07-14T10:01:00Z",
+              "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+            },
+            {
+              "id": "discovery",
+              "title": "Reading room discovery notes",
+              "url": "demo://readinglight/discovery",
+              "revision": "r1",
+              "fetched_at": "2027-07-14T10:01:00Z",
+              "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+            }
+          ],
+          "rationale": "Checked the complete supplied note for an amended or superseding prototype choice; none is present. Acceptance remains limited to design. Re-fetch D-041 and any later authoritative changes before reuse; this is not an exhaustive workspace check."
+        },
+        "extraction": {
+          "title": "Accepted prototype: individual free/occupied seat dots without visitor names in the two rooms",
+          "passage_id": "discovery:50071c354867d5e5",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "The explicit decision and named product steward establish acceptance for prototype design only, in the two pilot rooms; deployment authority is separate.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:50071c354867d5e5",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "H-001",
+        "title": "Oren Vale hypothesizes that a live seat map reduces interruptions across other branches",
+        "kind": "assumption",
+        "status": "unverified",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Librarian Oren Vale suspects that a live seat map would reduce interruptions across other branches; nobody has tested that market hypothesis."
+        },
+        "status_evidence": "nobody has tested that market hypothesis.",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "nobody has tested that market hypothesis."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Identifies the untested benefit hypothesis that must remain separate from observed findings."
+        ],
+        "relationship_evidence": [],
+        "followup": null,
+        "extraction": {
+          "title": "Oren Vale hypothesizes that a live seat map reduces interruptions across other branches",
+          "passage_id": "discovery:fbde0bfe19411f2e",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "An untested cross-branch hypothesis is retained as a validation item within this pilot handoff. The record does not assert a measured benefit or expand prototype scope beyond the two rooms.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:fbde0bfe19411f2e",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "Q-001",
+        "title": "Weekend and screen-reader user needs remain unresearched",
+        "kind": "question",
+        "status": "open",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+        },
+        "status_evidence": "Weekend and screen-reader users have not yet been interviewed.",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Weekend and screen-reader users have not yet been interviewed."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Preserves the unrepresented populations and the action-specific limit on demand claims."
+        ],
+        "relationship_evidence": [],
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "id": "discovery",
+              "title": "Reading room discovery notes",
+              "url": "demo://readinglight/discovery",
+              "revision": "r1",
+              "fetched_at": "2027-07-14T10:01:00Z",
+              "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+            }
+          ],
+          "rationale": "Checked the full supplied discovery note for later answers; none resolves these missing interviews. No follow-up document is linked. Preserve the open research need and check newer interviews before making demand or accessibility claims."
+        },
+        "extraction": {
+          "title": "Weekend and screen-reader user needs remain unresearched",
+          "passage_id": "discovery:fbde0bfe19411f2e",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "Recruitment remains an open research need; the source explicitly says this gap limits demand claims without preventing a staff-only prototype.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:fbde0bfe19411f2e",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "R-001",
+        "title": "Local discovery cannot establish demand for all library users",
+        "kind": "risk",
+        "status": "open",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "These are local observations, not evidence about all library users."
+        },
+        "status_evidence": "These are local observations, not evidence about all library users.",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "These are local observations, not evidence about all library users."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Prevents overgeneralizing the local findings into population demand."
+        ],
+        "relationship_evidence": [],
+        "followup": null,
+        "extraction": {
+          "title": "Local discovery cannot establish demand for all library users",
+          "passage_id": "discovery:fbde0bfe19411f2e",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "This explicit evidence limit affects demand claims; it is not a prohibition on the prototype design authorized in D-041.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:fbde0bfe19411f2e",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "REQ-RELEASE",
+        "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+        "kind": "requirement",
+        "status": "accepted",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+        },
+        "status_evidence": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Separates design authority from the unestablished visitor-facing release approval."
+        ],
+        "relationship_evidence": [],
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "id": "discovery",
+              "title": "Reading room discovery notes",
+              "url": "demo://readinglight/discovery",
+              "revision": "r1",
+              "fetched_at": "2027-07-14T10:01:00Z",
+              "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+            }
+          ],
+          "rationale": "The supplied note retains the separate written-release requirement and contains no written release approval. The requirement is current in this source; actual release approval and deployment are not established. Retrieve Ivo Reed’s scoped written approval before any visitor-facing deployment."
+        },
+        "extraction": {
+          "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+          "passage_id": "discovery:50071c354867d5e5",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "This is the explicit authorization boundary in the accepted decision paragraph. It establishes the release prerequisite, not evidence that release approval has been issued.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:50071c354867d5e5",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "CE-001",
+        "title": "Four of six interviewees reported abandoning a room after finding no seat",
+        "kind": "customer_evidence",
+        "status": "observed",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat;"
+        },
+        "status_evidence": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch.",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Supports the local seating problem and preserves the interview sample size."
+        ],
+        "relationship_evidence": [],
+        "followup": null,
+        "extraction": {
+          "title": "Four of six interviewees reported abandoning a room after finding no seat",
+          "passage_id": "discovery:fbde0bfe19411f2e",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "Interview reports are evidence of what this small local sample said, not a population prevalence estimate or an observed intervention effect.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:fbde0bfe19411f2e",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "CE-002",
+        "title": "Nine unnecessary room entries counted during two afternoon observations",
+        "kind": "customer_evidence",
+        "status": "observed",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat; observers counted nine unnecessary room entries."
+        },
+        "status_evidence": "observers counted nine unnecessary room entries.",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "observers counted nine unnecessary room entries."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Provides the local observational count without an invented rate or intervention effect."
+        ],
+        "relationship_evidence": [],
+        "followup": null,
+        "extraction": {
+          "title": "Nine unnecessary room entries counted during two afternoon observations",
+          "passage_id": "discovery:fbde0bfe19411f2e",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "The count belongs to the two afternoon observations in this branch. No observation duration, total traffic, baseline rate or reason for each entry is supplied.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:fbde0bfe19411f2e",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      }
+    ],
+    "attention": [
+      {
+        "id": "G-001",
+        "title": "Stated purpose: help visitors find space in two reading rooms",
+        "kind": "goal",
+        "status": "unknown",
+        "reason": "Follow-up authority remains unresolved.",
+        "in_selected": true,
+        "omission_reason": null,
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+        },
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+        }
+      },
+      {
+        "id": "D-041",
+        "title": "Accepted prototype: individual free/occupied seat dots without visitor names in the two rooms",
+        "kind": "decision",
+        "status": "accepted",
+        "reason": "approval_boundary: Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+        "in_selected": true,
+        "omission_reason": null,
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+        },
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today:"
+        }
+      },
+      {
+        "id": "H-001",
+        "title": "Oren Vale hypothesizes that a live seat map reduces interruptions across other branches",
+        "kind": "assumption",
+        "status": "unverified",
+        "reason": "The task relies on an unverified assumption.",
+        "in_selected": true,
+        "omission_reason": null,
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Librarian Oren Vale suspects that a live seat map would reduce interruptions across other branches; nobody has tested that market hypothesis."
+        },
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "nobody has tested that market hypothesis."
+        }
+      },
+      {
+        "id": "Q-001",
+        "title": "Weekend and screen-reader user needs remain unresearched",
+        "kind": "question",
+        "status": "open",
+        "reason": "An applicable question or risk is still open.",
+        "in_selected": true,
+        "omission_reason": null,
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+        },
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Weekend and screen-reader users have not yet been interviewed."
+        }
+      },
+      {
+        "id": "R-001",
+        "title": "Local discovery cannot establish demand for all library users",
+        "kind": "risk",
+        "status": "open",
+        "reason": "An applicable question or risk is still open.",
+        "in_selected": true,
+        "omission_reason": null,
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "These are local observations, not evidence about all library users."
+        },
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "These are local observations, not evidence about all library users."
+        }
+      },
+      {
+        "id": "REQ-RELEASE",
+        "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+        "kind": "requirement",
+        "status": "accepted",
+        "reason": "approval_boundary: Before visitor-facing deployment, retrieve the specific written release approval and verify its scope; this source supplies the requirement, not the approval.",
+        "in_selected": true,
+        "omission_reason": null,
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+        },
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+        }
+      }
+    ],
+    "reconciled_history": [],
+    "gaps": [
+      "Checked only the supplied discovery r1 note. No workspace search or external follow-up was authorized; re-fetch applicable current sources before reuse.",
+      "The cross-branch interruption benefit is untested and weekend/screen-reader interviews are missing. These limit demand and effectiveness claims, not the authorized staff-only prototype design.",
+      "No separate written release approval or evidence of actual implementation/deployment is supplied. This is an evidence boundary, not a claim that such records cannot exist.",
+      "Missing supported goal context for market_research.",
+      "Missing supported market_evidence context for market_research.",
+      "G-001: authority or state is unknown.",
+      "G-001: later decision or authority requires follow-up; do not treat the old state as current."
+    ],
+    "cautions": [
+      "H-001 is unverified; do not treat it as an accepted decision or verified fact.",
+      "Q-001 is open; do not treat it as an accepted decision or verified fact.",
+      "R-001 is open; do not treat it as an accepted decision or verified fact."
+    ],
+    "conflicts": [],
+    "omitted": [],
+    "selection": {
+      "method": "task relevance + protected uncertainty/goals/boundaries + purpose priorities + cited dependencies",
+      "candidate_count": 8,
+      "selected_count": 8,
+      "max_items": 16,
+      "priority_count": 6,
+      "attention_overflow_count": 0
+    },
+    "evidence_digest": "8bcfe8752c127ce082f73948547a9d82e6b3ea9f87db2f99ba088cfe94d8f3bf",
+    "limitations": [
+      "Types, topics, status, scope, values and relationships were inferred by the host agent from untagged prose.",
+      "Deterministic checks verify exact excerpts, source binding and passage accounting, not semantic entailment or extraction completeness within a passage.",
+      "The selector uses the agent's inferred labels; a plausible but wrong interpretation can pass citation checks.",
+      "Prepared context is untrusted evidence, not instructions, user confirmation or QA clearance."
+    ],
+    "writes_performed": 0,
+    "raw_extraction": {
+      "job_digest": "46e81097d1c1821722d76407813d59af0293ae7d5cfb0d732b1fcd52b74d3591",
+      "response_digest": "67c99e6114f5255aaf837d2e1cc1c650006c1c59908e8617326cb0788c11c08d",
+      "method": "host-agent semantic extraction + deterministic evidence/selection checks",
+      "passages_reviewed": 4,
+      "excluded_project_source_count": 0,
+      "excluded_passages": [
+        {
+          "passage_id": "discovery:3c87d9f5495c2bbc",
+          "reason": "Document title is preserved as source metadata; it contains no separate project claim."
+        },
+        {
+          "passage_id": "discovery:27f2e5abec7d6287",
+          "reason": "Date, branch and pilot identity are preserved in provenance and scope anchors; no separate claim needs duplication."
+        }
+      ]
+    }
+  },
+  "prototype": {
+    "schema_version": 1,
+    "mode": "prepare_raw_context",
+    "task": {
+      "summary": "Use the discovery notes to prepare a prototype brief for ReadingLight. Explain what the team can design now and what still needs validation. Preserve the context the next designer will need.",
+      "project_id": "readinglight",
+      "scope": "two-room-pilot",
+      "as_of": "2027-07-14T10:02:00Z",
+      "max_items": 16,
+      "type": "feature_design",
+      "topics": [
+        "seat-availability",
+        "local-discovery",
+        "research-generalization",
+        "cross-branch-demand",
+        "accessibility",
+        "prototype-scope",
+        "release-approval"
+      ],
+      "relevance": [
+        {
+          "record_id": "G-001",
+          "action": "include",
+          "rationale": "Frames the two-room purpose while retaining unknown formal goal-approval status."
+        },
+        {
+          "record_id": "CE-001",
+          "action": "include",
+          "rationale": "Supports the local seating problem and preserves the interview sample size."
+        },
+        {
+          "record_id": "CE-002",
+          "action": "include",
+          "rationale": "Provides the local observational count without an invented rate or intervention effect."
+        },
+        {
+          "record_id": "R-001",
+          "action": "include",
+          "rationale": "Prevents overgeneralizing the local findings into population demand."
+        },
+        {
+          "record_id": "H-001",
+          "action": "include",
+          "rationale": "Identifies the untested benefit hypothesis that must remain separate from observed findings."
+        },
+        {
+          "record_id": "Q-001",
+          "action": "include",
+          "rationale": "Preserves the unrepresented populations and the action-specific limit on demand claims."
+        },
+        {
+          "record_id": "D-041",
+          "action": "include",
+          "rationale": "Defines the accepted prototype scope that research and the next designer must carry forward."
+        },
+        {
+          "record_id": "REQ-RELEASE",
+          "action": "include",
+          "rationale": "Separates design authority from the unestablished visitor-facing release approval."
+        }
+      ]
+    },
+    "status": "needs_context",
+    "coverage": {
+      "scope": "Supplied raw documents only; workspace discovery not evaluated",
+      "complete": true,
+      "gaps": [
+        "Checked only the supplied discovery r1 note. No workspace search or external follow-up was authorized; re-fetch applicable current sources before reuse.",
+        "The cross-branch interruption benefit is untested and weekend/screen-reader interviews are missing. These limit demand and effectiveness claims, not the authorized staff-only prototype design.",
+        "No separate written release approval or evidence of actual implementation/deployment is supplied. This is an evidence boundary, not a claim that such records cannot exist."
+      ]
+    },
+    "selected": [
+      {
+        "id": "D-041",
+        "title": "Accepted prototype: individual free/occupied seat dots without visitor names in the two rooms",
+        "kind": "decision",
+        "status": "accepted",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+        },
+        "status_evidence": "Product steward Sela Rowan accepted decision D-041 today:",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today:"
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Defines the accepted prototype scope that research and the next designer must carry forward."
+        ],
+        "relationship_evidence": [],
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "id": "discovery",
+              "title": "Reading room discovery notes",
+              "url": "demo://readinglight/discovery",
+              "revision": "r1",
+              "fetched_at": "2027-07-14T10:01:00Z",
+              "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+            },
+            {
+              "id": "discovery",
+              "title": "Reading room discovery notes",
+              "url": "demo://readinglight/discovery",
+              "revision": "r1",
+              "fetched_at": "2027-07-14T10:01:00Z",
+              "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+            }
+          ],
+          "rationale": "Checked the complete supplied note for an amended or superseding prototype choice; none is present. Acceptance remains limited to design. Re-fetch D-041 and any later authoritative changes before reuse; this is not an exhaustive workspace check."
+        },
+        "extraction": {
+          "title": "Accepted prototype: individual free/occupied seat dots without visitor names in the two rooms",
+          "passage_id": "discovery:50071c354867d5e5",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "The explicit decision and named product steward establish acceptance for prototype design only, in the two pilot rooms; deployment authority is separate.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:50071c354867d5e5",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "REQ-RELEASE",
+        "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+        "kind": "requirement",
+        "status": "accepted",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+        },
+        "status_evidence": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed.",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Separates design authority from the unestablished visitor-facing release approval."
+        ],
+        "relationship_evidence": [],
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "id": "discovery",
+              "title": "Reading room discovery notes",
+              "url": "demo://readinglight/discovery",
+              "revision": "r1",
+              "fetched_at": "2027-07-14T10:01:00Z",
+              "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+            }
+          ],
+          "rationale": "The supplied note retains the separate written-release requirement and contains no written release approval. The requirement is current in this source; actual release approval and deployment are not established. Retrieve Ivo Reed’s scoped written approval before any visitor-facing deployment."
+        },
+        "extraction": {
+          "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+          "passage_id": "discovery:50071c354867d5e5",
+          "line_start": 7,
+          "line_end": 7,
+          "rationale": "This is the explicit authorization boundary in the accepted decision paragraph. It establishes the release prerequisite, not evidence that release approval has been issued.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:50071c354867d5e5",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "R-001",
+        "title": "Local discovery cannot establish demand for all library users",
+        "kind": "risk",
+        "status": "open",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "These are local observations, not evidence about all library users."
+        },
+        "status_evidence": "These are local observations, not evidence about all library users.",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "These are local observations, not evidence about all library users."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Prevents overgeneralizing the local findings into population demand."
+        ],
+        "relationship_evidence": [],
+        "followup": null,
+        "extraction": {
+          "title": "Local discovery cannot establish demand for all library users",
+          "passage_id": "discovery:fbde0bfe19411f2e",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "This explicit evidence limit affects demand claims; it is not a prohibition on the prototype design authorized in D-041.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:fbde0bfe19411f2e",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "H-001",
+        "title": "Oren Vale hypothesizes that a live seat map reduces interruptions across other branches",
+        "kind": "assumption",
+        "status": "unverified",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Librarian Oren Vale suspects that a live seat map would reduce interruptions across other branches; nobody has tested that market hypothesis."
+        },
+        "status_evidence": "nobody has tested that market hypothesis.",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "nobody has tested that market hypothesis."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Identifies the untested benefit hypothesis that must remain separate from observed findings."
+        ],
+        "relationship_evidence": [],
+        "followup": null,
+        "extraction": {
+          "title": "Oren Vale hypothesizes that a live seat map reduces interruptions across other branches",
+          "passage_id": "discovery:fbde0bfe19411f2e",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "An untested cross-branch hypothesis is retained as a validation item within this pilot handoff. The record does not assert a measured benefit or expand prototype scope beyond the two rooms.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:fbde0bfe19411f2e",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "G-001",
+        "title": "Stated purpose: help visitors find space in two reading rooms",
+        "kind": "goal",
+        "status": "unknown",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+        },
+        "status_evidence": "ReadingLight will help visitors find space in the library's two reading rooms.",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Frames the two-room purpose while retaining unknown formal goal-approval status."
+        ],
+        "relationship_evidence": [],
+        "followup": {
+          "outcome": "unresolved",
+          "evidence": [
+            {
+              "id": "discovery",
+              "title": "Reading room discovery notes",
+              "url": "demo://readinglight/discovery",
+              "revision": "r1",
+              "fetched_at": "2027-07-14T10:01:00Z",
+              "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+            }
+          ],
+          "rationale": "Checked all four passages of discovery r1. The purpose is stated but separate goal-approval authority is not identified. If formal goal approval matters, ask the product steward for the applicable decision; D-041 independently authorizes the scoped prototype design."
+        },
+        "extraction": {
+          "title": "Stated purpose: help visitors find space in two reading rooms",
+          "passage_id": "discovery:fbde0bfe19411f2e",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "The notes state the intended goal, but do not identify separate acceptance of this goal; unknown is retained for formal authority rather than inferring it from a future-tense statement.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:fbde0bfe19411f2e",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "Q-001",
+        "title": "Weekend and screen-reader user needs remain unresearched",
+        "kind": "question",
+        "status": "open",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+        },
+        "status_evidence": "Weekend and screen-reader users have not yet been interviewed.",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Weekend and screen-reader users have not yet been interviewed."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Preserves the unrepresented populations and the action-specific limit on demand claims."
+        ],
+        "relationship_evidence": [],
+        "followup": {
+          "outcome": "no_change_found",
+          "evidence": [
+            {
+              "id": "discovery",
+              "title": "Reading room discovery notes",
+              "url": "demo://readinglight/discovery",
+              "revision": "r1",
+              "fetched_at": "2027-07-14T10:01:00Z",
+              "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+            }
+          ],
+          "rationale": "Checked the full supplied discovery note for later answers; none resolves these missing interviews. No follow-up document is linked. Preserve the open research need and check newer interviews before making demand or accessibility claims."
+        },
+        "extraction": {
+          "title": "Weekend and screen-reader user needs remain unresearched",
+          "passage_id": "discovery:fbde0bfe19411f2e",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "Recruitment remains an open research need; the source explicitly says this gap limits demand claims without preventing a staff-only prototype.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:fbde0bfe19411f2e",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "CE-001",
+        "title": "Four of six interviewees reported abandoning a room after finding no seat",
+        "kind": "customer_evidence",
+        "status": "observed",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat;"
+        },
+        "status_evidence": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch.",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Supports the local seating problem and preserves the interview sample size."
+        ],
+        "relationship_evidence": [],
+        "followup": null,
+        "extraction": {
+          "title": "Four of six interviewees reported abandoning a room after finding no seat",
+          "passage_id": "discovery:fbde0bfe19411f2e",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "Interview reports are evidence of what this small local sample said, not a population prevalence estimate or an observed intervention effect.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:fbde0bfe19411f2e",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      },
+      {
+        "id": "CE-002",
+        "title": "Nine unnecessary room entries counted during two afternoon observations",
+        "kind": "customer_evidence",
+        "status": "observed",
+        "scope": "two-room-pilot",
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Researcher Mira Fen recorded six visitor interviews and two afternoon observations at this branch. Four interviewees said they had abandoned a room after finding no seat; observers counted nine unnecessary room entries."
+        },
+        "status_evidence": "observers counted nine unnecessary room entries.",
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "observers counted nine unnecessary room entries."
+        },
+        "source_complete": true,
+        "partial_context": null,
+        "selection_reasons": [
+          "Task-specific rationale: Provides the local observational count without an invented rate or intervention effect."
+        ],
+        "relationship_evidence": [],
+        "followup": null,
+        "extraction": {
+          "title": "Nine unnecessary room entries counted during two afternoon observations",
+          "passage_id": "discovery:fbde0bfe19411f2e",
+          "line_start": 5,
+          "line_end": 5,
+          "rationale": "The count belongs to the two afternoon observations in this branch. No observation duration, total traffic, baseline rate or reason for each entry is supplied.",
+          "scope_evidence": "14 July 2027 — Bracken Civic Library, ReadingLight pilot",
+          "status_source_id": "discovery",
+          "status_passage_id": "discovery:fbde0bfe19411f2e",
+          "status_link": null,
+          "interpretation": "host-agent inference; exact citations checked, meaning requires review"
+        }
+      }
+    ],
+    "attention": [
+      {
+        "id": "D-041",
+        "title": "Accepted prototype: individual free/occupied seat dots without visitor names in the two rooms",
+        "kind": "decision",
+        "status": "accepted",
+        "reason": "approval_boundary: Acceptance permits the prototype design and does not authorize visitor-facing deployment.",
+        "in_selected": true,
+        "omission_reason": null,
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only."
+        },
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today:"
+        }
+      },
+      {
+        "id": "REQ-RELEASE",
+        "title": "Visitor-facing deployment requires separate written approval from release chair Ivo Reed",
+        "kind": "requirement",
+        "status": "accepted",
+        "reason": "approval_boundary: Before visitor-facing deployment, retrieve the specific written release approval and verify its scope; this source supplies the requirement, not the approval.",
+        "in_selected": true,
+        "omission_reason": null,
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+        },
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Product steward Sela Rowan accepted decision D-041 today: prototype individual free/occupied seat dots, without visitor names, in these two rooms. This authorizes prototype design only. Any visitor-facing deployment requires a separate written release approval from release chair Ivo Reed."
+        }
+      },
+      {
+        "id": "R-001",
+        "title": "Local discovery cannot establish demand for all library users",
+        "kind": "risk",
+        "status": "open",
+        "reason": "An applicable question or risk is still open.",
+        "in_selected": true,
+        "omission_reason": null,
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "These are local observations, not evidence about all library users."
+        },
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "These are local observations, not evidence about all library users."
+        }
+      },
+      {
+        "id": "H-001",
+        "title": "Oren Vale hypothesizes that a live seat map reduces interruptions across other branches",
+        "kind": "assumption",
+        "status": "unverified",
+        "reason": "The task relies on an unverified assumption.",
+        "in_selected": true,
+        "omission_reason": null,
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Librarian Oren Vale suspects that a live seat map would reduce interruptions across other branches; nobody has tested that market hypothesis."
+        },
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "nobody has tested that market hypothesis."
+        }
+      },
+      {
+        "id": "G-001",
+        "title": "Stated purpose: help visitors find space in two reading rooms",
+        "kind": "goal",
+        "status": "unknown",
+        "reason": "Follow-up authority remains unresolved.",
+        "in_selected": true,
+        "omission_reason": null,
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+        },
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "ReadingLight will help visitors find space in the library's two reading rooms."
+        }
+      },
+      {
+        "id": "Q-001",
+        "title": "Weekend and screen-reader user needs remain unresearched",
+        "kind": "question",
+        "status": "open",
+        "reason": "An applicable question or risk is still open.",
+        "in_selected": true,
+        "omission_reason": null,
+        "evidence": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Weekend and screen-reader users have not yet been interviewed. That gap limits demand claims but does not prevent a staff-only prototype."
+        },
+        "status_citation": {
+          "id": "discovery",
+          "title": "Reading room discovery notes",
+          "url": "demo://readinglight/discovery",
+          "revision": "r1",
+          "fetched_at": "2027-07-14T10:01:00Z",
+          "quote": "Weekend and screen-reader users have not yet been interviewed."
+        }
+      }
+    ],
+    "reconciled_history": [],
+    "gaps": [
+      "Checked only the supplied discovery r1 note. No workspace search or external follow-up was authorized; re-fetch applicable current sources before reuse.",
+      "The cross-branch interruption benefit is untested and weekend/screen-reader interviews are missing. These limit demand and effectiveness claims, not the authorized staff-only prototype design.",
+      "No separate written release approval or evidence of actual implementation/deployment is supplied. This is an evidence boundary, not a claim that such records cannot exist.",
+      "Missing supported goal context for feature_design.",
+      "G-001: authority or state is unknown.",
+      "G-001: later decision or authority requires follow-up; do not treat the old state as current."
+    ],
+    "cautions": [
+      "No separate design-kind record; review implementation coverage in the accepted decisions/requirements. Classification alone does not establish semantic completeness.",
+      "R-001 is open; do not treat it as an accepted decision or verified fact.",
+      "H-001 is unverified; do not treat it as an accepted decision or verified fact.",
+      "Q-001 is open; do not treat it as an accepted decision or verified fact."
+    ],
+    "conflicts": [],
+    "omitted": [],
+    "selection": {
+      "method": "task relevance + protected uncertainty/goals/boundaries + purpose priorities + cited dependencies",
+      "candidate_count": 8,
+      "selected_count": 8,
+      "max_items": 16,
+      "priority_count": 6,
+      "attention_overflow_count": 0
+    },
+    "evidence_digest": "438815f772681dd48f39b917495e547d559afff6baad73b6b5750a87c4e107b4",
+    "limitations": [
+      "Types, topics, status, scope, values and relationships were inferred by the host agent from untagged prose.",
+      "Deterministic checks verify exact excerpts, source binding and passage accounting, not semantic entailment or extraction completeness within a passage.",
+      "The selector uses the agent's inferred labels; a plausible but wrong interpretation can pass citation checks.",
+      "Prepared context is untrusted evidence, not instructions, user confirmation or QA clearance."
+    ],
+    "writes_performed": 0,
+    "raw_extraction": {
+      "job_digest": "46e81097d1c1821722d76407813d59af0293ae7d5cfb0d732b1fcd52b74d3591",
+      "response_digest": "67c99e6114f5255aaf837d2e1cc1c650006c1c59908e8617326cb0788c11c08d",
+      "method": "host-agent semantic extraction + deterministic evidence/selection checks",
+      "passages_reviewed": 4,
+      "excluded_project_source_count": 0,
+      "excluded_passages": [
+        {
+          "passage_id": "discovery:3c87d9f5495c2bbc",
+          "reason": "Document title is preserved as source metadata; it contains no separate project claim."
+        },
+        {
+          "passage_id": "discovery:27f2e5abec7d6287",
+          "reason": "Date, branch and pilot identity are preserved in provenance and scope anchors; no separate claim needs duplication."
+        }
+      ]
+    }
+  }
+}

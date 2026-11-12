@@ -1,0 +1,844 @@
+{
+  "adjudication_version": 2,
+  "suite": "suite-b",
+  "run": "improved-b",
+  "date": "2026-11-08",
+  "review_scope": {
+    "roots_read_this_audit": [
+      "work/blind-author/suite-b",
+      "work/blind-runs/improved-b"
+    ],
+    "all_seven_raw_sources_and_frozen_answers_reviewed": true,
+    "response_and_all_selected_titles_quotes_rationales_gaps_omissions_reviewed": true,
+    "repository_suite_a_other_new_runs_or_external_services_read": false,
+    "subagents_used": false,
+    "frozen_files_modified": false,
+    "note": "Only the already-completed baseline adjudication in conversation is used for comparison. No implementation diagnosis was attempted."
+  },
+  "method": [
+    "Use the same frozen minimum facts and whole-record semantic criteria as baseline.",
+    "Credit clauses split across selected records and explicit adequate uncertainty disclosure; do not equate exact quote/kind/status matches with meaning.",
+    "Judge request-specific relevance rather than mechanically penalize every optional or extra supported fact.",
+    "Separate source-fact distortions from packet coverage/diagnostic errors."
+  ],
+  "integrity": {
+    "sealed_artifacts_verified": 7,
+    "all_seal_hashes_match": true,
+    "response_sha256": "af2e39bc91fd8802a8b2dc46ccab72c26e6cf24f7bf7a86266dbfb67e30c9e78",
+    "packets_sha256": "afb719f4406646b50773483328334bbdf32bc8fe695eea01a9ecf8a596c4249f",
+    "expectations_sha256": "6ba867726768dc994b1a729f9ca70cbb5d3e04abc2a9db038d5606358b744f0d",
+    "author_notes_sha256": "b9608bcef2dfefdcd781ed7a3d4719b999af55f73824014ac838fa34a63208b2",
+    "protected_files_unchanged": true
+  },
+  "summary": {
+    "required_fact_request_pairs": 42,
+    "required_covered_in_selected_or_adequate_gaps": 42,
+    "confirmed_missing_fact_request_pairs": 0,
+    "confirmed_wrong_selection_pairs": 0,
+    "confirmed_semantic_errors": 0,
+    "confirmed_packet_diagnostic_errors": 1,
+    "confirmed_stale_or_cross_project_selections": 0,
+    "critical_behavior_errors": 0
+  },
+  "cases": [
+    {
+      "request_id": "research",
+      "required_fact_count": 9,
+      "confirmed_missing_fact_ids": [],
+      "confirmed_wrong_record_ids": [],
+      "confirmed_semantic_errors": [],
+      "confirmed_packet_diagnostic_errors": [],
+      "required_covered_in_selected_or_adequate_gaps": 9,
+      "required_covered_only_in_gaps": [],
+      "selected_record_count": 15,
+      "required_fact_coverage": [
+        {
+          "fact_id": "b-f04",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "field_notes"
+          ],
+          "reason": "Title and exact excerpt preserve 4 of 6 volunteers, paper notes and absent logs/original paper; rationale preserves the self-report limitation."
+        },
+        {
+          "fact_id": "b-f05",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "field_notes"
+          ],
+          "reason": "field_notes explicitly preserves the two people with inaccurate observation-time recall."
+        },
+        {
+          "fact_id": "b-f06",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "state_confusion"
+          ],
+          "reason": "state_confusion preserves one reported misunderstanding, requested state distinction and non-generalization to the other five."
+        },
+        {
+          "fact_id": "b-f07",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "retention_expectation"
+          ],
+          "reason": "retention_expectation says unverified and its excerpt preserves no comparison and existing participants only."
+        },
+        {
+          "fact_id": "b-f09",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "competitor_demo"
+          ],
+          "reason": "competitor_demo preserves the single public demonstration and unknown excluded failure conditions."
+        },
+        {
+          "fact_id": "b-f10",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "competitor_promo"
+          ],
+          "reason": "competitor_promo explicitly says only promotional wording was observed, not executed product behavior."
+        },
+        {
+          "fact_id": "b-f11",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "competitor_promo"
+          ],
+          "reason": "competitor_promo excerpt/rationale explicitly leave duplicate prevention, photos and expired-login behavior unknown."
+        },
+        {
+          "fact_id": "b-f14",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "release_scope",
+            "release_exclusions"
+          ],
+          "reason": "release_scope and release_exclusions together preserve one-device new personal records and excluded existing-record multi-device edits/photos."
+        },
+        {
+          "fact_id": "b-f15",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "goal"
+          ],
+          "reason": "goal is a purpose, not a measured outcome; the excerpt says it is the first-stage purpose."
+        }
+      ],
+      "waiver_ids": [
+        "IB-W01",
+        "IB-W02",
+        "IB-W07",
+        "IB-W10"
+      ],
+      "omissions_reviewed": true,
+      "omission_reason": "All required clauses are retained. Unselected historical proposals, other-project content and request-specific optional research/testing details do not create required omissions."
+    },
+    {
+      "request_id": "design",
+      "required_fact_count": 16,
+      "confirmed_missing_fact_ids": [],
+      "confirmed_wrong_record_ids": [],
+      "confirmed_semantic_errors": [],
+      "confirmed_packet_diagnostic_errors": [
+        {
+          "id": "IB-D01",
+          "request_id": "design",
+          "severity": "minor",
+          "claim": "Missing supported design context for feature_design.",
+          "locations": [
+            "packets.json#/design/gaps/0",
+            "packet-design.md:337"
+          ],
+          "record_ids": [
+            "retry_identity",
+            "server_dedupe",
+            "completion_ack",
+            "auto_send",
+            "state_labels"
+          ],
+          "fact_ids": [
+            "b-f19",
+            "b-f22",
+            "b-f23",
+            "b-f24"
+          ],
+          "reason": "The selected records contain the actual source-backed storage/transmission design, but it is labeled decision/requirement rather than design. b05 explicitly calls the mechanism a finalized design. This is a false semantic coverage warning, not missing source content.",
+          "evidence": [
+            {
+              "source": "b05",
+              "quote": "연결이 돌아온 것만으로 전송 완료로 바꾸지 않고 서버 확인을 기다리는 것으로 설계를 확정했다."
+            },
+            {
+              "packet_location": "packet-design.md:135",
+              "record_id": "retry_identity"
+            },
+            {
+              "packet_location": "packet-design.md:151",
+              "record_id": "server_dedupe"
+            },
+            {
+              "packet_location": "packet-design.md:167",
+              "record_id": "state_labels"
+            }
+          ],
+          "impact": "The design packet is marked needs_context despite complete required semantic coverage. All 26 selected records remain present.",
+          "repair": "Base coverage on represented design meaning or accept decision/requirement alternatives; do not duplicate or relabel correct records merely to fill a kind bucket."
+        }
+      ],
+      "required_covered_in_selected_or_adequate_gaps": 16,
+      "required_covered_only_in_gaps": [],
+      "selected_record_count": 26,
+      "required_fact_coverage": [
+        {
+          "fact_id": "b-f04",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "field_notes"
+          ],
+          "reason": "Title and exact excerpt preserve 4 of 6 volunteers, paper notes and absent logs/original paper; rationale preserves the self-report limitation."
+        },
+        {
+          "fact_id": "b-f06",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "state_confusion"
+          ],
+          "reason": "state_confusion preserves one reported misunderstanding, requested state distinction and non-generalization to the other five."
+        },
+        {
+          "fact_id": "b-f14",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "release_scope",
+            "release_exclusions"
+          ],
+          "reason": "release_scope and release_exclusions together preserve one-device new personal records and excluded existing-record multi-device edits/photos."
+        },
+        {
+          "fact_id": "b-f15",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "goal"
+          ],
+          "reason": "goal is a purpose, not a measured outcome; the excerpt says it is the first-stage purpose."
+        },
+        {
+          "fact_id": "b-f16",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "local_save",
+            "missing_fields"
+          ],
+          "reason": "local_save preserves the three required fields and local-first storage independent of connectivity; missing_fields preserves missing-input guidance and no success display."
+        },
+        {
+          "fact_id": "b-f17",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "observation_time"
+          ],
+          "reason": "observation_time explicitly prohibits server-arrival substitution."
+        },
+        {
+          "fact_id": "b-f18",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "optional_location"
+          ],
+          "reason": "optional_location preserves optional location and saving without permission."
+        },
+        {
+          "fact_id": "b-f19",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "state_labels"
+          ],
+          "reason": "state_labels preserves local-only pending versus confirmed-server completion."
+        },
+        {
+          "fact_id": "b-f20",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "retain_on_error",
+            "retain_on_reopen"
+          ],
+          "reason": "retain_on_error and retain_on_reopen together preserve local data on error and pending records across reopening."
+        },
+        {
+          "fact_id": "b-f21",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "expired_login"
+          ],
+          "reason": "expired_login preserves re-login guidance, transmission pause and retained local records."
+        },
+        {
+          "fact_id": "b-f22",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "retry_identity",
+            "server_dedupe"
+          ],
+          "reason": "retry_identity and server_dedupe preserve stable initial identifier plus existing acknowledgment instead of new insertion; decision/accepted is a defensible design-choice label."
+        },
+        {
+          "fact_id": "b-f23",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "completion_ack"
+          ],
+          "reason": "completion_ack explicitly distinguishes restored connectivity from confirmed server receipt."
+        },
+        {
+          "fact_id": "b-f24",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "auto_send",
+            "no_background"
+          ],
+          "reason": "auto_send plus no_background preserve open-app/logged-in/connected prerequisites and unsupported closed-app background transfer."
+        },
+        {
+          "fact_id": "b-f25",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "manual_retry"
+          ],
+          "reason": "manual_retry preserves the retry button and no two simultaneous requests for an already transmitting record."
+        },
+        {
+          "fact_id": "b-f26",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "crash_risk"
+          ],
+          "reason": "crash_risk preserves the exact post-acknowledgment forced-termination risk, identifier design intent and lack of execution validation."
+        },
+        {
+          "fact_id": "b-f27",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "storage_copy"
+          ],
+          "reason": "storage_copy preserves unresolved wording and a November 9 proposal, without implementation/completion claims."
+        }
+      ],
+      "waiver_ids": [
+        "IB-W02",
+        "IB-W03",
+        "IB-W04",
+        "IB-W05",
+        "IB-W06",
+        "IB-W09",
+        "IB-W10"
+      ],
+      "omissions_reviewed": true,
+      "omission_reason": "All required clauses are retained. Unselected historical proposals, other-project content and request-specific optional research/testing details do not create required omissions."
+    },
+    {
+      "request_id": "qa",
+      "required_fact_count": 17,
+      "confirmed_missing_fact_ids": [],
+      "confirmed_wrong_record_ids": [],
+      "confirmed_semantic_errors": [],
+      "confirmed_packet_diagnostic_errors": [],
+      "required_covered_in_selected_or_adequate_gaps": 17,
+      "required_covered_only_in_gaps": [],
+      "selected_record_count": 25,
+      "required_fact_coverage": [
+        {
+          "fact_id": "b-f14",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "release_scope",
+            "release_exclusions"
+          ],
+          "reason": "release_scope and release_exclusions together preserve one-device new personal records and excluded existing-record multi-device edits/photos."
+        },
+        {
+          "fact_id": "b-f16",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "local_save",
+            "missing_fields"
+          ],
+          "reason": "local_save preserves the three required fields and local-first storage independent of connectivity; missing_fields preserves missing-input guidance and no success display."
+        },
+        {
+          "fact_id": "b-f17",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "observation_time"
+          ],
+          "reason": "observation_time explicitly prohibits server-arrival substitution."
+        },
+        {
+          "fact_id": "b-f18",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "optional_location"
+          ],
+          "reason": "optional_location preserves optional location and saving without permission."
+        },
+        {
+          "fact_id": "b-f19",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "state_labels"
+          ],
+          "reason": "state_labels preserves local-only pending versus confirmed-server completion."
+        },
+        {
+          "fact_id": "b-f20",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "retain_on_error",
+            "retain_on_reopen"
+          ],
+          "reason": "retain_on_error and retain_on_reopen together preserve local data on error and pending records across reopening."
+        },
+        {
+          "fact_id": "b-f21",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "expired_login"
+          ],
+          "reason": "expired_login preserves re-login guidance, transmission pause and retained local records."
+        },
+        {
+          "fact_id": "b-f22",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "retry_identity",
+            "server_dedupe"
+          ],
+          "reason": "retry_identity and server_dedupe preserve stable initial identifier plus existing acknowledgment instead of new insertion; decision/accepted is a defensible design-choice label."
+        },
+        {
+          "fact_id": "b-f23",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "completion_ack"
+          ],
+          "reason": "completion_ack explicitly distinguishes restored connectivity from confirmed server receipt."
+        },
+        {
+          "fact_id": "b-f24",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "auto_send",
+            "no_background"
+          ],
+          "reason": "auto_send plus no_background preserve open-app/logged-in/connected prerequisites and unsupported closed-app background transfer."
+        },
+        {
+          "fact_id": "b-f25",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "manual_retry"
+          ],
+          "reason": "manual_retry preserves the retry button and no two simultaneous requests for an already transmitting record."
+        },
+        {
+          "fact_id": "b-f26",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "crash_risk"
+          ],
+          "reason": "crash_risk preserves the exact post-acknowledgment forced-termination risk, identifier design intent and lack of execution validation."
+        },
+        {
+          "fact_id": "b-f28",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "android_reopen"
+          ],
+          "reason": "android_reopen preserves Android, airplane mode, normal exit/reopen and all fields/pending state; it explicitly refuses forced-exit/iOS generalization."
+        },
+        {
+          "fact_id": "b-f29",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "location_run"
+          ],
+          "reason": "location_run is the separate permission-denied save observation in the Android note; its rationale preserves platform limits."
+        },
+        {
+          "fact_id": "b-f30",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "retry_server_run",
+            "duplicate_ui"
+          ],
+          "reason": "retry_server_run and duplicate_ui preserve one server record, local completed/pending duplicate rows, persistence on reopening and unresolved state."
+        },
+        {
+          "fact_id": "b-f31",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "pending_conditions"
+          ],
+          "reason": "pending_conditions lists all four next-run conditions and explicitly says unexecuted; planned does not claim a result."
+        },
+        {
+          "fact_id": "b-f32",
+          "verdict": "covered_in_selected",
+          "record_ids": [
+            "ios_request",
+            "android_reopen"
+          ],
+          "reason": "ios_request preserves the requested iOS check and unknown device date; selected android_reopen rationale explicitly says no iOS execution record, supported by b06 paragraph 3 and visible in packet-qa.md:363."
+        }
+      ],
+      "waiver_ids": [
+        "IB-W02",
+        "IB-W03",
+        "IB-W04",
+        "IB-W05",
+        "IB-W06",
+        "IB-W09",
+        "IB-W10"
+      ],
+      "omissions_reviewed": true,
+      "omission_reason": "All required clauses are retained. Unselected historical proposals, other-project content and request-specific optional research/testing details do not create required omissions."
+    }
+  ],
+  "waivers": [
+    {
+      "id": "IB-W01",
+      "record_ids": [
+        "competitor_promo"
+      ],
+      "fact_ids": [
+        "b-f10",
+        "b-f11"
+      ],
+      "reason": "observed describes promotional text actually seen. The title, excerpt and rationale explicitly deny execution and preserve unknown feature details. Same waiver as baseline r08."
+    },
+    {
+      "id": "IB-W02",
+      "record_ids": [
+        "release_scope",
+        "release_exclusions",
+        "local_save",
+        "missing_fields",
+        "retain_on_error",
+        "retain_on_reopen",
+        "retry_identity",
+        "server_dedupe",
+        "auto_send",
+        "no_background"
+      ],
+      "fact_ids": [
+        "b-f14",
+        "b-f16",
+        "b-f20",
+        "b-f22",
+        "b-f24"
+      ],
+      "reason": "Required compound meanings are split across selected records. Every clause is present; exact quote or one-record matching would create false omissions."
+    },
+    {
+      "id": "IB-W03",
+      "record_ids": [
+        "retry_identity",
+        "server_dedupe"
+      ],
+      "fact_ids": [
+        "b-f22"
+      ],
+      "reason": "decision/accepted is defensible for explicitly finalized design choices, even though frozen acceptable_kinds lists design/requirement. The prose preserves both mechanism and non-empirical status."
+    },
+    {
+      "id": "IB-W04",
+      "record_ids": [
+        "crash_risk"
+      ],
+      "fact_ids": [
+        "b-f26"
+      ],
+      "reason": "risk/open preserves uncertainty and the untested crash boundary. Same waiver as baseline r22; no verified crash recovery is claimed."
+    },
+    {
+      "id": "IB-W05",
+      "record_ids": [
+        "retry_server_run",
+        "duplicate_ui"
+      ],
+      "fact_ids": [
+        "b-f30"
+      ],
+      "reason": "The server outcome and UI failure are separate observations. observed is valid for the test_result; duplicate_ui title/excerpt/rationale all preserve the unresolved problem. No additional risk/open record is needed."
+    },
+    {
+      "id": "IB-W06",
+      "record_ids": [
+        "ios_request",
+        "android_reopen"
+      ],
+      "fact_ids": [
+        "b-f32"
+      ],
+      "reason": "test_case/draft is defensible for a requested future platform check with no device date. Absence of an iOS run is explicitly preserved in selected android_reopen rationale and source paragraph; no gap-only rescue or missing fact."
+    },
+    {
+      "id": "IB-W07",
+      "record_ids": [
+        "new_user_inquiry",
+        "comparison_direction"
+      ],
+      "fact_ids": [
+        "b-f08",
+        "b-f13"
+      ],
+      "reason": "task/planned is less conservative than draft for an expressed suggestion, but titles/excerpts/rationales explicitly say proposal/opinion, not completed research or approved feature work. Same whole-record uncertainty criterion as the baseline open-question waiver."
+    },
+    {
+      "id": "IB-W08",
+      "record_ids": [
+        "old_save_block",
+        "old_multi_edit",
+        "old_photo_copy"
+      ],
+      "fact_ids": [
+        "b-f01",
+        "b-f02",
+        "b-f03"
+      ],
+      "reason": "All are omitted from every packet. The superseded save block is explicitly tied to b04. rejected for the other proposals is limited in title/rationale/status rationale to this release, not a permanent prohibition; the current exclusions are accurately selected."
+    },
+    {
+      "id": "IB-W09",
+      "record_ids": [
+        "storage_copy"
+      ],
+      "fact_ids": [
+        "b-f27"
+      ],
+      "reason": "question/open combines unresolved wording and the forthcoming November 9 proposal without claiming a completed task. Combining these clauses is as valid as the baseline split."
+    },
+    {
+      "id": "IB-W10",
+      "request_ids": [
+        "research"
+      ],
+      "record_ids": [
+        "local_save",
+        "state_labels",
+        "auto_send",
+        "no_background"
+      ],
+      "fact_ids": [
+        "b-f16",
+        "b-f19",
+        "b-f24"
+      ],
+      "reason": "These accurate functional boundaries and status principles are reasonable extras for the requested feature scope. Research does not require every implementation detail, and omitting the rest is not missing required context."
+    }
+  ],
+  "ambiguous_flags": [
+    {
+      "id": "IB-A01",
+      "record_ids": [
+        "new_user_inquiry",
+        "comparison_direction"
+      ],
+      "issue": "planned for an expressed suggestion can sound more committed in a label-only consumer; the packet text keeps proposal/opinion and missing execution explicit, so no semantic error is confirmed."
+    },
+    {
+      "id": "IB-A02",
+      "record_ids": [
+        "old_multi_edit",
+        "old_photo_copy"
+      ],
+      "issue": "rejected would overstate a permanent status if detached from release scope; current text explicitly limits it and neither is selected."
+    }
+  ],
+  "fact_record_map": {
+    "b-f01": [
+      "old_save_block"
+    ],
+    "b-f02": [
+      "old_multi_edit"
+    ],
+    "b-f03": [
+      "old_photo_copy"
+    ],
+    "b-f04": [
+      "field_notes"
+    ],
+    "b-f05": [
+      "field_notes"
+    ],
+    "b-f06": [
+      "state_confusion"
+    ],
+    "b-f07": [
+      "retention_expectation"
+    ],
+    "b-f08": [
+      "new_user_inquiry"
+    ],
+    "b-f09": [
+      "competitor_demo"
+    ],
+    "b-f10": [
+      "competitor_promo"
+    ],
+    "b-f11": [
+      "competitor_promo"
+    ],
+    "b-f12": [
+      "market_gaps"
+    ],
+    "b-f13": [
+      "comparison_direction"
+    ],
+    "b-f14": [
+      "release_scope",
+      "release_exclusions"
+    ],
+    "b-f15": [
+      "goal"
+    ],
+    "b-f16": [
+      "local_save",
+      "missing_fields"
+    ],
+    "b-f17": [
+      "observation_time"
+    ],
+    "b-f18": [
+      "optional_location"
+    ],
+    "b-f19": [
+      "state_labels"
+    ],
+    "b-f20": [
+      "retain_on_error",
+      "retain_on_reopen"
+    ],
+    "b-f21": [
+      "expired_login"
+    ],
+    "b-f22": [
+      "retry_identity",
+      "server_dedupe"
+    ],
+    "b-f23": [
+      "completion_ack"
+    ],
+    "b-f24": [
+      "auto_send",
+      "no_background"
+    ],
+    "b-f25": [
+      "manual_retry"
+    ],
+    "b-f26": [
+      "crash_risk"
+    ],
+    "b-f27": [
+      "storage_copy"
+    ],
+    "b-f28": [
+      "android_reopen"
+    ],
+    "b-f29": [
+      "location_run"
+    ],
+    "b-f30": [
+      "retry_server_run",
+      "duplicate_ui"
+    ],
+    "b-f31": [
+      "pending_conditions"
+    ],
+    "b-f32": [
+      "ios_request",
+      "android_reopen"
+    ],
+    "b-f33": [],
+    "b-f34": [],
+    "b-f35": []
+  },
+  "critical_checks": {
+    "reviewed_count": 12,
+    "confirmed_failures": [],
+    "reason": "No old policy revival, photo/multi-device scope inflation, timestamp substitution, mandatory location, connectivity/ack confusion, unsupported background transfer, universal retry/crash proof, server/UI duplication conflation, platform generalization, fabricated test outcome, promotional verification, customer-effect overclaim, or other-project contamination."
+  },
+  "comparison_with_baseline": {
+    "baseline_reference": "Prior independent baseline-b audit completed before this improved run was opened; baseline files not changed.",
+    "cases": [
+      {
+        "request_id": "research",
+        "baseline": {
+          "covered": 9,
+          "missing": 0,
+          "wrong_selected": 0,
+          "fact_semantic_errors": 0,
+          "packet_diagnostic_errors": 0
+        },
+        "improved": {
+          "covered": 9,
+          "missing": 0,
+          "wrong_selected": 0,
+          "fact_semantic_errors": 0,
+          "packet_diagnostic_errors": 0
+        }
+      },
+      {
+        "request_id": "design",
+        "baseline": {
+          "covered": 16,
+          "missing": 0,
+          "wrong_selected": 0,
+          "fact_semantic_errors": 0,
+          "packet_diagnostic_errors": 0
+        },
+        "improved": {
+          "covered": 16,
+          "missing": 0,
+          "wrong_selected": 0,
+          "fact_semantic_errors": 0,
+          "packet_diagnostic_errors": 1
+        }
+      },
+      {
+        "request_id": "qa",
+        "baseline": {
+          "covered": 17,
+          "missing": 0,
+          "wrong_selected": 2,
+          "fact_semantic_errors": 0,
+          "packet_diagnostic_errors": 1
+        },
+        "improved": {
+          "covered": 17,
+          "missing": 0,
+          "wrong_selected": 0,
+          "fact_semantic_errors": 0,
+          "packet_diagnostic_errors": 0
+        }
+      }
+    ],
+    "confirmed_improvements": [
+      "QA omits the baseline off-task r05 retention expectation and r06 new-user interview proposal.",
+      "QA no longer reports missing test-case context; pending_conditions explicitly carries the unexecuted plan."
+    ],
+    "confirmed_regressions": [
+      "Design now falsely reports missing design context despite source-backed design decisions. The baseline design packet had no such diagnostic."
+    ],
+    "unchanged": [
+      "All 42 required fact/request pairs are covered; no fact-level semantic or critical behavior error in either run.",
+      "There is one confirmed packet diagnostic error overall in each run, moving from QA to design."
+    ],
+    "cautions": [
+      "Do not count removal of baseline research extras as correction of confirmed errors; those were defensible or ambiguous in the prior adjudication.",
+      "Selected record counts and exact label agreement are not quality metrics because splitting/granularity changed.",
+      "No overall success or generalization claim follows from this one small fictional held-out corpus."
+    ]
+  }
+}
