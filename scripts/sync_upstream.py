@@ -128,7 +128,7 @@ def sync(root=ROOT):
                 raise ValueError('Unexpected source/destination; refusing recursive or external sync')
             current = current_files(root, entry)
             repo = Path(tmp) / name
-            git('clone', '--bare', '--filter=blob:none', '--single-branch', '--branch', 'main', url + '.git', str(repo))
+            git('clone', '--bare', '--single-branch', '--branch', 'main', url + '.git', str(repo))
             head = git('rev-parse', 'refs/heads/main', cwd=repo).decode().strip()
             # Rewritten history is a review boundary, even when file changes look harmless.
             git('merge-base', '--is-ancestor', entry['source_commit'], head, cwd=repo)

@@ -125,6 +125,70 @@ class SyncTests(unittest.TestCase):
             self.assertFalse((root / 'sync').exists())
 
 
+    def test_full_sync_file_directory_transitions_and_provenance(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            entries = []
+            old = dict(self.old, **{'become-file/old.md': b'old', 'become-dir': b'old'})
+            incoming = dict(self.old, **{'become-file': b'new file', 'become-dir/new.md': b'new child', 'ignored.log': b'tracked source log'})
+            for name, repository in sync.SOURCES.items():
+                e = copy.deepcopy(self.entry)
+                e.update(name=name, path='packages/' + name, source_url='https://github.com/' + repository,
+                         source_sha256={p: sync.digest(b) for p, b in old.items()},
+                         current_sha256={p: sync.digest(b) for p, b in old.items()})
+                entries.append(e)
+                base = root / e['path']
+                for rel, payload in old.items():
+                    file = base / rel
+                    file.parent.mkdir(parents=True, exist_ok=True)
+                    file.write_bytes(payload)
+            catalog = root / 'catalog.json'
+            catalog.write_text(json.dumps({'schema_version': 1, 'packages': entries}))
+            def fake_git(*args, **kwargs):
+                return b'b' * 40 if args[0] == 'rev-parse' else b''
+            def snapshots(repo, commit):
+                files = old if commit == 'a' * 40 else incoming
+                return files, {p: 0o100644 for p in files}
+            with mock.patch.object(sync, 'git', side_effect=fake_git), mock.patch.object(sync, 'snapshot', side_effect=snapshots), mock.patch.object(sync, 'version', return_value='1.0.0'):
+                report = sync.sync(root)
+            self.assertEqual(len(report), 3)
+            for e in entries:
+                self.assertEqual(sync.current_files(root, e), incoming)
+                history = root / 'sync/history' / e['name'] / ('a' * 40 + '.json')
+                self.assertEqual(json.loads(history.read_text()), e)
+            self.assertTrue(all(e['source_commit'] == 'b' * 40 for e in json.loads(catalog.read_text())['packages']))
+
+    def test_later_source_failure_applies_nothing(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            entries = []
+            for name, repository in sync.SOURCES.items():
+                e = copy.deepcopy(self.entry)
+                e.update(name=name, path='packages/' + name, source_url='https://github.com/' + repository)
+                entries.append(e)
+                base = root / e['path']
+                base.mkdir(parents=True)
+                for rel, payload in self.old.items():
+                    (base / rel).write_bytes(payload)
+            catalog = root / 'catalog.json'
+            catalog.write_text(json.dumps({'schema_version': 1, 'packages': entries}))
+            before = catalog.read_bytes()
+            def fake_git(*args, **kwargs):
+                return b'b' * 40 if args[0] == 'rev-parse' else b''
+            def snapshots(repo, commit):
+                if repo.name == 'web-feature-demo':
+                    raise ValueError('Later source failed')
+                files = self.old if commit == 'a' * 40 else dict(self.old, **{'README.md': b'updated'})
+                return files, {p: 0o100644 for p in files}
+            with mock.patch.object(sync, 'git', side_effect=fake_git), mock.patch.object(sync, 'snapshot', side_effect=snapshots), mock.patch.object(sync, 'version', return_value='1.0.0'):
+                with self.assertRaisesRegex(ValueError, 'Later source'):
+                    sync.sync(root)
+            self.assertEqual(catalog.read_bytes(), before)
+            for e in entries:
+                self.assertEqual(sync.current_files(root, e), self.old)
+            self.assertFalse((root / 'sync').exists())
+
+
 class PublishTests(unittest.TestCase):
     def run_main(self, report, api, git=None):
         with tempfile.TemporaryDirectory() as tmp:
@@ -144,7 +208,7 @@ class PublishTests(unittest.TestCase):
             calls.append(path)
             return [{'head': {'ref': 'sync/upstream-test'}, 'html_url': 'https://github.com/ChoMinGi/agent.d/pull/1'}]
         self.run_main([{'package': 'x'}], api)
-        self.assertEqual(calls, ['pulls?state=open&per_page=100'])
+        self.assertEqual(calls, ['pulls?state=open&per_page=100&page=1'])
 
     def test_moved_main_stops_without_writes(self):
         calls = []
@@ -154,6 +218,59 @@ class PublishTests(unittest.TestCase):
         with self.assertRaisesRegex(SystemExit, 'main moved'):
             self.run_main([{'package': 'x'}], api, lambda *a: b'old')
         self.assertEqual(len(calls), 2)
+
+
+    def test_existing_pr_on_page_two(self):
+        calls = []
+        def api(path, *args):
+            calls.append(path)
+            if path.endswith('page=1'):
+                return [{'head': {'ref': 'unrelated'}}] * 100
+            return [{'head': {'ref': 'sync/upstream-old'}, 'html_url': 'https://github.com/ChoMinGi/agent.d/pull/1'}]
+        self.run_main([{'package': 'x'}], api)
+        self.assertEqual(len(calls), 2)
+
+    def test_publish_ignored_addition_deletion_modes_and_retry(self):
+        import urllib.error
+        for existing in (False, True):
+            with self.subTest(existing=existing), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                file = root / 'packages/cognitive-partner/ignored.log'
+                file.parent.mkdir(parents=True)
+                file.write_bytes(b'new source file')
+                file.chmod(0o755)
+                calls = []
+                def git(*args):
+                    if args[0] == 'rev-parse':
+                        return b'base'
+                    if args[0] == 'diff':
+                        return b'packages/cognitive-partner/deleted.txt\0'
+                    return b'packages/cognitive-partner/ignored.log\0' if '--exclude-standard' not in args else b''
+                def api(path, method='GET', data=None):
+                    calls.append((path, method, data))
+                    if path.startswith('pulls?'): return []
+                    if path == 'git/ref/heads/main': return {'object': {'sha': 'base'}}
+                    if path == 'git/commits/base': return {'tree': {'sha': 'base-tree'}}
+                    if path == 'git/blobs': return {'sha': 'blob'}
+                    if path == 'git/trees': return {'sha': 'new-tree'}
+                    if path.startswith('git/ref/heads/sync/'):
+                        if existing: return {'object': {'sha': 'prior'}}
+                        raise urllib.error.HTTPError('test', 404, 'not found', {}, None)
+                    if path == 'git/commits/prior': return {'tree': {'sha': 'new-tree'}, 'parents': [{'sha': 'base'}]}
+                    if path == 'git/commits': return {'sha': 'new-commit'}
+                    if path == 'git/refs': return {}
+                    if path == 'pulls': return {'html_url': 'https://github.com/ChoMinGi/agent.d/pull/1'}
+                    raise AssertionError(path)
+                report = [{'package': 'cognitive-partner', 'from': 'a' * 40, 'to': 'b' * 40, 'compare': 'https://github.com/ChoMinGi/cognitive-partner/compare/a...b', 'added': ['ignored.log'], 'removed': ['deleted.txt'], 'changed': []}]
+                with mock.patch.object(publish, 'ROOT', root):
+                    self.run_main(report, api, git)
+                tree = next(data['tree'] for path, method, data in calls if path == 'git/trees')
+                self.assertEqual(tree, [
+                    {'path': 'packages/cognitive-partner/deleted.txt', 'mode': '100644', 'type': 'blob', 'sha': None},
+                    {'path': 'packages/cognitive-partner/ignored.log', 'mode': '100755', 'type': 'blob', 'sha': 'blob'}])
+                self.assertEqual(sum(path == 'git/refs' for path, _, _ in calls), 0 if existing else 1)
+                self.assertTrue(next(data['draft'] for path, _, data in calls if path == 'pulls'))
+                self.assertFalse(any(method in {'PATCH', 'PUT', 'DELETE'} for _, method, _ in calls))
 
 
 if __name__ == '__main__':

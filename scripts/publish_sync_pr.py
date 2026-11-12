@@ -39,10 +39,16 @@ def main():
     if os.environ.get('GITHUB_REPOSITORY', REPO) != REPO:
         raise SystemExit('Publishing is restricted to ChoMinGi/agent.d')
     # Never overwrite an existing proposal, reviewer edits, or manual branch commits.
-    for pr in api('pulls?state=open&per_page=100'):
-        if pr['head']['ref'].startswith(PREFIX):
-            print('Existing sync PR awaits review: ' + pr['html_url'])
-            return
+    page = 1
+    while True:
+        prs = api(f'pulls?state=open&per_page=100&page={page}')
+        for pr in prs:
+            if pr['head']['ref'].startswith(PREFIX):
+                print('Existing sync PR awaits review: ' + pr['html_url'])
+                return
+        if len(prs) < 100:
+            break
+        page += 1
     base = git('rev-parse', 'HEAD').decode().strip()
     if api('git/ref/heads/main')['object']['sha'] != base:
         raise SystemExit('main moved during preparation; next scheduled run will retry from fresh main')
