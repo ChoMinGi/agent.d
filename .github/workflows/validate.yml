@@ -1,0 +1,41 @@
+name: Validate skills
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Install validator dependency
+        run: python -m pip install PyYAML==6.0.3
+      - name: Validate monorepo and independent installs
+        run: |
+          python -B scripts/verify_monorepo.py
+          python -B -m unittest discover -s tests -v
+      - name: Validate Cognitive Partner
+        working-directory: packages/cognitive-partner
+        run: |
+          python -B validate_package.py
+          python -B audit/test_validator_contract.py
+          python -B scripts/check_release.py
+      - name: Validate DecisionGuard
+        working-directory: packages/decisionguard
+        run: |
+          python -B -m unittest discover -s tests
+          python -B scripts/evaluate_context.py
+          python -B scripts/evaluate_context_v2.py
+          python -B scripts/evaluate_raw_context.py
+          python -B scripts/evaluate_blind_context.py
+          python -B scripts/evaluate_handoff.py
+          python -B scripts/release_check.py --require-git
+      - name: Validate Web Feature Demo syntax
+        working-directory: packages/web-feature-demo
+        run: |
+          find scripts tests examples -name '*.mjs' -print0 | xargs -0 -n1 node --check
+          bash -n scripts/install.sh tests/smoke.sh

@@ -55,6 +55,7 @@ $decisionguard 이전에 확인한 결정과 현재 프로젝트 문서를 대�
 
 - [이 모노레포에서 개별 설치하기](docs/install.md)
 - [구조, 독립 버전과 원본 저장소](docs/maintenance.md)
+- [원본 저장소 자동 동기화](docs/sync.md)
 - [검증 결과와 한계](docs/verification.md)
 - [라이선스와 외부 구성 요소](LICENSE.md)
 

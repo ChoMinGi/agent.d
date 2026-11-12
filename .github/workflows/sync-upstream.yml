@@ -1,0 +1,37 @@
+name: Sync upstream skills
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: upstream-skill-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    if: github.repository == 'ChoMinGi/agent.d' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Verify sync implementation before reading upstream
+        run: python3 -B -m unittest discover -s tests -v
+      - name: Prepare public upstream snapshots as data
+        run: python3 -B scripts/sync_upstream.py --report "$RUNNER_TEMP/sync-report.json"
+      - name: Validate data, install boundaries and archives
+        run: |
+          python3 -B scripts/verify_monorepo.py
+          python3 -B -m unittest discover -s tests -v
+      # No upstream scripts, pip/npm installs, actions or hooks run in this job.
+      # The write token is exposed only to this trusted publisher from agent.d main.
+      - name: Open immutable draft pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 -B scripts/publish_sync_pr.py --report "$RUNNER_TEMP/sync-report.json"
