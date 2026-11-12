@@ -16,7 +16,7 @@ agent.d/
 
 ## Source preservation
 
-This migration imports the tracked files of each current `main` snapshot, including documentation, examples and tests. No `.git` directories, local environments, working data, credentials or untracked outputs were copied. Package files are byte-for-byte preserved; the root catalog records every source file hash and the exact source commit.
+This migration imports the tracked files of each current `main` snapshot, including documentation, examples and tests. No `.git` directories, local environments, working data, credentials or untracked outputs were copied. Runtime files and evaluation materials are byte-for-byte preserved. Cognitive Partner's license and related documentation were updated with owner approval. The root catalog retains every original source hash and exact source commit separately from reviewed current hashes and documented migration changes.
 
 The original repositories, issues, tags, release assets and installation URLs remain unchanged. Original Git history is not rewritten or imported. This keeps old links working and avoids exposing unrelated historical content. It is a snapshot migration, not a history-preserving merge. Nothing here deletes, archives or redirects the originals.
 
@@ -30,7 +30,7 @@ Package-level instructions run from their package directory. The root installer 
 
 These are source package versions, not a shared monorepo version. Future releases can use tags such as `cognitive-partner/v1.0.1`, `decisionguard/v0.6.2`, and `web-feature-demo/v1.0.1`. These examples have not been created. Preserve old repository tags and avoid making consumers upgrade unrelated skills.
 
-`catalog.json` locks the current imported sources. To update a package, review the incoming commit, preserve its license and provenance records, update that package's catalog entry and hashes, then run all affected checks. Do not treat a hash update as review or license approval.
+`catalog.json` locks the original snapshots and reviewed current package files. To update a package, review the incoming commit, preserve its license and provenance records, update that package's catalog entry, current hashes and change notes, then run all affected checks. Do not treat a hash update as review or license approval.
 
 ## Validation
 
@@ -39,16 +39,23 @@ python3 -B scripts/verify_monorepo.py
 python3 -B -m unittest discover -s tests -v
 ```
 
-These checks include original-byte integrity, file inventory, local Markdown targets, versions, skill names, obvious secret patterns, independent installation and ZIP contents. They do not run real models or prove product effectiveness.
+These checks include reviewed-byte integrity and original source provenance, file inventory, local Markdown targets, versions, skill names, obvious secret patterns, independent installation and ZIP contents. They do not run real models or prove product effectiveness.
 
 Run each package's own tests from its directory as well. Cognitive Partner requires the `requirements-dev.txt` dependency. Web Feature Demo's full tests require Chrome and a Playwright runner and may open test windows. See [verification](verification.md) for actual results rather than assuming these commands were run.
 
-## Public release checklist
+## Publication and future releases
 
-1. Confirm creation and visibility of `ChoMinGi/agent.d` with the owner. No remote is configured by this preparation.
-2. Ask the owner to select Cognitive Partner's license and any root-content license. Do not apply MIT to the entire tree by inference. Existing MIT notices must remain intact.
-3. Confirm rights in source media and contributed material; inspect the exact files to be uploaded. Repeat secret/privacy review after any edit.
-4. Run package tests and root integration checks against the release tree. Check archive names, licenses, and extracted content.
-5. Create/push/tag only within explicit authorization. Verify the exact remote commit and checks before reporting publication.
+The owner approved public `ChoMinGi/agent.d` and MIT for Cognitive Partner. The root MIT license covers agent.d integration code; the other packages retain their original MIT notices. The original repositories are not changed by this publication.
 
-Suggested repository About: `Personal agent skills for critical thinking, project decisions, and local browser demos.`
+Before each later release:
+
+1. Review exact changes, media and credential/privacy checks.
+2. Run package tests and root integration checks against the release tree.
+3. Keep per-package versions and license notices intact. Validate extracted archives.
+4. Push or publish only within the owner's current authorization. Verify the exact remote commit and CI result.
+
+Do not run the imported Cognitive Partner `scripts/publish.sh` to publish this monorepo: it describes the original standalone repository and tag. Use root Git operations targeting `ChoMinGi/agent.d`.
+
+A validated [GitHub Actions example](ci.example.yml) covers root integration, Cognitive Partner and DecisionGuard checks, plus JavaScript/shell syntax checks. It is not active in this repository. To enable it, copy it to `.github/workflows/validate.yml` using an account/connection allowed to write workflows, then verify the run for the exact commit. Full Chrome UI/lifecycle checks were run locally; the example does not claim browser coverage.
+
+Repository About: `Personal agent skills for critical thinking, project decisions, and local browser demos.`

@@ -21,6 +21,27 @@ class IntegrationTests(unittest.TestCase):
         self.assertTrue(result['passed'], result['errors'])
         self.assertEqual(result['imported_files'], 240)
 
+    def test_migration_notes_match_changed_files(self):
+        for entry in catalog():
+            changed = {rel for rel in entry['source_sha256']
+                       if entry['source_sha256'][rel] != entry['current_sha256'][rel]}
+            self.assertEqual(changed, set(entry['migration_changes']))
+            self.assertTrue(all(entry['migration_changes'][rel].strip() for rel in changed))
+            if entry['name'] != 'cognitive-partner':
+                self.assertEqual(changed, set())
+
+    def test_runtime_behavior_and_license_preservation(self):
+        for entry in catalog():
+            _, files = runtime_files(entry['name'])
+            for relative, path in files.items():
+                source_relative = str(path.relative_to(ROOT / entry['path']))
+                if relative != 'LICENSE':
+                    self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(),
+                                     entry['source_sha256'][source_relative])
+            self.assertTrue(files['LICENSE'].read_text().startswith('MIT License'))
+        self.assertIn('DecisionGuard contributors', (ROOT / 'packages/decisionguard/LICENSE').read_text())
+        self.assertIn('web-feature-demo contributors', (ROOT / 'packages/web-feature-demo/LICENSE').read_text())
+
     def test_independent_installs(self):
         with tempfile.TemporaryDirectory() as tmp:
             for entry in catalog():

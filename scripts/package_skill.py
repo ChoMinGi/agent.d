@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build one reproducible skill ZIP, including its original license; no upload."""
+"""Build one reproducible skill ZIP, including its package license; no upload."""
 import argparse
 import hashlib
 import json

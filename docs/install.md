@@ -1,6 +1,13 @@
 # 개별 설치
 
-세 스킬을 한 번에 활성화하지 않습니다. 필요한 스킬만 복사하세요. Python 3.10 이상을 사용합니다. 명령은 `agent.d` 루트에서 실행하며, 기존 설치와 심볼릭 링크는 덮어쓰지 않습니다.
+세 스킬을 한 번에 활성화하지 않습니다. 필요한 스킬만 복사하세요. Python 3.10 이상을 사용합니다. 먼저 저장소를 받습니다.
+
+```sh
+git clone https://github.com/ChoMinGi/agent.d.git
+cd agent.d
+```
+
+아래 명령은 `agent.d` 루트에서 실행하며, 기존 설치와 심볼릭 링크는 덮어쓰지 않습니다.
 
 ## Codex
 
@@ -32,7 +39,14 @@ Claude Code를 다시 시작하고 `/web-feature-demo`를 호출합니다. Node.
 
 기존 설치는 직접 비교하고 백업한 뒤 새 경로에 설치해 교체하세요. 자동 삭제, 덮어쓰기, 전역 지침 변경, 인증 설정 변경은 하지 않습니다. 제거할 때는 자신이 설치한 복사본만 제거하며 프로젝트 자료와 기억은 별도입니다.
 
-원본 패키지 문서의 기존 GitHub 설치 링크는 그대로 유지했습니다. 이 모노레포를 사용하려면 위 명령을 사용하세요. 아직 생성되지 않은 모노레포 URL을 설치 가능한 주소로 안내하지 않습니다.
+원본 패키지 문서의 기존 GitHub 설치 링크는 그대로 유지했습니다. 이 모노레포를 사용하려면 위 명령을 사용하세요. Codex의 스킬 설치 도구를 쓸 때는 아래처럼 정확한 패키지 경로를 지정할 수도 있습니다.
+
+```text
+$skill-installer install https://github.com/ChoMinGi/agent.d/tree/main/packages/cognitive-partner/cognitive-partner
+$skill-installer install https://github.com/ChoMinGi/agent.d/tree/main/packages/decisionguard/skills/decisionguard
+```
+
+위 외부 설치 도구는 호스트마다 다를 수 있으며 이 작업에서는 실제 호스트 활성화를 시험하지 않았습니다. 패키지 LICENSE까지 확실히 함께 복사하려면 이 문서의 로컬 설치 스크립트를 사용하세요.
 
 ## 독립 ZIP 만들기
 
@@ -41,4 +55,4 @@ mkdir -p dist
 python3 -B scripts/package_skill.py --skill decisionguard --out dist/decisionguard-v0.6.1.zip
 ```
 
-`--skill`을 바꾸면 각 스킬을 따로 만들 수 있습니다. ZIP 내부 최상위 폴더는 스킬 이름이며 LICENSE를 포함합니다. 이미 있는 출력 파일은 덮어쓰지 않습니다. Cognitive Partner는 라이선스 미선택 상태를 그대로 담으며, ZIP 생성은 공개 배포 허락을 의미하지 않습니다.
+`--skill`을 바꾸면 각 스킬을 따로 만들 수 있습니다. ZIP 내부 최상위 폴더는 스킬 이름이며 LICENSE를 포함합니다. 이미 있는 출력 파일은 덮어쓰지 않습니다. 세 스킬은 각각 MIT LICENSE를 포함합니다.

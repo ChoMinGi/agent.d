@@ -42,7 +42,14 @@ def package(name):
     no_symlinks(base)
     if not base.resolve().is_relative_to(ROOT.resolve()):
         raise ValueError('Package escaped repository')
-    for rel, expected in entry['source_sha256'].items():
+    original = entry['source_sha256']
+    current = entry.get('current_sha256', original)
+    if set(current) != set(original):
+        raise ValueError('Imported file inventory must remain explicit')
+    changed = {rel for rel in original if original[rel] != current[rel]}
+    if changed != set(entry.get('migration_changes', {})):
+        raise ValueError('Every migration change must be documented')
+    for rel, expected in current.items():
         source = base / safe_relative(rel)
         no_symlinks(source)
         if not source.is_file() or hashlib.sha256(source.read_bytes()).hexdigest() != expected:
