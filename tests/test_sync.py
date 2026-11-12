@@ -239,13 +239,18 @@ class PublishTests(unittest.TestCase):
                 file.parent.mkdir(parents=True)
                 file.write_bytes(b'new source file')
                 file.chmod(0o755)
+                child = root / 'packages/cognitive-partner/become-dir/new.md'
+                child.parent.mkdir(parents=True)
+                child.write_bytes(b'new child')
                 calls = []
                 def git(*args):
                     if args[0] == 'rev-parse':
                         return b'base'
                     if args[0] == 'diff':
-                        return b'packages/cognitive-partner/deleted.txt\0'
-                    return b'packages/cognitive-partner/ignored.log\0' if '--exclude-standard' not in args else b''
+                        return b'packages/cognitive-partner/deleted.txt\0packages/cognitive-partner/become-dir\0'
+                    if args[0] == 'ls-tree':
+                        return b'100644 blob license-sha\tLICENSE\0' + b'100644 blob old-sha\tpackages/cognitive-partner/become-dir\0' + b'100644 blob deleted-sha\tpackages/cognitive-partner/deleted.txt\0'
+                    return b'packages/cognitive-partner/ignored.log\0packages/cognitive-partner/become-dir/new.md\0' if '--exclude-standard' not in args else b''
                 def api(path, method='GET', data=None):
                     calls.append((path, method, data))
                     if path.startswith('pulls?'): return []
@@ -266,7 +271,8 @@ class PublishTests(unittest.TestCase):
                     self.run_main(report, api, git)
                 tree = next(data['tree'] for path, method, data in calls if path == 'git/trees')
                 self.assertEqual(tree, [
-                    {'path': 'packages/cognitive-partner/deleted.txt', 'mode': '100644', 'type': 'blob', 'sha': None},
+                    {'path': 'LICENSE', 'mode': '100644', 'type': 'blob', 'sha': 'license-sha'},
+                    {'path': 'packages/cognitive-partner/become-dir/new.md', 'mode': '100644', 'type': 'blob', 'sha': 'blob'},
                     {'path': 'packages/cognitive-partner/ignored.log', 'mode': '100755', 'type': 'blob', 'sha': 'blob'}])
                 self.assertEqual(sum(path == 'git/refs' for path, _, _ in calls), 0 if existing else 1)
                 self.assertTrue(next(data['draft'] for path, _, data in calls if path == 'pulls'))

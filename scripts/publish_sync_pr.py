@@ -60,20 +60,28 @@ def main():
     allowed = ('packages/cognitive-partner/', 'packages/decisionguard/', 'packages/web-feature-demo/', 'sync/history/')
     if any(path != 'catalog.json' and not path.startswith(allowed) for path in paths):
         raise SystemExit('Prepared diff includes an unexpected path')
-    tree = []
+    # Build a complete flat tree so file/directory replacements never conflict
+    # with base_tree nested deletion semantics. Preserve every unrelated blob.
+    tree = {}
+    for line in git('ls-tree', '-rz', '--full-tree', 'HEAD').split(b'\0'):
+        if not line:
+            continue
+        header, rawpath = line.split(b'\t', 1)
+        mode, kind, sha = header.decode().split()
+        path = rawpath.decode('utf-8')
+        tree[path] = {'path': path, 'mode': mode, 'type': kind, 'sha': sha}
     for path in paths:
         file = ROOT / path
-        if not file.exists():
-            tree.append({'path': path, 'mode': '100644', 'type': 'blob', 'sha': None})
-            continue
         if file.is_symlink():
             raise SystemExit('Symlinks may not be published')
+        if not file.is_file():
+            tree.pop(path, None)
+            continue
         blob = api('git/blobs', 'POST', {'content': base64.b64encode(file.read_bytes()).decode(), 'encoding': 'base64'})
-        tree.append({'path': path, 'mode': '100755' if file.stat().st_mode & 0o111 else '100644', 'type': 'blob', 'sha': blob['sha']})
+        tree[path] = {'path': path, 'mode': '100755' if file.stat().st_mode & 0o111 else '100644', 'type': 'blob', 'sha': blob['sha']}
     if not tree:
         return
-    base_tree = api('git/commits/' + base)['tree']['sha']
-    new_tree = api('git/trees', 'POST', {'base_tree': base_tree, 'tree': tree})['sha']
+    new_tree = api('git/trees', 'POST', {'tree': [tree[path] for path in sorted(tree)]})['sha']
     branch = PREFIX + hashlib.sha256((base + new_tree).encode()).hexdigest()[:16]
     try:
         existing = api('git/ref/heads/' + branch)
