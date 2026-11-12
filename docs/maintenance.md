@@ -18,7 +18,7 @@ agent.d/
 
 This migration imports the tracked files of each current `main` snapshot, including documentation, examples and tests. No `.git` directories, local environments, working data, credentials or untracked outputs were copied. Runtime files and evaluation materials are byte-for-byte preserved. Cognitive Partner's license and related documentation were updated with owner approval. The root catalog retains every original source hash and exact source commit separately from reviewed current hashes and documented migration changes.
 
-The original repositories, issues, tags, release assets and installation URLs remain unchanged. Original Git history is not rewritten or imported. This keeps old links working and avoids exposing unrelated historical content. It is a snapshot migration, not a history-preserving merge. Nothing here deletes, archives or redirects the originals.
+The original repositories, issues, tags, release assets and installation URLs remain unchanged. Original Git history is not rewritten or imported. This keeps old links working and avoids exposing unrelated historical content. The initial migration was a snapshot import, not a history-preserving merge. The [one-way synchronization workflow](sync.md) now provides reviewed updates from those original repositories once activated. Nothing here deletes, archives or redirects the originals.
 
 Package-level instructions run from their package directory. The root installer resolves paths relative to its own file, not the shell's working directory. All three runtime SKILL.md files retain their original names and references.
 
@@ -30,7 +30,7 @@ Package-level instructions run from their package directory. The root installer 
 
 These are source package versions, not a shared monorepo version. Future releases can use tags such as `cognitive-partner/v1.0.1`, `decisionguard/v0.6.2`, and `web-feature-demo/v1.0.1`. These examples have not been created. Preserve old repository tags and avoid making consumers upgrade unrelated skills.
 
-`catalog.json` locks the original snapshots and reviewed current package files. To update a package, review the incoming commit, preserve its license and provenance records, update that package's catalog entry, current hashes and change notes, then run all affected checks. Do not treat a hash update as review or license approval.
+`catalog.json` locks the current source snapshots and reviewed current package files. Automatic updates retain superseded source records in `sync/history/`; original Git history remains in the original repositories. To update a package, review the incoming commit, preserve its license and provenance records, update that package's catalog entry, current hashes and change notes, then run all affected checks. Do not treat a hash update as review or license approval.
 
 ## Validation
 
@@ -56,6 +56,6 @@ Before each later release:
 
 Do not run the imported Cognitive Partner `scripts/publish.sh` to publish this monorepo: it describes the original standalone repository and tag. Use root Git operations targeting `ChoMinGi/agent.d`.
 
-A validated [GitHub Actions example](ci.example.yml) covers root integration, Cognitive Partner and DecisionGuard checks, plus JavaScript/shell syntax checks. It is not active in this repository. To enable it, copy it to `.github/workflows/validate.yml` using an account/connection allowed to write workflows, then verify the run for the exact commit. Full Chrome UI/lifecycle checks were run locally; the example does not claim browser coverage.
+The validation workflow in `.github/workflows/validate.yml` and its [original example](ci.example.yml) cover root integration, Cognitive Partner and DecisionGuard checks, plus JavaScript/shell syntax checks. See [activation requirements](sync.md#activation-requirements) before assuming the workflows are enabled, and verify the run for the exact commit. Full Chrome UI/lifecycle checks were run locally; the example does not claim browser coverage.
 
 Repository About: `Personal agent skills for critical thinking, project decisions, and local browser demos.`

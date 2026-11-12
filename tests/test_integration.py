@@ -19,7 +19,7 @@ class IntegrationTests(unittest.TestCase):
     def test_repository_integrity(self):
         result = validate()
         self.assertTrue(result['passed'], result['errors'])
-        self.assertEqual(result['imported_files'], 240)
+        self.assertEqual(result['imported_files'], sum(len(e['source_sha256']) for e in catalog()))
 
     def test_migration_notes_match_changed_files(self):
         for entry in catalog():
